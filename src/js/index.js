@@ -1,0 +1,1 @@
+((a, b)=> console.log(a + b))(val1, val2);
