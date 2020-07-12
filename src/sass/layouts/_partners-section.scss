@@ -1,0 +1,30 @@
+.slides{
+    h1{
+        text-align: center;
+
+    }
+    .partner{
+        width: 210px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        float: left;
+        position: relative;
+        left: 12%;
+    }
+    a{
+            display: block;
+            background-color: $primary-variant;
+            border-radius: 5px;
+            padding: 20px;
+    }
+    
+    img{ 
+       
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+       
+    }
+}
+
