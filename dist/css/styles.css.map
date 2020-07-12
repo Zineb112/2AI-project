@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["styles.css"],"sourcesContent":["h1{font-family:Poppins,sans-serif;font-size:40px}"],"file":"styles.css"}
+{"version":3,"names":[],"mappings":"","sources":["styles.css"],"sourcesContent":["body,h1{font-family:Poppins,sans-serif}h1{font-size:40px}"],"file":"styles.css"}
