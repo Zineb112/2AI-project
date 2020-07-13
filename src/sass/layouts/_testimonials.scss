@@ -26,6 +26,11 @@
 
 
 .testimonials {
+	&__bg{
+		background-image: url(../images/bg_clients.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
     &__title{
         text-align: center;
         font-size: 40px;
@@ -41,15 +46,6 @@
 	position: absolute;
 }
 
-.testimonials__shape-1 {
-	top: -72px;
-	left: 0;
-}
-
-.testimonials__shape-2 {
-	top: 100px;
-	left: 295px;
-}
 
 .testimonials .container-fluid {
 	width: 100%;
@@ -229,6 +225,11 @@
 	
 	
 	.testimonials {
+		&__bg{
+			background-image: url(../images/bg_clients.png);
+			background-repeat: no-repeat;
+			
+		}
 		&__title{
 			text-align: center;
 			font-size: 24px;
@@ -445,6 +446,11 @@
 	
 	
 	.testimonials {
+		&__bg{
+			background-image: url(../images/bg_clients.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
 		&__title{
 			text-align: center;
 			font-size: 24px;
