@@ -1,16 +1,18 @@
-.slides{
-    h1{
+.partners{
+&__container{
+    
+    &--title{
         text-align: center;
 
     }
-    .partner{
+    &--partner{
         width: 210px;
         margin-right: 20px;
         margin-bottom: 10px;
         margin-top: 20px;
         float: left;
         position: relative;
-        left: 12%;
+        left:20% ;
         
     }
     a{
@@ -32,3 +34,4 @@
    
 }
 
+}
