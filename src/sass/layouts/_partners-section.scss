@@ -1,10 +1,14 @@
 .partners{
-&__container{
-    
-    &--title{
-        text-align: center;
 
-    }
+&__title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+&__container{
+ 
     &--partner{
         width: 210px;
         margin-right: 20px;
