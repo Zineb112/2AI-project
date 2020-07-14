@@ -1,3 +1,4 @@
+(function ($) {
 $(window).on('load', function () {
 
     if ($('.thm__owl-carousel').length) {
@@ -22,3 +23,6 @@ $(window).on('load', function () {
         });
     }
 });
+})(jQuery);
+
+
