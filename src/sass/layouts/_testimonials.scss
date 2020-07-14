@@ -1,3 +1,9 @@
+body{
+
+	padding: 0px;
+	margin: 0px;
+}
+
 @media (min-width: 1200px){
 .block-title__line {
 	background-color: $secondary;
@@ -26,6 +32,7 @@
 
 
 .testimonials {
+	margin-bottom: 72px;
 	&__bg{
 		background-image: url(../images/bg_clients.png);
 		background-repeat: no-repeat;
