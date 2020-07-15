@@ -1,3 +1,9 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
 @media (min-width: 1200px){
 .block-title__line {
 	background-color: $secondary;
@@ -26,6 +32,12 @@
 
 
 .testimonials {
+	margin-bottom: 72px;
+	&__bg{
+		background-image: url(../images/bg_clients.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
     &__title{
         text-align: center;
         font-size: 40px;
@@ -41,15 +53,6 @@
 	position: absolute;
 }
 
-.testimonials__shape-1 {
-	top: -72px;
-	left: 0;
-}
-
-.testimonials__shape-2 {
-	top: 100px;
-	left: 295px;
-}
 
 .testimonials .container-fluid {
 	width: 100%;
@@ -229,6 +232,11 @@
 	
 	
 	.testimonials {
+		&__bg{
+			background-image: url(../images/bg_clients.png);
+			background-repeat: no-repeat;
+			
+		}
 		&__title{
 			text-align: center;
 			font-size: 24px;
@@ -241,7 +249,7 @@
 			text-align: justify;
 			font-size: 16px;
 			font-weight: 500;
-			width: 80%;
+			width: 65%;
 			margin-left: auto;
 			margin-right: auto;
 			text-align-last: center;
@@ -445,6 +453,11 @@
 	
 	
 	.testimonials {
+		&__bg{
+			background-image: url(../images/bg_clients.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
 		&__title{
 			text-align: center;
 			font-size: 24px;
