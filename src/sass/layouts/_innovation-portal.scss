@@ -1,0 +1,38 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+  
+  }
+  
+  .right {
+    right: 0;
+    
+  }
+.inno{
+    color: green;
+}
+
+  .Firstimg{
+      width:25%;
+      position:relative;
+      top: 335px;
+      left: 37%;
+
+
+  }
+ 
+  .secondimg{
+      width:50%;
+      position:absolute;
+      top:10%;
+      
+  }
