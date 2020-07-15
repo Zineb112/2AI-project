@@ -1,0 +1,291 @@
+@media (min-width: 1200px){
+    .block-title__line {
+        background-color: $secondary;
+        display: flex;
+        width: 64px;
+        height: 6px;
+        border-radius: 3px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .block-title__line::before {
+        content: '';
+        width: 8px;
+        height: 6px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        left: 12px;
+        top: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    
+    
+    .actualitesPage {
+        margin-bottom: 72px;
+        &__title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        &__subtitle{
+            text-align: center;
+            font-size: 24px;
+        }
+        &__bg{
+            position: absolute;
+            margin-top: -6%;
+            margin-left: 14%;
+            width: 6%;
+        }
+        &__container{
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            grid-template-rows: max-content  max-content;
+        }
+    }
+
+    .post-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .post-pagination a {
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 57px;
+        height: 57px;
+        transition: all .4s ease;
+    }
+    
+    .post-pagination a:hover {
+        background-color: $secondary;
+        color: #fff;
+    }
+    
+    .post-pagination a.active {
+        background-color: $secondary;
+        color: #fff;
+        cursor: auto;
+    }
+    
+    .post-pagination a+a {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .block-title__line {
+		background-color: $secondary;
+		display: flex;
+		width: 64px;
+		height: 6px;
+		border-radius: 3px;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.block-title__line::before {
+		content: '';
+		width: 8px;
+		height: 6px;
+		background-color: white;
+		border-radius: 3px;
+		position: absolute;
+		left: 12px;
+		top: 0px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	
+	
+	
+	.actualitesPage {
+		&__title{
+			text-align: center;
+			font-size: 24px;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: 700;
+		}
+		&__subtitle{
+			text-align: justify;
+			font-size: 16px;
+			font-weight: 500;
+			width: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align-last: center;
+        }
+        &__bg{
+            display: none;
+        }        &__container{
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content  max-content max-content max-content  max-content;
+        }
+    }
+    .post-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .post-pagination a {
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        transition: all .4s ease;
+    }
+    
+    .post-pagination a:hover {
+        background-color: $secondary;
+        color: #fff;
+    }
+    
+    .post-pagination a.active {
+        background-color: $secondary;
+        color: #fff;
+        cursor: auto;
+    }
+    
+    .post-pagination a+a {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 600px)and (max-width: 1024px){
+	.block-title__line {
+		background-color: $secondary;
+		display: flex;
+		width: 64px;
+		height: 6px;
+		border-radius: 3px;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.block-title__line::before {
+		content: '';
+		width: 8px;
+		height: 6px;
+		background-color: white;
+		border-radius: 3px;
+		position: absolute;
+		left: 12px;
+		top: 0px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	
+	
+	
+	.actualitesPage {
+		&__title{
+			text-align: center;
+			font-size: 24px;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: 700;
+		}
+		&__subtitle{
+			text-align: justify;
+			font-size: 16px;
+			font-weight: 500;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align-last: center;
+		}
+        &__bg{
+            display: none;
+        }        &__container{
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content  max-content max-content max-content  max-content;
+        }
+    }
+    .post-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .post-pagination a {
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        transition: all .4s ease;
+    }
+    
+    .post-pagination a:hover {
+        background-color: $secondary;
+        color: #fff;
+    }
+    
+    .post-pagination a.active {
+        background-color: $secondary;
+        color: #fff;
+        cursor: auto;
+    }
+    
+    .post-pagination a+a {
+        margin-left: 15px;
+    }
+}
