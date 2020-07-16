@@ -1,11 +1,16 @@
 .navigation-alt {
-    padding: 5rem 10rem;
+    margin: 24px auto;
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
     justify-items: center;
-    font-family: 'Nunito', 'Poppins', sans-serif;
-    font-size: 1.6rem;
+    font-size: 20px;
+    background-color: white;
+    width: 80%;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0 0 4px 0 rgba(29,47,60,.41);
+
 
     @include responsive(small-desktop) {
         justify-items: start;
@@ -28,7 +33,6 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 9px;
 
         @include responsive(tab-land) {
             display: none;
@@ -42,8 +46,8 @@
 
         &:link,
         &:visited {
-            font-weight: 400;
-            color: black;
+            font-weight: 600;
+            color: $primary;
             text-decoration: none;
             transition: all .4s;
             cursor: pointer;
@@ -64,15 +68,15 @@
             display: inline-block;
             width: 0;
             position: absolute;
-            bottom: 0;
-            border-bottom: 1px solid green;
+            bottom: -8px;
+            border-bottom: 4px solid $secondary;
             transition: $hover;
             z-index: 2;
         }
 
         //dropdown style
         &-sub {
-
+            list-style: none;
             min-width: 13rem;
             left: -3px;
             position: absolute;
@@ -108,8 +112,7 @@
                 border-bottom: 10px solid currentColor;
                 border-left: 10px solid transparent;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, .03);
-
-                color: #fff;
+                color: $primary;
                 content: '';
                 pointer-events: none;
             }
@@ -119,11 +122,10 @@
                 width: max-content;
                 &>a {
                     display: flex;
-                    display: -webkit-flex;
-                    padding: 10px 20px;
+                    padding: 16px 24px;
                     vertical-align: middle;
                     white-space: nowrap;
-                    font-size: 13px;
+                    font-size: 14px;
                     line-height: 1;
                     flex-grow: 1;
                     align-items: center;
@@ -137,7 +139,8 @@
             }
 
             &>.navigation-alt__item-sub {
-                top: 100%;
+                background-color: $primary;
+                margin-top: 8px;
                 bottom: auto;
                 visibility: visible;
                 opacity: 1;
@@ -461,6 +464,12 @@
         top: 5.5rem;
         
     }
+}
+
+.navigation-alt__link--color{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 @media (min-width: 1200px){
