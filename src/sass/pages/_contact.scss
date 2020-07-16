@@ -1,4 +1,4 @@
-.contact{
+.contactpage{
     &__title{
         text-align: center;
         font-size: 40px;
@@ -10,32 +10,69 @@
     }
   
     &__box{
-       
-        
-            width: 100%;
+
+       width: 100%;
      
         &--adresse{
             margin-left: 280px;
            display: inline-block;
-          
-         
-       
 
         i{
-            color:$primary;
+           
             position: relative;
             top: 86px;
             right: 72px;
-            font-size: 60px;
-  
-  
+            font-size: 29px;
+            padding: 15px;
+            background-color:$primary ;
+            color:$color-white;
            
         }
         p{
             font-size:13px;
         }
     }
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 40px;
+    &--maps{
+        width: 80%;
+        margin-left: 195px;
+        grid-area :1/1;
+        background-color: red;
+    }
+    &--form{
+        padding-top: 40px;
+        width: 80%;
+        grid-area: 1/2;
+        background-color:$primary  ;
+      
+    }
+    input{
+        width: 320px;
+        border: 2px;
+        margin: 15px 205px;
+        outline: none;
+        box-sizing: border-box;
+        transition: .3s;
+        height: 46px;
+        background-color: $primary-variant;
+    }
+    select{
+        width: 320px;
+        border: 2px;
+        margin: 15px 205px;
+        outline: none;
+        box-sizing: border-box;
+        transition: .3s;
+        height: 46px;
+       background-color: $primary-variant;
+    }
+   .inputEdit{
+       height:120px;
+   }
 
-   
     }
 }
