@@ -1,8 +1,16 @@
 @import "abstracts/variables";
+@import "components/button";
 
 
-@import "layouts/header";
-@import "layouts/testimonials";
+
+@import "layouts/innovation-portal";
+
+@import "layouts/testimonials-section";
+@import "layouts/partners-section";
+@import "layouts/service-section";
+@import "layouts/blog-section";
+@import "layouts/services-aboutUs";
+@import "layouts/team-section";
 
 
 
@@ -14,6 +22,12 @@
 
 
 @import "pages/404";
+<<<<<<< HEAD
 @import "layouts/partners-section";
 @import "layouts/service-section";
 @import "layouts/footer";
+=======
+@import "pages/news";
+
+
+>>>>>>> 7a56563b582884ca9906f177fe3c18e8a7dfaf53
