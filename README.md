@@ -4,4 +4,4 @@ This repository is dedicated to the project of *Ibtikar Arab Agency - 2AI*, whic
 - Mina Dakiri / minadakiri7@gmail.com
 - Zineb Belassiri / zbelassiri@gmail.com
 - Salma Belassiri / salmabelassiri@gmail.com
-- Achraf Abbassi  / 
+- Achraf Abbassi  / hraf.abbassi@gmail.com
