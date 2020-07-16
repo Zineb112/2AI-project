@@ -1,0 +1,45 @@
+
+html {
+    //this defines what 1rem is
+    font-size:  62.5%; //1rem = 10px; 10px/16px = 62.5%
+    @include responsive(small-desktop) { // width < 1200?
+        font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+    }
+
+    @include responsive(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+    }
+
+    @include responsive(tab-land-1) { // width < 1200?
+        font-size: 55%; //1 rem = 9px, 9/16 = 56.25%
+    }
+
+    @include responsive(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+
+    }
+    
+    @include responsive(phone) {
+        font-size: 45%; // 1rem = 7.2px, 7.2/16 = 45%
+        
+    }
+
+    @include responsive(phone-1) {
+        font-size: 43%; // 1rem = 7.2px, 7.2/16 = 45%
+        
+    }
+
+    @include responsive(iphone) {
+        font-size: 37%; // 1rem = 5px, 5/16 = 30%
+    }
+
+    @include responsive(iphone-1) {
+        font-size: 35%; // 1rem = 5px, 5/16 = 30%
+    }
+
+
+    // @include responsive(big-desktop) {
+    //     font-size: 90%; //1rem = 12, 12/16
+    // }
+
+}
