@@ -75,13 +75,50 @@ grid-row-gap: 0px;
 
 
 
-
-
-.main__feature-img{
-        width: 5%
+.box{
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: flex;
+    
 }
 
+.box:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+}
 
+.box .imgBx{
+    width: 150px;
+    float: 0 0 150px;
+}
 
-  
+.box .imgBx img{
+    max-width: 50%;
+    padding-top: 50%;
+    padding-left: 17%;
+}
+
+.box .content{
+    padding-left: 20px;
+}
+
+.box .content h2{
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.box .content p {
+    margin: 0;
+   padding: 10px 0 0;
+   font-size:15px;
+    
+}
 
