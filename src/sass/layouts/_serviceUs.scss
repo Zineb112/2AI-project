@@ -1,0 +1,20 @@
+@media (min-width: 1200px){
+    .servicesUs {
+        &__title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            &--font{
+                font-family: $fontS;
+                color: $primary;
+            }
+        }
+        &__subtitle{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+    }
+
+}
