@@ -1,4 +1,5 @@
 (function ($) {
+    
 $(window).on('load', function () {
 
     if ($('.thm__owl-carousel').length) {
