@@ -225,7 +225,7 @@
         position: fixed;
         top: 6.5rem;
         right: 10.5rem;
-        background-image: radial-gradient(green, $secondary);
+        background-image: radial-gradient($primary-variant, $primary-variant);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -483,3 +483,32 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 480px){
+.navigation-alt {
+    box-shadow: none;
+}
+#top-alt {
+    top: 12rem;
+}
+.navigation-alt__logo {
+    width: 96%;
+}
+#top-alt-bg {
+    top: 12rem;
+}
+}
+@media (min-width: 600px)and (max-width: 1024px){
+    .navigation-alt {
+        box-shadow: none;
+    }
+    #top-alt {
+        top: 11rem;
+    }
+    .navigation-alt__logo {
+        width: 64%;
+    }
+    #top-alt-bg {
+        top: 11rem;
+    }
+    }
