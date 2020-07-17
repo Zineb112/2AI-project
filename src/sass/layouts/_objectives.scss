@@ -11,7 +11,7 @@ body{
     background-size: contain;
     background-position: right;
     margin-bottom: 6%;
-    margin-top: 15%;
+    margin-top: 10%;
 
 }
 
@@ -32,7 +32,9 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 10% 16% 10% 20%;
+    padding: 6% 2% 10% 10%;
+    padding-top: 4%;
+
 
 }
 
@@ -41,7 +43,7 @@ body{
     box-sizing: border-box;
     background:#fff;
     box-shadow: 0 7px 7px rgba(0, 0, 0, .5);
-    font-size: 131%;
+    font-size: 107%;
     width: 78%;
     
 
@@ -55,7 +57,7 @@ body{
 
 .para{
     padding: 3% 12% 16px 30px;
-    font-size: 99%;
+    font-size: 85%;
     font-weight: 500;
     
 }
@@ -64,6 +66,8 @@ body{
     background-image: url(../images/one.png);
     background-repeat: no-repeat;
     background-size: contain;
+    padding-left: 6%;
+    font-size: 150%;
     
 }
 
@@ -71,6 +75,8 @@ body{
     background-image: url(../images/two.png);
     background-repeat: no-repeat;
     background-size: contain;
+    padding-left: 6%;
+    font-size: 150%;
     
 }
 
@@ -78,5 +84,8 @@ body{
     background-image: url(../images/three.png);
     background-repeat: no-repeat;
     background-size: contain;
+    padding-left: 6%;
+    font-size: 150%;
+    
     
 }
