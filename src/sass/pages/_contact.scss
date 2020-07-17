@@ -2,11 +2,20 @@
     &__title{
         text-align: center;
         font-size: 40px;
-        font-weight: 700;
+       
     }
-    &__subtitle{
+    &__second{
         text-align: center;
+        margin-left: 11%;
         font-size: 24px;
+        margin-top: -4%;
+    }
+    
+    &__shape{
+        position: absolute;
+        margin-top: -4%;
+        margin-left: 7%;
+        width: 6%;
     }
   
     &__box{
@@ -20,17 +29,21 @@
         i{
            
             position: relative;
-            top: 86px;
-            right: 72px;
-            font-size: 29px;
-            padding: 15px;
+            top: 81px;
+            right: 84px;
+            font-size: 30px;
+            padding: 18px;
             background-color:$primary ;
             color:$color-white;
            
         }
-        p{
-            font-size:13px;
-        }
+       
+    }
+    &--p{
+        padding: 4% 10% 16px 2px;
+        font-size: 99%;
+       font-weight: 500;
+        
     }
     }
     &__container{
@@ -51,6 +64,7 @@
       
     }
     input{
+        padding-left: 35px;
         width: 320px;
         border: 2px;
         margin: 15px 205px;
@@ -59,8 +73,10 @@
         transition: .3s;
         height: 46px;
         background-color: $primary-variant;
+        
     }
     select{
+        padding-left: 35px;
         width: 320px;
         border: 2px;
         margin: 15px 205px;
@@ -71,6 +87,7 @@
        background-color: $primary-variant;
     }
    .inputEdit{
+       padding-bottom: 61px;
        height:120px;
    }
 
