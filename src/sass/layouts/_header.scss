@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
-    height: max-content;
+    height: 720px;
     padding: 8rem 16rem;
 
     &__nav {
@@ -218,4 +218,5 @@
     display: grid;
     grid-template-columns: max-content max-content;
     grid-template-rows: 100%;
+    margin-top: -184px;
 }

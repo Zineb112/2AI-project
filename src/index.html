@@ -1,7 +1,44 @@
 @@include('includes/nav.html')
 
 <!-- header -->
-
+<header class="hero-header">
+        @@include('includes/navigation.html')
+        <div class="hero-header__main">
+              <div class="hero-header__main-text">
+                <h1 class="heading">
+                        Agence Arab Ibtikarat
+                </h1>
+                <p class="sub-heading">
+                        
+                </p>
+              </div>
+              <div class="hero-header__slider">
+                  <div class="thm__owl-carousel testimonials__carousel owl-carousel owl-theme" data-options='{
+                    "items": 3, "margin": 60, "smartSpeed": 700, "autoplay": true, "autoplayHoverPause": true, "autoplayTimeout": 5000, "loop": true, "nav": false, "dots": true, "center": true, "responsive": {
+                        "0": {"items": 1, "margin": 0},
+                        "767": {"items": 1, "margin": 0},
+                        "991": {"items": 1, "margin": 0},
+                        "1199": {"items": 1, "margin": 0}
+                    }
+                }'>
+                    <div>
+                      <img src="images/audio_img.png" alt="" class="hero-slide__img">
+                    </div>
+                    <div>
+                      <img src="images/commu_img.png" alt="" class="hero-slide__img">
+                    </div>
+                    <div>
+                      <img src="images/event_img.png" alt="" class="hero-slide__img">
+                    </div>
+                  </div>
+    
+              </div>
+        </div>
+        <div class="bnn">
+            <button class="contactHeader">Contacter nous</button>
+            <a class="banner-one__video video-popup"><i class="fa fa-play"></i></a>  
+        </div> 
+</header>
 <!-- header end -->
 
 <!-- services -->
