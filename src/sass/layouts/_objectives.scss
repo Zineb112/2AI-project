@@ -1,11 +1,82 @@
-.contain{
+body{
+	font-family: 'Poppins', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.objectives{
     width: 100%;
+    background-image: url(../images/bg_objectifs.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-bottom: 6%;
+    margin-top: 15%;
+
+}
+
+
+.grand{
+
+&__titre{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+}
+
+
+.contain{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10% 16% 10% 20%;
+
+}
+
+.cart{
     
+    box-sizing: border-box;
+    background:#fff;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, .5);
+    font-size: 131%;
+    width: 78%;
     
 
+    
+}
 
+h1{
+    padding: 12px 16% 1px 15px;
+    color: $primary;
+}
 
+p{
+    padding: 3% 12% 16px 30px;
+    font-size: 99%;
+    font-weight: 500;
+    
+}
 
+.bach1{
+    background-image: url(../images/one.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.bach2{
+    background-image: url(../images/two.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.bach3{
+    background-image: url(../images/three.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 }
