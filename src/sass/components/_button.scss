@@ -75,3 +75,19 @@
         }
     }
 }
+///start button for contact page 
+.contactpage{
+
+    &__container{
+        &--send{
+            background-color: $secondary;
+            color:$color-white;
+            border-radius: 20px;
+            border:none;
+            width: 145px;
+            height: 60px;
+            margin: 1px 18px 61px 207px;
+        }
+    }
+    
+}
