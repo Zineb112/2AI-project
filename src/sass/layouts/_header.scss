@@ -1,10 +1,9 @@
 .hero-header {
-    background-image: url('../images/bg_header.png');
+    background-image: url(../images/bg_header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom left;
-    height: 720px;
-    padding: 8rem 16rem;
+    height: 800px;
+    padding: 4rem 16rem;
     @include responsive(tab-port){
         background-image: url('../images/bg_header.png');
         background-repeat: no-repeat;
@@ -117,7 +116,7 @@
 
     .hero-slide {
         &__img {
-            width: 56rem !important;
+            width: 48rem !important;
 
             @include responsive(phone) {
                 width: 47rem !important;
@@ -162,11 +161,12 @@
 }
 
 @media (min-width: 1200px){
+
 .bnn{
     display: grid;
     grid-template-columns: max-content max-content;
     grid-template-rows: 100%;
-    margin-top: -184px;
+    margin-top: -240px;
 }
 }
 
