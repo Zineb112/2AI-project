@@ -2,7 +2,7 @@
       
     text-align: center;
     box-shadow: -1px 2px 20px -6px rgba(0, 0, 0, 0.75);
-    padding: 70px;
+    padding: 50px;
     width: 50%;
     margin-left: 40em;
     background-color: white;
@@ -18,7 +18,10 @@
     color: white;
     text-shadow: 1px 1px 2px #fff;
     font-size:12px;
-    
+&:hover {
+  background:$primary;
+  color: $color-white;
+  }
   }
   .banner a{
     padding: 1.6em 3em;
