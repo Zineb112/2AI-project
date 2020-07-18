@@ -315,3 +315,27 @@
     }
     
 }
+//tablet
+@media (min-width: 600px)and (max-width: 1024px){
+    .contactpage{ 
+    &__container{
+        &--send{
+            border: none;
+           margin-left:103px;
+    }
+}
+}
+}
+//mobile
+@media (min-width: 320px) and (max-width: 480px){
+    .contactpage{
+        &__container{
+            &--send{
+                border: none;
+                margin-left: 31px;
+                width: 73%;
+        }
+        }
+    }
+
+}
