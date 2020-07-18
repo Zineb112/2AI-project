@@ -123,9 +123,7 @@
 
   }
 }
-footer{
-    display: none;
-}
+
 @media (min-width: 600px)and (max-width: 1024px){
     .contactpage{
         &__title{
@@ -283,15 +281,18 @@ footer{
           
            }
            input {
-            margin-left: 20px;
-            width: 221px;;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 72%;
+        }
         }
         select{
-            margin-left: 20px;
-            width: 221px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 72%;
         }
+        }
+     }
 
-       }
-
-}
-}
