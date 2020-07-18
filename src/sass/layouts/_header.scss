@@ -5,6 +5,15 @@
     background-position: bottom left;
     height: 720px;
     padding: 8rem 16rem;
+    @include responsive(tab-port){
+        background-image: url('../images/bg_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        height: max-content;
+        padding: 8rem 4rem;
+
+    }
 
     &__nav {
         display: flex;
@@ -69,7 +78,8 @@
                 }
 
                 @include responsive(tab-port) {
-                    margin: 2rem 0;
+                    margin: 2rem 0 8rem;
+                    font-weight: 500;
                 }
             }
         }
@@ -151,72 +161,41 @@
 	}
 }
 
-
-.contactHeader{
-    border: none;
-    padding: 25px 32px;
-    border-radius:50px;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: white;
-    cursor: pointer;
-
-}
-
-.banner-one__video {
-	width: 56px;
-	height: 56px;
-	border-radius: 50%;
-	background-color: $secondary;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: white;
-	font-size: 14px;
-	transition: all 500ms ease;
-	margin: auto 24px;
-	position: relative;
-}
-
-.banner-one__video::before,
-.banner-one__video::after {
-	content: '';
-	position: absolute;
-	width: 68px;
-	height: 68px;
-	border-radius: 50%;
-	border: 1px solid $secondary;
-	opacity: 1;
-	top: calc(50% - 34px);
-	left: calc(50% - 34px);
-	animation: videoBtnAnim 3s linear infinite;
-	z-index: 1;
-}
-
-.banner-one__video::after {
-	width: 75px;
-	height: 75px;
-	left: calc(50% - 37.5px);
-	top: calc(50% - 37.5px);
-	opacity: 1;
-}
-
-.banner-one__video::before {
-	animation-delay: 1s;
-}
-
-.banner-one__video:hover {
-	background-color: $primary;
-	color: #fff;
-}
-
-
+@media (min-width: 1200px){
 .bnn{
     display: grid;
     grid-template-columns: max-content max-content;
     grid-template-rows: 100%;
     margin-top: -184px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .bnn{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-rows: 100%;
+        padding: 2rem 6rem;
+    }
+}
+
+
+@media (min-width: 600px)and (max-width: 1024px){
+    .hero-header {
+        background-image: url('../images/bg_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        height: max-content;
+        padding: 8rem;
+}
+.bnn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+    width: 56%;
+}
 }
