@@ -10,8 +10,6 @@ body{
     width: 100%;
     background-image: url(../images/bg_contact.png);
     background-size: 100% 100%;
-    margin-top: 6%;
-    margin-bottom: 6%;
    
 }
 
@@ -19,41 +17,32 @@ body{
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 	align-items: center;
     align-content: center;
-    padding-top: 10%;
+    padding-top: 14%;
     
 }
 
 
 .titres{
 
-    padding-right: 8%;
-    padding-left: 8%;
-
     &__première{
-
+        font-size: 20px;
         color: $color-white;
-        font-size: 53px;
-        font-family: Playfair Display;
-        padding-right: 37%;
     }
 
-    &__deuxième{
 
+    &__Second{
+        font-size: 20px;
+        font-size: 200;
         color: $color-white;
-        font-size: 64px;
-        
+}
 
-
-
-    }
 }
 
 
-
 .button{
-
 
     &__first{
 
@@ -67,8 +56,9 @@ body{
         border:  3px solid $primary;
         cursor: pointer;
         text-align: center;
-        color:  $color-white;
+        color:  $color-white
 
+        
         
     }
     
@@ -85,20 +75,8 @@ body{
         border: none;
         cursor: pointer;
         text-align: center;
-        color:  $color-white;
+        color:  $color-white
 
     } 
 }
-
-.button__first:hover{
-    background-color: $primary;
-}
-
-.button__second:hover{
-    background-color: $secondary;
-}
-
-
-
-
 

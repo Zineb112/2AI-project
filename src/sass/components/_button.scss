@@ -85,19 +85,6 @@
 	color: #fff;
 }
 
-.services__info--btn{
-    border: none;
-    padding: 25px 32px;
-    border-radius:50px;
-    width: 32%;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: $secondary;
-    color: white;
-    cursor: pointer;
-}
-
 }
 
 // Mobile
@@ -183,19 +170,6 @@
     .banner-one__video:hover {
         background-color: $primary;
         color: #fff;
-    }
-
-    .services__info--btn{
-        border: none;
-        padding: 25px 32px;
-        border-radius:50px;
-        width: 100%;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        background-color: $secondary;
-        color: white;
-        cursor: pointer;
     }
     
 }
@@ -286,18 +260,6 @@
         background-color: $primary;
         color: #fff;
     }
-
-    .services__info--btn{
-        border: none;
-        padding: 25px 32px;
-        border-radius:50px;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        background-color: $secondary;
-        color: white;
-        cursor: pointer;
-    }
 }
 ///start button for contact page 
 .contactpage{
@@ -314,28 +276,4 @@
         }
     }
     
-}
-//tablet
-@media (min-width: 600px)and (max-width: 1024px){
-    .contactpage{ 
-    &__container{
-        &--send{
-            border: none;
-           margin-left:103px;
-    }
-}
-}
-}
-//mobile
-@media (min-width: 320px) and (max-width: 480px){
-    .contactpage{
-        &__container{
-            &--send{
-                border: none;
-                margin-left: 31px;
-                width: 73%;
-        }
-        }
-    }
-
 }
