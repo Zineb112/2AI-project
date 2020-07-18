@@ -1,0 +1,147 @@
+
+@mixin small-font {
+    font-size: $small-font-size;
+    font-weight: $medium-font-weight;
+}
+
+@mixin description-font {
+    font-size: 1.5rem;
+    font-weight: $light-font-weight;
+    color: $primary-variant;
+}
+
+
+@mixin subtitle-font {
+    font-size: $font-size-4;
+    font-weight: $medium-font-weight;
+}
+@mixin medium-font {
+    font-size: $medium-font-size;
+    font-weight: $medium-font-weight;
+}
+
+@mixin  main-title {
+    color: $primary;
+    font-size: 4rem;
+    font-weight: $medium-font-weight;
+}
+
+@mixin main-subheading {
+    color: $primary-variant;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: $light-font-weight;
+}
+@mixin abs_centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin learnig-center_sizing {
+    @include custom_media(1580){
+        padding: 0 10rem;
+    }
+    @include custom_media(1700){
+        grid-gap: 5rem;
+    }
+
+    @include responsive(phone){
+        padding: 0 4rem;
+        margin-top: 5rem;
+    }
+}
+
+
+@mixin pages_header_1 {
+        background-image: url(../images/bg-heroPages1.png);
+        position: relative;
+        background-size: cover;
+        background-repeat: round;
+        height: 55vh;
+        @include responsive(phone){
+            height: 40vh;
+        }
+        @include responsive(phone-1){
+            height: 35vh;
+        }
+}
+
+
+// 16:9 video ratio
+@mixin videoratio($width) {
+    width: $width;
+    height: #{($width / 16)*9};
+}
+//MEDIA QUERY MANNAGER
+
+/*
+0 - 600px: phone
+600 - 900px: Tbalet portrait
+900 - 1200px Tablet Landscape
+[1200 - 1800] is where our normal style apply
+1800px + Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base typography > general layout + grid > page layout > components
+
+for media queries 1em = 16px
+*/
+@mixin responsive($breakpoint) {
+
+    @if $breakpoint == iphone-1 {
+        @media screen and (max-width: 20em) { @content }; //320px
+     }
+
+    @if $breakpoint == iphone {
+        @media screen and (max-width: 23.44em) { @content }; //375px
+     }
+     
+    @if $breakpoint == phone-1 {
+        @media screen and (max-width: 30em) { @content }; //480px
+    }
+    @if $breakpoint == phone {
+        @media screen and (max-width: 37.5em) { @content }; //600px
+    }
+
+    @if $breakpoint == tab-port-1 {
+        @media screen and (max-width: 50em) { @content }; //800px
+    }
+
+    @if $breakpoint == tab-port {
+        @media screen and (max-width: 56.25em) { @content }; //900px
+    }
+
+    @if $breakpoint == tab-land-1 {
+        @media screen and (max-width: 64em) { @content }; //1024px
+    }
+
+    @if $breakpoint == tab-land {
+        @media screen and (max-width: 75em) { @content }; //1200px
+    }
+
+    @if $breakpoint == small-desktop {
+        @media screen and (max-width: 100em) { @content }; //1600px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media screen and (min-width: 112.5em) { @content }; //1800px
+    }
+}
+
+@mixin  custom_media($point) {
+    @media screen and (max-width: ($point / 16)*1em) { @content };
+}
+
+// @mixin custom_media-minmax($max-point,$min-point) {
+//     @media (min-width: $min-point) and (max-width: $max-point) { @content };
+// }
+// @media (min-width: 1200px)
+// @media (min-width: 320px) and (max-width: 480px)
+// @media (min-width: 600px)and (max-width: 1024px)

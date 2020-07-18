@@ -1,0 +1,163 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+#Portail{
+    height: max-content;
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 50%);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 {
+     grid-area: 1 / 2 / 2 / 3; 
+     margin-left:20%;
+     
+}
+
+  .Firstimg{
+      width:13%;
+      position:absolute;
+      margin-left:17%;
+      margin-top:20%;
+      
+  }
+
+  .secondimg{
+      width:55%;
+      position:relative;
+       margin-left:20%;
+       margin-bottom:10%;
+       margin-top: 5%;
+  }
+
+  .inno{
+      color:green;
+  }
+
+  .line{
+    background-color: $secondary;
+	display: flex;
+	width: 64px;
+	height: 6px;
+	border-radius: 3px;
+	position: relative;
+    
+  }
+  .line::before{
+      content: '';
+	width: 8px;
+	height: 6px;
+	background-color: white;
+	border-radius: 3px;
+	position: absolute;
+	left: 12px;
+	top: 0px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+  }
+
+
+  .titlep{
+      font-size:40px;
+  }
+  .parg{
+      font-size:24px;
+  }
+
+
+
+.box{
+    margin-top: 18%;
+    margin-left: 39%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: flex;
+    
+}
+
+
+.box .imgBx{
+    width: 150px;
+    float: 0 0 150px;
+}
+
+.box .imgBx img{
+    max-width: 50%;
+    padding-top: 50%;
+    padding-left: 17%;
+}
+
+.box .content{
+    padding-left: 20px;
+}
+
+.box .content h2{
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.box .content p {
+    margin: 0;
+   padding: 10px 0 0;
+   font-size:15px;
+    
+}
+
+.box1{
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: flex;
+    height: 101%;
+    
+}
+
+
+.box .imgBx1 img{
+    max-width: 60%;
+    padding-top: 75%;
+    padding-left: 17%;
+}
+
+.btn{
+        border-radius: 3em;
+        margin-top: 45%;
+        margin-left: 13%;
+        transform: translate(40%, -50%);
+        background-color: $secondary;
+        font-size: 19px;
+        padding: 25px 50px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        color:  $color-white;
+        
+        &:hover {
+  background:$primary;
+  color: $color-white;
+  }
+        
+}
