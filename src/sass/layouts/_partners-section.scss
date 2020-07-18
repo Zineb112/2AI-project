@@ -1,3 +1,8 @@
+.partnersWidth{
+    width: 80%;
+    margin: auto;
+}
+
 .partners{
 
 &__title{
@@ -10,27 +15,21 @@
 &__container{
 
     &--partner{
-        width: 210px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        margin-top: 20px;
-        float: left;
-        position: relative;
-        left:20% ;
-        
+        width: max-content;
+        margin: 40px auto;
     }
     
     a{
             display: block;
             background-color: $primary-variant;
             border-radius: 5px;
-            padding: 20px;
+            padding: 32px;
     }
     
     img{ 
        
-        max-width: 100%;
-        height: auto;
+        width: 280px;
+        height: 60px;
         vertical-align: middle;
      
        
