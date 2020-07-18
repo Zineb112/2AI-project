@@ -1,33 +1,36 @@
 .banner{
-      
-    text-align: center;
-    box-shadow: -1px 2px 20px -6px rgba(0, 0, 0, 0.75);
-    padding: 50px;
+  text-align: center;
+    box-shadow: -1px 2px 20px -6px rgba(0,0,0,.75);
+    padding: 36px;
     width: 50%;
     margin-left: 40em;
-    background-color: white;
-    transform: translate(2%, 122%);
+    background-color: #fff;
+    transform: translate(3%,94%);
+}
 
 
   }
   .banner h2{
-    padding-bottom: 1em;
+    padding-bottom: -1em;
   }
   .banner__btn{
-    background-color: #E70D00;
-    color: white;
-    text-shadow: 1px 1px 2px #fff;
-    font-size:12px;
+      border-radius: 3em;
+        margin-top: 7%;
+        margin-left: -8%;
+        transform: translate(40%, -50%);
+        background-color: $secondary;
+        font-size: 19px;
+        padding: 25px 50px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        color:  $color-white;
 &:hover {
   background:$primary;
   color: $color-white;
   }
   }
-  .banner a{
-    padding: 1.6em 3em;
-    text-decoration: none;
-    border-radius:100px;
-   } 
+ 
 
 
 .banner__title{
@@ -69,3 +72,25 @@
  .mis{
      color: #E70D00;
  }
+
+
+
+input { 
+   font-size: 19px;
+    margin-left: 33%;
+    width: 20%;
+    margin-bottom: -1px;
+    border: none;
+  color:$primary-variant; 
+
+}
+label { 
+  color:$primary-variant; 
+  font-weight:bold; 
+  display:block;
+  padding-bottom:4px;
+}
+
+.mail{
+display:flex;
+}
