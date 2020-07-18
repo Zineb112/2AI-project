@@ -77,9 +77,8 @@ grid-row-gap: 0px;
 
 
 .box{
-    position: absolute;
-    top: 220%;
-    left: 75%;
+    margin-top: 18%;
+    margin-left: 39%;
     transform: translate(-50%, -50%);
     width: 600px;
     padding: 20px;
@@ -143,3 +142,22 @@ grid-row-gap: 0px;
     padding-left: 17%;
 }
 
+.btn{
+        border-radius: 3em;
+        margin-top: 45%;
+        margin-left: 13%;
+        transform: translate(40%, -50%);
+        background-color: $secondary;
+        font-size: 19px;
+        padding: 25px 50px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        color:  $color-white;
+        
+        &:hover {
+  background:$primary;
+  color: $color-white;
+  }
+        
+}
