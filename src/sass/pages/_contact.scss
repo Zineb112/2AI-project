@@ -243,26 +243,18 @@
         &__box{
             display: flex;
             flex-direction: column;
-            margin-left: auto;
-             margin-right: auto;
-            display: block;
+
             i{
-                position: static;
+                top: 66px;
+                right: 55px;
                 font-size: 14px;
                 padding: 16px;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-                width: 5%;
             } 
             h3, h4{
                 font-size: 10px;
-                text-align: center;
             }
             &--p{
                 font-size: 9px;
-                text-align: center;
-                padding: 2px;
                 
             }
         }
