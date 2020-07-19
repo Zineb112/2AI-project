@@ -127,37 +127,7 @@
 }
 
 
-@keyframes videoBtnAnim {
-	0% {
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
-		opacity: 1;
-	}
 
-	25% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-		opacity: 0.4;
-	}
-
-	50% {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-		opacity: 0.8;
-	}
-
-	75% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-		opacity: 0.4;
-	}
-
-	100% {
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
-		opacity: 1;
-	}
-}
 
 @media (min-width: 1200px){
 .bnn{

@@ -25,8 +25,21 @@ grid-row-gap: 0px;
       position:absolute;
       margin-left:17%;
       margin-top:20%;
+      animation: 4s infinite alternate floating;
       
   }
+
+  @keyframes floating {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-200px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
   .secondimg{
       width:55%;
@@ -150,7 +163,6 @@ grid-row-gap: 0px;
         cursor: pointer;
         text-align: center;
         color:  $color-white;
-        
     
-        
 }
+
