@@ -1,7 +1,7 @@
 @media (min-width: 1200px){
     .footerN{
         background-color: $primary-variant;
-        padding: 8rem;
+        padding: 18rem 8rem 8rem;
         &__container{
         display: grid;
         grid-template-columns: 30% 35% 35%;
@@ -34,6 +34,9 @@
     
         &__card2{
             grid-area: 1/2;
+        }
+        &__card3{
+            padding-left: 40px;
         }
         &__title{
             font-size: 24px;
