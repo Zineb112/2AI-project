@@ -239,9 +239,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px){
-    .footer{
+    .footerN{
         background-color: $primary-variant;
-        padding: 4rem;
+        padding: 36rem 4rem 4rem;
         &__container{
         display: grid;
         grid-template-columns: 100%;
@@ -478,9 +478,9 @@
 }
 
 @media (min-width: 600px)and (max-width: 1024px){
-    .footer{
+    .footerN{
         background-color: $primary-variant;
-        padding: 4rem;
+        padding: 36rem 4rem 4rem;
         &__container{
         display: grid;
         grid-template-columns: 100%;

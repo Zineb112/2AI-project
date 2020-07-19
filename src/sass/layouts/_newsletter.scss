@@ -1,3 +1,7 @@
+
+
+
+@media (min-width: 1200px){
 .newsletter{
   &__container{
     background-color: #fff;
@@ -70,3 +74,147 @@
     cursor: pointer;
   }
 }
+br{
+  display: none;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  .newsletter{
+    &__container{
+      background-color: #fff;
+      box-shadow: 0 8px 27px 0 rgba(29,47,60,.18);
+      padding: 24px 40px;
+      width: 64%;
+      margin: 0px auto -180px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: max-content max-content;
+      z-index: 100;
+      position: relative;
+    }
+    &__title{
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin: 0px auto 24px;
+      font-size: 24px;
+      text-align: center;
+      color: $primary;
+      
+    }
+    span{
+      color: $secondary;
+      font-family: $fontS;
+      font-weight: 700;
+    }
+    &__form{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: max-content max-content max-content;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .fa-envelope{
+      color: $secondary;
+      grid-area: 1/1;
+      font-size: 40px;
+      margin: 0px auto 16px;
+    }
+    input{
+      height: 64px;
+      width: 100%;
+      background-color: $primary-variant;
+      border: none;
+      padding-left: 8px;
+      grid-area: 2/1;;
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+      text-align: center;
+      margin: 0px auto 16px;
+      border-radius: 8%;
+    }
+    button{
+      display: block;
+      height: 64px;
+      border: none;
+      background-color: $secondary;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      margin: auto;
+      padding: 6px 24px;
+      border-radius: 32px;
+      cursor: pointer;
+      grid-area: 3/1;
+    }
+  }
+}
+
+@media (min-width: 600px)and (max-width: 1024px){
+  .newsletter{
+    &__container{
+      background-color: #fff;
+      box-shadow: 0 8px 27px 0 rgba(29,47,60,.18);
+      padding: 24px 88px;
+      width: 56%;
+      margin: 0px auto -200px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 500 50%;
+      z-index: 100;
+      position: relative;
+    }
+    &__title{
+      grid-area: 1/1;
+      margin: 0px auto 40px;
+      font-size: 40px;
+      color: $primary;
+      text-align: center;
+      
+    }
+    span{
+      color: $secondary;
+      font-family: $fontS;
+    }
+    &__form{
+      grid-area: 2/1;
+      display: grid;
+      grid-template-rows: max-content max-content;
+      grid-template-columns: 100%;
+    }
+    .fa-envelope{
+      color: $secondary;
+      grid-area: 1/1;
+      font-size: 56px;
+      margin: 0px auto 24px;
+    }
+    input{
+      grid-area: 2/1;
+      height: 64px;
+      background-color: $primary-variant;
+      border: none;
+      padding-left: 40px;
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+    }
+    button{
+      margin-left: 72%;
+      grid-area: 2/1;
+      width: 37%;
+      height: 64px;
+      border: none;
+      background-color: $secondary;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 8px 24px;
+      border-radius: 32px;
+      cursor: pointer;
+    }
+  }
+}
+
