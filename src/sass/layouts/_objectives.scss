@@ -115,3 +115,53 @@
 }
 
 
+@media (min-width: 320px) and (max-width: 480px){
+
+
+
+    .objectives{
+        margin-bottom: 18%;
+        margin-top: 17%;
+    
+    }
+
+    .grand{
+
+        &__titre{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        
+        }
+
+
+
+    .contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    
+    }
+
+    .pack{
+        padding-bottom: 100px;
+        padding-right: 211px;
+    }
+    .cart{
+
+        font-size: 8px;
+        margin: -43% 0 0 24%;
+        width: 226px
+        
+}
+    
+
+
+    .bach{
+        width: 95px;
+    }
+    
+}
