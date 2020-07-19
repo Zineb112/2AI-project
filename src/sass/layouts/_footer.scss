@@ -218,6 +218,21 @@
       .socialMediaLinks  li:nth-child(4) a:before {
         background: #c4302b;
       }
+
+      .bottomFooter{
+          background-color: $primary;
+          padding: 16px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          &__title{
+              font-weight: 400;
+          }
+          span {
+              color: #2bbbe8;
+              font-weight: 700;
+          }
+      }
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -442,6 +457,21 @@
       .socialMediaLinks  li:nth-child(4) a:before {
         background: #c4302b;
       }
+
+      .bottomFooter{
+        background-color: $primary;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        &__title{
+            font-weight: 400;
+        }
+        span {
+            color: #2bbbe8;
+            font-weight: 700;
+        }
+    }
 }
 
 @media (min-width: 600px)and (max-width: 1024px){
@@ -671,4 +701,19 @@
       .socialMediaLinks  li:nth-child(4) a:before {
         background: #c4302b;
       }
+
+      .bottomFooter{
+        background-color: $primary;
+        padding: 16px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        &__title{
+            font-weight: 400;
+        }
+        span {
+            color: #2bbbe8;
+            font-weight: 700;
+        }
+    }
 }
