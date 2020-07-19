@@ -2,11 +2,12 @@
 @media (min-width: 1200px){
 .actualites{
     width: 80%;
-    margin: auto;
+    margin: auto auto 140px auto;
     &__title{
         text-align: center;
         font-size: 40px;
         font-weight: 700;
+        margin-top: 12px;
     }
     &__subtitle{
         text-align: center;
