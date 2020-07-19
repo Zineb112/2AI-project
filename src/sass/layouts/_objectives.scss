@@ -118,6 +118,8 @@
 @media (min-width: 320px) and (max-width: 480px){
 
 
+    
+
 
     .objectives{
         margin-bottom: 18%;
@@ -129,7 +131,7 @@
 
         &__titre{
             text-align: center;
-            font-size: 40px;
+            font-size: 26px;
             font-weight: 700;
         }
         
@@ -142,6 +144,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding-top: 73px;
+        padding-left: 73px;
         
     
     }
