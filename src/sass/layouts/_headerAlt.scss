@@ -1,0 +1,13 @@
+.headerAlt{
+    background-image: url(../images/bg_headerAlt.png);
+    height: 600px;
+    padding: 4rem 16rem;
+    @include responsive(tab-port){
+        background-image: url('../images/bg_headerAlt.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        height: max-content;
+        padding: 8rem 4rem;
+    }
+}
