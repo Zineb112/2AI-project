@@ -150,7 +150,36 @@ grid-row-gap: 0px;
         cursor: pointer;
         text-align: center;
         color:  $color-white;
-        
     
-        
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .btn{
+    margin-top: 225%;
+    margin-left: -95%;
+}
+.parent{
+    display:block;
+}
+
+  .Firstimg{
+      width:20%;
+      margin-left: 35%
+      margin-top:40%;
+  }
+  .secondimg{
+      width:55%;
+      position:relative;
+      margin-left: 52%;
+      margin-bottom:10%;
+      margin-top: 5%;
+  }
+
+  
+.box{
+    margin-top: 42%;
+    margin-left: 86%;
+    width: 396px;
+}
+
 }
