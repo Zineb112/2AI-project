@@ -116,7 +116,7 @@
             opacity: 1;
         }
     }
-.services__info--btn{
+    .services__info--btn{
     border: none;
     padding: 25px 32px;
     border-radius:50px;
@@ -127,7 +127,18 @@
     background-color: $secondary;
     color: white;
     cursor: pointer;
-}
+    }
+    .sendBtnPage{
+        padding: 16px 24px;
+        border: none;
+        background-color: $secondary;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 24px;
+        width: 32%;
+        cursor: pointer;
+    }
 }
 
 // Mobile
@@ -290,7 +301,7 @@
             color:$color-white;
             border-radius: 20px;
             border:none;
-            width: 145px;
+            width: 73%;
             height: 60px;
             margin: 1px 18px 61px 207px;
         }

@@ -1,95 +1,180 @@
-.contactpage{
-    &__title{
-        text-align: center;
-        font-size: 40px;
-       
+@media (min-width: 1200px){
+    .contactPage{
+        margin-bottom: 120px;
+        &__title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        &__subtitle{
+            text-align: center;
+            font-size: 24px;
+        }
+        &__bg{
+            position: absolute;
+            margin-top: -6%;
+            margin-left: 14%;
+            width: 6%;
+        }
+        &__Top{
+            width: 80%;
+            margin: 120px auto 56px;
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 33% 34% 33%;
+            &--phone{
+                grid-area: 1/1;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &--message{
+                grid-area: 1/2;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &--location{
+                grid-area: 1/3;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            i{
+                grid-area: 1/1;
+                margin: 0px auto auto;
+                font-size: 32px;
+                padding: 24px;
+                color: white;
+                border-radius: 24px;
+                background: linear-gradient(90deg, $primary 0%, $primary-variant 100%);
+            }
+            h4{
+                grid-area: 1/2;
+                font-size: 16px;
+                font-weight: 700;
+                width: 72%;
+                margin: 0px;
+            }
+            a{
+                grid-area: 1/2;
+                font-size: 16px;
+                font-weight: 600;
+                width: 72%;
+                margin-top: 24px;
+                text-decoration: none;
+                color: $secondary;
+            }
+            p{
+                grid-area: 1/2;
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 64px;
+            }
+        }
+        &__container{
+            background-color: $primary;
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-rows: max-content;
+            grid-template-columns: 50% 50%;
+        }
+        &__maps{
+            grid-area: 1/1;
+            // margin: auto;
+            width: 100%;
+            img{
+                width: 100%;
+                height: max-content;
+            }
+        }
+        &__form{
+            grid-area: 1/2;
+            background-color: $primary;
+            margin: auto;
+            
+        }
     }
-    &__second{
-        text-align: center;
-        margin-left: 11%;
-        font-size: 24px;
-        margin-top: -4%;
+
+    .formName{
+        input{
+            background-color: $primary-variant;
+            border: none;
+            width: 440px;
+            height: 40px;
+            padding-left: 32px;
+            color: black;
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-family: $fontP;
+        }
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $fontP;
+        }
     }
     
-    &__shape{
-        position: absolute;
-        margin-top: -4%;
-        margin-left: 7%;
-        width: 6%;
-    }
-  
-    &__box{
-
-       width: 98%;
-     
-        &--adresse{
-            margin-left: 358px;
-           display: inline-block;
-
-        i{
-           
-            position: relative;
-            top: 81px;
-            right: 84px;
-            font-size: 30px;
-            padding: 18px;
-            background-color:$primary ;
-            color:$color-white;
-           
+    .formEmail{
+        input{
+            background-color: $primary-variant;
+            border: none;
+            width: 440px;
+            height: 40px;
+            padding-left: 32px;
+            color: black;
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-family: $fontP;
         }
-       
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $fontP;
+        }
     }
-    &--p{
-        padding: 4% 10% 16px 2px;
-        font-size: 99%;
-       font-weight: 500;
-        
-    }
-    }
-    &__container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-bottom: 40px;
-    &--maps{
-        width: 80%;
-        margin-left: 195px;
-        grid-area :1/1;
-        background-color: red;
-    }
-    &--form{
-        padding-top: 40px;
-        width: 80%;
-        grid-area: 1/2;
-        background-color:$primary  ;
-      
-    }
-    input{
-        padding-left: 35px;
-        width: 320px;
-        border: 2px;
-        margin: 15px 205px;
-        outline: none;
-        box-sizing: border-box;
-        transition: .3s;
-        height: 46px;
-        background-color: $primary-variant;
-        
-    }
-    select{
-        padding-left: 35px;
-        width: 320px;
-        border: 2px;
-        margin: 15px 205px;
-        outline: none;
-        box-sizing: border-box;
-        transition: .3s;
-        height: 46px;
-       background-color: $primary-variant;
-    }
-   .inputEdit{
-       padding-bottom: 61px;
-       height:120px;
-   }
 
+    .formSubject{
+        select{
+            background-color: $primary-variant;
+            border: none;
+            width: 472px;
+            height: 40px;
+            padding-left: 32px;
+            padding-right: 32px;
+            color: black;
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-family: $fontP;
+        }
+    }
+
+    .formMessage{
+        textarea{
+            background-color:$primary-variant;
+            border: none;
+            width: 440px;
+            height: 144px;
+            padding-left: 32px;
+            color: black;
+            font-weight: 500;
+            margin-bottom: 24px;
+            font-family: $fontP;
+            padding-top: 24px;
+        }
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+        }
     }
 }
