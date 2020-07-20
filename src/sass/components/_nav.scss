@@ -312,7 +312,10 @@
                 left: 47rem;
             }
             @include responsive(phone) {
-                left: 20rem;
+                left: -3rem;
+                list-style: none;
+                text-align: center;
+            
             }
         }
 
@@ -499,8 +502,8 @@
     width: 96%;
 }
 #top-alt-bg {
-    top: 12rem;
-    height: max-content;
+    top: 10rem;
+    height: 5%;
 }
 }
 @media (min-width: 600px)and (max-width: 1024px){
