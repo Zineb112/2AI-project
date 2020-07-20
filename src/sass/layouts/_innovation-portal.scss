@@ -113,6 +113,7 @@
         width: 88%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 120px;
         &__container{
             display: grid;
             grid-template-columns: 100%;
@@ -139,6 +140,7 @@
         &__paragraph{
             font-size: 24px;
             text-align: justify;
+            margin-bottom: 40px;
         }
         &__box{
             box-shadow: 0px 0px 27px 0px rgba(6, 15, 154, 0.1);
