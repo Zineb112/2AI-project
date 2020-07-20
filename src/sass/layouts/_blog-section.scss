@@ -2,7 +2,7 @@
 @media (min-width: 1200px){
 .actualites{
     width: 80%;
-    margin: auto auto 140px auto;
+    margin: auto auto 120px auto;
     &__title{
         text-align: center;
         font-size: 40px;
@@ -213,7 +213,7 @@
 
     .actualites{
         width: 80%;
-        margin: auto;
+        margin: auto auto 120px auto;
 		&__title{
 			text-align: center;
 			font-size: 24px;
@@ -431,7 +431,7 @@
 
     .actualites{
         width: 80%;
-        margin: auto;
+        margin: auto auto 120px auto;
 		&__title{
 			text-align: center;
 			font-size: 24px;
