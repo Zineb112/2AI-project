@@ -26,7 +26,8 @@
     
     
     .actualitesPage {
-        margin-bottom: 72px;
+        margin-top: 120px;
+        margin-bottom: 80px;
         &__title{
             text-align: center;
             font-size: 32px;
@@ -57,6 +58,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-bottom: 140px;
     }
     
     .post-pagination a {
@@ -120,6 +122,8 @@
 	}
 
 	.actualitesPage {
+        margin-top: 64px;
+        margin-bottom: 40px;
 		&__title{
 			text-align: center;
 			font-size: 24px;
@@ -153,6 +157,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-bottom: 120px;
     }
     
     .post-pagination a {
@@ -218,6 +223,8 @@
 	
 	
 	.actualitesPage {
+        margin-top: 40px;
+        margin-bottom: 40px;
 		&__title{
 			text-align: center;
 			font-size: 24px;
@@ -251,6 +258,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-bottom: 120px;
     }
     
     .post-pagination a {
