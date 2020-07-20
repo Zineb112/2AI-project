@@ -329,6 +329,18 @@
     
     }
 
+    .services__info--btn{
+        border: none;
+        padding: 25px 32px;
+        border-radius:50px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: $secondary;
+        color: white;
+        cursor: pointer;
+    }
     .banner-one__video {
         width: 56px;
         height: 56px;

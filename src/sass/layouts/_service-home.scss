@@ -255,6 +255,7 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .services {
+       margin-bottom: 120px;
         &__box--audio,
         &__box--commu,
         &__box--event {
@@ -436,6 +437,7 @@
 
 @media (min-width: 600px)and (max-width: 1024px){
     .services {
+        margin-bottom: 120px;
         &__box--audio,
         &__box--commu,
         &__box--event {
