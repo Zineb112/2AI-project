@@ -1,8 +1,10 @@
 {
-  "name": "btikar-arab-agency",
+  "name": "2ai-project",
   "version": "1.0.0",
-  "description": "btikar Arab Agency - 2AI-website",
-  "main": "index.js",
+  "description": "This repository is dedicated to the project of *Ibtikar Arab Agency - 2AI*, which is a showcase site, and it works by the team consisting of:",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,30 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/Zineb112/2AI-project.git"
   },
-  "author": "Mina Dakiri, Zineb Belassiri, Salma Belassiri",
+  "author": "Mina Dakiri, Zineb Belassiri, Salma Belassiri, Achraf Abbassi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zineb112/2AI-project/issues"
   },
-  "homepage": "https://github.com/Zineb112/2AI-project#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-cache": "^1.1.3",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-file-include": "^2.1.1",
-    "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-terser": "^1.2.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^4.0.1"
-  },
-  "dependencies": {
-    "gh-pages": "^2.2.0",
-    "gulp-cli": "^2.2.0",
-    "normalize.css": "^8.0.1"
-  }
+  "homepage": "https://github.com/Zineb112/2AI-project#readme"
 }
