@@ -309,7 +309,9 @@
             // transition: $slide-slow;
 
             @include responsive(tab-port) {
-                left: 47rem;
+                left: -3rem;
+                list-style: none;
+                text-align: center;
             }
             @include responsive(phone) {
                 left: -3rem;
@@ -506,7 +508,7 @@
     height: 5%;
 }
 }
-@media (min-width: 600px)and (max-width: 1024px){
+@media (min-width: 600px)and (max-width: 1023px){
     .navigation__list {
         top: 32%;
     }
@@ -525,6 +527,39 @@
     }
     #top-alt-bg {
         top: 9rem;
-        height: 4%;
+        height: 5%;
     }
+
+
     }
+
+@media (min-width: 1023px)and (max-width: 1024px){
+        .navigation__list {
+            top: 24%;
+        }
+        .navigation-alt {
+            box-shadow: none;
+            background-color: transparent;
+            margin: 0;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        #top-alt {
+            top: 12rem;
+        }
+        .navigation-alt__logo {
+            width: 64%;
+        }
+        #top-alt-bg {
+            top: 13rem;
+            height: 3%;
+        }
+        .navigation__item-sub {
+            display: none;
+            text-align: center;
+            position: relative;
+            left: -2rem;
+            list-style: none;
+        }
+    
+}
