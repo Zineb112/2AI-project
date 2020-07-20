@@ -84,6 +84,31 @@
         background-color: $primary;
         color: #fff;
     }
+    .contactBtnSection{
+        border: 4px solid $primary;
+        background-color: transparent;
+        padding: 32px;
+        border-radius: 64px;
+        margin: auto 16px auto auto;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    .devisBtnSection{
+        border: 4px solid $primary;
+        background-color: $primary;
+        padding: 32px;
+        border-radius: 64px;
+        margin: auto;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
 
     @keyframes videoBtnAnim {
         0% {

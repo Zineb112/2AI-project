@@ -1,258 +1,35 @@
-.contact{
-    
-    height: 600px;
-    width: 100%;
+.contactNous{
     background-image: url(../images/bg_contact.png);
-    background-size: 100% 100%;
-    margin-bottom: 140px;
-   
-}
-
-.form{
-
-    display: flex;
-    flex-direction: row;
-	align-items: center;
-    align-content: center;
-    padding-top: 10%;
-    
-}
-
-
-.titres{
-
-    padding-right: 8%;
-    padding-left: 8%;
-
-    &__première{
-
-        color: $color-white;
-        font-size: 53px;
-        font-family: Playfair Display;
-        padding-right: 37%;
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 120px;
+    &__container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content;
+        margin: auto;
+        padding: 16rem 0rem;
+        width: 88%;
     }
-
-    &__deuxième{
-
-        color: $color-white;
-        font-size: 64px;
-        
-
-
-
-    }
-}
-
-
-
-.button{
-
-
-    &__first{
-
-        border-radius: 3em;
-        top: 50%;
-        left: 50%;
-        transform: translate(35%, -50%);
-        background-color: Transparent;
-        font-size: 16px;
-        padding: 34px 44px;
-        border:  3px solid $primary;
-        cursor: pointer;
-        text-align: center;
-        color:  $color-white;
-
-        
-    }
-    
-
-    &__second{
-
-        border-radius: 3em;
-        top: 50%;
-        left: 50%;
-        transform: translate(40%, -50%);
-        background-color: $primary;
-        font-size: 19px;
-        padding: 34px 46px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        color:  $color-white;
-
-    } 
-}
-
-@media (min-width: 600px) and (max-width: 1024px){
-
-    .form{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        padding-top: 10%;
-        
-    }
-
-    .titres{
-
-
-    
-        &__première{
-    
-            color: $color-white;
-            font-size: 22px;
-            font-family: Playfair Display;
-            padding-left: 27%;
-        }
-    
-        &__deuxième{
-    
-            color: $color-white;
-            font-size: 39px;
-            
-            
-    
-    
-    
-        }
-    }
-
-
-    .button{
-
-        padding-top: 88px;
-        padding-right: 162px;
-
-     
-        &__first{
-    
-            border-radius: 3em;
-            transform: translate(35%, -50%);
-            background-color: Transparent;
-            font-size: 16px;
-            padding: 31px 16px;
-            border:  3px solid $primary;
-            cursor: pointer;
-            text-align: center;
-            color:  $color-white;
-    
+    &__titles{
+        grid-area: 1/1;
+        h3{
+            font-family: $fontS;
+            font-size: 56px;
+            color: white;
             
         }
-        
-    
-        &__second{
-    
-            border-radius: 3em;
-            transform: translate(40%, -50%);
-            background-color: $primary;
-            font-size: 16px;
-            padding: 31px 32px;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-            color:  $color-white;
-    
-        } 
+        h4{
+            font-size: 56px;
+            color: white;
+            font-weight: 900;
+        }
     }
-
-
+    &__btns{
+        grid-area: 1/2;
+        margin: auto;
+    }
 }
-
-
-@media (min-width: 320px) and (max-width: 480px){
-
-
-
-    .contact{
-
-        height: 393px;
-        width: 100%;;
-        margin-top: 20%;
-        margin-bottom: 15%;
-    }
-    
-
-    .form{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        padding-top: 39%;
-        
-    }
-
-    .titres{
-
-
-        padding-right: 7%;
-        padding-left: 11%;
-
-    
-        &__première{
-    
-            color: $color-white;
-            font-size: 10px;
-            font-family: Playfair Display;
-            padding-left: 27%;
-        }
-    
-        &__deuxième{
-    
-            color: $color-white;
-            font-size: 18px;
-            
-            
-    
-    
-    
-        }
-    }
-
-
-    .button{
-
-        padding-top: 51px;
-        padding-right: 79px;
-
-     
-        &__first{
-    
-            border-radius: 3em;
-            transform: translate(35%, -50%);
-            background-color: Transparent;
-            font-size: 9px;
-            padding: 19px 16px;
-            border:  3px solid $primary;
-            cursor: pointer;
-            text-align: center;
-            color:  $color-white;
-    
-            
-        }
-        
-    
-        &__second{
-    
-            border-radius: 3em;
-            transform: translate(40%, -50%);
-            background-color: $primary;
-            font-size: 9px;
-            padding: 19px 16px;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-            color:  $color-white;
-    
-        } 
-    }
-
-}
-
-
-
-
-
 
