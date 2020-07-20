@@ -10,4 +10,27 @@
         height: max-content;
         padding: 8rem 4rem;
     }
+    &__container{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% max-content;
+        grid-template-rows: 100%;
+        margin: 9% auto;
+    }
+    &__title{
+        font-size: 48px;
+        color: $secondary;
+    }
+    &__list{
+        grid-column: 4/7;
+        font-size: 32px;
+        margin: auto;
+        il{
+            color: $primary;
+        }
+        a{
+        font-weight: 500;
+        color: $primary;
+        text-decoration: none;
+        }
+    }
 }
