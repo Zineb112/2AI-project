@@ -66,20 +66,25 @@
         margin: auto;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
+        grid-template-rows: max-content max-content;
     }
     &__serviceInfos{
         grid-area: 1/1;
         margin: 0px auto 0px 80px;
     }
     &__serviceImg{
-        grid-area: 1/2;
+        grid-row: 1/3;
+        grid-column: 2/3;
         margin: auto;
         img{
             display: block;
             width: 80%;
             margin: auto;
         }
+    }
+    &__list{
+        grid-row: 2/3;
+        grid-column: 1/2;
     }
 }
 .serviceInfos{
@@ -91,18 +96,12 @@
     }
 }
 
-
-
-.list--commu{
-    margin: -144px auto 0px 13%;
-}
-
 .CheckList{
     padding-left: 0;
     list-style-type: none;
-    width: 84%;
     display: grid;
-    grid-template-columns: 25% 25%;
+    grid-template-columns: 50% 50%;
+    margin-left: 72px;
     li {
         width: 80%;
         margin-top: 10px;
@@ -162,4 +161,8 @@
             }
         }
     }
+}
+
+.displayAudio, .displayEvent{
+    display: none;
 }
