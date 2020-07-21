@@ -1,0 +1,100 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 55px;
+    grid-row-gap: 10px;
+        }
+
+
+
+.première {
+     grid-area: 2 / 2 / 3 / 3; 
+
+
+    &__cart{
+        grid-row: 1/3;
+        grid-column: 2/3;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 88%;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 15px 50px 30px;
+    }
+
+    
+
+     img{
+        position: relative;
+    }
+    
+
+    
+    }
+
+
+
+.deuxièm { 
+    
+    grid-area: 2 / 3 / 3 / 4;
+
+
+}
+
+
+
+.troisième {
+    
+    grid-area: 2 / 4 / 3 / 5;
+
+}
+
+
+.quatrième { 
+    
+    grid-area: 3 / 2 / 4 / 3;
+
+
+}
+
+
+.cinquième {
+    
+    grid-area: 3 / 3 / 4 / 4; 
+
+
+}
+
+
+.sixième {
+    
+    
+    grid-area: 3 / 4 / 4 / 5;
+
+}
+
+
+.sept {
+    
+    grid-area: 4 / 2 / 5 / 3;
+
+}
+
+
+.huitième {
+    
+    grid-area: 4 / 3 / 5 / 4; 
+
+}
+
+.neuf {
+
+
+     grid-area: 4 / 4 / 5 / 5;
+    
+    }
+
