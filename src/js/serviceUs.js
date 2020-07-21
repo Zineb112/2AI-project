@@ -22,3 +22,55 @@ const divEvent = document.querySelector('.displayEvent')
 cardCommu.addEventListener('click',fCommunication);
 cardAudio.addEventListener('click',fAudio);
 cardEvent.addEventListener('click',fEvent);
+
+// Communication function
+
+function fCommunication(){
+    divCommu.style.display = 'block'
+    divAudio.style.display ='none'
+    divEvent.style.display ='none'
+    imgComm.style.display ='block'
+    imgCommAlt.style.display ='none'
+    imgAudio.style.display ='none'
+    imgAudioAlt.style.display ='block'
+    imgEvent.style.display ='none'
+    imgEventAlt.style.display ='block'
+    cardAudio.classList.remove('cardActive')
+    cardEvent.classList.remove('cardActive')
+    cardCommu.classList.add('cardActive')
+
+}
+
+// Audio function
+
+function fAudio(){
+    divCommu.style.display = 'none'
+    divAudio.style.display ='block'
+    divEvent.style.display ='none'
+    imgAudio.style.display ='block'
+    imgAudioAlt.style.display ='none'
+    imgComm.style.display ='none'
+    imgCommAlt.style.display ='block'
+    imgEvent.style.display ='none'
+    imgEventAlt.style.display ='block'
+    cardAudio.classList.add('cardActive')
+    cardEvent.classList.remove('cardActive')
+    cardCommu.classList.remove('cardActive')
+}
+
+// Event function
+
+function fEvent(){
+    divCommu.style.display = 'none'
+    divAudio.style.display ='none'
+    divEvent.style.display ='block'
+    imgEvent.style.display ='block'
+    imgEventAlt.style.display ='none'
+    imgComm.style.display ='none'
+    imgCommAlt.style.display ='block'
+    imgAudio.style.display ='none'
+    imgAudioAlt.style.display ='block'
+    cardAudio.classList.remove('cardActive')
+    cardEvent.classList.add('cardActive')
+    cardCommu.classList.remove('cardActive')
+}
