@@ -1,7 +1,5 @@
 
 
-
-
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -40,12 +38,63 @@
 
 
 
-.deuxièm { grid-area: 2 / 3 / 3 / 4; }
-.troisième { grid-area: 2 / 4 / 3 / 5; }
-.quatrième { grid-area: 3 / 2 / 4 / 3; }
-.cinquième { grid-area: 3 / 3 / 4 / 4; }
-.sixième { grid-area: 3 / 4 / 4 / 5; }
-.sept { grid-area: 4 / 2 / 5 / 3; }
-.huitième { grid-area: 4 / 3 / 5 / 4; }
-.neuf { grid-area: 4 / 4 / 5 / 5; }
+.deuxièm { 
+    
+    grid-area: 2 / 3 / 3 / 4;
+
+
+}
+
+
+
+.troisième {
+    
+    grid-area: 2 / 4 / 3 / 5;
+
+}
+
+
+.quatrième { 
+    
+    grid-area: 3 / 2 / 4 / 3;
+
+
+}
+
+
+.cinquième {
+    
+    grid-area: 3 / 3 / 4 / 4; 
+
+
+}
+
+
+.sixième {
+    
+    
+    grid-area: 3 / 4 / 4 / 5;
+
+}
+
+
+.sept {
+    
+    grid-area: 4 / 2 / 5 / 3;
+
+}
+
+
+.huitième {
+    
+    grid-area: 4 / 3 / 5 / 4; 
+
+}
+
+.neuf {
+
+
+     grid-area: 4 / 4 / 5 / 5;
+    
+    }
 
