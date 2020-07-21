@@ -18,18 +18,17 @@
     -o-transition:all .5s ease;
     transition:all .5s ease;
     font-size:20px;
-}
-
-
-
-
-
-.active{
-    background:$secondary;
+    &:hover {
+  background:$secondary;
     color:#ffffff;
-  
+}
 
 }
+
+
+
+
+
 
 .line2{
     margin-top:8%;
