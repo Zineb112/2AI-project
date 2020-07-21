@@ -11,32 +11,42 @@
 
 
 .première {
+
      grid-area: 2 / 2 / 3 / 3; 
 
 
-    &__cart{
+    
 
-     
+    
+
+    
+    
+
+    
+    }
+
+
+    .première__cart{
 
         box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
-        padding-left: 24px;
-        padding-right: 24px;
-        width: 20%;
-        height: 88%;
-        margin-top: auto;
-        margin-bottom: auto;
         border-radius: 0px 0px 31px 0px;
+
+
+        img{
+            position: relative;
+        }
+        
+
+
+        &__cart#{
+            position: absolute;
+            width: 20px;
+        }
+        
     }
 
-    
+   
 
-     img{
-        position: relative;
-    }
-    
-
-    
-    }
 
 
 
