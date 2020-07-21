@@ -1,3 +1,4 @@
+@media (min-width: 1200px){
 .cardActive{
     background-color: $primary-variant !important;
     color: black !important;
@@ -165,4 +166,180 @@
 
 .displayAudio, .displayEvent{
     display: none;
+}
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .cardActive{
+        background-color: $primary-variant !important;
+        color: black !important;
+    }
+    .servicesUs{
+        margin-bottom: 80px;
+        &__title{
+			text-align: center;
+			font-size: 24px;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+            font-weight: 700;
+            margin-top: 12px;
+            br{
+                display: none;
+            }
+            &--font{
+                font-family: $fontS;
+                color: $primary;
+                font-weight: 900;
+            }
+        }
+        &__container{
+            width: 80%;
+            margin: 24px auto;
+            display: grid;
+            grid-template-rows: max-content max-content max-content;
+            grid-template-columns: 100%;
+            img{
+                width: 32%;
+                margin: auto;
+            }
+        }
+        &__imgAlt1,&__img2,&__img3{
+            display: none;
+        }
+        &__cardTitle{
+            font-size: 16px;
+            font-weight: 800;
+        }
+        &__card1{
+            grid-area: 1/1;
+            text-align: center;
+            margin: auto auto 24px auto;
+            box-shadow: 3px -2px 20px 8px rgba(107,125,179,.11);
+            width: 72%;
+            padding: 24px 0px;
+            cursor: pointer;
+    
+        }
+        &__card2{
+            grid-area: 2/1;
+            text-align: center;
+            margin: auto auto 24px auto;
+            box-shadow: 3px -2px 20px 8px rgba(107,125,179,.11);
+            width: 72%;
+            padding: 24px 0px;
+            cursor: pointer;
+        }
+        &__card3{
+            grid-area: 3/1;
+            text-align: center;
+            margin: auto;
+            box-shadow: 3px -2px 20px 8px rgba(107,125,179,.11);
+            width: 72%;
+            padding: 24px 0px;
+            cursor: pointer;
+        }
+    
+        &__wrapperInfos{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content max-content;
+        }
+        &__serviceInfos{
+            grid-area: 2/1;
+        }
+        &__serviceImg{
+            grid-area: 1/1;
+            margin: auto;
+            img{
+                display: block;
+                width: 80%;
+                margin: auto;
+            }
+        }
+        &__list{
+            grid-area: 3/1;
+        }
+    }
+    .serviceInfos{
+        &__title{
+            font-size: 24px;
+        }
+        &__para{
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+    
+    .CheckList{
+        list-style-type: none;
+        li {
+            width: 80%;
+            margin-top: 10px;
+            padding: {
+                left: 10px;
+                right: 10px;
+            }
+            span {
+                display: block;
+                background-color: $primary-variant;
+                border-radius: 5px;
+                padding: 13px 12px 8px 40px;
+                z-index: 1;
+                position: relative;
+                transition: .5s;
+                font: {
+                    weight: 600;
+                    size: 15px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    border-radius: 5px;
+                    background-color: $primary;
+                    z-index: -1;
+                    transition: .5s;
+                }
+                i {
+                    font-size: 12px;
+                    color: white;
+                    background-color:$primary;
+                    width: 23px;
+                    height: 23px;
+                    line-height: 23px;
+                    transition: .5s;
+                    text-align: center;
+                    border-radius: 3px;
+                    position: absolute;
+                    left: 8px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:hover {
+                    color: white;
+    
+                    &::before {
+                        width: 100%;
+                    }
+                    i {
+                        background-color: $secondary;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    .displayAudio, .displayEvent{
+        display: none;
+    }
+    
 }
