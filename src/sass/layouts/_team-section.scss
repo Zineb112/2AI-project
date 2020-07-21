@@ -24,6 +24,7 @@
     }
 
     .teamUs {
+        margin-bottom: 120px;
         &__title{
             text-align: center;
             font-size: 40px;
@@ -135,7 +136,6 @@
 
 }
 
-
 @media (min-width: 320px) and (max-width: 480px){
 	.block-title__line {
 		background-color: $secondary;
@@ -162,6 +162,7 @@
 	}
 
     .teamUs {
+        margin-bottom: 88px;
 		&__title{
 			text-align: center;
 			font-size: 24px;
@@ -307,6 +308,7 @@
 	}
 
     .teamUs {
+        margin-bottom: 120px;
 		&__title{
 			text-align: center;
 			font-size: 24px;
