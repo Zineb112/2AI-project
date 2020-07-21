@@ -1,3 +1,7 @@
+.cardActive{
+    background-color: $primary-variant !important;
+    color: black !important;
+}
 .servicesUs{
     margin-bottom: 120px;
     &__title{
@@ -16,10 +20,10 @@
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: 33% 33% 33%;
-    }
-    img{
-        width: 32%;
-        margin: auto;
+        img{
+            width: 32%;
+            margin: auto;
+        }
     }
     &__imgAlt1,&__img2,&__img3{
         display: none;
@@ -56,9 +60,106 @@
         padding: 24px 0px;
         cursor: pointer;
     }
+
+    &__wrapperInfos{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+    &__serviceInfos{
+        grid-area: 1/1;
+        margin: 0px auto 0px 80px;
+    }
+    &__serviceImg{
+        grid-area: 1/2;
+        margin: auto;
+        img{
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+.serviceInfos{
+    &__title{
+        font-size: 32px;
+    }
+    &__para{
+        font-size: 24px;
+    }
 }
 
-.cardActive{
-    background-color: $primary-variant;
-    color: black;
+
+
+.list--commu{
+    margin: -144px auto 0px 13%;
+}
+
+.CheckList{
+    padding-left: 0;
+    list-style-type: none;
+    width: 84%;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    li {
+        width: 80%;
+        margin-top: 10px;
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+        span {
+            display: block;
+            background-color: $primary-variant;
+            border-radius: 5px;
+            padding: 13px 12px 8px 40px;
+            z-index: 1;
+            position: relative;
+            transition: .5s;
+            font: {
+                weight: 600;
+                size: 15px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                border-radius: 5px;
+                background-color: $primary;
+                z-index: -1;
+                transition: .5s;
+            }
+            i {
+                font-size: 12px;
+                color: white;
+                background-color:$primary;
+                width: 23px;
+                height: 23px;
+                line-height: 23px;
+                transition: .5s;
+                text-align: center;
+                border-radius: 3px;
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:hover {
+                color: white;
+
+                &::before {
+                    width: 100%;
+                }
+                i {
+                    background-color: $secondary;
+                    color: white;
+                }
+            }
+        }
+    }
 }
