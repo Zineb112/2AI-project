@@ -18,7 +18,7 @@
     -o-transition:all .5s ease;
     transition:all .5s ease;
     font-size:20px;
-    &:hover {
+    &:active  {
   background:$secondary;
     color:#ffffff;
 }
