@@ -16,3 +16,9 @@ const imgEventAlt = document.querySelector('.servicesUs__imgAlt3')
 const divCommu = document.querySelector('.displayComm')
 const divAudio = document.querySelector('.displayAudio')
 const divEvent = document.querySelector('.displayEvent')
+
+// EVENT
+
+cardCommu.addEventListener('click',fCommunication);
+cardAudio.addEventListener('click',fAudio);
+cardEvent.addEventListener('click',fEvent);
