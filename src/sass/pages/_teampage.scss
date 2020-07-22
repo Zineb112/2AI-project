@@ -1,7 +1,5 @@
-
+@media (min-width: 1200px){
 .part-one{
-
-
     padding-top: 12%;
 
     &__title{
@@ -14,8 +12,6 @@
         text-align: center;
         font-size: 24px;
     }
-
-
     img{
         position: absolute;
         margin-top: -6%;
@@ -31,108 +27,297 @@
     grid-column-gap: 55px;
     grid-row-gap: 10px;
     margin-top: -15%;
-        }
+    margin-bottom: -20%;
 
-
+     }
 
 .première {
 
      grid-area: 2 / 2 / 3 / 3; 
 
-    }
-     .première__cart{
+     &__cart{
 
-       
-        position: absolute;
-        width: 175px;
-        left: 10%;
-        top: 10%;
+        width: 408px;
         box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
         border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
 
-        
-        
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
     }
 
-
-    .imag{
-
-      position: relative;    
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
     }
 
     
-
-    
-    
-
-    
-   
-
-
-    
-
-   
-
-
-
-
+    }
+}
 .deuxièm { 
     
     grid-area: 2 / 3 / 3 / 4;
 
+    &__cart{
 
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }   
+    }
 }
-
-
 
 .troisième {
     
     grid-area: 2 / 4 / 3 / 5;
 
-}
+    &__cart{
 
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }   
+    }
+}
 
 .quatrième { 
     
     grid-area: 3 / 2 / 4 / 3;
 
+    &__cart{
 
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }   
+    }
 }
-
 
 .cinquième {
     
     grid-area: 3 / 3 / 4 / 4; 
+    &__cart{
 
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }
+         
+        
+    }
 
 }
 
 
 .sixième {
     
-    
     grid-area: 3 / 4 / 4 / 5;
+    &__cart{
 
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }
+         
+        
+    }
 }
 
 
 .sept {
     
     grid-area: 4 / 2 / 5 / 3;
+    &__cart{
+
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }
+         
+        
+    }
+
+
 
 }
+
 
 
 .huitième {
     
     grid-area: 4 / 3 / 5 / 4; 
 
+    &__cart{
+
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }
+            
+    }
 }
+
 
 .neuf {
 
 
      grid-area: 4 / 4 / 5 / 5;
-    
+
+     &__cart{
+
+        width: 408px;
+        box-shadow: 0 0 27px 0 rgba(6,15,154,.1);
+        border-radius: 0px 0px 31px 0px;
+        left: 3%;
+        top: 85%;
+   
+    h1{
+
+        font-size: 20px;
+        text-align: center;
+        padding: 6% 0px 0;
+
     }
 
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: $secondary;
+        padding: 0px 0 6% 0%;
+    }        
+    }
+}
+
+
+  
+}
+
+
+
+
+@media (min-width: 600px)and (max-width: 1024px){
+
+}
+
+
+    
+    
