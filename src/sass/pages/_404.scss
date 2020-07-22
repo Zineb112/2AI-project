@@ -1,14 +1,12 @@
 @media (min-width: 1200px){
 .error{
     &__para{
-        color: white;
-        font-size: 24px;
+        text-transform: uppercase;
+        color: black;
+        font-size: 20px;
         font-weight: 700;
-        position: absolute;
+        margin-bottom: 48px;
         text-align: center;
-        top: 53.7%;
-        left: 44%;
-        width: 11%;
     }
     a{
     text-decoration: none;
@@ -30,7 +28,7 @@
     &__bg{
         display: block;
         width: 40%;
-        margin: 80px auto;
+        margin: 80px auto 56px;
     }
     &__roue1{
         width: 15%;
@@ -70,6 +68,81 @@
         top: 27%;
     }
 }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .error{
+        &__btn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 24px 18px;
+            border-radius: 56px;
+            border: none;
+            background-color: $primary;
+            color: white;
+            width: 56%;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        &__para{
+            text-transform: uppercase;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            
+        }
+        a{
+        text-decoration: none;
+        }
+        &__bg{
+            display: block;
+            width: 80%;
+            margin: 80px auto 40px;
+        }
+        &__roue1{
+            position: absolute;
+            width: 20%;
+            top: 18%;
+            left: 9%;
+            z-index: -1;
+        }
+        &__roue2{
+            position: absolute;
+            left: 68%;
+            width: 24%;
+            top: 13%;
+            z-index: -1;
+
+        }
+        &__roue3{
+            position: absolute;
+            left: 43%;
+            width: 11%;
+            top: 15.5%;
+        }
+        &__roue4{
+            position: absolute;
+            left: 54%;
+            width: 8%;
+            top: 18%;
+        }
+        &__roue5{
+            position: absolute;
+            left: 47%;
+            width: 8%;
+            top: 21%;
+        }
+        &__roue6{
+            position: absolute;
+            left: 51%;
+            width: 10%;
+            top: 10%;
+        }
+    }
 }
 
 
