@@ -63,3 +63,6 @@ class Typewritter {
     time: 100 // velocidad de escritura
   });
   
+
+
+  
