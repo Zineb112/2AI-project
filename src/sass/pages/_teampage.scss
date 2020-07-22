@@ -1,3 +1,5 @@
+@media (min-width: 1200px){
+
 .teamPage{
     &__container{
         width: 64%;
@@ -116,5 +118,126 @@
 	margin-left: 20px;
 }
 
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .teamPage{
+        &__container{
+            width: 88%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
     
     
+    .team-one {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    
+    .team-one .container {
+        position: relative;
+    }
+    
+    .team-one__single {
+        position: relative;
+        margin: 40px 40px 64px 40px;
+    }
+    
+    .team-one__image {
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: $primary-variant;
+    }
+    
+    .team-one__image>img {
+        width: 100%;
+        transition: all 500ms ease;
+    }
+    
+    .team-one__single:hover .team-one__image>img {
+        opacity: 0.17;
+    }
+    
+    .team-one__content {
+        background-color: #fff;
+        width: calc(100% - 47px);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 64%;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        padding-top: 18.5px;
+        padding-bottom: 18.5px;
+        margin-bottom: -46.5px;
+        align-items: center;
+        border-bottom-right-radius: 25px;
+        box-shadow: 2.63px 5.393px 35px 0px rgba(0, 0, 0, 0.09);
+    }
+    
+    
+    .team-one__content h3 {
+        margin: 0;
+        color: $primary;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1em;
+        margin-bottom: 12px;
+    }
+    
+    .team-one__content h3 a {
+        color: inherit;
+        transition: all 500ms ease;
+        text-decoration: none;
+    }
+    
+    .team-one__content h3 a:hover {
+        color: red;
+    }
+    
+    .team-one__content p {
+        margin: 0;
+        color: $secondary;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1em;
+    }
+    
+    .team-one__social {
+        position: absolute;
+        bottom: 65px;
+        right: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        opacity: 0;
+        transform: translateX(40%);
+        transition: opacity 500ms ease, transform 500ms ease;
+    }
+    
+    .team-one__single:hover .team-one__social {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .team-one__social a {
+        color: $primary;
+        font-size: 20px;
+        transition: all 500ms ease;
+    }
+    
+    .team-one__social a:hover {
+        color: $secondary;
+    }
+    
+    .team-one__social a+a {
+        margin-left: 20px;
+    }
+    
+}
+        
