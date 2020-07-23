@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["pages/aboutUs.css"],"sourcesContent":[".contenu{display:flex;flex-direction:row;justify-content:space-around;align-items:stretch;align-content:stretch}"],"file":"aboutUs.css"}
+{"version":3,"names":[],"mappings":"","sources":["pages/aboutUs.css"],"sourcesContent":[".contenu{display:flex;flex-direction:row;justify-content:space-around;align-items:stretch;align-content:stretch;margin-top:110px}"],"file":"aboutUs.css"}
