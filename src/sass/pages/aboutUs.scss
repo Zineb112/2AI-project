@@ -1,3 +1,7 @@
+
+@media (min-width: 1200px){
+
+
 .contenu{
     display: flex;
 	flex-direction: row;
@@ -5,8 +9,117 @@
 	align-items: stretch;
     align-content: stretch;
     margin-top: 110px;
+    padding: 1% 2% 8% 8%;
 
+}
+
+
+.contenu-écrit{
+
+    margin-top: 17px;
+   
+    &__titre{
+        font-size: 41px;
+        padding: 0% 12% 0% 7%;
+
+    }
+
+    &__para{
+
+        font-size: 31px;
+        padding: 0% 14% 1% 7%;
+    }
+}
+
+.aboutlLin{
+    margin-left: 7% !important;
+}
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+    .contenu{
+
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 110px;
+        padding: 0% 8% 20% 8%;
+
+     &__image{
+         width: 271px;
+     }      
+    }
+
+    .contenu-écrit{
+
+        margin-top: 17px;
+       
+        &__titre{
+            text-align: center;
+            font-size: 23px;
+            padding: 0% 12% 0% 7%;
+    
+        }
+    
+        &__para{
+            
+            text-align : center;
+            font-size: 16px;
+            padding: 30px 0% 3% 4%
+            
+        }
+    }
+    
+    .aboutlLin{
+        margin-left: 97px !important;
+    }
     
 
 }
 
+
+
+
+
+
+
+
+@media (min-width: 600px)and (max-width: 1024px){
+    
+    .contenu{
+
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 110px;
+        padding: 0% 8% 20% 8%;
+    
+    }
+
+    .contenu-écrit{
+
+        margin-top: 17px;
+       
+        &__titre{
+            text-align: center;
+            font-size: 41px;
+            padding: 0% 12% 0% 7%;
+    
+        }
+    
+        &__para{
+            
+            text-align : center;
+            font-size: 25px;
+            padding: 30px 0% 3% 4%
+            
+        }
+    }
+    
+    
+    
+
+    
+}
