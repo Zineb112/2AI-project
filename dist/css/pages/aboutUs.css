@@ -1,2 +1,2 @@
-.contenu{display:flex;flex-direction:row;justify-content:space-around;align-items:stretch;align-content:stretch;margin-top:110px}
+@charset "UTF-8";.contenu{display:flex;flex-direction:row;justify-content:space-around;align-items:stretch;align-content:stretch;margin-top:110px;padding:1% 2% 3% 12%}.contenu-écrit__titre{font-size:41px;padding:8% 12% 0 7%}.contenu-écrit__para{font-size:29px;padding:2% 12% 1% 7%}
 /*# sourceMappingURL=aboutUs.css.map */

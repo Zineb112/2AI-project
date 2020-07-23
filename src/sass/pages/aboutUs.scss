@@ -5,8 +5,21 @@
 	align-items: stretch;
     align-content: stretch;
     margin-top: 110px;
-
-    
+    padding: 1% 2% 3% 12%;
 
 }
 
+.contenu-écrit{
+
+    &__titre{
+        font-size: 41px;
+        padding: 8% 12% 0% 7%;
+
+    }
+
+    &__para{
+
+        font-size: 29px;
+        padding: 2% 12% 1% 7%;
+    }
+}
