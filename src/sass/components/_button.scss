@@ -248,6 +248,12 @@
         background-color: $secondary;
         color: white;
         cursor: pointer;
+        transition: 0.6s;
+    }
+    .services__info--btn:hover{
+        border: 1px solid $secondary;
+        background-color: transparent;
+        color: $secondary;
     }
 
     
@@ -311,6 +317,13 @@
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.6s;
+    }
+    .contactBtnSection:hover{
+        border: 2px solid $primary;
+        background-color: $primary;
+        color: white;
+
     }
     
     .devisBtnSection{
@@ -325,6 +338,11 @@
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.6s;
+    }
+    .devisBtnSection:hover{
+        border: 2px solid $primary;
+        background-color: transparent;
     }
 
     @keyframes videoBtnAnim {
@@ -408,10 +426,17 @@
         background-color: $primary;
         color: white;
         cursor: pointer;
+        transition: 0.6s;
         display: block;
         margin-left: auto;
         margin-right: auto;
     
+    }
+    .contactHeader:hover{
+        background-color: transparent;
+        border: 1px solid $primary;
+        color: $primary;
+
     }
 
     .services__info--btn{
@@ -425,6 +450,12 @@
         background-color: $secondary;
         color: white;
         cursor: pointer;
+        transition: 0.6s;
+    }
+    .services__info--btn:hover{
+        border: 1px solid $secondary;
+        background-color: transparent;
+        color: $secondary;
     }
     .banner-one__video {
         width: 56px;
@@ -486,6 +517,13 @@
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.6s;
+    }
+    .contactBtnSection:hover{
+        border: 2px solid $primary;
+        background-color: $primary;
+        color: white;
+
     }
     
     .devisBtnSection{
@@ -500,6 +538,11 @@
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.6s;
+    }
+    .devisBtnSection:hover{
+        border: 2px solid $primary;
+        background-color: transparent;
     }
 
     @keyframes videoBtnAnim {
