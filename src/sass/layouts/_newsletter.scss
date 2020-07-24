@@ -75,6 +75,12 @@
     padding: 8px 32px;
     border-radius: 32px;
     cursor: pointer;
+    transition: 0.6s;
+  }
+  button:hover{
+    background-color: $primary-variant;
+    border: 2px solid $secondary;
+    color: $secondary;
   }
 }
 
