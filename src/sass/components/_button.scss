@@ -27,13 +27,19 @@
         border: none;
         padding: 25px 32px;
         border-radius:50px;
+        border: 2px solid $primary;
         width: 100%;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
         background-color: white;
         cursor: pointer;
-    
+        transition: .4s;
+    }
+    .contactHeader:hover{
+        background-color: transparent;
+        border: 2px solid $primary;
+        color: $primary;
     }
 
     
@@ -200,9 +206,16 @@
         font-weight: 700;
         text-transform: uppercase;
         background-color: $primary;
+        border: 1px solid $primary;
         color: white;
         cursor: pointer;
-    
+        transition: 0.4s;
+    }
+    .contactHeader:hover{
+        background-color: transparent;
+        border: 1px solid $primary;
+        color: $primary;
+
     }
 
     .services__info--btn{
