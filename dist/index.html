@@ -47,6 +47,9 @@
 
 
 <!-- header -->
+<div id="video-overlay" class="video-overlay">
+        <a class="video-overlay-close">&times;</a>
+</div>
 <header class="hero-header">
         <nav class="navigation-alt ">
     <div class="navigation-alt__logo-box">
@@ -161,7 +164,7 @@
         </div>
         <div class="bnn">
             <button class="contactHeader">Contacter nous</button>
-            <a class="banner-one__video video-popup"><i class="fa fa-play"></i></a>  
+            <a class="banner-one__video video-popup" id="play-video"><i class="fa fa-play"></i></a>  
         </div> 
 </header>
 <!-- header end -->
@@ -354,22 +357,22 @@
     <div class="blog-one__single" data-aos="flip-right" data-aos-duration="2500">
         <div class="blog-one__image">
             <img src="images/news1.png" alt="">
-            <a href="blog-details.html"><i class="fas fa-plus"></i></a>
+            <a href="news-post.html"><i class="fas fa-plus"></i></a>
         </div><!-- /.blog-one__image -->
         <div class="blog-one__content">
             <div class="blog-one__meta">
                 <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
                 <a href="#"><i class="fas fa-user"></i>Admin</a>
             </div><!-- /.blog-one__meta -->
-            <h3><a href="blog-details.html">Strategy for Norway's Peion Fund Global.</a></h3>
-            <a href="blog-details.html" class="thm-btn blog-one__btn"><span>View more</span></a>
+            <h3><a href="news-post.html">Strategy for Norway's Peion Fund Global.</a></h3>
+            <a href="news-post.html" class="thm-btn blog-one__btn"><span>View more</span></a>
             <!-- /.thm-btn blog-one__btn -->
         </div><!-- /.blog-one__content -->
     </div><!-- /.blog-one__single -->
     <div class="blog-one__single" data-aos="flip-right" data-aos-duration="2500">
         <div class="blog-one__image">
             <img src="images/news2.png" alt="">
-            <a href="blog-details.html"><i class="fas fa-plus"></i></a>
+            <a href="news-post.html"><i class="fas fa-plus"></i></a>
         </div><!-- /.blog-one__image -->
         <div class="blog-one__content">
             <div class="blog-one__meta">
@@ -651,4 +654,25 @@
     </script>
 </body>
 </html>
+
+
+<script>
+        $('#play-video').on('click', function(e){
+          e.preventDefault();
+          $('#video-overlay').addClass('open');
+          $("#video-overlay").append('<iframe width="80%" height="80%" src="../images/about2AI.mp4" frameborder="0" allowfullscreen></iframe>');
+        });
+        
+        $('.video-overlay, .video-overlay-close').on('click', function(e){
+          e.preventDefault();
+          close_video();
+        });
+        
+        $(document).keyup(function(e){
+          if(e.keyCode === 27) { close_video(); }
+        });
+        
+        function close_video() {
+          $('.video-overlay.open').removeClass('open').find('iframe').remove();
+        };</script>
 
