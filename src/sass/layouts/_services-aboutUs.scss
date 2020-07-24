@@ -4,7 +4,7 @@
     color: black !important;
 
 }
-.listPlus{
+.listPlusA{
     display: none;
 }
 .servicesUs{
@@ -193,6 +193,46 @@
         background-color: $primary-variant !important;
         color: black !important;
     }
+    .listPlusA{
+        display: block;
+        border: none;
+        padding: 16px 24px;
+        background-color: $secondary;
+        color: white;
+        border-radius: 24px;
+        font-weight: 700;
+        width: 56%;
+        margin: 40px;
+        transition: .4s;
+        border: 2px solid $secondary;
+    }
+    .listPlusA:hover{
+        background-color: transparent;
+        border: 2px solid $secondary;
+        color: $secondary;
+        font-weight: 700;
+    }
+    .listPlusE{
+        display: block;
+        border: none;
+        padding: 16px 24px;
+        background-color: $secondary;
+        color: white;
+        border-radius: 24px;
+        font-weight: 700;
+        width: 56%;
+        margin: 40px;
+        transition: .4s;
+        border: 2px solid $secondary;
+    }
+    .listPlusE:hover{
+        background-color: transparent;
+        border: 2px solid $secondary;
+        color: $secondary;
+        font-weight: 700;
+    }
+
+
     .servicesUs{
         margin-bottom: 80px;
         &__title{
@@ -355,9 +395,10 @@
         }
     }
     
-    .displayAudio, .displayEvent{
+    .displayAudio, .displayEvent, .maskListA1, .maskListA2, .maskListA3, .maskListE1 , .maskListE2, .maskListE3, .maskListE4, .maskListE5, .maskListE6, .maskListE7, .maskListE8, .maskListE9{
         display: none;
     }
+    
     
 }
 

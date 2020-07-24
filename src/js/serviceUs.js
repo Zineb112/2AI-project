@@ -3,6 +3,23 @@
 const AboutMore = document.querySelector('.aboutUs__right--more')
 const AboutMoreBtn = document.querySelector('.aboutUs__right--moreBtn')
 
+const PlusA = document.querySelector('.listPlusA')
+const ListA1 = document.querySelector('.maskListA1')
+const ListA2 = document.querySelector('.maskListA2')
+const ListA3 = document.querySelector('.maskListA3')
+
+const PlusE = document.querySelector('.listPlusE')
+const ListE1 = document.querySelector('.maskListE2')
+const ListE2 = document.querySelector('.maskListE2')
+const ListE3 = document.querySelector('.maskListE3')
+const ListE4 = document.querySelector('.maskListE4')
+const ListE5 = document.querySelector('.maskListE5')
+const ListE6 = document.querySelector('.maskListE6')
+const ListE7 = document.querySelector('.maskListE7')
+const ListE8 = document.querySelector('.maskListE8')
+const ListE9 = document.querySelector('.maskListE9')
+
+
 
 const cardCommu = document.querySelector('.servicesUs__card1')
 const cardAudio = document.querySelector('.servicesUs__card2')
@@ -25,6 +42,9 @@ const divEvent = document.querySelector('.displayEvent')
 
 AboutMoreBtn.addEventListener('click',MUs)
 
+PlusA.addEventListener('click',ListAudio)
+PlusE.addEventListener('click',ListEvent)
+
 cardCommu.addEventListener('click',fCommunication);
 cardAudio.addEventListener('click',fAudio);
 cardEvent.addEventListener('click',fEvent);
@@ -34,6 +54,28 @@ cardEvent.addEventListener('click',fEvent);
 function MUs(){
     AboutMore.style.display = 'block'
     AboutMoreBtn.style.display = 'none'
+}
+
+// More List functions
+
+function ListAudio(){
+    ListA1.style.display = 'block'
+    ListA2.style.display = 'block'
+    ListA3.style.display = 'block'
+    PlusA.style.display = 'none'
+}
+
+function ListEvent(){
+    ListE1.style.display = 'block'
+    ListE2.style.display = 'block'
+    ListE3.style.display = 'block'
+    ListE4.style.display = 'block'
+    ListE5.style.display = 'block'
+    ListE6.style.display = 'block'
+    ListE7.style.display = 'block'
+    ListE8.style.display = 'block'
+    ListE9.style.display = 'block'
+    PlusE.style.display = 'none'
 }
 
 // Communication function
