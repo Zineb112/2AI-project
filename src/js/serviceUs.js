@@ -1,5 +1,9 @@
 // DOM
 
+const AboutMore = document.querySelector('.aboutUs__right--more')
+const AboutMoreBtn = document.querySelector('.aboutUs__right--moreBtn')
+
+
 const cardCommu = document.querySelector('.servicesUs__card1')
 const cardAudio = document.querySelector('.servicesUs__card2')
 const cardEvent = document.querySelector('.servicesUs__card3')
@@ -19,9 +23,18 @@ const divEvent = document.querySelector('.displayEvent')
 
 // EVENT
 
+AboutMoreBtn.addEventListener('click',MUs)
+
 cardCommu.addEventListener('click',fCommunication);
 cardAudio.addEventListener('click',fAudio);
 cardEvent.addEventListener('click',fEvent);
+
+// More aboutUs function
+
+function MUs(){
+    AboutMore.style.display = 'block'
+    AboutMoreBtn.style.display = 'none'
+}
 
 // Communication function
 
