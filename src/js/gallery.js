@@ -1,18 +1,12 @@
-$('.portfolio-item').isotope({
-    itemSelector:'.item',
-    layoutMode:'fitRows'
+var mixer =mixitup ('#Container');
+    $('ul.filter-wrap > li').on('click', function(e){
 
-});
-$('.portfolio-menu ul li').click(function(){
-    $('.portfolio-menu ul li').removeClass('active');
-    $(this).addClass('active');
+        e.preventDefault();
 
-    var selector = $(this).attr('data-filter');
-    $('.portfolio-item').isotope({
-        filter:selector
-        });
-        return false;
+        var filter = $(this).attr('data-filter');
 
-});
+        $('ul.filter-wrap > li').removeClass('active-filtre');
+        $(this).addClass('active-filtre');
 
 
+    });
