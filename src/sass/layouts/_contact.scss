@@ -71,6 +71,9 @@
         &__btns{
             grid-area: 2/1;
             margin: auto;
+            a{
+                text-decoration: none;
+            }
         }
     }
 }
