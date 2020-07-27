@@ -92,15 +92,12 @@
             grid-area: 1/1;
             // margin: auto;
             width: 100%;
-            img{
-                width: 100%;
-                height: max-content;
-            }
         }
         &__form{
             grid-area: 1/2;
             background-color: $primary;
             margin: auto;
+            padding: 40px 0px;
             
         }
     }
