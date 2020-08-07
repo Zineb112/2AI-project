@@ -92,7 +92,9 @@
     }
     &__years{
         background-color: #032970;
-        font-size: 32px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
         color: #fff;
         text-align: center;
         padding: 76px 32px;
@@ -267,7 +269,9 @@
         }
         &__years{
             background-color: #032970;
-            font-size: 32px;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 600;
             color: #fff;
             text-align: center;
             padding: 76px 0px;
@@ -464,10 +468,12 @@
         }
         &__years{
             background-color: #032970;
-            font-size: 32px;
+            font-size: 23px;
+            text-transform: uppercase;
+            font-weight: 600;
             color: #fff;
             text-align: center;
-            padding: 76px 32px;
+            padding: 76px 24px;
             width: 72%;
             height: -webkit-max-content;
             height: -moz-max-content;
