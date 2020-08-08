@@ -1,8 +1,9 @@
-.comm{
+.design, .digi{
     background-color: $primary!important;
 }
 
-.vis{
+
+.vis, .marketing{
     background-color: $secondary!important;
 }
 
@@ -11,12 +12,13 @@
 }
 
 
+
 .bubbleG::before{
     content: '';
     width: 16px;
     height: 16px;
-    background-color: $primary-variant!important;
-    border: 2px solid $primary!important;
+    background-color: $primary!important;
+    border: 2px solid white!important;
     border-radius: 50%;
     position: absolute;
     top: 10px;
@@ -30,8 +32,33 @@
     height: 16px;
     border-radius: 50%;
     position: absolute;
-    background-color: $primary-variant!important;
-    border: 2px solid $primary!important;
+    background-color: $primary!important;
+    border: 2px solid white!important;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bubbleR::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: $secondary!important;
+    border: 2px solid white!important;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 500ms ease;
+}
+.bubbleR::after{
+    content: '';
+    width: 16px;
+    transition: all 500ms ease;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $secondary!important;
+    border: 2px solid white!important;
     bottom: 10px;
     right: 10px;
 }
@@ -40,8 +67,8 @@
     content: '';
     width: 16px;
     height: 16px;
-    background-color: $primary!important;
-    border: 2px solid $primary!important;
+    background-color: black!important;
+    border: 2px solid white!important;
     border-radius: 50%;
     position: absolute;
     top: 10px;
@@ -55,8 +82,8 @@
     height: 16px;
     border-radius: 50%;
     position: absolute;
-    background-color: $primary!important;
-    border: 2px solid $primary!important;
+    background-color: black!important;
+    border: 2px solid white!important;
     bottom: 10px;
     right: 10px;
 }
@@ -67,48 +94,34 @@
 .services {
     margin-bottom: 140px;
     &__box--audio,
-    &__box--commu,
-    &__box--event {
+    &__box--design,
+    &__box--event,
+    &__box--digitalisation,
+    &__box--marketing {
         background-color: #fff;
         box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
         text-align: center;
         padding: 40px 32px;
-        width: 72%;
-        margin: auto;
-    }
-    &__box--commu{
-        grid-row: 1/3;
-        grid-column: 1/2;
-    }
-    &__box--event{
-        grid-row: 2/4;
-        grid-column: 2/3;
-        margin: -80px auto 20px;
-        height: max-content;
-    }
-    &__box--audio{
-        grid-row: 3/5;
-        grid-column: 1/2;
+        width: 60%;
+        margin: auto auto 16px auto;
     }
     &__years{
         background-color: #032970;
-        font-size: 22px;
+        font-size: 18px;
         text-transform: uppercase;
         font-weight: 600;
         color: #fff;
         text-align: center;
         padding: 76px 32px;
-        width: 72%;
+        width: 60%;
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content;
-        margin: -122px auto;
-        grid-row: 4/5;
-        grid-column: 2/3;
+        margin:  auto;
     }
     &__icon {
-        width: 121px;
-        height: 121px;
+        width: 120px;
+        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -126,7 +139,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-size: 35px;
+            font-size: 2px;
             color: white;
             background-image: linear-gradient(90deg, $primary-variant 0%, $primary);
         }
@@ -177,11 +190,11 @@
     }
     &__wrapper {
         width: 80%;
-        margin: -184px auto 40px;
+        margin: -140px auto 40px;
         grid-area: 1/1;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 40% 16% 40% 16%;
+        grid-template-rows: max-content max-content max-content;
     }
     &__info{
         display: grid;
@@ -228,25 +241,11 @@
 }
 
 .servTitle{
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.servPara {
     font-size: 16px;
-    font-weight: 500;
-    text-align: justify;
-    text-align-last: center;
+    font-weight: 700;
+    margin: 0px;
 }
 
-.numberY{
-    color: $secondary;
-    font-weight: 700;
-}
-
-.yearA{
-    font-weight: 700;
-}
 .lineTP{
     grid-row: 2/3;
 }
@@ -258,14 +257,17 @@
 @media (min-width: 320px) and (max-width: 480px){
     .services {
        margin-bottom: 120px;
-        &__box--audio,
-        &__box--commu,
-        &__box--event {
+       &__box--audio,
+       &__box--design,
+       &__box--event,
+       &__box--digitalisation,
+       &__box--marketing {
             background-color: #fff;
             box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
             text-align: center;
             padding: 40px 32px;
-            margin: 0px auto 40px;
+            margin-bottom: 24px;
+            
         }
         &__years{
             background-color: #032970;
@@ -437,14 +439,14 @@
 
 }
 
-
-
 @media (min-width: 600px)and (max-width: 1024px){
     .services {
         margin-bottom: 120px;
         &__box--audio,
-        &__box--commu,
-        &__box--event {
+        &__box--design,
+        &__box--event,
+        &__box--digitalisation,
+        &__box--marketing {
             background-color: #fff;
             box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
             text-align: center;
@@ -452,35 +454,19 @@
             width: 72%;
             margin: 0px auto 40px;
         }
-        &__box--commu{
-            grid-row: 1/3;
-            grid-column: 1/2;
-        }
-        &__box--event{
-            grid-row: 2/4;
-            grid-column: 2/3;
-            margin: -80px auto 20px;
-            height: max-content;
-        }
-        &__box--audio{
-            grid-row: 3/5;
-            grid-column: 1/2;
-        }
         &__years{
             background-color: #032970;
-            font-size: 23px;
+            font-size: 20px;
             text-transform: uppercase;
             font-weight: 600;
             color: #fff;
             text-align: center;
-            padding: 76px 24px;
+            padding: 64px 24px;
             width: 72%;
             height: -webkit-max-content;
             height: -moz-max-content;
             height: max-content;
             margin:  36px auto ;
-            grid-row: 4/5;
-            grid-column: 2/3;
         }
         &__icon {
             width: 121px;
