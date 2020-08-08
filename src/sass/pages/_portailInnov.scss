@@ -34,6 +34,9 @@
 }
 
 @media (min-width: 1200px){
+    .hidMoreM{
+        display: none;
+    }
 .Actualite{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -65,7 +68,7 @@
             border: 2px solid $primary-variant;
             background-color: transparent;
             color: white;
-        }
+    }
 }
 .ActualiteRight{
 grid-area: 1/2;
@@ -247,6 +250,13 @@ margin-right: auto;
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+    .hidMoreD{
+        display: none;
+    }
+    .hidMoreM{
+        margin: auto;
+        display: block;
+    }
     .Actualite{
         margin-top: 56px;
         display: grid;
@@ -263,6 +273,25 @@ margin-right: auto;
             font-weight: 400;
             color: white;
         }
+        &__more{
+            border: 2px solid $primary;
+            background-color: $primary-variant;
+            padding: 24px 32px;
+            border-radius: 64px;
+            margin: auto;
+            font-size: 16px;
+            font-weight: 600;
+            color: $primary;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.6s;
+            width: 48%;
+        }
+        &__more:hover{
+                border: 2px solid $primary-variant;
+                background-color: transparent;
+                color: white;
+        }
 
     }
     .ActualiteRight{
@@ -273,6 +302,9 @@ margin-right: auto;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    a{
+        text-decoration: none;
+    }
     
     }
     .ActualiteLeft{
@@ -284,7 +316,7 @@ margin-right: auto;
     
     .blog-one__singleInnov {
         width: 88%;
-        margin: 40px auto;
+        margin: 24px auto;
         
     }
     
