@@ -2,19 +2,33 @@
 &__title{
     text-align: center;
     font-size:30px;
-    margin-top:12%;     
-}
-
-&__img{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+    margin-top:10%;
+    }
+    &__img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:3%;
+        width: 50%;
+        height: 425px;
+        }
 &__txt{
     font-size:20px;
-    margin-left:23%;
-}
+    margin-left:27%;
+    }
+   
+    }
 
+.titr{
+  margin-left:27%;  
+  font-size:36px;
 }
-
+.prg{
+    text-align: center;
+    margin-bottom:2%;
+    font-size:12px;
+}
+.titr2{
+  margin-left:27%;  
+  
+}
