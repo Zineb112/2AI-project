@@ -1174,7 +1174,7 @@ margin-right: auto;
     .InewsBtnA{
         text-decoration: none;
         grid-column: 1/2;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
     
     .InewsBtn{
@@ -1473,6 +1473,9 @@ margin-right: auto;
             width: 88%;
             margin-bottom: 40px;
         }
+        &__buttonM{
+            display: none;
+        }
         &__button{
             border: 2px solid $primary;
             background-color: $primary;
@@ -1557,6 +1560,143 @@ margin-right: auto;
             text-decoration: none;
             text-align: center;
             grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        &__download:hover{
+            border: 2px solid $primary-variant;
+            background-color: transparent;
+            color: white;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .carnetN{
+        background-color: $secondary;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        margin-bottom: 80px;
+        &__wrapper{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content max-content;
+        }
+        &__title{
+            margin: 0px;
+            font-size: 32px;
+            font-family: $fontS;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+        }
+        &__line{
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__subtitle{
+            font-size: 16px;
+            color: white;
+            width: 88%;
+            margin-bottom: 40px;
+            text-align: justify;
+            text-align-last: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__button{
+            display: none;
+        }
+        &__buttonM{
+            border: 2px solid $primary;
+            background-color: $primary;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 64px;
+            margin: auto;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.6s;
+            width: 32%;
+            text-decoration: none;
+            text-align: center;
+        }
+        &__buttonM:hover{
+            border: 2px solid $primary-variant;
+            background-color: transparent;
+            color: white;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &__right{
+            grid-area: 2/1;
+            margin: auto;
+        }
+        &__carnet{
+            width: 320px;
+            img{
+                width: 320px;
+                height: 240px;
+                border-radius: 24px 24px 0px 0px;
+            }
+        }
+        &__infos{
+            background-color: $primary;
+            border-radius: 0px 0px 24px 24px;
+            margin-top: -12px;
+            margin-bottom: 32px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content max-content;
+            &--date{
+                margin-top: 0px;
+                margin-bottom: 8px;
+                color: white;
+                font-size: 20px;
+                padding: 24px 24px 0px;
+                font-weight: 500;
+                grid-area: 1/1;
+            }
+            &--title{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 18px;
+                padding: 0px 24px 8px;
+                font-weight: 400;
+                grid-area: 2/1;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        &__download{
+            border: 2px solid $primary-variant;
+            background-color: $primary-variant;
+            color: black;
+            padding: 10px 32px;
+            border-radius: 24px 0px 24px 0px;
+            margin-left: auto;
+            margin-top: 0px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.6s;
+            width: 32%;
+            text-decoration: none;
+            text-align: center;
+            grid-row: 3/4;
             grid-column: 1/2;
         }
         &__download:hover{
