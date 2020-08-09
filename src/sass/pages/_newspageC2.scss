@@ -1,5 +1,9 @@
 @media (min-width: 1200px){
  
+  .news{
+    
+  }
+
   .til{
     font-size: 48px;
     color: $primary;
@@ -10,6 +14,7 @@
   .newsPage {
       margin-top: 120px;
       margin-bottom: 80px;
+     
      
       &__containe{
         width: 72%;
@@ -64,9 +69,6 @@
     }
   }
 
- 
-
-
   .Numbering {
       display: flex;
       justify-content: center;
@@ -110,5 +112,78 @@
       margin-left: 15px;
   }
 }
+
+
+
+
+
+
+
+
+@media (min-width: 600px)and (max-width: 1024px){
+
+	
+	.newsPage {
+        margin-top: 40px;
+        margin-bottom: 40px;
+	&__container{
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content  max-content max-content max-content  max-content;
+        }
+    }
+
+
+    .post-card {
+      width: 70%;
+      margin: 25px auto;
+  
+      &__image {
+        overflow: hidden;
+        position: relative;
+  
+        img{
+          width: 67%;
+          height: 100%;
+          border-radius: 5% 5% 0% 0%;
+          
+        }
+      }
+    
+      &__content {
+        padding: 40px 35px;
+        box-shadow: 1.782px 0.908px 20px 3px #dbf0e5;
+        border-radius: 15px;
+        border: 1px solid $primary;
+        margin-top: -16px;
+        width: 50%;
+  
+        .titr{
+  
+          font-size: 18px;
+          text-align: center;
+          font-weight: inherit;
+          margin: 3px 0px 25px 0px;
+         
+        }
+  
+        .but{
+  
+        padding-left: 52px;
+        text-decoration: none;
+        color: #03704d;
+        font-size: 17px;
+        font-weight: 600;
+        }
+  
+      }
+    }
+
+  }
+
+
 
 
