@@ -81,14 +81,12 @@
   .Numbering a {
       border-radius: 50%;
       border-width: 1px;
-      border-style: solid;
-      
+      border-style: solid;   
       color: black;
       text-decoration: none;
       font-size: 18px;
       font-weight: 600;
       text-align: center;
-      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -195,13 +193,11 @@
       border-radius: 50%;
       border-width: 1px;
       border-style: solid;
-      
       color: black;
       text-decoration: none;
       font-size: 18px;
       font-weight: 600;
       text-align: center;
-      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -224,11 +220,115 @@
   .Numbering a+a {
       margin-left: 5px;
   }
-
-
-
   }
 
 
 
 
+  @media (min-width: 320px) and (max-width: 480px){
+
+    .newsPage {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    &__container{
+          width: 72%;
+          margin-left: auto;
+          margin-right: auto;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: max-content max-content  max-content max-content max-content  max-content;
+      }
+    }
+
+
+  .post-card {
+    width: 59%;
+    margin: 25px auto;
+
+    &__image {
+      overflow: hidden;
+      position: relative;
+
+      img{
+        width: 77%;
+        height: 100%;
+        border-radius: 5% 5% 0% 0%;
+        
+      }
+    }
+  
+    &__content {
+      padding: 35px 35px;
+      box-shadow: 1.782px 0.908px 20px 3px #e0dde0;
+      border-radius: 15px;
+      border: 1px solid $primary;
+      margin-top: -16px;
+      width: 39%;
+
+      .titr{
+
+        font-size: 11px;
+        text-align: center;
+        font-weight: inherit;
+        margin: -10px -31px 8px;
+       
+      }
+
+      .but{
+
+      
+      text-decoration: none;
+      color: #03704d;
+      font-size: 11px;
+      font-weight: 600;
+      }
+
+    }
+  }
+
+
+  .Numbering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 83px 37px 99px 0px;
+}
+
+.Numbering a {
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 19px;
+    transition: all .4s ease;
+}
+
+.Numbering a:hover {
+    background-color: $secondary;
+    color: #fff;
+}
+
+.Numbering a.active {
+    background-color: $secondary;
+    color: #fff;
+    cursor: auto;
+}
+
+.Numbering a+a {
+    margin-left: 3px;
+}
+
+
+
+  }
