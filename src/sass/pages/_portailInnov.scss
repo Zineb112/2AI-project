@@ -40,6 +40,7 @@
 .Actualite{
     display: grid;
     grid-template-columns: 30% 70%;
+    margin-bottom: 80px;
     &__title{
         font-size: 32px;
         font-family: $fontS;
@@ -47,8 +48,9 @@
         font-weight: 700;
     }
     &__subtitle{
-        font-size: 24px;
+        font-size: 20px;
         color: white;
+        margin-bottom: 40px;
     }
     &__more{
         border: 2px solid $primary;
@@ -712,4 +714,241 @@ margin-right: auto;
     .blog-one__metaInnov a i {
         margin-right: 3px;
     }
+}
+
+
+// innovationNews section
+
+@media (min-width: 1200px){
+.innovationN{
+    background-image: url(../images/innovationNews-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    &__title{
+        margin-top: 0px;
+        font-size: 32px;
+        font-family: $fontS;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__line{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__subtitle{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.Inews__singleInnov {
+    width: 80%;
+    margin: 40px auto;
+	
+}
+
+.Inews__imageInnov {
+	overflow: hidden;
+	position: relative;
+}
+
+.Inews__imageInnov::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.88;
+	transform: scale(1, 0);
+	transform-origin: top;
+	background-image: linear-gradient(180deg, $primary, $primary-variant);
+	transition: transform 500ms ease, opacity 500ms ease;
+	opacity: 0;
+	z-index: 10;
+}
+
+.Inews__singleInnov:hover .Inews__imageInnov::before {
+	opacity: .88;
+	transform-origin: bottom;
+	transform: scale(1, 1);
+}
+
+.Inews__imageInnov>img {
+    width: 100%;
+	transform: scale(1);
+	transition: transform 500ms ease;
+}
+
+.Inews__singleInnov:hover .Inews__imageInnov>img {
+	transform: scale(1.05);
+}
+
+.Inews__imageInnov>a {
+	width: 54px;
+	height: 54px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translateY(-27px) translateX(-27px);
+    background-color: #fff;
+    text-decoration: none;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	color: black;
+	z-index: 11;
+	transition: transform 500ms ease, opacity 500ms ease, color 500ms ease, background-color 500ms ease;
+	opacity: 0;
+}
+
+.Inews__singleInnov:hover .Inews__imageInnov>a {
+	opacity: 1;
+}
+
+.Inews__imageInnov>a:hover {
+	background-color: $secondary;
+	color: #fff;
+}
+
+.Inews__contentInnov {
+    padding: 8px 35px 56px;
+    background-color: white;
+    box-shadow: 1.782px 0.908px 20px 3px gray;
+}
+
+.Inews__contentInnov h3 {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	color: black;
+	margin: 24px 0px;
+}
+
+.Inews__contentInnov h3 a {
+	color: inherit;
+    transition: all 500ms ease;
+    text-decoration: none;
+}
+
+.Inews__singleInnov:hover h3 a {
+	color: $primary;
+}
+
+.Inews__btnInnov {
+	border-radius: 22.5px;
+	color: $primary;
+	font-size: 15px;
+	font-weight: 600;
+	background-color: $primary-variant;
+	padding: 7.5px 27px;
+	box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-decoration: none;
+    float: right;
+}
+
+.Inews__btnInnov:hover {
+	background-color: var(--thm-base);
+}
+
+.Inews__btnInnov::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: scale(1, 0);
+	background-image: linear-gradient(90deg, $primary, $primary-variant);
+	border-radius: 22.5px;
+	transform-origin: bottom;
+	transition: transform 500ms ease;
+}
+
+.Inews__btnInnov:hover::before {
+	transform: scale(1, 1);
+	transform-origin: top;
+}
+
+.Inews__btnInnov span {
+	position: relative;
+}
+.Inews__btnInnov:hover{
+    color: white;
+}
+
+.Inews__metaInnov {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.Inews__metaInnov a {
+	display: flex;
+	align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+	color: black;
+	line-height: 1em;
+    transition: all 500ms ease;
+    text-decoration: none;
+}
+
+
+.Inews__metaInnov a+a {
+	margin-left: 20px;
+}
+
+.Inews__metaInnov a i {
+	margin-right: 3px;
+}
+
+.InewsBtnA{
+    text-decoration: none;
+    grid-column: 2/4;
+    margin-bottom: 120px;
+}
+
+.InewsBtn{
+    display: block;
+    border: 2px solid $primary;
+    background-color: $primary;
+    color: white;
+    padding: 24px 32px;
+    border-radius: 64px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.InewsBtn:hover{
+        border: 2px solid $primary;
+        background-color: transparent;
+        color: black;
+}
 }
