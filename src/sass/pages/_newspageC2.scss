@@ -155,7 +155,7 @@
     
       &__content {
         padding: 40px 35px;
-        box-shadow: 1.782px 0.908px 20px 3px #dbf0e5;
+        box-shadow: 1.782px 0.908px 20px 3px #e0dde0;
         border-radius: 15px;
         border: 1px solid $primary;
         margin-top: -16px;
@@ -181,6 +181,51 @@
   
       }
     }
+
+
+    .Numbering {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 106px 144px 112px 0;
+  }
+  
+  .Numbering a {
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 37px;
+      transition: all .4s ease;
+  }
+  
+  .Numbering a:hover {
+      background-color: $secondary;
+      color: #fff;
+  }
+  
+  .Numbering a.active {
+      background-color: $secondary;
+      color: #fff;
+      cursor: auto;
+  }
+  
+  .Numbering a+a {
+      margin-left: 5px;
+  }
+
+
 
   }
 
