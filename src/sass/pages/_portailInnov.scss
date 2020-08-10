@@ -2868,6 +2868,7 @@ margin-right: auto;
 
 @media (min-width: 600px)and (max-width: 1023px){
     .aiNews{
+        margin-bottom: 80px;
         &__more{
             display: none;
         }
@@ -3003,6 +3004,7 @@ margin-right: auto;
 
 @media (min-width: 1024px) and (max-width: 1199px){
     .aiNews{
+        margin-bottom: 80px;
         &__more{
             display: none;
         }
@@ -3297,3 +3299,161 @@ margin-right: auto;
     }
 }
 
+
+@media (min-width: 600px)and (max-width: 1023px){
+    .downloadApp{
+        background-color: $primary;
+        padding: 40px 0px;
+        &__wrapper{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+        }
+        &__left{
+            grid-area: 2/1;
+            margin: auto auto 0px;
+            img{
+                width: 64%;
+                display: block;
+                margin: auto;
+            }
+        }
+        &__right{
+            grid-area: 1/1;
+            margin: auto;
+        }
+        &__title{
+            margin: 0px;
+            font-size: 32px;
+            font-family: $fontS;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+        }
+        &__line{
+            width: 32%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__subtitle{
+            font-size: 16px;
+            color: white;
+            width: 88%;
+            margin-bottom: 40px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__down{
+            display: none;
+        }
+        &__downM{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows:  max-content;
+            width: 56%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__android,&__apple{
+            display: block;
+            border: 2px solid white;
+            padding: 16px 24px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 24px;
+            font-size: 12px;
+            width: 60%;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.6s;
+            margin: 16px auto;
+            i{
+                margin-right: 12px;
+            }
+        }
+        &__android:hover,&__apple:hover{
+            border: 2px solid white;
+            background-color: white;
+            color: $primary;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+    .downloadApp{
+        background-color: $primary;
+        padding: 40px 0px;
+        &__wrapper{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin: auto auto 0px;
+            img{
+                width: 88%;
+            }
+        }
+        &__right{
+            grid-area: 1/2;
+            margin: auto;
+        }
+        &__title{
+            margin: 0px;
+            font-size: 32px;
+            font-family: $fontS;
+            color: white;
+            font-weight: 900;
+        }
+        &__line{
+            width: 24%;
+        }
+        &__subtitle{
+            font-size: 16px;
+            color: white;
+            width: 88%;
+            margin-bottom: 40px;
+        }
+        &__downM{
+            display: none;
+        }
+        &__down{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 84%;
+        }
+        &__android,&__apple{
+            border: 2px solid white;
+            padding: 16px 32px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 24px;
+            font-size: 16px;
+            margin: auto;
+            width: 64%;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.6s;
+            i{
+                margin-right: 16px;
+            }
+        }
+        &__android:hover,&__apple:hover{
+            border: 2px solid white;
+            background-color: white;
+            color: $primary;
+        }
+    }
+}
