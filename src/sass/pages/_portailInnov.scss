@@ -2605,6 +2605,7 @@ margin-right: auto;
         background-size: contain;
         background-position: right;
         padding-top: 144px;
+        margin-bottom: 120px;
         &__moreM{
             display: none;
         }
@@ -2612,7 +2613,7 @@ margin-right: auto;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: max-content;
-        width: 88%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
 
@@ -3131,5 +3132,77 @@ margin-right: auto;
             margin-right: auto;
         }
         
+    }
+}
+
+
+// Download app section
+
+@media (min-width: 1200px){
+    .downloadApp{
+        background-color: $primary;
+        padding: 40px 0px;
+        &__wrapper{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin: auto auto 0px;
+            img{
+                width: 88%;
+            }
+        }
+        &__right{
+            grid-area: 1/2;
+            margin: auto;
+        }
+        &__title{
+            margin: 0px;
+            font-size: 40px;
+            font-family: $fontS;
+            color: white;
+            font-weight: 900;
+        }
+        &__line{
+            width: 24%;
+        }
+        &__subtitle{
+            font-size: 16px;
+            color: white;
+            width: 88%;
+            margin-bottom: 40px;
+        }
+        &__down{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 56%;
+        }
+        &__android,&__apple{
+            border: 2px solid white;
+            padding: 16px 32px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 24px;
+            font-size: 16px;
+            margin: auto;
+            width: 64%;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.6s;
+            i{
+                margin-right: 16px;
+            }
+        }
+        &__android:hover,&__apple:hover{
+            border: 2px solid white;
+            background-color: white;
+            color: $primary;
+        }
     }
 }
