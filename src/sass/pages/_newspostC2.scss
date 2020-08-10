@@ -1,9 +1,18 @@
-.news{
+
+.TopNew{
 &__title{
     text-align: center;
-    font-size:30px;
+    font-size:45px;
     margin-top:10%;
     }
+   .prg{
+    text-align: center;
+    margin-bottom:2%;
+    font-size:12px;
+}
+}
+.news{
+
     &__img{
         display: block;
         margin-left: auto;
@@ -23,11 +32,7 @@
   margin-left:27%;  
   font-size:36px;
 }
-.prg{
-    text-align: center;
-    margin-bottom:2%;
-    font-size:12px;
-}
+
 .titr2{
   margin-left:27%;  
   
