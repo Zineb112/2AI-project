@@ -134,3 +134,108 @@
     }
     }
 }
+
+@media (min-width: 600px)and (max-width: 1023px){
+    .portailIP{
+        &__title{
+            font-family: $fontS;
+            font-size: 32px;
+            margin: 80px 0px 64px;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-bottom: 32px;
+        }
+        &__pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 56px;
+        a {
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: all .4s ease;
+        }
+        a:hover {
+            background-color: $secondary;
+            color: #fff;
+        }
+        a.active {
+            background-color: $secondary;
+            color: #fff;
+            cursor: auto;
+        }
+        a+a {
+            margin-left: 15px;
+        }
+    }
+    }
+}
+
+@media (min-width: 1024px)and (max-width: 1199px){
+    .portailIP{
+        &__title{
+            font-family: $fontS;
+            font-size: 32px;
+            margin: 80px 0px 64px;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-bottom: 32px;
+
+        }
+        &__pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 56px;
+        a {
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: all .4s ease;
+        }
+        a:hover {
+            background-color: $secondary;
+            color: #fff;
+        }
+        a.active {
+            background-color: $secondary;
+            color: #fff;
+            cursor: auto;
+        }
+        a+a {
+            margin-left: 15px;
+        }
+    }
+    }
+}
