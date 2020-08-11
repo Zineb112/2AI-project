@@ -1,26 +1,22 @@
-
 .TopNew{
   background-image: url(../images/2aibg.png);
   background-repeat: no-repeat;
-  background-size:41%;
-  height:514px;
-    background-position:100% -59px;   
-}
-
-&__title{
-    text-align: center;
+  background-size: 41%;
+  height: 528px;
+  background-position: 100% -42px;
+  &__title{
+     text-align: center;
     font-size:45px;
     margin-top:10%;
-    }
-   .prg{
+  }
+    .prg{
     text-align: center;
     margin-bottom:2%;
     font-size:12px;
 }
-
+}
 .news{
-
-    &__img{
+  &__img{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -28,13 +24,16 @@
         width: 50%;
         height: 425px;
         }
-&__txt{
+        &__txt{
     font-size:20px;
     margin-left:27%;
     }
-   
+    &__txt1{
+          margin-top: 14%;
+          font-size:20px;
+          margin-left:27%;
     }
-
+}
 .titr{
   margin-left:27%;  
   font-size:36px;
@@ -44,7 +43,6 @@
   margin-left:27%;  
   
 }
-
 
  @media (min-width: 320px) and (max-width: 480px){
    .news{
