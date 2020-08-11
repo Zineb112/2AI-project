@@ -32,6 +32,12 @@ background-position:100% 0;
           font-size:29px;
           margin-left:22%;
     }
+    &__txt2{
+          margin-top: 5%;
+          font-size:29px;
+          margin-left:22%;
+          margin-bottom:6%;
+    }
 }
 .titr{
   margin-left:23%;  
@@ -49,9 +55,14 @@ background-position:100% 0;
     &__txt{
        text-align: center;
        margin-left:0;
+       font-size:18px;
       }
-      &__txt{
-        font-size:18px;
+      &__txt1{
+        text-align: center;
+       margin-left:0;
+       font-size:18px;
+      }
+
       }
       &__title{
         font-size:18px;
