@@ -73,17 +73,8 @@ background-position:100% 0;
         height: 400px;
         }
    }
-   .titr{
-     text-align: center;
-       margin-left:0;
-       font-size:29px;
-   }
-   .titr2{
-  margin-left:0%;
-   font-size:16px; 
-   text-align: center;
   
-}
+
  
  @media (min-width: 600px)and (max-width: 1024px){
    .news{
@@ -113,4 +104,14 @@ background-position:100% 0;
    font-size:20px; 
    
  }
+  }
+  .lastnews{
+     display:grid;
+      grid-template-columns: 33% 33% 33%;
+  }
+
+  .actualités{
+    margin-left:5%;
+    font-size:38px;
+    margin-top:10%;
   }
