@@ -50,67 +50,38 @@ background-position:100% 0;
   
 }
 
- @media (min-width: 320px) and (max-width: 480px){
-   .news{
-    &__txt{
-       text-align: center;
-       margin-left:0;
-       font-size:18px;
-      }
-      &__txt1{
-        text-align: center;
-       margin-left:0;
-       font-size:18px;
-      }
 
-      }
-      &__title{
-        font-size:18px;
-      }
-       &__img{
-       
-        width: 70%;
-        height: 400px;
-        }
-   }
-   .titr{
-     text-align: center;
-       margin-left:0;
-       font-size:29px;
-   }
-   .titr2{
-  margin-left:0%;
-   font-size:16px; 
-   text-align: center;
-  
-}
- }
- @media (min-width: 600px)and (max-width: 1024px){
-   .news{
-    &__txt{
-       
-       margin-left:6%;
-      }
-      &__txt{
-        font-size:18px;
-      }
-      &__title{
-        font-size:18px;
-      }
-       &__img{
-       
-        width: 70%;
-        height: 400px;
-        }
-   }
-     .titr{
-    
-       margin-left:7%;
-       font-size:29px;
-   }
-   .titr2{
-  margin-left:7%;
-   font-size:20px; 
-   
- }
+
+ 
+
+  .lastnews{
+     display:grid;
+      grid-template-columns: 33% 33% 33%;
   }
+
+  .actualités{
+    margin-left:5%;
+    font-size:38px;
+    margin-top:10%;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+     .lastnews{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-bottom: 32px;
+        }
+        .actualités{
+font-size:20px;
+text-align:center;
+        }
+  }
+  @media (min-width: 600px)and (max-width: 1199px){
+    .lastnews{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-bottom: 32px;
+            }
+            
+                  }
+                  }

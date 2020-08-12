@@ -1,378 +1,204 @@
-
-@media (min-width: 1200px){
-
-  .hero-headerC2 {
+.hero-headerC2NP{
     background-image: url('../images/bgHeaderC2.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
     padding: 4rem 16rem;
-
-    
-}
-
-
-.til{
-    font-size: 50px;
-    color: #fff;
-    font-family: Georgia,serif;
-    margin-left: -24px;
-    margin-bottom: 59px;
-    margin-top: 143px;
-}
-
-  
-
-
-  
-  .newsPage {
-      margin-top: 120px;
-      margin-bottom: 80px;
-      
-     
-     
-      &__containe{
-        width: 72%;
-        margin-left: 76px;
-        margin-right: 274px;
-        margin-top: -400px;
-        display: grid;
-        grid-template-columns: 42% 43% 42%;
-        grid-template-rows: max-content  max-content;
-      }
-  }
-
-  .post-card {
-    width: 79%;
-    margin: 25px auto;
-
-    &__image {
-      overflow: hidden;
-      position: relative;
-
-      img{
-        width: 100%;
-        height: 340px
-        border-radius: 5% 5% 0% 0%;
-        
-      }
-    }
-  
-    &__content {
-      padding: 30px 35px;
-      box-shadow: -2.218px 0.908px 20px 3px #e0dde0;
-      border-radius: 15px;
-      border: 1px solid $primary;
-      margin-top: -16px;
-
-      .titr{
-
-        font-size: 25px;
-        font-weight: inherit;
-        margin: 5px 0px 25px 0px;
-       
-      }
-
-      .but{
-
-      padding-left: 264px;
-      text-decoration: none;
-      color: #03704d;
-      font-size: 17px;
-      font-weight: 600;
-      }
-
-    }
-  }
-
-  .Numbering {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: 120px;
-      margin-top: 104px;
-  }
-  
-  .Numbering a {
-      border-radius: 50%;
-      border-width: 1px;
-      border-style: solid;   
-      color: black;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 57px;
-      height: 57px;
-      transition: all .4s ease;
-  }
-  
-  .Numbering a:hover {
-      background-color: $secondary;
-      color: #fff;
-  }
-  
-  .Numbering a.active {
-      background-color: $secondary;
-      color: #fff;
-      cursor: auto;
-  }
-  
-  .Numbering a+a {
-      margin-left: 15px;
-  }
-}
-
-
-
-
-
-
-
-
-@media (min-width: 600px)and (max-width: 1024px){
-
-	.til{
-    font-size: 37px;
-    color: #fff;
-    font-family: Georgia,serif;
-    margin-top: 75px;
-    padding-bottom: 89px;
-    text-align: center;
-
-    
-
-}
-
-  .newsPage {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  &__container{
-        width: 72%;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: max-content max-content  max-content max-content max-content  max-content;
-    }
-  }
-
-
-.post-card {
-  width: 90%;
-  margin: -97px 0px 150px 0px;
-  padding-left: 100px;
-
-  &__image {
-    overflow: hidden;
-    position: relative;
-
-    img{
-      width: 77%;
-      height: 100%;
-      border-radius: 5% 5% 0% 0%;
-      
-    }
-  }
-
-  &__content {
-    padding: 36px 34px;
-    box-shadow: 1.782px 0.908px 20px 3px #e0dde0;
-    border-radius: 15px;
-    border: 1px solid $primary;
-    margin-top: -16px;
-    width: 64%;
-
-    .titr{
-
-      font-size: 28px;
-      text-align: center;
-      font-weight: inherit;
-      margin: 24px 0px 25px;
-     
+    @include responsive(tab-port){
+        background-image: url('../images/bgHeaderC2.png');
+        background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: bottom left;
+        height: max-content;
+        padding: 8rem 4rem;
     }
 
-    .but{
+    &__nav {
+        display: flex;
+        justify-content: space-between;
 
-    
-    text-decoration: none;
-    color: #03704d;
-    font-size: 25px;
-    font-weight: 600;
-    padding-left: 83px;
+        .logo-box {
+            @include responsive(tab-port) {
+                position: relative;
+                left: -5rem;
+            }
+
+            &__img {
+                width: 15rem;
+            }
+        }
+
+        // .hamburger {}
     }
 
-  }
 }
 
-
-.Numbering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 83px 37px 99px 50px;
-}
-
-.Numbering a {
-  border-radius: 50%;
-  border-width: 1px;
-  border-style: solid;
-  color: black;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 55px;
-  height: 53px;
-  transition: all .4s ease;
-}
-
-.Numbering a:hover {
-  background-color: $secondary;
-  color: #fff;
-}
-
-.Numbering a.active {
-  background-color: $secondary;
-  color: #fff;
-  cursor: auto;
-}
-
-.Numbering a+a {
-  margin-left: 7px;
-}
-
-
-  }
-
-
-
-
-  @media (min-width: 320px) and (max-width: 480px){
-
-
-    .til{
-      font-size: 26px;
-      color: #fff;
-      font-family: Georgia,serif;
-      margin-top: 75px;
-      padding-bottom: 89px;
-      text-align: center;
-
-      
-
-  }
-
-    .newsPage {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    &__container{
-          width: 72%;
-          margin-left: auto;
-          margin-right: auto;
-          display: grid;
-          grid-template-columns: 100%;
-          grid-template-rows: max-content max-content  max-content max-content max-content  max-content;
-      }
+@media (min-width: 1200px){
+  .newsC2P{
+    &__title{
+        font-family: $fontS;
+        font-size: 40px;
+        margin: 80px 0px 64px;
+        color:white;
     }
-
-
-  .post-card {
-    width: 90%;
-    margin: -97px 0px 150px 0px;
-    padding-left: 49px;
-
-    &__image {
-      overflow: hidden;
-      position: relative;
-
-      img{
-        width: 77%;
-        height: 100%;
-        border-radius: 5% 5% 0% 0%;
-        
-      }
+    &__wrapper{
+      display:grid;
+      grid-template-columns: 33% 33% 33%;
     }
-  
-    &__content {
-      padding: 35px 35px;
-      box-shadow: 1.782px 0.908px 20px 3px #e0dde0;
-      border-radius: 15px;
-      border: 1px solid $primary;
-      margin-top: -16px;
-      width: 52%;
-
-      .titr{
-
-        font-size: 13px;
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+    a {
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
         text-align: center;
-        font-weight: inherit;
-        margin: 0px -31px 8px;
-       
-      }
-
-      .but{
-
-      
-      text-decoration: none;
-      color: #03704d;
-      font-size: 11px;
-      font-weight: 600;
-      padding-left: 39px;
-      }
-
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 57px;
+        height: 57px;
+        transition: all .4s ease;
     }
-  }
-
-
-  .Numbering {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 83px 37px 99px 50px;
-}
-
-.Numbering a {
-    border-radius: 50%;
-    border-width: 1px;
-    border-style: solid;
-    color: black;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 30px;;
-    transition: all .4s ease;
-}
-
-.Numbering a:hover {
-    background-color: $secondary;
-    color: #fff;
-}
-
-.Numbering a.active {
-    background-color: $secondary;
-    color: #fff;
-    cursor: auto;
-}
-
-.Numbering a+a {
-    margin-left: 7px;
-}
-
-
+    a:hover {
+        background-color: $secondary;
+        color: #fff;
+    }
+    a.active {
+        background-color: $secondary;
+        color: #fff;
+        cursor: auto;
+    }
+    a+a {
+        margin-left: 15px;
+    }
+    }
 
   }
+.blogshadow{
+    border:1px solid black;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+  .newsC2P{
+    &__title{
+            font-family: $fontS;
+            font-size: 32px;
+            margin: 80px 0px 64px;
+            color:white;
+        }
+    &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-bottom: 32px;
+        }
+    &__pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 56px;
+        a {
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            transition: all .4s ease;
+        }
+        a:hover {
+            background-color: $secondary;
+            color: #fff;
+        }
+        a.active {
+            background-color: $secondary;
+            color: #fff;
+            cursor: auto;
+        }
+        a+a {
+            margin-left: 15px;
+        }
+    }
+    }
+.blogshadow{
+    border:1px solid black;
+  }
+
+  }
+
+@media (min-width: 600px)and (max-width: 1199px){
+  .newsC2P{
+    &__title{
+            font-family: $fontS;
+            font-size: 32px;
+            margin: 80px 0px 64px;
+            color:white;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-bottom: 32px;
+        }
+        &__pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 56px;
+        a {
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: all .4s ease;
+        }
+        a:hover {
+            background-color: $secondary;
+            color: #fff;
+        }
+        a.active {
+            background-color: $secondary;
+            color: #fff;
+            cursor: auto;
+        }
+        a+a {
+            margin-left: 15px;
+        }
+    }
+    }
+.blogshadow{
+    border:1px solid black;
+  }
+
+  }
+
