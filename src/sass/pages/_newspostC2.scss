@@ -1,5 +1,5 @@
 .TopNew{
-  background-image: url(../images/2aibg.png);
+    background-image: url(../images/2aibg.png);
 background-size: 50%;
 background-repeat: no-repeat;
 background-position:100% 0; 
@@ -8,14 +8,20 @@ background-position:100% 0;
     font-size:47px;
     margin-top:10%;
   }
-    .prg{
+     .prg{
     text-align: center;
     margin-bottom:2%;
     font-size:12px;
 }
+
 }
+
 .news{
-  &__img{
+  &__txt{
+    font-size:29px;
+    margin-left:22%;
+  }
+   &__img{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -23,23 +29,13 @@ background-position:100% 0;
         width: 55%;
         height: 425px;
         }
-        &__txt{
-    font-size:29px;
-    margin-left:22%;
-    }
-    &__txt1{
-          margin-top: 5%;
-          font-size:29px;
-          margin-left:22%;
-    }
-    
-    &__asttxt{
+        &__lasttxt{
        margin-top: 5%;
           font-size:29px;
           margin-left:22%;
-          margin-bottom:6%;
+          margin-bottom:8%;
     }
-    }
+    
 }
 .titr{
   margin-left:23%;  
@@ -51,9 +47,7 @@ background-position:100% 0;
    font-size:29px;
   
 }
-
-
-  .lastnews{
+ .lastnews{
      display:grid;
       grid-template-columns: 33% 33% 33%;
    }
@@ -64,7 +58,8 @@ background-position:100% 0;
   margin-top:10%;
   }
 
- @media (min-width: 320px) and (max-width: 480px){
+
+   @media (min-width: 320px) and (max-width: 480px){
    .lastnews{
          display: grid;
         grid-template-columns: 100%;
