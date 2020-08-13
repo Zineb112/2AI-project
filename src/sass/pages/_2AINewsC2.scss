@@ -19,7 +19,7 @@
             width: 88%;
             margin-left: auto;
             margin-right: auto;
-			margin-top: -379px;
+			margin-top: -380px;
 			margin-bottom: 142px;
 			
         }
@@ -119,27 +119,6 @@
             background-color: transparent;
             color: $primary;
         }
-        &__more{
-            display: block;
-            border: 2px solid $primary;
-            background-color: $primary;
-            border-radius: 50px;
-            color: white;
-            padding: 16px 32px;
-            margin: 64px auto 0px;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: 0.6s;
-            width: 6%;
-            text-decoration: none;
-            text-align: center;
-        }
-        &__more:hover{
-            border: 2px solid $primary;
-            background-color: transparent;
-            color: $primary;
-        }
+        
     }
 }
