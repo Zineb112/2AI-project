@@ -1,0 +1,32 @@
+.hero-headerCI {
+    background-image: url('../images/carnetI-bg.png');
+    background-repeat: no-repeat;
+    padding: 4rem 16rem;
+    @include responsive(tab-port){
+        background-image: url('../images/carnetI-bg.png');
+        background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: bottom left;
+        height: max-content;
+        padding: 8rem 4rem;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+
+        .logo-box {
+            @include responsive(tab-port) {
+                position: relative;
+                left: -5rem;
+            }
+
+            &__img {
+                width: 15rem;
+            }
+        }
+
+        // .hamburger {}
+    }
+
+}
