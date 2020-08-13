@@ -76,7 +76,7 @@
                     <li class="navigation-alt__item"><a href="team.html" class="navigation-alt__link--color">Notre équipe</a></li>
                   </ul>
             </li>
-            <li class="navigation-alt__item"><a href="newsC2.htm" class="navigation-alt__link">Actualités</a></li>
+            <li class="navigation-alt__item"><a href="newsC2.html" class="navigation-alt__link">Actualités</a></li>
             <li class="navigation-alt__item"><a href="contact.html" class="navigation-alt__link">Contact</a></li>
         </ul>
         <div class="navigation d-mobile">
@@ -148,7 +148,7 @@ Derniers actualités
 </h3>
 
 <div class="newsC2P__wrapper">
-        <div class="blog-one__singleInnov">
+        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
             <div class="blog-one__imageInnov">
                 <img src="images/news9.png" alt="">
                 <a href=""><i class="fas fa-plus"></i></a>
@@ -161,7 +161,7 @@ Derniers actualités
                 <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
             </div>
         </div>
-        <div class="blog-one__singleInnov">
+        <div class="blog-one__singleInnov" data-aos="flip-up" data-aos-duration="1000">
             <div class="blog-one__imageInnov">
                 <img src="images/news8.png" alt="">
                 <a href=""><i class="fas fa-plus"></i></a>
@@ -174,7 +174,7 @@ Derniers actualités
                 <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
             </div>
         </div>
-        <div class="blog-one__singleInnov">
+        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
             <div class="blog-one__imageInnov">
                 <img src="images/news7.png" alt="">
                 <a href=""><i class="fas fa-plus"></i></a>
@@ -187,7 +187,7 @@ Derniers actualités
                 <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
             </div>
         </div>
-        <div class="blog-one__singleInnov">
+        <div class="blog-one__singleInnov" data-aos="flip-up" data-aos-duration="1000">
             <div class="blog-one__imageInnov">
                 <img src="images/news6.png" alt="">
                 <a href=""><i class="fas fa-plus"></i></a>
@@ -200,7 +200,7 @@ Derniers actualités
                 <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
             </div>
         </div>
-        <div class="blog-one__singleInnov">
+        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
             <div class="blog-one__imageInnov">
                 <img src="images/news1.png" alt="">
                 <a href=""><i class="fas fa-plus"></i></a>
@@ -213,7 +213,7 @@ Derniers actualités
                 <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
             </div>
         </div>
-        <div class="blog-one__singleInnov">
+        <div class="blog-one__singleInnov" data-aos="flip-up" data-aos-duration="1000">
             <div class="blog-one__imageInnov">
                 <img src="images/news2.png" alt="">
                 <a href=""><i class="fas fa-plus"></i></a>
@@ -306,4 +306,37 @@ Derniers actualités
         <h3 class="bottomFooter__title">
                 Copyright © 2020 Designed by <span>YouCode Students</span>
         </h3>
-    </div>    
+    </div> 
+<!-- <script src="js/isotope.min.js"></script> -->
+<script src="js/mixitup.min.js"></script>
+<script src="js/typed.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+            AOS.init(
+              {
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+                
+    
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 100, // values from 0 to 3000, with step 50ms
+                duration: 500, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+              }
+            );
+    </script>
+</body>
+</html>   
