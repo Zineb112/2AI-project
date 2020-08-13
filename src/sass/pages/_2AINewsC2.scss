@@ -1,8 +1,17 @@
 @media (min-width: 1200px){
+
+.grosTitre{
+	font-size: 44px;
+    font-family: Playfair Display,serif;
+    color: #fff;
+	font-weight: 700;
+	margin-top: 135px;
+    margin-bottom: 438px;
+}
+
     .news-content{
 
-		
-       
+	
         &__card{
             display: grid;
             grid-template-columns:  50% 50%;
@@ -10,7 +19,7 @@
             width: 88%;
             margin-left: auto;
             margin-right: auto;
-			margin-top: 56px;
+			margin-top: -379px;
 			margin-bottom: 142px;
 			
         }
