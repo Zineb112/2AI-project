@@ -31,7 +31,7 @@
 
 }
 
-
+@media (min-width: 1200px){
 .carnet-inv{
     &__title{
         font-size: 32px;
@@ -86,4 +86,5 @@
 
 .margincarn{
     margin-bottom: 48px;
+}
 }
