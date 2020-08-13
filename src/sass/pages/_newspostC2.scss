@@ -65,26 +65,6 @@ background-position:100% 0;
    margin-bottom: 32px;
 }
 
-   @media (min-width: 320px) and (max-width: 480px){
-   .lastnews{
-         display: grid;
-        grid-template-columns: 100%;
-         margin-bottom: 32px;
-       }
-       .actualités{
- font-size:20px;
-text-align:center;
-         }
-   }
-   @media (min-width: 600px)and (max-width: 1199px){
-     .lastnews{
-             display: grid;
-             grid-template-columns: 100%;
-             margin-bottom: 32px;
-             }
-            
-                   }
-                 }
 .actualités{
   font-size:18px;
 }
