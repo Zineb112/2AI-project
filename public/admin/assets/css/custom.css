@@ -1,0 +1,24 @@
+.notauth {
+    height: 25rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .notauth .notauth-text{
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%) !important;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background: linear-gradient(to top, #ff0844 0%, #ffb199 100%) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+
+/*
+ * bootstrap-tagsinput v0.8.0
+ * 
+ */
