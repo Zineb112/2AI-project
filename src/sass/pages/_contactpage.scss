@@ -10,6 +10,9 @@
         &__subtitle{
             text-align: center;
             font-size: 24px;
+            width: 56%;
+            margin-left: auto;
+            margin-right: auto;
         }
         &__bg{
             position: absolute;
@@ -18,7 +21,7 @@
             width: 6%;
         }
         &__Top{
-            width: 80%;
+            width: 72%;
             margin: 120px auto 56px;
             display: grid;
             grid-template-rows: 100%;
@@ -28,24 +31,24 @@
                 display: grid;
                 grid-template-columns: 30% 70%;
                 grid-template-rows: 100%;
-                margin-left: auto;
-                margin-right: auto;
+                // margin-left: auto;
+                // margin-right: auto;
             }
             &--message{
                 grid-area: 1/2;
                 display: grid;
                 grid-template-columns: 30% 70%;
                 grid-template-rows: 100%;
-                margin-left: auto;
-                margin-right: auto;
+                // margin-left: auto;
+                // margin-right: auto;
             }
             &--location{
                 grid-area: 1/3;
                 display: grid;
                 grid-template-columns: 30% 70%;
                 grid-template-rows: 100%;
-                margin-left: auto;
-                margin-right: auto;
+                // margin-left: auto;
+                // margin-right: auto;
             }
             i{
                 grid-area: 1/1;
@@ -143,16 +146,21 @@
     }
 
     .formSubject{
-        select{
+        input{
             background-color: $primary-variant;
             border: none;
-            width: 472px;
+            width: 440px;
             height: 40px;
             padding-left: 32px;
-            padding-right: 32px;
             color: black;
             font-weight: 600;
             margin-bottom: 24px;
+            font-family: $fontP;
+        }
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
             font-family: $fontP;
         }
     }
@@ -215,6 +223,7 @@
                 grid-template-rows: max-content max-content;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 32px;
             }
             &--message{
                 grid-area: 2/1;
@@ -223,6 +232,7 @@
                 grid-template-rows: max-content max-content;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 32px;
             }
             &--location{
                 grid-area: 3/1;
@@ -281,7 +291,7 @@
         &__form{
             grid-area: 2/1;
             background-color: $primary;
-            margin: 40px auto;
+            margin: 40px;
             
         }
     }
@@ -327,16 +337,21 @@
     }
 
     .formSubject{
-        select{
+        input{
             background-color: $primary-variant;
             border: none;
-            width: 100%;
+            width: 88%;
             height: 40px;
             padding-left: 32px;
-            padding-right: 32px;
             color: black;
             font-weight: 600;
             margin-bottom: 24px;
+            font-family: $fontP;
+        }
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
             font-family: $fontP;
         }
     }
@@ -396,7 +411,7 @@
                 grid-area: 1/1;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: max-content max-content;
+                grid-template-rows: max-content max-content max-content;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -404,7 +419,7 @@
                 grid-area: 1/2;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: max-content max-content;
+                grid-template-rows: max-content max-content max-content;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -412,7 +427,7 @@
                 grid-area: 1/3;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: max-content max-content;
+                grid-template-rows: max-content max-content max-content;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -435,22 +450,14 @@
             }
             a{
                 text-align: center;
-                grid-area: 2/1;
+                grid-area: 3/1;
                 font-size: 14px;
                 font-weight: 600;
-                width: 100%;
+                width: 64%;
                 text-decoration: none;
                 color: $secondary;
                 margin: auto;
                 
-            }
-            p{
-                text-align: center;
-                grid-area: 2/1;
-                font-size: 14px;
-                font-weight: 500;
-                margin-top: 64px;
-                margin: 80px auto auto;
             }
         }
         &__container{
@@ -516,16 +523,21 @@
     }
 
     .formSubject{
-        select{
+        input{
             background-color: $primary-variant;
             border: none;
-            width: 472px;
+            width: 440px;
             height: 40px;
             padding-left: 32px;
-            padding-right: 32px;
             color: black;
             font-weight: 600;
             margin-bottom: 24px;
+            font-family: $fontP;
+        }
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
             font-family: $fontP;
         }
     }
