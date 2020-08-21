@@ -1,6 +1,4 @@
-<?php
-
-
+<?php 
 //Helper Functions
 
 function redirect($location)
@@ -23,7 +21,6 @@ function set_message($type,$msg)
     
 }
 
-
 // Display your message
 
 function display_msg()
@@ -41,7 +38,6 @@ function display_msg()
         unset($_SESSION['message-success']);
     }
 }
-
 
 //**------  Handling  Images Uploads-------*/
 function upload_image($name, &$cover_id)
@@ -88,7 +84,6 @@ function upload_image($name, &$cover_id)
     }
 }
 
-
 /*Function to create thumbnails*/
 function make_thumb($src,$ext , $dest, $desired_width) {
     /* read the source image */
@@ -108,9 +103,67 @@ function make_thumb($src,$ext , $dest, $desired_width) {
   
     /* create the physical thumbnail image to its destination */
     imagejpeg($virtual_image, $dest);
+  }
+
+//changing password function
+function change_password(){
+    global $pdo;
+    try {
+        if(isset($_POST['submit'])) {
+            $current_pass = MD5(trim($_POST['current-password']));
+            $new_pass = MD5(trim($_POST['new-password']));
+            $sql = "SELECT password_hash FROM users WHERE id = ?";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([$_SESSION['user_id']]);
+            $res =  $stmt->fetch();
+            if($res){
+                if($current_pass == $res->password_hash){
+                    $updatepass = $pdo->prepare("UPDATE users SET password_hash = ? WHERE id = ?");
+                    $updatepass->execute([$new_pass, $_SESSION['user_id']]);
+                    if($updatepass){
+                        set_message('success', 'password updated successfully');
+                    }else{
+                        set_message('error', 'query failed try later');
+                    }
+                }else {
+                    set_message('error', 'current password incorrect');
+                }
+            } else {
+                set_message('error', 'user is not in our system');
+            }
+            }
+        }catch (PDOException $e) {
+        echo 'query failed' . $e->getMessage();
+    }
 }
 
+//function for creating an excerpt 
+function strWordCut($string,$length,$end='....')
+{
+    $string = strip_tags($string);
+
+    if (strlen($string) > $length) {
+
+        // truncate string
+        $stringCut = substr($string, 0, $length);
+
+        // make sure it ends in a word so assassinate doesn't become ass...
+        $string = substr($stringCut, 0, strrpos($stringCut, ' ')).$end;
+    }
+    return $string;
+}
+
+//function for creating URL slugs
+function create_url_slug($string){
+    $slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
+    return $slug;
+ }
 
 require_once('component/loginComponent.php');
+require_once('component/usersComponent.php');
+require_once('component/servicesComponent.php');
+
+
+
 
 ?>

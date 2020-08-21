@@ -2,7 +2,7 @@
     <div class="footer__container">
     <div class="footer__card1">
     <div class="footer__logo">
-        <img src="images/logo.png" alt="">
+        <img src="assets/images/logo.png" alt="2ai logo">
     </div>
     <p class="footer__para">C’est un Organisme professionnel Privé,
         chargé de la communication et de la
@@ -16,18 +16,18 @@
     <div class="footer__card2">
         <h3 class="footer__title">Liens</h3>
         <ul class="listLinks">
-          <li><a href="index.html">Acceuil</a></li>
-          <li><a href="aboutUs.html">À propos</a></li>
-          <li><a href="team.html">Équipe</a></li>
-          <li><a href="gallery.html">Galerie</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="news.html">Actualités</a></li>
-          <li><a href="portailInnov.html">Portail de l'innovation</a></li>
-          <li><a href="carnet-inv.html">Carnet de l'inventeur</a></li>
-          <li><a href="Innovation-news.html">Innovation News</a></li>
-          <li><a href="2AINewsC2.html">2AI news</a></li>
-          <li><a href="guide.html">Guide de l’Inventeur</a></li>
-          <li><a href="portailInventeurPage.html">Portail de l’Innovateur</a></li>
+          <li><a href="index.php">Acceuil</a></li>
+          <li><a href="aboutUs.php">À propos</a></li>
+          <li><a href="team.php">Équipe</a></li>
+          <li><a href="gallery.php">Galerie</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="news.php">Actualités</a></li>
+          <li><a href="portailInnov.php">Portail de l'innovation</a></li>
+          <li><a href="carnet-inv.php">Carnet de l'inventeur</a></li>
+          <li><a href="Innovation-news.php">Innovation News</a></li>
+          <li><a href="2AINewsC2.php">2AI news</a></li>
+          <li><a href="guide.php">Guide de l’Inventeur</a></li>
+          <li><a href="portailInventeurPage.php">Portail de l’Innovateur</a></li>
         </ul>
     </div>
     <div class="footer__card3">

@@ -2,9 +2,7 @@
 <script src="js/mixitup.min.js"></script>
 <script src="js/typed.js"></script>
     <!-- build:js js/main.min.js -->
-    <script src="js/testimonials.js"></script>
-    <script src="js/serviceUs.js"></script>
-    <script src="js/gallery.js"></script>
+    <script src="assets/js/main.min.js"></script>
 
     <!-- endbuild -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

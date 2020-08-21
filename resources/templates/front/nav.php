@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/icon-onglet.png" />
+    <link rel="icon" type="image/png" href="assets/images/icon-onglet.png" />
 
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>

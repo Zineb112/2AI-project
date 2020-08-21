@@ -4,11 +4,9 @@ include("user_auth.php");
 include(TEMPLATE_BACK . DS . "head.php");
 ?>
 
-
-
 <?php include(TEMPLATE_BACK . DS . "nav.php") ?>
 <?php include(TEMPLATE_BACK . DS . "ui_settings.php") ?>
-
+     
 <div class="app-main">
 <?php include(TEMPLATE_BACK . DS . "sidebar.php") ?>    
     <div class="app-main__outer">
@@ -21,25 +19,17 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "dashboard.php") ;
         }
 
-        // if(isset($_GET['create_partner'])){
-        //     include(TEMPLATE_BACK . DS . "create_partner.php");
-        // }
+        if(isset($_GET['add_user'])){
+            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "add_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
+        }
+        if(isset($_GET['manage_users'])){
+            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "manage_users.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
+        }
+        if(isset($_GET['edit_user'])){
+            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "edit_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
+        }
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php include( TEMPLATE_BACK . DS . "footer.php" )?>

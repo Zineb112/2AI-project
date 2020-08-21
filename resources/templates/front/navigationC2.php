@@ -1,29 +1,29 @@
 <nav class="navigation-alt ">
         <div class="navigation-alt__logo-box">
-            <a href="index.html">
-                <img src="images/logo.png" alt="logo" class="navigation-alt__logo">
+            <a href="index.php">
+                <img src="assets/images/logo.png" alt="logo" class="navigation-alt__logo">
             </a>
         </div>
         <ul class="navigation-alt__list">
-            <li class="navigation-alt__item"><a href="portailInnov.html" class="navigation-alt__link">Portail de l'innovation <i class="fa fa-angle-down"></i></a>
+            <li class="navigation-alt__item"><a href="portailInnov.php" class="navigation-alt__link">Portail de l'innovation <i class="fa fa-angle-down"></i></a>
                 <ul class="navigation-alt__item-sub list-unstyled">
-                        <li class="navigation-alt__item"><a href="Innovation-news.html" class="navigation-alt__link--color">Innovation News</a></li>
-                        <li class="navigation-alt__item"><a href="carnet-inv.html" class="navigation-alt__link--color">Carnet de l’inventeur</a></li>
-                        <li class="navigation-alt__item"><a href="portailInventeurPage.html" class="navigation-alt__link--color">Portail De L'inventeur</a></li>
-                        <li class="navigation-alt__item"><a href="2AINewsC2.html" class="navigation-alt__link--color">2AI News</a></li>
-                        <li class="navigation-alt__item"><a href="guide.html" class="navigation-alt__link--color">Guide De L’inventeur / Entrepreneur</a></li>
+                        <li class="navigation-alt__item"><a href="Innovation-news.php" class="navigation-alt__link--color">Innovation News</a></li>
+                        <li class="navigation-alt__item"><a href="carnet-inv.php" class="navigation-alt__link--color">Carnet de l’inventeur</a></li>
+                        <li class="navigation-alt__item"><a href="portailInventeurPage.php" class="navigation-alt__link--color">Portail De L'inventeur</a></li>
+                        <li class="navigation-alt__item"><a href="2AINewsC2.php" class="navigation-alt__link--color">2AI News</a></li>
+                        <li class="navigation-alt__item"><a href="guide.php" class="navigation-alt__link--color">Guide De L’inventeur / Entrepreneur</a></li>
                 </ul>
             </li>
             <li class="navigation-alt__item">
-                <a href="aboutUs.html" class="navigation-alt__link">À propos&nbsp;<i class="fa fa-angle-down"></i></a>
+                <a href="aboutUs.php" class="navigation-alt__link">À propos&nbsp;<i class="fa fa-angle-down"></i></a>
                 <ul class="navigation-alt__item-sub list-unstyled">
-                    <li class="navigation-alt__item"><a href="aboutUs.html" class="navigation-alt__link--color">Qui sommes nous</a></li>
-                    <li class="navigation-alt__item"><a href="aboutUs.html" class="navigation-alt__link--color">Nos service</a></li>
-                    <li class="navigation-alt__item"><a href="team.html" class="navigation-alt__link--color">Notre équipe</a></li>
+                    <li class="navigation-alt__item"><a href="aboutUs.php" class="navigation-alt__link--color">Qui sommes nous</a></li>
+                    <li class="navigation-alt__item"><a href="aboutUs.php" class="navigation-alt__link--color">Nos service</a></li>
+                    <li class="navigation-alt__item"><a href="team.php" class="navigation-alt__link--color">Notre équipe</a></li>
                   </ul>
             </li>
-            <li class="navigation-alt__item"><a href="newsC2.html" class="navigation-alt__link">Actualités</a></li>
-            <li class="navigation-alt__item"><a href="contact.html" class="navigation-alt__link">Contact</a></li>
+            <li class="navigation-alt__item"><a href="newsC2.php" class="navigation-alt__link">Actualités</a></li>
+            <li class="navigation-alt__item"><a href="contact.php" class="navigation-alt__link">Contact</a></li>
         </ul>
         <div class="navigation d-mobile">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -39,32 +39,32 @@
 
                         <li class="navigation__item">
                                 <label for="drop-1" class="toggle navigation__link">Portail de l'innovation<i class="fa fa-angle-down"></i></label>
-                                <a href="aboutUs.html" class="navigation__link"> &nbsp; &nbsp;Portail de l'innovation <i class="fa fa-angle-down"></i>&nbsp; &nbsp;</a>
+                                <a href="aboutUs.php" class="navigation__link"> &nbsp; &nbsp;Portail de l'innovation <i class="fa fa-angle-down"></i>&nbsp; &nbsp;</a>
                                 <input type="checkbox" id="drop-1">
                                 <ul class="navigation__item-sub list-unstyled">
-                                  <li class="navigation__item"><a href="Innovation-news.html" class="navigation__link"> &nbsp; &nbsp; &nbsp;Innovation News &nbsp; &nbsp; &nbsp;</a></li>
-                                  <li class="navigation__item"><a href="carnet-inv.html" class="navigation__link">&nbsp; &nbsp; &nbsp;Carnet de l’inventeur&nbsp; &nbsp; &nbsp;</a></li>
-                                  <li class="navigation__item"><a href="portailInventeurPage.html" class="navigation__link">&nbsp; &nbsp; &nbsp;Portail De L'inventeur&nbsp; &nbsp; &nbsp;</a></li>
-                                  <li class="navigation__item"><a href="2AINewsC2.html" class="navigation__link">&nbsp; &nbsp; &nbsp;2AI News&nbsp; &nbsp; &nbsp;</a></li>
-                                  <li class="navigation__item"><a href="guide.html" class="navigation__link">&nbsp; &nbsp; &nbsp;Guide De L’inventeur / Entrepreneur&nbsp; &nbsp; &nbsp;</a></li>
+                                  <li class="navigation__item"><a href="Innovation-news.php" class="navigation__link"> &nbsp; &nbsp; &nbsp;Innovation News &nbsp; &nbsp; &nbsp;</a></li>
+                                  <li class="navigation__item"><a href="carnet-inv.php" class="navigation__link">&nbsp; &nbsp; &nbsp;Carnet de l’inventeur&nbsp; &nbsp; &nbsp;</a></li>
+                                  <li class="navigation__item"><a href="portailInventeurPage.php" class="navigation__link">&nbsp; &nbsp; &nbsp;Portail De L'inventeur&nbsp; &nbsp; &nbsp;</a></li>
+                                  <li class="navigation__item"><a href="2AINewsC2.php" class="navigation__link">&nbsp; &nbsp; &nbsp;2AI News&nbsp; &nbsp; &nbsp;</a></li>
+                                  <li class="navigation__item"><a href="guide.php" class="navigation__link">&nbsp; &nbsp; &nbsp;Guide De L’inventeur / Entrepreneur&nbsp; &nbsp; &nbsp;</a></li>
                                 </ul>
                               </li>
 
                     <li class="navigation__item">
                       <label for="drop-1" class="toggle navigation__link">À propos<i class="fa fa-angle-down"></i></label>
-                      <a href="aboutUs.html" class="navigation__link"> &nbsp; &nbsp;À propos <i class="fa fa-angle-down"></i>&nbsp; &nbsp;</a>
+                      <a href="aboutUs.php" class="navigation__link"> &nbsp; &nbsp;À propos <i class="fa fa-angle-down"></i>&nbsp; &nbsp;</a>
                       <input type="checkbox" id="drop-1">
                       <ul class="navigation__item-sub list-unstyled">
-                        <li class="navigation__item"><a href="aboutUs.html" class="navigation__link"> &nbsp; &nbsp; &nbsp;Qui sommes nous &nbsp; &nbsp; &nbsp;</a></li>
-                        <li class="navigation__item"><a href="aboutUs.html" class="navigation__link">&nbsp; &nbsp; &nbsp;Nos service&nbsp; &nbsp; &nbsp;</a></li>
-                        <li class="navigation__item"><a href="team.html" class="navigation__link">&nbsp; &nbsp; &nbsp;Notre équipe&nbsp; &nbsp; &nbsp;</a></li>
+                        <li class="navigation__item"><a href="aboutUs.php" class="navigation__link"> &nbsp; &nbsp; &nbsp;Qui sommes nous &nbsp; &nbsp; &nbsp;</a></li>
+                        <li class="navigation__item"><a href="aboutUs.php" class="navigation__link">&nbsp; &nbsp; &nbsp;Nos service&nbsp; &nbsp; &nbsp;</a></li>
+                        <li class="navigation__item"><a href="team.php" class="navigation__link">&nbsp; &nbsp; &nbsp;Notre équipe&nbsp; &nbsp; &nbsp;</a></li>
                       </ul>
                     </li>
                     <li class="navigation__item">
-                      <a href="newsC2.html" class="navigation__link">&nbsp; &nbsp;Actualités&nbsp; &nbsp;</a>
+                      <a href="newsC2.php" class="navigation__link">&nbsp; &nbsp;Actualités&nbsp; &nbsp;</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="contact.html" class="navigation__link">&nbsp; &nbsp;Contact&nbsp; &nbsp;</a>
+                        <a href="contact.php" class="navigation__link">&nbsp; &nbsp;Contact&nbsp; &nbsp;</a>
                       </li>
                   </ul>
             </nav>

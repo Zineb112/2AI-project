@@ -11,29 +11,29 @@
     } }'>
    <div class="partners__container--partner">
         <a href="#">
-            <img src="/images/part1.png" alt="image">
+            <img src="assets/images/part1.png" alt="image">
         </a>
     </div>       
     <div class="partners__container--partner">
         <a href="#">
-            <img src="/images/part2.png" alt="image">
+            <img src="assets/images/part2.png" alt="image">
         </a>
     </div>
     <div class="partners__container--partner">
         <a href="#">
-            <img src="/images/part3.png" alt="image">
+            <img src="assets/images/part3.png" alt="image">
         </a>
     </div>
     <div class="partners__container--partner">
         <a href="#">
-            <img src="/images/part4.png" alt="image">
+            <img src="assets/images/part4.png" alt="image">
         </a>
     </div>
            
             
    <div class="partners__container--partner">
                     <a href="#">
-                        <img src="/images/part5.png" alt="image">
+                        <img src="assets/images/part5.png" alt="image">
                     </a>
                 </div>   
 </div>

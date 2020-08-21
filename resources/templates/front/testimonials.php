@@ -19,7 +19,7 @@
                 <div class="testimonials__single">
                     <div class="testimonials__inner">
                         <div class="testimonials__image">
-                            <img src="images/client1.png" alt="">
+                            <img src="assets/images/client1.png" alt="">
                         </div><!-- /.testimonials__image -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
                             a varius blandit, Lorem ipsum dolor sit </p>
@@ -32,7 +32,7 @@
                 <div class="testimonials__single">
                     <div class="testimonials__inner">
                         <div class="testimonials__image">
-                            <img src="images/client2.png" alt="">
+                            <img src="assets/images/client2.png" alt="">
                         </div><!-- /.testimonials__image -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
                             a varius blandit, Lorem ipsum dolor sit </p>
@@ -45,7 +45,7 @@
                 <div class="testimonials__single">
                     <div class="testimonials__inner">
                         <div class="testimonials__image">
-                            <img src="images/client3.png" alt="">
+                            <img src="assets/images/client3.png" alt="">
                         </div><!-- /.testimonials__image -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
                             a varius blandit, Lorem ipsum dolor sit </p>
@@ -58,7 +58,7 @@
                 <div class="testimonials__single">
                     <div class="testimonials__inner">
                         <div class="testimonials__image">
-                            <img src="images/client4.png" alt="">
+                            <img src="assets/images/client4.png" alt="">
                         </div><!-- /.testimonials__image -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
                             a varius blandit, Lorem ipsum dolor sit </p>
@@ -71,7 +71,7 @@
                 <div class="testimonials__single">
                     <div class="testimonials__inner">
                         <div class="testimonials__image">
-                            <img src="images/client5.png" alt="">
+                            <img src="assets/images/client5.png" alt="">
                         </div><!-- /.testimonials__image -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
                             a varius blandit, Lorem ipsum dolor sit </p>
@@ -84,7 +84,7 @@
                 <div class="testimonials__single">
                     <div class="testimonials__inner">
                         <div class="testimonials__image">
-                            <img src="images/client6.png" alt="">
+                            <img src="assets/images/client6.png" alt="">
                         </div><!-- /.testimonials__image -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
                             a varius blandit, Lorem ipsum dolor sit </p>
