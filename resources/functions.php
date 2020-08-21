@@ -162,6 +162,7 @@ function create_url_slug($string){
 require_once('component/loginComponent.php');
 require_once('component/usersComponent.php');
 require_once('component/servicesComponent.php');
+require_once('component/partnersComponent.php');
 
 
 
