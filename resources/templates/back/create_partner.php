@@ -40,13 +40,6 @@ submit_partner();
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Partner website</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner website" name="partner_link" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
 
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
