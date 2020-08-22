@@ -28,6 +28,19 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_user'])){
             $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "edit_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
         }
+        if(isset($_GET['change_pass'])){
+            include(TEMPLATE_BACK . DS . "change_password.php");
+        }
+
+        if(isset($_GET['create_partner'])){
+            include(TEMPLATE_BACK . DS . "create_partner.php");
+        }
+        if(isset($_GET['manage_partner'])){
+            include(TEMPLATE_BACK . DS . "manage_partner.php");
+        }
+        if(isset($_GET['edit_partner'])){
+            include(TEMPLATE_BACK . DS . "edit_partner.php");
+        }
 
 ?>
 

@@ -5,7 +5,7 @@
                                 <div class="app-footer-left">
                                     <ul class="nav">
                                         <li class="nav-item">
-                                            <a href="../" class="nav-link">
+                                            <a href="../" target="_blank" class="nav-link">
                                                 Home page
                                             </a>
                                         </li>
