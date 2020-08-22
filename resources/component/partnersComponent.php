@@ -88,4 +88,43 @@ partner;
 }
 }
 
+// Delete a partner
+function delete_partner()
+{
+    global $pdo;
+    if (isset($_GET['delete_partner'])) {
+        //Exeption Handling
+        try {
+            //The SQL statement.
+            $sqlimg = "SELECT m.id, m.file_name FROM partners p join media m on p.partner_logo = m.id WHERE p.id = ?";
+                //Prepare our SELECT SQL statement.
+                $stmtimg = $pdo->prepare($sqlimg);
+                //Execute the statement GET the Partner's image data.
+                $stmtimg->execute([$_GET['delete_partner']]);
+                //fetch the Partner cover data.
+                $img = $stmtimg->fetch();
+                //Check if it's the default image, we don't want to delete the default image.
+                if ($img->id !== '1') {
+                    //this is not the default image, Now we are going to delete thumbnail  from the uploads folder.
+                    !unlink('../uploads/thumbnails/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
+                    //this is not the default image, Now we are going to delete the actual image from the uploads folder.
+                    !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
+                    //this is not the default image, The query to delete both the image and the partner
+                    $sql = "DELETE p, m FROM partners p join media m on p.partner_logo = m.id WHERE p.id = ?";
+                } else {
+                    //this is the default image, The query to delete just the partner
+                    $sql = "DELETE FROM partners WHERE id = ?";
+                }
+                            //Prepare our DELETE SQL statement.
+                $stmt = $pdo->prepare($sql);
+                //Execute the statement DELETE The partner.
+                $stmt->execute([$_GET['delete_partner']]);
+                //display toastr notification, event deleted successfully
+                set_message('success', 'Partner deleted successfully');
+}catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
+}
+
 ?>
