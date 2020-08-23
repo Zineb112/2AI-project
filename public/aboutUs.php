@@ -1,21 +1,23 @@
+<?php require_once('../resources/config.php'); ?>
+
 <!-- nav -->
-@@include('includes/nav.html')
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 <!-- nav end -->
 
 <!-- header -->
 <header class="headerAlt">
-        @@include('includes/navigation.html')
+<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
         <div class="headerAlt__container">
         <h3 class="headerAlt__title">À Propos</h3>
         <ul class="headerAlt__list">
             <il>
-                <a href="index.html">Acceuil</a>
+                <a href="index.php">Acceuil</a>
             </il>
             <il>
                 >
             </il>
             <il>
-                <a href="aboutUs.html">À Propos</a>
+                <a href="aboutUs.php">À Propos</a>
             </il>
         </ul>
         </div>
@@ -298,7 +300,7 @@
 
 
 <!-- objectives -->
-@@include('includes/objectives.html')
+<?php include(TEMPLATE_FRONT . DS . "objectives.php") ?>
 <!-- objectives end -->
 
 <!-- testimonials -->
@@ -321,100 +323,27 @@
             "1199": {"items": 3, "margin": 40}
         }
     }'>
-            <div class="team-box">
-                    <div class="image">
-                        <img src="images/team1.png" alt="team">
-
-                        <div class="social">
-                            <a href="#" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3>Natasha Weber</h3>
-                        <span>CEO</span>
-                    </div>
-            </div>
-            <div class="team-box">
-                    <div class="image">
-                        <img src="images/team2.png" alt="team">
-
-                        <div class="social">
-                            <a href="#" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3>Christine Roberts</h3>
-                        <span>CEO</span>
-                    </div>
-            </div>
-            <div class="team-box">
-                    <div class="image">
-                        <img src="images/team3.png" alt="team">
-
-                        <div class="social">
-                            <a href="#" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3>Charles Carpenter</h3>
-                        <span>CEO</span>
-                    </div>
-            </div>
+            <?php display_team_about() ?>
+           
     </div>
 </div>
-<a href="team.html"><button class="seeTeam">voir tout</button></a>
+<a href="team.php"><button class="seeTeam">voir tout</button></a>
 </section>
 <!-- Team end -->
 
 <!-- contact -->
-@@include('includes/contactSection.html')
+<?php include(TEMPLATE_FRONT . DS . "contactSection.php") ?>
 <!-- contact end -->
 
 <!-- partners -->
-@@include('includes/partners.html')
+<?php include(TEMPLATE_FRONT . DS . "partners.php") ?>
 <!-- partners end -->
 
 
 <!-- footer -->
-@@include('includes/newsletter.html')
+<?php include(TEMPLATE_FRONT . DS . "newsletter.php") ?>
 <!-- footer end -->
-@@include('includes/end.html')
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
 
 <script>
     $('#play-video').on('click', function(e){
