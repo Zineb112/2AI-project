@@ -112,7 +112,39 @@ function submit_team(){
 
 
 
+//Team Management. display team  to be edited or deleted in admin area
 
+function display_team_admin()
+{
+    global $pdo;
+    try{
+        $sql = "SELECT t.*, m.file_name FROM team t join media m on t.avatar = m.id "; 
+        $stmt = $pdo->query($sql)->fetchAll();
+        foreach ($stmt as $team){
+        echo <<<team
+        <tr>
+        <td class="text-center text-muted">{$team->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$team->file_name}" class="br-a" alt="team thumbnail"></td>
+        <td class=""> {$team->full_name} </td>
+        <td class=""> {$team->role} </td>
+
+        <td class="text-center">
+            <a href="index.php?edit_team={$team->id}">
+            <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
+                <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
+            </button>
+            </a>
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_team&delete_team={$team->id}" data-toggle="modal" data-target="#exampleModal">
+                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
+            </button>
+        </td>
+    </tr>
+team;
+    }
+} catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
 
 
 
