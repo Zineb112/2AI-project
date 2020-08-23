@@ -10,9 +10,9 @@ submit_partner();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Add new client 
+                    Add testimonials client
                     <div class="page-title-subheading">
-                        By submitting this form you will create a new client 
+                        By submitting this form you will create a new testimonials client
                     </div>
                 </div>
             </div>
@@ -29,13 +29,11 @@ submit_partner();
         <div class="col-md-8">
             <div class="main-card mb-2 card">
                 <div class="card-body">
-                    <h5 class="card-title">new client </h5>
+                    <h5 class="card-title">New testimonials client</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
-                            
-
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">full_name</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -44,7 +42,7 @@ submit_partner();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">description</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="testimonials description" name="description" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="testimonial description" name="description" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -52,7 +50,7 @@ submit_partner();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">role</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="client role" name="role" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="role client" name="role" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -67,7 +65,7 @@ submit_partner();
                                 <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
                             </div>
                         </div>
-                        <input class="btn btn-primary" id="submit_testimonials" type="submit" name="submit" value="Submit form">
+                        <input class="btn btn-primary" id="submit_testimoniale" type="submit" name="submit" value="Submit form">
                     </form>
         
                     <script>
