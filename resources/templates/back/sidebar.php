@@ -131,29 +131,8 @@
                                 <li class="app-sidebar__heading">Activities</li>
                                 <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>
-                                        Programms
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="index.php?create_program">
-                                                <i class="metismenu-icon">
-                                                </i>Create program
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.php?manage_program">
-                                                <i class="metismenu-icon">
-                                                </i>Manage programms
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-albums"></i>
-                                        Startups
+                                        <i class="metismenu-icon pe-7s-photo-gallery"></i>
+                                        Gallery
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
@@ -167,18 +146,6 @@
                                             <a href="index.php?manage_project">
                                                 <i class="metismenu-icon">
                                                 </i>Manage projects
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-notifications.html">
-                                                <i class="metismenu-icon">
-                                                </i>Notifications
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-modals.html">
-                                                <i class="metismenu-icon">
-                                                </i>Modals
                                             </a>
                                         </li>
                                     </ul>
@@ -300,10 +267,37 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="charts-chartjs.html">
-                                        <i class="metismenu-icon pe-7s-id"></i>
-                                        Profile
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-browser"></i>
+                                        Pages
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
+                                    <ul>
+                                        <li>
+                                            <a href="elements-buttons-standard.html">
+                                                <i class="metismenu-icon"></i>
+                                                Buttons
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="elements-dropdowns.html">
+                                                <i class="metismenu-icon">
+                                                </i>Dropdowns
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="elements-icons.html">
+                                                <i class="metismenu-icon">
+                                                </i>Icons
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="elements-badges-labels.html">
+                                                <i class="metismenu-icon">
+                                                </i>Badges
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
