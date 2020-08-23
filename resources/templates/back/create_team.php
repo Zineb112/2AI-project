@@ -1,5 +1,5 @@
 <?php 
-submit_partner();
+submit_team();
 
 ?>
 <div class="app-main__inner">
@@ -34,7 +34,7 @@ submit_partner();
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">full name</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="ful_name" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name"  required=""  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -74,7 +74,7 @@ submit_partner();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Instagram</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your instagram account" name="instagram" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your instagram account" name="instagram"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
