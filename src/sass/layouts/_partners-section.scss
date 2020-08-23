@@ -2,7 +2,9 @@
     width: 80%;
     margin: auto auto 120px auto;
 }
-
+.partners__item{
+    list-style: none;
+}
 .partners{
 
 &__title{
@@ -23,7 +25,6 @@
     a{
             
             display: block;
-            background-color: $primary-variant;
             border-radius: 5px;
             padding: 32px;
     }
