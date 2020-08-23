@@ -1,17 +1,19 @@
-@@include('includes/nav.html')
+<?php require_once('../resources/config.php'); ?>
+
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 <header class="headerAlt">
-@@include('includes/navigation.html')
+<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
 <div class="headerAlt__container">
 <h3 class="headerAlt__title">Équipe</h3>
 <ul class="headerAlt__list">
     <il>
-        <a href="index.html">Acceuil</a>
+        <a href="index.php">Acceuil</a>
     </il>
     <il>
         >
     </il>
     <il>
-        <a href="team.html">Équipe</a>
+        <a href="team.php">Équipe</a>
     </il>
 </ul>
 </div>
@@ -184,11 +186,11 @@
 </section>
 
 
-@@include('includes/contactSection.html')
+<?php include(TEMPLATE_FRONT . DS . "contactSection.php") ?>
 
 
-@@include('includes/partners.html')
+<?php include(TEMPLATE_FRONT . DS . "partners.php") ?>
 
-@@include('includes/newsletter.html')
+<?php include(TEMPLATE_FRONT . DS . "newsletter.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
 
-@@include('includes/end.html')
