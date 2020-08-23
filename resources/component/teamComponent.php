@@ -186,5 +186,32 @@ function delete_team()
 }
 }
 
+// Update a partner information
 
+function update_team()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['avatar']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('avatar', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `team` SET `full_name` = ?,`role` = ?, `avatar` = ?, `linkedin` = ?, `gmail` = ?, `twitter` = ?, `instagram`  = ? WHERE `team`.`id` = ?";
+            $update_team = $pdo->prepare($sql);
+            $update_team->execute([$_POST['full_name'], $_POST['role'], $cover_id ,$_POST['linkedin'], $_POST['gmail'], $_POST['twitter'], $_POST['instagram'], $_POST['team_id']]);
+            if ($update_team) {
+                set_message('success', 'Team  member updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 ?>
