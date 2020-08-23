@@ -47,6 +47,9 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['manage_team'])){
             include(TEMPLATE_BACK . DS . "manage_team.php");
         }
+        if(isset($_GET['edit_team'])){
+            include(TEMPLATE_BACK . DS . "edit_team.php");
+        }
 
 ?>
 
