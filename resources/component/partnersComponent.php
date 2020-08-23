@@ -36,7 +36,7 @@ function submit_partner(){
         upload_image('partner_logo', $cover_id);
         $sql = "INSERT INTO `partners` (`id`, `partner_name`, `partner_logo`) VALUES (NULL, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        $result = $stmt->execute([$name, $cover_id, $link]);
+        $result = $stmt->execute([$name, $cover_id]);
         if($result){
             set_message('success','Partner created successfully');
             
