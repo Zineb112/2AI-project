@@ -41,7 +41,7 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_partner'])){
             include(TEMPLATE_BACK . DS . "edit_partner.php");
         }
-        if(isset($_GET['create_partner'])){
+        if(isset($_GET['create_team'])){
             include(TEMPLATE_BACK . DS . "create_team.php");
         }
 
