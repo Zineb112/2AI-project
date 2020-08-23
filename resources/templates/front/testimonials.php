@@ -15,85 +15,8 @@
                 "1199": {"items": 3.9999, "margin": 40}
             }
         }'>
-            <div class="item">
-                <div class="testimonials__single">
-                    <div class="testimonials__inner">
-                        <div class="testimonials__image">
-                            <img src="assets/images/client1.png" alt="">
-                        </div><!-- /.testimonials__image -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
-                            a varius blandit, Lorem ipsum dolor sit </p>
-                        <h3>Lina Doris</h3>
-                        <h4>Directeur</h4>
-                    </div><!-- /.testimonials__inner -->
-                </div><!-- /.testimonials__single -->
-            </div><!-- /.item -->
-            <div class="item">
-                <div class="testimonials__single">
-                    <div class="testimonials__inner">
-                        <div class="testimonials__image">
-                            <img src="assets/images/client2.png" alt="">
-                        </div><!-- /.testimonials__image -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
-                            a varius blandit, Lorem ipsum dolor sit </p>
-                        <h3>Ruth Fuller</h3>
-                        <h4>Directeur</h4>
-                    </div><!-- /.testimonials__inner -->
-                </div><!-- /.testimonials__single -->
-            </div><!-- /.item -->
-            <div class="item">
-                <div class="testimonials__single">
-                    <div class="testimonials__inner">
-                        <div class="testimonials__image">
-                            <img src="assets/images/client3.png" alt="">
-                        </div><!-- /.testimonials__image -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
-                            a varius blandit, Lorem ipsum dolor sit </p>
-                        <h3>Joan Watkins</h3>
-                        <h4>Directeur</h4>
-                    </div><!-- /.testimonials__inner -->
-                </div><!-- /.testimonials__single -->
-            </div><!-- /.item -->
-            <div class="item">
-                <div class="testimonials__single">
-                    <div class="testimonials__inner">
-                        <div class="testimonials__image">
-                            <img src="assets/images/client4.png" alt="">
-                        </div><!-- /.testimonials__image -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
-                            a varius blandit, Lorem ipsum dolor sit </p>
-                        <h3>Natasha Nelson</h3>
-                        <h4>Directeur</h4>
-                    </div><!-- /.testimonials__inner -->
-                </div><!-- /.testimonials__single -->
-            </div><!-- /.item -->
-            <div class="item">
-                <div class="testimonials__single">
-                    <div class="testimonials__inner">
-                        <div class="testimonials__image">
-                            <img src="assets/images/client5.png" alt="">
-                        </div><!-- /.testimonials__image -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
-                            a varius blandit, Lorem ipsum dolor sit </p>
-                        <h3>Louisa Valdez</h3>
-                        <h4>Directeur</h4>
-                    </div><!-- /.testimonials__inner -->
-                </div><!-- /.testimonials__single -->
-            </div><!-- /.item -->
-            <div class="item">
-                <div class="testimonials__single">
-                    <div class="testimonials__inner">
-                        <div class="testimonials__image">
-                            <img src="assets/images/client6.png" alt="">
-                        </div><!-- /.testimonials__image -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida
-                            a varius blandit, Lorem ipsum dolor sit </p>
-                        <h3>Brandon Collins</h3>
-                        <h4>Fondatrice de la galerie</h4>
-                    </div><!-- /.testimonials__inner -->
-                </div><!-- /.testimonials__single -->
-            </div><!-- /.item -->
-
+        <?php display_testimonials() ?>
+            
         </div><!-- /.thm__owl-carousel testimonials__carousel owl-carousel owl-theme -->
 
     </div><!-- /.container-fluid -->
