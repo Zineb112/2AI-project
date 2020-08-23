@@ -32,6 +32,48 @@ team;
 }
 
 
+function display_team_about(){
+    global $pdo;
+    try{
+    $sql ="SELECT t.full_name, t.role, t.avatar,t.linkedin, t.gmail, t.twitter, t.instagram, m.file_location FROM team t join media m on t.avatar = m.id";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $team){
+        echo <<<team
+
+        <div class="team-box">
+                    <div class="image">
+                        <img src="uploads/{$team->file_location}" alt="team">
+
+                        <div class="social">
+                            <a href=""{$team->linkedin}"" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="{$team->twitter}" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="{$team->twitter}" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="{$team->instagram}" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>{$team->full_name}</h3>
+                        <span>{$team->role}</span>
+                    </div>
+            </div>
+      
+                   
+team;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
 
 
 
