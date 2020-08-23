@@ -195,6 +195,27 @@
                                 </li>
                                 <li>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-users"></i>
+                                        Testimonials
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_testimonials">
+                                                <i class="metismenu-icon"></i>
+                                                Create client member
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_testimonials">
+                                                <i class="metismenu-icon">
+                                                </i>Manage client member
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <i class="metismenu-icon pe-7s-mail-open"></i>
                                         contact
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
