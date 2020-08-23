@@ -76,7 +76,39 @@ team;
 }
 
 
+// submit a team  to database admin area
+function submit_team(){
+    global $pdo;
+    if(isset($_POST['submit'])){
+        try{
+        $name = trim($_POST['full_name']);
+        $role = trim($_POST['role']);
+        $linkedin = trim($_POST['linkedin']);
+        $gmail = trim($_POST['gmail']);
+        $twitter= trim($_POST['twitter']);
+        $instagram = trim($_POST['instagram']);
+        $file = $_FILES['avatar']['name'];
+        $cover_id = 1;
 
+        //**------  function for handling image upload-------*/
+        upload_image('avatar', $cover_id);
+        $sql = "INSERT INTO `team` (`id`, `full_name`, `role`, `avatar`, `linkedin`, `gmail`, `twitter`, `instagram`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?)";
+        $stmt = $pdo->prepare($sql);
+        $result = $stmt->execute([$name, $role, $cover_id, $linkedin, $gmail, $twitter, $instagram, ]);
+        if($result){
+            set_message('success','Team created successfully');
+            
+          } else {
+            set_message('error','try again later');
+            
+          }
+        } catch (PDOException $e) {
+            set_message('error','query failed');
+            
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 
 
