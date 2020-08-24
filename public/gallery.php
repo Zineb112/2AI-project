@@ -34,7 +34,6 @@
         <li class="filter" data-filter=".video">
             <a>Vidéos</a>
         </li>
-    
 </ul>
 <div class="galleryCenter">
 <div id="Container" class="galleryContainer">
@@ -171,8 +170,10 @@
                                                         </div>
                                                     </div>
 </div>
+    
 </div>
 </section>
+
 
 
 
