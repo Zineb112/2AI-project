@@ -31,13 +31,13 @@
                     <h5 class="card-title">General Info</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                     <?php if($testimonials_result): ?>
-                        <?php foreach($testimonials_result as $testimonials): ?>
+                        <?php foreach($testimonials_result as $tes): ?>
                         <div class="form-row">
 
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">full name</label>
-                                <input type="hidden" name="testimonials_id" value="<?php echo $testimonials->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $testimonials->full_name ?>" required="" />
+                                <input type="hidden" name="testimonials_id" value="<?php echo $tes->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $tes->full_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -45,8 +45,8 @@
 
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">descriptione</label>
-                                <input type="hidden" name="testimonials_id" value="<?php echo $testimonials->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="description" name="description" value="<?php echo $testimonials->description ?>" required="" />
+                                <input type="hidden" name="testimonials_id" value="<?php echo $tes->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="description" name="description" value="<?php echo $tes->description ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -54,8 +54,8 @@
 
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">role</label>
-                                <input type="hidden" name="testimonials_id" value="<?php echo $testimonials->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $testimonials->role ?>" required="" />
+                                <input type="hidden" name="testimonials_id" value="<?php echo $tes->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $tes->role ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -65,7 +65,7 @@
                                 <label for="exampleFile" class="">File</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
-                                <input type="hidden" name="cover_id" value="<?php echo $testimonials->profile?>">
+                                <input type="hidden" name="cover_id" value="<?php echo $tes->profile?>">
                                 <input name="profile" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
                             </div>
