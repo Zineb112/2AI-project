@@ -67,7 +67,7 @@ function submit_testimonials(){
 }
 
 
-// Partner Management. display partners to be edited or deleted in admin area
+// Partner Management. display testimonials to be edited or deleted in admin area
 
 function display_testimonials_admin()
 {
