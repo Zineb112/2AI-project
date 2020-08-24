@@ -1,17 +1,19 @@
-@@include('includes/nav.html')
+<?php require_once('../resources/config.php'); ?>
+
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 <header class="headerAlt">
-@@include('includes/navigation.html')
+<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
 <div class="headerAlt__container">
 <h3 class="headerAlt__title">Galerie</h3>
 <ul class="headerAlt__list">
     <il>
-        <a href="index.html">Acceuil</a>
+        <a href="index.php">Acceuil</a>
     </il>
     <il>
         >
     </il>
     <il>
-        <a href="gallery.html">Galerie</a>
+        <a href="gallery.php">Galerie</a>
     </il>
 </ul>
 </div>
@@ -174,8 +176,8 @@
 
 
 
-@@include('includes/testimonials.html')
-@@include('includes/partners.html')
-@@include('includes/newsletter.html')
-@@include('includes/end.html')
+<?php include(TEMPLATE_FRONT . DS . "testimonials.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "partners.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "newsletter.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
 
