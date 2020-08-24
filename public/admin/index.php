@@ -19,46 +19,54 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "dashboard.php") ;
         }
 
-        if(isset($_GET['add_user'])){
-            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "add_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
-        }
-        if(isset($_GET['manage_users'])){
-            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "manage_users.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
-        }
-        if(isset($_GET['edit_user'])){
-            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "edit_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
-        }
-        if(isset($_GET['change_pass'])){
-            include(TEMPLATE_BACK . DS . "change_password.php");
-        }
 
+        // Partners requests
         if(isset($_GET['create_partner'])){
-            include(TEMPLATE_BACK . DS . "create_partner.php");
+            include(TEMPLATE_BACK . DS . "partners/create_partner.php");
         }
         if(isset($_GET['manage_partner'])){
-            include(TEMPLATE_BACK . DS . "manage_partner.php");
+            include(TEMPLATE_BACK . DS . "partners/manage_partner.php");
         }
         if(isset($_GET['edit_partner'])){
-            include(TEMPLATE_BACK . DS . "edit_partner.php");
-        }
-        if(isset($_GET['create_testimonials'])){
-            include(TEMPLATE_BACK . DS . "create_testimonials.php");
-        }
-        if(isset($_GET['manage_testimonials'])){
-            include(TEMPLATE_BACK . DS . "manage_testimonials.php");
-        }
-        if(isset($_GET['edit_testimonials'])){
-            include(TEMPLATE_BACK . DS . "edit_testimonials.php");
-        if(isset($_GET['create_team'])){
-            include(TEMPLATE_BACK . DS . "create_team.php");
-        }
-        if(isset($_GET['manage_team'])){
-            include(TEMPLATE_BACK . DS . "manage_team.php");
-        }
-        if(isset($_GET['edit_team'])){
-            include(TEMPLATE_BACK . DS . "edit_team.php");
+            include(TEMPLATE_BACK . DS . "partners/edit_partner.php");
         }
 
+        // Team requests
+        if(isset($_GET['create_team'])){
+            include(TEMPLATE_BACK . DS . "team/create_team.php");
+        }
+        if(isset($_GET['manage_team'])){
+            include(TEMPLATE_BACK . DS . "team/manage_team.php");
+        }
+        if(isset($_GET['edit_team'])){
+            include(TEMPLATE_BACK . DS . "team/edit_team.php");
+        }
+
+        // Testimonials requests
+        if(isset($_GET['create_testimonials'])){
+            include(TEMPLATE_BACK . DS . "testimonials/create_testimonials.php");
+        }
+        if(isset($_GET['manage_testimonials'])){
+            include(TEMPLATE_BACK . DS . "testimonials/manage_testimonials.php");
+        }
+        if(isset($_GET['edit_testimonials'])){
+            include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
+        }
+
+
+        // Users requests
+        if(isset($_GET['add_user'])){
+            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "users/add_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
+        }
+        if(isset($_GET['manage_users'])){
+            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "users/manage_users.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
+        }
+        if(isset($_GET['edit_user'])){
+            $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "users/edit_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
+        }
+        if(isset($_GET['change_pass'])){
+            include(TEMPLATE_BACK . DS . "users/change_password.php");
+        }
 ?>
 
 

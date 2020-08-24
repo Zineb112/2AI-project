@@ -48,7 +48,7 @@ function submit_testimonials(){
 
         //**------  function for handling image upload-------*/
         upload_image('profile', $cover_id);
-        $sql = "INSERT INTO `testimonials` (`id`, `full_name`, `description`, `role`, `profile`) VALUES (NULL, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO `testimonials` (`id`, `full_name`, `description`, `role`, `profile`) VALUES (NULL, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
         $result = $stmt->execute([$name, $description, $role, $cover_id]);
         if($result){
@@ -158,11 +158,11 @@ function update_testimonials()
           }
             
 
-            $sql = "UPDATE `testimonials` SET `full_name` = ?, `description` = ?, `role` = ?,`profile` = ?, WHERE `testimonials`.`id` = ?";
+            $sql = "UPDATE `testimonials` SET `full_name` = ?, `description` = ?, `role` = ?,`profile` = ? WHERE `testimonials`.`id` = ?";
             $update_testimonials = $pdo->prepare($sql);
-            $update_testimonials->execute([$_POST['full_name'], ['description'], ['role'], $cover_id, $_POST['testimonials_id']]);
+            $update_testimonials->execute([$_POST['full_name'], $_POST['description'], $_POST['role'], $cover_id, $_POST['testimonials_id']]);
             if ($update_testimonials) {
-                set_message('success', 'Partner updated successfully');
+                set_message('success', 'Testimonials informations updated successfully');
             } else {
                 set_message('error', 'query failed try later');
             }
