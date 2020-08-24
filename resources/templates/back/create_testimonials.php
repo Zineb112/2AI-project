@@ -1,5 +1,5 @@
 <?php 
-submit_partner();
+submit_testimonials();
 
 ?>
 <div class="app-main__inner">
@@ -33,7 +33,7 @@ submit_partner();
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">full_name</label>
+                                <label for="validationCustom01">full name</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -65,7 +65,7 @@ submit_partner();
                                 <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
                             </div>
                         </div>
-                        <input class="btn btn-primary" id="submit_testimoniale" type="submit" name="submit" value="Submit form">
+                        <input class="btn btn-primary" id="submit_testimonials" type="submit" name="submit" value="Submit form">
                     </form>
         
                     <script>
