@@ -167,6 +167,8 @@ require_once('component/usersComponent.php');
 require_once('component/servicesComponent.php');
 require_once('component/partnersComponent.php');
 require_once('component/testimonialsComponent.php');
+require_once('component/teamComponent.php');
+require_once('component/galleryComponent.php');
 
 
 
