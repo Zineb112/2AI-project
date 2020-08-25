@@ -1,5 +1,5 @@
 <?php 
-submit_gallery();
+submit_innov();
 
 ?>
 <div class="app-main__inner">
@@ -10,9 +10,9 @@ submit_gallery();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Add new team member
+                    Add new innovation news
                     <div class="page-title-subheading">
-                        By submitting this form you will create a new team member
+                        By submitting this form you will create an innovation news
                     </div>
                 </div>
             </div>
@@ -29,20 +29,12 @@ submit_gallery();
         <div class="col-md-8">
             <div class="main-card mb-2 card">
                 <div class="card-body">
-                    <h5 class="card-title">New team member</h5>
+                    <h5 class="card-title">New innovation news</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Title</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title"  required=""  />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Category</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="News title" name="title" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -50,26 +42,12 @@ submit_gallery();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Link</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your linkedin account" name="link"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="News link" name="link" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Type</label>
-                                <select name="type" id="validationCustom01">
-                                <option value="images">Image</option>
-                                <option value="video">Video</option>
-                                </select>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                    
-
-            
 
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
