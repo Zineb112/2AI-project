@@ -2905,14 +2905,16 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #3f6ad8;
-    border-color: #3f6ad8
+    background-color: #03704D;
+    border-color: #03704D;
+    transition: all 0.5s;
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #2955c8;
-    border-color: #2651be
+    color: #03704D;
+    font-weight: 600;
+    background-color: transparent;
+    border-color: #03704D;
 }
 
 .btn-primary:focus,
@@ -11066,7 +11068,8 @@ button,
 .app-header__logo .logo-src {
     height: 36.0764px;
     width: 100.7898px;
-    background: url(../images/logo-inverse.png)
+    background: url(../images/logo-inverse.png);
+    background-repeat: no-repeat;
 }
 
 .app-header__menu,
@@ -11178,7 +11181,7 @@ button,
 .app-header.header-text-light .header__pane .hamburger.is-active .hamburger-inner,
 .app-header.header-text-light .header__pane .hamburger-inner::before,
 .app-header.header-text-light .header__pane .hamburger-inner::after {
-    background-color: rgba(255, 255, 255, 0.8) !important
+    background-color: #03704D !important;
 }
 
 .app-header.header-text-light .search-wrapper .input-holder .search-icon span::after {
@@ -11343,7 +11346,7 @@ button,
     font-size: .8rem;
     margin: .75rem 0;
     font-weight: bold;
-    color: #3f6ad8;
+    color: #03704D;
     white-space: nowrap;
     position: relative
 }
@@ -11416,8 +11419,10 @@ button,
 }
 
 .vertical-nav-menu li a:hover {
-    background: #e0f3ff;
-    text-decoration: none
+    background: #E70D00;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
 }
 
 .vertical-nav-menu li a:hover i.metismenu-icon {
@@ -11437,9 +11442,9 @@ button,
 }
 
 .vertical-nav-menu li a.mm-active {
-    color: #343a40;
-    background: #e0f3ff;
-    font-weight: bold
+    color: white;
+    background: #03704D;
+    font-weight: bold;
 }
 
 .vertical-nav-menu i.metismenu-state-icon,
@@ -11488,7 +11493,7 @@ button,
 }
 
 .vertical-nav-menu ul>li>a:hover {
-    color: #3f6ad8
+    color: white;
 }
 
 .vertical-nav-menu ul>li>a .metismenu-icon {
@@ -23501,7 +23506,7 @@ legend {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: #3f6ad8
+    background-color: #03704D;
 }
 
 .hamburger-box {
@@ -23522,7 +23527,7 @@ legend {
 .hamburger-inner::after {
     width: 24px;
     height: 2px;
-    background-color: #3f6ad8;
+    background-color: #03704D;
     border-radius: 10px;
     position: absolute;
     transition-property: transform;
