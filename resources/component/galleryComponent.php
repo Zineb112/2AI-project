@@ -94,5 +94,45 @@ gallery;
     echo 'query failed' . $e->getMessage();
 }
 }
+
+// Delete a gallery items
+function delete_gallery()
+{
+    global $pdo;
+    if (isset($_GET['delete_gallery'])) {
+        //Exeption Handling
+        try {
+            //The SQL statement.
+            $sqlimg = "SELECT m.id, m.file_name FROM gallery g join media m on g.cover = m.id WHERE p.id = ?";
+                //Prepare our SELECT SQL statement.
+                $stmtimg = $pdo->prepare($sqlimg);
+                //Execute the statement GET the Gallery's image data.
+                $stmtimg->execute([$_GET['delete_gallery']]);
+                //fetch the gallery cover data.
+                $img = $stmtimg->fetch();
+                //Check if it's the default image, we don't want to delete the default image.
+                if ($img->id !== '1') {
+                    //this is not the default image, Now we are going to delete thumbnail  from the uploads folder.
+                    !unlink('../uploads/thumbnails/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
+                    //this is not the default image, Now we are going to delete the actual image from the uploads folder.
+                    !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
+                    //this is not the default image, The query to delete both the image and the gallery
+                    $sql = "DELETE g, m FROM gallery g join media m on g.cover = m.id WHERE p.id = ?";
+                } else {
+                    //this is the default image, The query to delete just the gallery
+                    $sql = "DELETE FROM gallery WHERE id = ?";
+                }
+                            //Prepare our DELETE SQL statement.
+                $stmt = $pdo->prepare($sql);
+                //Execute the statement DELETE The gallery item.
+                $stmt->execute([$_GET['delete_gallery']]);
+                //display toastr notification, event deleted successfully
+                set_message('success', 'gallery deleted successfully');
+}catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
+}
+
    
 ?>
