@@ -60,7 +60,39 @@ function submit_innov(){
 }
 
 
+// Innovation news Management. display innov news to be edited or deleted in admin area
 
+function display_innov_admin()
+{
+    global $pdo;
+    try{
+        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id "; 
+        $stmt = $pdo->query($sql)->fetchAll();
+        foreach ($stmt as $innov){
+        echo <<<innov
+        <tr>
+        <td class="text-center text-muted">{$innov->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$innov->file_name}" class="br-a" alt="partner thumbnail"></td>
+        <td class=""> {$innov->title} </td>
+        <td class=""> {$innov->link} </td>
+
+        <td class="text-center">
+            <a href="index.php?edit_innov={$innov->id}">
+            <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
+                <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
+            </button>
+            </a>
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_innov-news&delete_innovNews={$innov->id}" data-toggle="modal" data-target="#exampleModal">
+                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
+            </button>
+        </td>
+    </tr>
+innov;
+    }
+} catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
 
 
 

@@ -120,9 +120,9 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_posts">
+                                            <a href="index.php?manage_innov-news">
                                                 <i class="metismenu-icon">
-                                                </i>Manage posts
+                                                </i>Manage innovation news
                                             </a>
                                         </li>
                                     </ul>
