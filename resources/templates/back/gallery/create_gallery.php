@@ -10,7 +10,7 @@ submit_gallery();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Add new team member
+                    Add new item
                     <div class="page-title-subheading">
                         By submitting this form you will create a new team member
                     </div>
@@ -50,7 +50,7 @@ submit_gallery();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Link</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your linkedin account" name="link"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter link" name="link"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
