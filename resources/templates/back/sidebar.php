@@ -109,20 +109,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        Blog
+                                        Innovation news
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?new_post">
+                                            <a href="index.php?create_innov-news">
                                                 <i class="metismenu-icon">
-                                                </i>New Post
+                                                </i>Create new innovation news
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_posts">
+                                            <a href="index.php?manage_innov-news">
                                                 <i class="metismenu-icon">
-                                                </i>Manage posts
+                                                </i>Manage innovation news
                                             </a>
                                         </li>
                                     </ul>
@@ -137,13 +137,13 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?create_project">
+                                            <a href="index.php?create_gallery">
                                                 <i class="metismenu-icon">
                                                 </i>Create new project
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_project">
+                                            <a href="index.php?manage_gallery">
                                                 <i class="metismenu-icon">
                                                 </i>Manage projects
                                             </a>
