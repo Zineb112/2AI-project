@@ -196,6 +196,27 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-users"></i>
+                                        2ai News 
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_2AINewsC2">
+                                                <i class="metismenu-icon"></i>
+                                                Create 2ai News
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_team">
+                                                <i class="metismenu-icon">
+                                                </i>Manage 2ai News
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-users"></i>
                                         Testimonials
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
