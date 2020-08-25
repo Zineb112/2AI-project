@@ -1,7 +1,9 @@
-@@include('includes/nav.html')
+<?php require_once('../resources/config.php'); ?>
+
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 
 <header class="hero-headerCI">
-@@include('includes/navigationC2.html')
+<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
 
 <section class="carnet-inv">
     <h3 class="carnet-inv__title">
@@ -52,6 +54,6 @@
 </section>
 </header>
 
-@@include('includes/newsletterC2.html')
-@@include('includes/footerC2.html')
-@@include('includes/end.html')
+<?php include(TEMPLATE_FRONT . DS . "newsletterC2.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "footerC2.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
