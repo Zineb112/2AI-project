@@ -147,7 +147,7 @@ team;
 }
 
 
-// Delete a partner
+// Delete a team
 function delete_team()
 {
     global $pdo;
@@ -186,7 +186,7 @@ function delete_team()
 }
 }
 
-// Update a partner information
+// Update a team information
 
 function update_team()
 {
