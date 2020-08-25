@@ -45,6 +45,9 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['create_2AINewsC2'])){
             include(TEMPLATE_BACK . DS . "2aiNewsC2/create_2AINewsC2.php");
         }
+        if(isset($_GET['manage_2AINewsC2'])){
+            include(TEMPLATE_BACK . DS . "2aiNewsC2/manage_2AINewsC2.php");
+        }
         // Testimonials requests
         if(isset($_GET['create_testimonials'])){
             include(TEMPLATE_BACK . DS . "testimonials/create_testimonials.php");
