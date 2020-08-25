@@ -1,3 +1,5 @@
+<?php require_once('../resources/config.php'); ?>
+
 @@include('includes/nav.html')
 <header class="hero-headerIN">
 @@include('includes/navigationC2.html')
