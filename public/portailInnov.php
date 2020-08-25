@@ -1,7 +1,10 @@
-@@include('includes/nav.html')
+<?php require_once('../resources/config.php'); ?>
+
+
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 
 <header class="hero-headerC2">
-@@include('includes/navigationC2.html')
+<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
 <section class="Actualite">
     <div class="ActualiteLeft">
     <h3 class="Actualite__title">Actualité À La Une</h3>
@@ -9,7 +12,7 @@
         libero nec, interdum tortor. Morbi in nibh 
         faucibus, iaculis lorem vitae, cursus velit. 
         Etiam non blandit ex.</p>
-    <a href="newsC2.html"><button class="Actualite__more hidMoreD">voir tout</button></a>
+    <a href="newsC2.php"><button class="Actualite__more hidMoreD">voir tout</button></a>
     </div>
     <div class="ActualiteRight">
         <div class="blog-one__singleInnov" data-aos="flip-left" data-aos-duration="1000">
@@ -38,7 +41,7 @@
                 <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
             </div>
         </div>
-        <a class="Actualite__moreA" href="newsC2.html"><button class="Actualite__more hidMoreM">voir tout</button></a>
+        <a class="Actualite__moreA" href="newsC2.php"><button class="Actualite__more hidMoreM">voir tout</button></a>
 
     </div>
 </section>
@@ -104,16 +107,7 @@
         <p class="carnetN__subtitle">Carnet de l’Inventeur est un magazine mensuel, qui vise à promouvoir les résultats des recherches des inventeurs et des innovateurs, fort d’un contenu riche en informations techniques et stratégiques, et permettra aux entreprises et aux bailleurs de fonds de saisir d’intéressantes opportunités d’investissements à travers la valorisation des inventions qui y sont diffusées.</p>
         <a href="" class="carnetN__button">Autre éditions</a>
     </div>
-    <div class="carnetN__right" data-aos="flip-down" data-aos-duration="1000">
-        <div class="carnetN__carnet">
-            <img src="images/carnet1.png" alt="">
-            <div class="carnetN__infos">
-                <h3 class="carnetN__infos--date">Magazine mois décembre</h3>
-                <h5 class="carnetN__infos--title"> <span>Titre: </span> Pulvinar condimentum </h5>
-                <a href="" class="carnetN__download">Télécharger</a>
-            </div>
-        </div>
-    </div>
+    <?php display_carnet_portailInnov() ?>
     <a href="" class="carnetN__buttonM">Autre éditions</a>
     </div>
 </section>
@@ -255,6 +249,6 @@
 </section>
 
 
-@@include('includes/newsletterC2.html')
-@@include('includes/footerC2.html')
-@@include('includes/end.html')
+<?php include(TEMPLATE_FRONT . DS . "newsletterC2.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "footerC2.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
