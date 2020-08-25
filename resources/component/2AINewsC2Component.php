@@ -73,7 +73,7 @@ function display_2aiNews_admin()
         <td class=""> {$ai_news->full_name} </td>
         <td class=""> {$ai_news->link} </td>
         <td class=""> {$ai_news->role} </td>
-        <td class=""> {$ai_news->title} </td>
+        <td class=""> {$ai_news->title}</td>
         
         <td class="text-center">
             <a href="index.php?edit_2AINewsC2={$ai_news->id}">
@@ -95,40 +95,40 @@ ainews;
 
 
 // Delete a team
-function delete_2ai_news()
-{
-    global $pdo;
-    if (isset($_GET['delete_2ai_news'])) {
-        //Exeption Handling
-        try {
-            //The SQL statement.
-            $sqlimg = "SELECT m.id, m.file_name FROM ai_news a join media m on a.cover = m.id WHERE a.id = ?";
-                //Prepare our SELECT SQL statement.
-                $stmtimg = $pdo->prepare($sqlimg);
-                //Execute the statement GET the Partner's image data.
-                $stmtimg->execute([$_GET['delete_team']]);
-                //fetch the Partner cover data.
-                $img = $stmtimg->fetch();
-                //Check if it's the default image, we don't want to delete the default image.
-                if ($img->id !== '1') {
-                    //this is not the default image, Now we are going to delete thumbnail  from the uploads folder.
-                    !unlink('../uploads/thumbnails/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
-                    //this is not the default image, Now we are going to delete the actual image from the uploads folder.
-                    !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
-                    //this is not the default image, The query to delete both the image and the partner
-                    $sql = "DELETE a, m FROM ai_news a join media m on a.cover = m.id WHERE a.id = ?";
-                } else {
-                    //this is the default image, The query to delete just the partner
-                    $sql = "DELETE FROM ai_news WHERE id = ?";
-                }
-                            //Prepare our DELETE SQL statement.
-                $stmt = $pdo->prepare($sql);
-                //Execute the statement DELETE The partner.
-                $stmt->execute([$_GET['delete_2ai_news']]);
-                //display toastr notification, event deleted successfully
-                set_message('success', '2ai News deleted successfully');
+function delete_2ai_news(){
+global $pdo;
+if (isset($_GET['delete_2ai_news'])) {
+    //Exeption Handling
+    try {
+        //The SQL statement.
+        $sqlimg = "SELECT m.id, m.file_name FROM ai_news a join media m on a.cover = m.id WHERE a.id = ?";
+            //Prepare our SELECT SQL statement.
+            $stmtimg = $pdo->prepare($sqlimg);
+            //Execute the statement GET the team's image data.
+            $stmtimg->execute([$_GET['delete_2ai_news']]);
+            //fetch the 2ai News cover data.
+            $img = $stmtimg->fetch();
+            //Check if it's the default image, we don't want to delete the default image.
+            if ($img->id !== '1') {
+                //this is not the default image, Now we are going to delete thumbnail  from the uploads folder.
+                !unlink('../uploads/thumbnails/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
+                //this is not the default image, Now we are going to delete the actual image from the uploads folder.
+                !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
+                //this is not the default image, The query to delete both the image and the 2ai News
+                $sql = "DELETE a, m FROM ai_news a join media m on a.cover = m.id WHERE a.id = ?";
+            } else {
+                //this is the default image, The query to delete just the 2ai News
+                $sql = "DELETE FROM ai_news WHERE id = ?";
+            }
+                        //Prepare our DELETE SQL statement.
+            $stmt = $pdo->prepare($sql);
+            //Execute the statement DELETE The 2ai News.
+            $stmt->execute([$_GET['delete_2ai_news']]);
+            //display toastr notification, event deleted successfully
+            set_message('success','2ai News deleted successfully');
 }catch (PDOException $e) {
-    echo 'query failed' . $e->getMessage();
+echo 'query failed' . $e->getMessage();
 }
 }
 }
+
