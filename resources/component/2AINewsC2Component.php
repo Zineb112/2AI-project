@@ -9,7 +9,7 @@ function display_2AINewsC2(){
         <div class="AinewsP__card" data-aos="flip-up" data-aos-duration="1500">
             <div class="AinewsP__top">
             <img src="uploads/{$ai_news->file_location}" alt="{$ai_news->full_name}" >
-                <a href=""><i class="fas fa-play"></i></a>
+                <a href="$ai_news->link"><i class="fas fa-play"></i></a>
             </div>
             <div class="AinewsP__bottom">
                 <h3 class="AinewsP__name">$ai_news->full_name</h3>
@@ -57,7 +57,7 @@ function submit_ai_news(){
         }
     }
 }
-//Team Management. display team  to be edited or deleted in admin area
+//Team Management. display 2aiNews to be edited or deleted in admin area
 
 function display_2aiNews_admin()
 {
@@ -81,7 +81,7 @@ function display_2aiNews_admin()
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
             </a>
-            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_team&delete_team={$ai_news->id}" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_2AINewsC2&delete_ai_news={$ai_news->id}" data-toggle="modal" data-target="#exampleModal">
                 <i class="pe-7s-trash" style="font-size: 1rem;"></i>
             </button>
         </td>
