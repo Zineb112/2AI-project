@@ -109,14 +109,14 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        Blog
+                                        Innovation news
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?new_post">
+                                            <a href="index.php?create_innov-news">
                                                 <i class="metismenu-icon">
-                                                </i>New Post
+                                                </i>Create new innovation news
                                             </a>
                                         </li>
                                         <li>

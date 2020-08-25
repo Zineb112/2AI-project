@@ -62,6 +62,11 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_testimonials'])){
             include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
+
+        // Innovation news requests
+        if(isset($_GET['create_innov-news'])){
+            include(TEMPLATE_BACK . DS . "innovationNews/create_innov-news.php");
+        }
           
 
 
