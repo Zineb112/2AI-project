@@ -73,7 +73,7 @@
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $ai_news->cover?>">
-                                <input name="avatar" id="exampleFile" type="file" class="form-control-file">
+                                <input name="cover" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
                             </div>
                         </div>
