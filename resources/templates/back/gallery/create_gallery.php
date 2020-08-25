@@ -1,5 +1,5 @@
 <?php 
-submit_team();
+submit_gallery();
 
 ?>
 <div class="app-main__inner">
@@ -33,7 +33,7 @@ submit_team();
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">title</label>
+                                <label for="validationCustom01">Title</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title"  required=""  />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -41,7 +41,7 @@ submit_team();
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">category</label>
+                                <label for="validationCustom01">Category</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -49,7 +49,7 @@ submit_team();
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Linkedin</label>
+                                <label for="validationCustom01">Link</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your linkedin account" name="link"  />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -57,10 +57,10 @@ submit_team();
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">type</label>
+                                <label for="validationCustom01">Type</label>
                                 <select name="type" id="validationCustom01">
-                                <option value="images">click1</option>
-                                <option value="video">click1</option>
+                                <option value="images">Image</option>
+                                <option value="video">Video</option>
                                 </select>
                                 <div class="valid-feedback">
                                     Looks good!
@@ -75,7 +75,7 @@ submit_team();
                                 <label for="exampleFile" class="">File</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-                                <input name="avatar" id="exampleFile" type="file" class="form-control-file">
+                                <input name="cover" id="exampleFile" type="file" class="form-control-file">
                                 <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
                             </div>
                         </div>

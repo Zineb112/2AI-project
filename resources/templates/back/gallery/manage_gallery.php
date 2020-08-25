@@ -1,4 +1,4 @@
-<?php delete_partner(); ?>
+
 <div class="app-main__inner">
     <div class="app-page-title">
         <div class="page-title-wrapper">
@@ -28,7 +28,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php display_partners_admin() ?>
+                            <?php display_gallery_admin() ?>
                         </tbody>
                     </table>
                 </div>
