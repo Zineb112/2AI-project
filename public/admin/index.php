@@ -41,7 +41,10 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_team'])){
             include(TEMPLATE_BACK . DS . "team/edit_team.php");
         }
-
+        // 2aiNewsC2 requests
+        if(isset($_GET['create_2AINewsC2'])){
+            include(TEMPLATE_BACK . DS . "2aiNewsC2/create_2AINewsC2.php");
+        }
         // Testimonials requests
         if(isset($_GET['create_testimonials'])){
             include(TEMPLATE_BACK . DS . "testimonials/create_testimonials.php");
@@ -52,6 +55,7 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_testimonials'])){
             include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
+          
 
 
         // Users requests
