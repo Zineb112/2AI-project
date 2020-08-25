@@ -10,7 +10,7 @@ submit_ai_news();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Add new 2aiNews
+                    Add new 2ai News
                     <div class="page-title-subheading">
                         By submitting this form you will create a new 2ai News
                     </div>
