@@ -132,3 +132,32 @@ echo 'query failed' . $e->getMessage();
 }
 }
 
+// Update a 2ai News information
+
+function update_ai_news()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+            $sql = "UPDATE `ai_news` SET `full_name` = ?,`link` = ?, `cover` = ?, `role` = ?, `title` = ? WHERE `ai_news`.`id` = ?";
+            $update_ai_news = $pdo->prepare($sql);
+            $update_ai_news->execute([$_POST['full_name'], $_POST['link'], $cover_id , $_POST['role'], $_POST['title'], $_POST['ai_news_id']]);
+            if ($update_ai_news) {
+                set_message('success', '2ai News  updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
+?>
+

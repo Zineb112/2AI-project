@@ -10,6 +10,7 @@
     <h3 class="AinewsP__title">2AI News</h3>
     <div class="AinewsP__wrapper">      
     <?php display_2AINewsC2() ?>
+    </div>
     <div class="innov-newsP__pagination">
             <a href="#"><i class="fa fa-angle-left"></i></a>
             <a href="#" class="active">1</a>

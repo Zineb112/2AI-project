@@ -1,5 +1,5 @@
 <?php 
-submit_ai_news();
+submit_team();
 
 ?>
 <div class="app-main__inner">
@@ -10,9 +10,9 @@ submit_ai_news();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Add new 2ai News
+                    Add new team member
                     <div class="page-title-subheading">
-                        By submitting this form you will create a new 2ai News
+                        By submitting this form you will create a new team member
                     </div>
                 </div>
             </div>
@@ -29,47 +29,53 @@ submit_ai_news();
         <div class="col-md-8">
             <div class="main-card mb-2 card">
                 <div class="card-body">
-                    <h5 class="card-title">New 2ai News</h5>
+                    <h5 class="card-title">New team member</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">full name</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name"  required=""  />
+                                <label for="validationCustom01">title</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title"  required=""  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Link</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="link's for 2ai News" name="link" required="" />
+                                <label for="validationCustom01">category</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Role</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your role for 2ai News" name="role" required="" />
+                                <label for="validationCustom01">Linkedin</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your linkedin account" name="link"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Title</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your title for 2ai News" name="title" />
+                                <label for="validationCustom01">type</label>
+                                <select name="type" id="validationCustom01">
+                                <option value="images">click1</option>
+                                <option value="video">click1</option>
+                                </select>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
+                    
+
+            
 
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-                                <input name="cover" id="exampleFile" type="file" class="form-control-file">
+                                <input name="avatar" id="exampleFile" type="file" class="form-control-file">
                                 <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
                             </div>
                         </div>
