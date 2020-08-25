@@ -196,6 +196,27 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-users"></i>
+                                        2ai News 
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_2AINewsC2">
+                                                <i class="metismenu-icon"></i>
+                                                Create 2ai News
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_2AINewsC2">
+                                                <i class="metismenu-icon">
+                                                </i>Manage 2ai News
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-users"></i>
                                         Testimonials
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
@@ -267,18 +288,6 @@
                                                 </i>Manage users
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="elements-icons.html">
-                                                <i class="metismenu-icon">
-                                                </i>Icons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-badges-labels.html">
-                                                <i class="metismenu-icon">
-                                                </i>Badges
-                                            </a>
-                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -295,27 +304,27 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="elements-buttons-standard.html">
+                                            <a href="../index.php" target="_blank">
                                                 <i class="metismenu-icon"></i>
-                                                Buttons
+                                                Home
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="elements-dropdowns.html">
+                                            <a href="../aboutUs.php" target="_blank">
                                                 <i class="metismenu-icon">
-                                                </i>Dropdowns
+                                                </i>About Us
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="elements-icons.html">
+                                            <a href="../team.php" target="_blank">
                                                 <i class="metismenu-icon">
-                                                </i>Icons
+                                                </i>Team
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="elements-badges-labels.html">
+                                            <a href="../gallery.php" target="_blank">
                                                 <i class="metismenu-icon">
-                                                </i>Badges
+                                                </i>Gallery
                                             </a>
                                         </li>
                                     </ul>

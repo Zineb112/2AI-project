@@ -34,14 +34,13 @@
         <li class="filter" data-filter=".video">
             <a>Vidéos</a>
         </li>
-    
 </ul>
 <div class="galleryCenter">
 <div id="Container" class="galleryContainer">
-<?php display_gallery()?>
-
+<?php display_gallery() ?>
 </div>
 </section>
+
 
 
 
