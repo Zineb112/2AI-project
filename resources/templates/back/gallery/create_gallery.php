@@ -12,7 +12,7 @@ submit_gallery();
                 <div>
                     Add new item
                     <div class="page-title-subheading">
-                        By submitting this form you will create a new team member
+                        By submitting this form you will add new images/video to your gallery
                     </div>
                 </div>
             </div>
