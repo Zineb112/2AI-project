@@ -45,7 +45,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Role</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $team->full_name ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $team->role ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -54,7 +54,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Linkedin</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="linkedIn account" name="linkedin" value="<?php echo $team->full_name ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="linkedIn account" name="linkedin" value="<?php echo $team->linkedin ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -63,7 +63,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Gmail</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Gmail account" name="gmail" value="<?php echo $team->full_name ?>"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Gmail account" name="gmail" value="<?php echo $team->gmail ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -72,7 +72,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Twitter</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Twitter account" name="twitter" value="<?php echo $team->full_name ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Twitter account" name="twitter" value="<?php echo $team->twitter?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -81,7 +81,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Instagram</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Instagram account" name="instagram" value="<?php echo $team->full_name ?>"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Instagram account" name="instagram" value="<?php echo $team->instagram ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
