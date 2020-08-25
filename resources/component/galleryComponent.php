@@ -61,5 +61,38 @@ function submit_gallery(){
         }
     }
 }
+
+// Gallery Management. display images/videos to be edited or deleted in admin area
+
+function display_gallery_admin()
+{
+    global $pdo;
+    try{
+        $sql = "SELECT g.*, m.file_name FROM gallery g join media m on g.cover = m.id "; 
+        $stmt = $pdo->query($sql)->fetchAll();
+        foreach ($stmt as $gallery){
+        echo <<<gallery
+        <tr>
+        <td class="text-center text-muted">{$gallery->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$gallery->file_name}" class="br-a" alt="gallery thumbnail"></td>
+        <td class=""> {$gallery->title} </td>
+
+        <td class="text-center">
+            <a href="index.php?edit_gallery={$gallery->id}">
+            <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
+                <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
+            </button>
+            </a>
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_gallery&delete_gallery={$gallery->id}" data-toggle="modal" data-target="#exampleModal">
+                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
+            </button>
+        </td>
+    </tr>
+gallery;
+    }
+} catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
    
 ?>
