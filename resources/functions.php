@@ -170,6 +170,7 @@ require_once('component/testimonialsComponent.php');
 require_once('component/teamComponent.php');
 require_once('component/galleryComponent.php');
 require_once('component/2AINewsC2Component.php');
+require_once('component/carnet-invComponent.php');
 
 
 
