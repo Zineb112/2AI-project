@@ -1,8 +1,9 @@
 <?php require_once('../resources/config.php'); ?>
 
-@@include('includes/nav.html')
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 <header class="hero-headerIN">
-@@include('includes/navigationC2.html')
+
+<?php include(TEMPLATE_FRONT . DS . "navigationC2.php") ?>
 
 
 <section class="innov-newsP">
@@ -82,7 +83,6 @@
 </section>
 
 </header>
-
-@@include('includes/newsletterC2.html')
-@@include('includes/footerC2.html')
-@@include('includes/end.html')
+<?php include(TEMPLATE_FRONT . DS . "newsletterC2.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "footerC2.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
