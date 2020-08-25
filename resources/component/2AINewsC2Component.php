@@ -81,7 +81,7 @@ function display_2aiNews_admin()
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
             </a>
-            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_team&delete_team={$ai_news->id}" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_2AINewsC2&delete_2ai_news={$ai_news->id}" data-toggle="modal" data-target="#exampleModal">
                 <i class="pe-7s-trash" style="font-size: 1rem;"></i>
             </button>
         </td>
