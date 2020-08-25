@@ -25,3 +25,35 @@ ai_news;
     echo 'query failed' . $e->getMessage();
     }
 }
+
+// submit 2AI News to database admin area
+function submit_ai_news(){
+    global $pdo;
+    if(isset($_POST['submit'])){
+        try{
+        $name = trim($_POST['full_name']);
+        $link= trim($_POST['link']);
+        $role = trim($_POST['role']);
+        $title = trim($_POST['title']);
+        $file = $_FILES['cover']['name'];
+        $cover_id = 1;
+
+        //**------  function for handling image upload-------*/
+        upload_image('cover', $cover_id);
+        $sql = "INSERT INTO `ai_news` (`id`, `full_name`,`link`, `cover`, `role`, `title`) VALUES (NULL, ?, ?, ?, ?,?)";
+        $stmt = $pdo->prepare($sql);
+        $result = $stmt->execute([$name, $link, $cover_id, $role,  $title ,]);
+        if($result){
+            set_message('success','2ai News created successfully');
+            
+          } else {
+            set_message('error','try again later');
+            
+          }
+        } catch (PDOException $e) {
+            set_message('error','query failed');
+            
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
