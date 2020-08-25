@@ -207,7 +207,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_team">
+                                            <a href="index.php?manage_2AINewsC2">
                                                 <i class="metismenu-icon">
                                                 </i>Manage 2ai News
                                             </a>
