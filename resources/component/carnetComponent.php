@@ -58,6 +58,37 @@ carnet_portailInnov;
 }
 
 
+// submit a carnet to database admin area
+function submit_carnet(){
+    global $pdo;
+    if(isset($_POST['submit'])){
+        try{
+        $title = trim($_POST['title']);
+        $date = trim($_POST['date']);
+        $file = trim($_POST['file']);
+        $cover = $_FILES['cover']['name'];
+        $cover_id = 1;
+
+        //**------  function for handling image upload-------*/
+        upload_image('cover', $cover_id);
+        $sql = "INSERT INTO `carnet` (`id`, `title`, `date`, `file`, `cover`) VALUES (NULL, ?, ?, ?, ?)";
+        $stmt = $pdo->prepare($sql);
+        $result = $stmt->execute([$title , $date, $file, $cover_id]);
+        if($result){
+            set_message('success','carnet created successfully');
+            
+          } else {
+            set_message('error','try again later');
+            
+          }
+        } catch (PDOException $e) {
+            set_message('error','query failed');
+            
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
+
 
 
 
