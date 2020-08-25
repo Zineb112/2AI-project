@@ -62,6 +62,14 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_testimonials'])){
             include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
+        
+        // Gallery requests
+        if(isset($_GET['create_gallery'])){
+            include(TEMPLATE_BACK . DS . "gallery/create_gallery.php");
+        }
+        if(isset($_GET['manage_gallery'])){
+            include(TEMPLATE_BACK . DS . "gallery/manage_gallery.php");
+        }
           
 
 
