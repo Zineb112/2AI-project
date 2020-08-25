@@ -134,5 +134,34 @@ function delete_gallery()
 }
 }
 
+
+// Update gallery item information
+
+function update_gallery()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `gallery` SET `title` = ?,`category` = ?, `cover` = ?, `type` = ?, `link` = ? =  WHERE `gallery`.`id` = ?";
+            $update_gallery = $pdo->prepare($sql);
+            $update_gallery->execute([$_POST['title'], $_POST['category'], $cover_id ,$_POST['type'], $_POST['link'], $_POST['gallery_id']]);
+            if ($update_gallery) {
+                set_message('success', 'Gallery item updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
    
 ?>
