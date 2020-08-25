@@ -101,6 +101,12 @@ include(TEMPLATE_BACK . DS . "head.php");
         }
 
 
+        // Carnet requests
+        if(isset($_GET['create_carnet'])){
+            include(TEMPLATE_BACK . DS . "carnet/create_carnet.php");
+            }
+
+
 
 ?>
 
