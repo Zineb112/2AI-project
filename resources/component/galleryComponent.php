@@ -21,8 +21,6 @@ function display_gallery(){
     </div>
       
 
-
-
 gallery;
     }
     } catch (PDOException $e) {
@@ -30,6 +28,38 @@ gallery;
     echo 'query failed' .$e->getMessage();
     }
 }
-   
 
+
+// submit a gallery to database admin area
+function submit_gallery(){
+    global $pdo;
+    if(isset($_POST['submit'])){
+        try{
+        $title = trim($_POST['title']);
+        $category = trim($_POST['category']);
+        $link = trim($_POST['link']);
+        $type = trim($_POST['type']);
+        $file = $_FILES['cover']['name'];
+        $cover_id = 1;
+
+        //**------  function for handling image upload-------*/
+        upload_image('cover', $cover_id);
+        $sql = "INSERT INTO `gallery` (`id`, `title`, `category`, `link`, `type`, `cover`) VALUES (NULL, ?, ?, ?, ?,?)";
+        $stmt = $pdo->prepare($sql);
+        $result = $stmt->execute([$title, $category, $link, $type, $cover_id]);
+        if($result){
+            set_message('success','gallery created successfully');
+            
+          } else {
+            set_message('error','try again later');
+            
+          }
+        } catch (PDOException $e) {
+            set_message('error','query failed');
+            
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
+   
 ?>
