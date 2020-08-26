@@ -77,7 +77,7 @@ function display_innov_admin()
         <td class=""> {$innov->link} </td>
 
         <td class="text-center">
-            <a href="index.php?edit_innov={$innov->id}">
+            <a href="index.php?edit_innov-news={$innov->id}">
             <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
@@ -135,6 +135,35 @@ function delete_innovNews()
 }
 
 
+
+// Update an innovation news information
+
+function update_innovNews()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `innov_news` SET `title` = ?,`link` = ?, `cover` = ? WHERE `innov_news`.`id` = ?";
+            $update_team = $pdo->prepare($sql);
+            $update_team->execute([$_POST['title'], $_POST['link'], $cover_id , $_POST['innov_id']]);
+            if ($update_team) {
+                set_message('success', 'Innovation news updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 
 ?>
