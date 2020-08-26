@@ -21,7 +21,7 @@
     
         $edit_gallery_sql = "SELECT * FROM gallery WHERE id = ?";
         $gallery_edit = $pdo->prepare($edit_gallery_sql);
-        $galery_edit->execute([$_GET['edit_gallery']]);
+        $gallery_edit->execute([$_GET['edit_gallery']]);
         $gallery_result = $gallery_edit->fetchAll();
     ?>
     <div class="row justify-content-xl-center">
@@ -34,7 +34,7 @@
                         <?php foreach($gallery_result as $gallery): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">title</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $gallery->title ?>" required="" />
                                 <div class="valid-feedback">
@@ -43,7 +43,7 @@
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Role</label>
+                                <label for="validationCustom01">category</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" value="<?php echo $gallery->category ?>" required="" />
                                 <div class="valid-feedback">
@@ -51,17 +51,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Linkedin</label>
-                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="cover" name="cover" value="<?php echo $gallery->cover ?>" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Gmail</label>
+                                <label for="validationCustom01">link</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>"  />
                                 <div class="valid-feedback">
@@ -69,24 +61,16 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Twitter</label>
-                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="type" name="type" value="<?php echo $gallery->type?>" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
                           
 
+                
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $gallery->cover?>">
                                 <input name="avatar" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Upload only if you want to replaced the existing image/video with a new one</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">
