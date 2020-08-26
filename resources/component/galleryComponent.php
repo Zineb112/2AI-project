@@ -14,7 +14,7 @@ function display_gallery(){
             <div class="content-box">
                 <div class="inner">
                     <div class="title">{$gallery->title}</div>
-                    <h3><a href="portfolio-details.html">{$gallery->category}</a></h3>
+                    <h3><a href="#">{$gallery->category}</a></h3>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@ function delete_gallery()
         //Exeption Handling
         try {
             //The SQL statement.
-            $sqlimg = "SELECT m.id, m.file_name FROM gallery g join media m on g.cover = m.id WHERE p.id = ?";
+            $sqlimg = "SELECT m.id, m.file_name FROM gallery g join media m on g.cover = m.id WHERE g.id = ?";
                 //Prepare our SELECT SQL statement.
                 $stmtimg = $pdo->prepare($sqlimg);
                 //Execute the statement GET the Gallery's image data.
@@ -117,7 +117,7 @@ function delete_gallery()
                     //this is not the default image, Now we are going to delete the actual image from the uploads folder.
                     !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
                     //this is not the default image, The query to delete both the image and the gallery
-                    $sql = "DELETE g, m FROM gallery g join media m on g.cover = m.id WHERE p.id = ?";
+                    $sql = "DELETE g, m FROM gallery g join media m on g.cover = m.id WHERE g.id = ?";
                 } else {
                     //this is the default image, The query to delete just the gallery
                     $sql = "DELETE FROM gallery WHERE id = ?";
