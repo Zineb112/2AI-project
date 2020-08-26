@@ -82,7 +82,7 @@ include(TEMPLATE_BACK . DS . "head.php");
         include(TEMPLATE_BACK . DS . "testimonials/manage_testimonials.php");
         }
         if(isset($_GET['edit_testimonials'])){
-        include(TEMPLATE_BACK . DS . "testimonialss/edit_testimonials.php");
+        include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
 
 
