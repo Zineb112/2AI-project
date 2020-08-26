@@ -39,73 +39,7 @@
                                         Analytics Dashboard
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">Learning center</li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-airplay"></i>
-                                        Webinars
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="elements-buttons-standard.html">
-                                                <i class="metismenu-icon"></i>
-                                                Buttons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-dropdowns.html">
-                                                <i class="metismenu-icon">
-                                                </i>Dropdowns
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-icons.html">
-                                                <i class="metismenu-icon">
-                                                </i>Icons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-badges-labels.html">
-                                                <i class="metismenu-icon">
-                                                </i>Badges
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-display1"></i>
-                                        Events
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="index.php?create_event">
-                                                <i class="metismenu-icon"></i>
-                                                Create event
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.php?manage_event">
-                                                <i class="metismenu-icon">
-                                                </i>Manage event
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.php?event_hosts">
-                                                <i class="metismenu-icon">
-                                                </i>Event hosts
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.php?manage_hosts">
-                                                <i class="metismenu-icon">
-                                                </i>Manage Hosts
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li class="app-sidebar__heading">Innovation Portal</li>
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
@@ -145,6 +79,50 @@
                                             <a href="index.php?manage_guide">
                                                 <i class="metismenu-icon">
                                                 </i>Manage Inventor's guide 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        inventor's notebook
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_carnet">
+                                                <i class="metismenu-icon"></i>
+                                                Create Carnet de l’inventeur
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_carnet">
+                                                <i class="metismenu-icon">
+                                                </i>Manage Carnet de l’inventeur
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        2AI News 
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_2AINewsC2">
+                                                <i class="metismenu-icon"></i>
+                                                Create 2ai News
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_2AINewsC2">
+                                                <i class="metismenu-icon">
+                                                </i>Manage 2ai News
                                             </a>
                                         </li>
                                     </ul>
@@ -215,27 +193,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-users"></i>
-                                        2ai News 
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="index.php?create_2AINewsC2">
-                                                <i class="metismenu-icon"></i>
-                                                Create 2ai News
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.php?manage_2AINewsC2">
-                                                <i class="metismenu-icon">
-                                                </i>Manage 2ai News
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
+
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-users"></i>
@@ -253,60 +211,6 @@
                                             <a href="index.php?manage_testimonials">
                                                 <i class="metismenu-icon">
                                                 </i>Manage client member
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-users"></i>
-                                        Carnet de l’inventeur
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="index.php?create_carnet">
-                                                <i class="metismenu-icon"></i>
-                                                Create Carnet de l’inventeur
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.php?manage_carnet">
-                                                <i class="metismenu-icon">
-                                                </i>Manage Carnet de l’inventeur
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-mail-open"></i>
-                                        contact
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="elements-buttons-standard.html">
-                                                <i class="metismenu-icon"></i>
-                                                Buttons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-dropdowns.html">
-                                                <i class="metismenu-icon">
-                                                </i>Dropdowns
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-icons.html">
-                                                <i class="metismenu-icon">
-                                                </i>Icons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-badges-labels.html">
-                                                <i class="metismenu-icon">
-                                                </i>Badges
                                             </a>
                                         </li>
                                     </ul>

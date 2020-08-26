@@ -99,7 +99,7 @@ include(TEMPLATE_BACK . DS . "head.php");
 
         // Users requests
         if(isset($_GET['change_pass'])){
-            include(TEMPLATE_BACK . DS . "change_password.php");
+            include(TEMPLATE_BACK . DS . "users/change_password.php");
         }
         if(isset($_GET['add_user'])){
             $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "users/add_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
