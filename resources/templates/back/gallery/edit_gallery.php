@@ -51,6 +51,7 @@
                                 </div>
                             </div>
 
+                         
 
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">link</label>
@@ -61,16 +62,24 @@
                                 </div>
                             </div>
 
-                          
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Type</label>
+                                <select name="type" id="validationCustom01">
+                                <option value="images">Image</option>
+                                <option value="video">Video</option>
+                                </select>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
 
-                
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $gallery->cover?>">
                                 <input name="avatar" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image/video with a new one</small>
+                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">
