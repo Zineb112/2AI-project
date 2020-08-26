@@ -1,25 +1,25 @@
 <?php 
 
-
-function display_innovNews(){
+function display_guide(){
     global $pdo;
     try{
-    $sql ="SELECT i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id";
+    $sql ="SELECT g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id";
     $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $innovNews){
-        echo <<<innov
+    foreach ($stmt as $guide){
+        echo <<<guide
 
-        <div class="Inews__singleInnov" data-aos="flip-up" data-aos-duration="1500">
-        <div class="Inews__imageInnov">
-            <img src="uploads/{$innovNews->file_name}" alt="{$innovNews->title}">
-            <a href="{$innovNews->link}"><i class="fas fa-play"></i></a>
+        <div class="guideInv__card" data-aos="flip-down" data-aos-duration="1500">
+        <div class="guideInv__top">
+            <img src="uploads/{$guide->file_location}" alt="{$guide->title}">
+            <a href="{$guide->link}"><i class="fas fa-play"></i></a>
         </div>
-        <div class="Inews__contentInnov">
-            <h3><a href="{$innovNews->link}">{$innovNews->title}</a></h3>
-            <a href="{$innovNews->link}" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
+        <div class="guideInv__bottom">
+            <h3 class="guideInv__name">{$guide->full_name}</h3>
+            <h3 class="guideInv__role">{$guide->role}g</h3>
+            <h3 class="guideInv__episode">{$guide->title}</h3>
         </div>
     </div>
-innov;
+guide;
     }
     } catch (PDOException $e) {
     set_message('error','query failed');
@@ -28,12 +28,13 @@ innov;
 }
 
 
-
-// submit an innovation news to database admin area
-function submit_innov(){
+// submit a guide to database admin area
+function submit_guide(){
     global $pdo;
     if(isset($_POST['submit'])){
         try{
+        $name = trim($_POST['full_name']);
+        $role = trim($_POST['role']);
         $title = trim($_POST['title']);
         $link = trim($_POST['link']);
         $file = $_FILES['cover']['name'];
@@ -41,11 +42,11 @@ function submit_innov(){
 
         //**------  function for handling image upload-------*/
         upload_image('cover', $cover_id);
-        $sql = "INSERT INTO `innov_news` (`id`, `title`, `link`, `cover`) VALUES (NULL, ?, ?, ?)";
+        $sql = "INSERT INTO `guide` (`id`, `full_name`, `role`, `cover`, `title`, `link`) VALUES (NULL, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        $result = $stmt->execute([$title, $link, $cover_id]);
+        $result = $stmt->execute([$name, $role, $cover_id, $title, $link]);
         if($result){
-            set_message('success','Innovation news created successfully');
+            set_message('success','Inventors guide created successfully');
             
           } else {
             set_message('error','try again later');
@@ -60,55 +61,56 @@ function submit_innov(){
 }
 
 
-// Innovation news Management. display innov news to be edited or deleted in admin area
 
-function display_innov_admin()
+//Inventor's guide Management. display Inventor's guide to be edited or deleted in admin area
+
+function display_guide_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id "; 
+        $sql = "SELECT g.*, m.file_name FROM guide g join media m on g.cover = m.id "; 
         $stmt = $pdo->query($sql)->fetchAll();
-        foreach ($stmt as $innov){
-        echo <<<innov
+        foreach ($stmt as $guide){
+        echo <<<guide
         <tr>
-        <td class="text-center text-muted">{$innov->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$innov->file_name}" class="br-a" alt="innov news thumbnail"></td>
-        <td class=""> {$innov->title} </td>
-        <td class=""> {$innov->link} </td>
+        <td class="text-center text-muted">{$guide->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$guide->file_name}" class="br-a" alt="guide thumbnail"></td>
+        <td class=""> {$guide->full_name} </td>
+        <td class=""> {$guide->role} </td>
+        <td class=""> {$guide->link} </td>
 
         <td class="text-center">
-            <a href="index.php?edit_innov-news={$innov->id}">
+            <a href="index.php?edit_guide={$guide->id}">
             <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
             </a>
-            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_innov-news&delete_innovNews={$innov->id}" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_guide&delete_guide={$guide->id}" data-toggle="modal" data-target="#exampleModal">
                 <i class="pe-7s-trash" style="font-size: 1rem;"></i>
             </button>
         </td>
     </tr>
-innov;
+guide;
     }
 } catch (PDOException $e) {
     echo 'query failed' . $e->getMessage();
 }
 }
 
-
-// Delete an innovation news
-function delete_innovNews()
+// Delete an inventor's guide
+function delete_guide()
 {
     global $pdo;
-    if (isset($_GET['delete_innovNews'])) {
+    if (isset($_GET['delete_guide'])) {
         //Exeption Handling
         try {
             //The SQL statement.
-            $sqlimg = "SELECT m.id, m.file_name FROM innov_news i join media m on i.cover = m.id WHERE i.id = ?";
+            $sqlimg = "SELECT m.id, m.file_name FROM guide g join media m on g.cover = m.id WHERE g.id = ?";
                 //Prepare our SELECT SQL statement.
                 $stmtimg = $pdo->prepare($sqlimg);
-                //Execute the statement GET the innov news's image data.
-                $stmtimg->execute([$_GET['delete_innovNews']]);
-                //fetch the Partner cover data.
+                //Execute the statement GET the team's image data.
+                $stmtimg->execute([$_GET['delete_guide']]);
+                //fetch the team  cover data.
                 $img = $stmtimg->fetch();
                 //Check if it's the default image, we don't want to delete the default image.
                 if ($img->id !== '1') {
@@ -116,18 +118,18 @@ function delete_innovNews()
                     !unlink('../uploads/thumbnails/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
                     //this is not the default image, Now we are going to delete the actual image from the uploads folder.
                     !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
-                    //this is not the default image, The query to delete both the image and the innov news
-                    $sql = "DELETE i, m FROM innov_news i join media m on i.cover = m.id WHERE i.id = ?";
+                    //this is not the default image, The query to delete both the image and the team
+                    $sql = "DELETE g, m FROM guide g join media m on g.cover = m.id WHERE g.id = ?";
                 } else {
-                    //this is the default image, The query to delete just the innov news
-                    $sql = "DELETE FROM innov_news WHERE id = ?";
+                    //this is the default image, The query to delete just the team
+                    $sql = "DELETE FROM guide WHERE id = ?";
                 }
                             //Prepare our DELETE SQL statement.
                 $stmt = $pdo->prepare($sql);
-                //Execute the statement DELETE The innov news.
-                $stmt->execute([$_GET['delete_innovNews']]);
+                //Execute the statement DELETE The team.
+                $stmt->execute([$_GET['delete_guide']]);
                 //display toastr notification, event deleted successfully
-                set_message('success', 'Innovation news deleted successfully');
+                set_message('success', 'inventor guide deleted successfully');
 }catch (PDOException $e) {
     echo 'query failed' . $e->getMessage();
 }
@@ -135,10 +137,9 @@ function delete_innovNews()
 }
 
 
+// Update an inventor's guide information
 
-// Update an innovation news information
-
-function update_innovNews()
+function update_guide()
 {
     global $pdo;
     if (isset($_POST['submit'])) {
@@ -151,11 +152,11 @@ function update_innovNews()
           }
             
 
-            $sql = "UPDATE `innov_news` SET `title` = ?,`link` = ?, `cover` = ? WHERE `innov_news`.`id` = ?";
+            $sql = "UPDATE `guide` SET `full_name` = ?,`role` = ?, `cover` = ?, `link` = ?, `title` = ?  WHERE `guide`.`id` = ?";
             $update_team = $pdo->prepare($sql);
-            $update_team->execute([$_POST['title'], $_POST['link'], $cover_id , $_POST['innov_id']]);
+            $update_team->execute([$_POST['full_name'], $_POST['role'], $cover_id ,$_POST['link'], $_POST['title'], $_POST['guide_id']]);
             if ($update_team) {
-                set_message('success', 'Innovation news updated successfully');
+                set_message('success', 'inventor guide updated successfully');
             } else {
                 set_message('error', 'query failed try later');
             }
@@ -164,6 +165,4 @@ function update_innovNews()
         }
     }
 }
-
-
 ?>

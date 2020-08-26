@@ -40,6 +40,9 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_gallery'])){
             include(TEMPLATE_BACK . DS . "gallery/edit_gallery.php");
         }
+        if(isset($_GET['edit_gallery'])){
+            include(TEMPLATE_BACK . DS . "gallery/edit_gallery.php");
+        }
 
         // Innovation news requests
         if(isset($_GET['create_innov-news'])){
@@ -50,6 +53,17 @@ include(TEMPLATE_BACK . DS . "head.php");
         }
         if(isset($_GET['edit_innov-news'])){
             include(TEMPLATE_BACK . DS . "innovationNews/edit_innov-news.php");
+        }
+
+        //Inventor's guide requets
+        if(isset($_GET['create_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/create_guide.php");
+        }
+        if(isset($_GET['manage_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/manage_guide.php");
+        }
+        if(isset($_GET['edit_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/edit_guide.php");
         }
 
         // Team requests
