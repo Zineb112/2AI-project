@@ -46,7 +46,7 @@ function submit_guide(){
         $stmt = $pdo->prepare($sql);
         $result = $stmt->execute([$name, $role, $cover_id, $title, $link]);
         if($result){
-            set_message('success','Guide episode created successfully');
+            set_message('success','Inventors guide created successfully');
             
           } else {
             set_message('error','try again later');
@@ -59,6 +59,44 @@ function submit_guide(){
         }
     }
 }
+
+
+
+//Inventor's guide Management. display Inventor's guide to be edited or deleted in admin area
+
+function display_guide_admin()
+{
+    global $pdo;
+    try{
+        $sql = "SELECT g.*, m.file_name FROM guide g join media m on g.cover = m.id "; 
+        $stmt = $pdo->query($sql)->fetchAll();
+        foreach ($stmt as $guide){
+        echo <<<guide
+        <tr>
+        <td class="text-center text-muted">{$guide->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$guide->file_name}" class="br-a" alt="guide thumbnail"></td>
+        <td class=""> {$guide->full_name} </td>
+        <td class=""> {$guide->role} </td>
+        <td class=""> {$guide->link} </td>
+
+        <td class="text-center">
+            <a href="index.php?edit_guide={$guide->id}">
+            <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
+                <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
+            </button>
+            </a>
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_guide&delete_guide={$guide->id}" data-toggle="modal" data-target="#exampleModal">
+                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
+            </button>
+        </td>
+    </tr>
+guide;
+    }
+} catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
+
 
 
 ?>
