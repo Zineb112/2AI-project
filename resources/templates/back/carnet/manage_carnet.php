@@ -1,4 +1,4 @@
-<?php delete_testimonials(); ?>
+<?php delete_carnet(); ?>
 <div class="app-main__inner">
     <div class="app-page-title">
         <div class="page-title-wrapper">
@@ -24,9 +24,9 @@
                             <tr>
                                 <th class="text-center">#</th>
                                 <th>carnet thumbnail</th>
-                                <th>carnet file</th>
-                                <th>carnet date</th>
                                 <th>carnet title</th>
+                                <th>carnet date</th>
+                                <th>carnet file</th>
                             </tr>
                         </thead>
                         <tbody>
