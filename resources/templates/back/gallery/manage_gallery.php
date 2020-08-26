@@ -24,7 +24,7 @@
                             <tr>
                                 <th class="text-center">#</th>
                                 <th>gallery item thumbnail</th>
-                                <th>gallery item title</th>
+                                <th>gallery item title/category</th>
                             </tr>
                         </thead>
                         <tbody>
