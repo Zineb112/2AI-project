@@ -166,6 +166,35 @@ function delete_carnet()
 }
 
 
+// Update a carnet information
+
+function update_carnet()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `carnet` SET `title` = ?, `date` = ?, `file` = ?,`cover` = ? WHERE `carnet`.`id` = ?";
+            $update_carnet = $pdo->prepare($sql);
+            $update_carnet->execute([$_POST['title'], $_POST['date'], $_POST['file'], $cover_id, $_POST['carnet_id']]);
+            if ($update_carnet) {
+                set_message('success', 'carnet informations updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
+
 
 
 

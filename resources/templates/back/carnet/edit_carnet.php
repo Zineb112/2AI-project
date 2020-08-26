@@ -36,7 +36,7 @@
 
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">title</label>
-                                <input type="hidden" name="carnet_id" value="<?php echo $car>id?>">
+                                <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $car->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
