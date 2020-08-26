@@ -48,15 +48,13 @@ submit_carnet();
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">file</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="file" name="file" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+                            <div class="col-md-6">
+                                <label for="exampleFile" class="">File</label>
+                                        <!-- MAX_FILE_SIZE must precede the file input field -->
+                                        
+                                <input name="file" id="exampleFile" type="file" class="form-control-file">
+                                <big class="form-text text-muted"> for pdf file</big>
                             </div>
-
-
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
