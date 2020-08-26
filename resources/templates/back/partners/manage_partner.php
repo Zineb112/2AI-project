@@ -25,6 +25,7 @@
                                 <th class="text-center">#</th>
                                 <th>Partner thumbnail</th>
                                 <th>Partner Name</th>
+                                <th>Partner Link</th>
                             </tr>
                         </thead>
                         <tbody>

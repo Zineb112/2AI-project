@@ -33,8 +33,16 @@ submit_partner();
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Name</label>
+                                <label for="validationCustom01">Partner name</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Partner title" name="partner_name" required="" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Website link</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner website link" name="link" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
