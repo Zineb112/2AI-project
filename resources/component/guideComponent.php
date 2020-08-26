@@ -136,4 +136,33 @@ function delete_guide()
 }
 }
 
+
+// Update an inventor's guide information
+
+function update_guide()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `guide` SET `full_name` = ?,`role` = ?, `cover` = ?, `link` = ?, `title` = ?  WHERE `guide`.`id` = ?";
+            $update_team = $pdo->prepare($sql);
+            $update_team->execute([$_POST['full_name'], $_POST['role'], $cover_id ,$_POST['link'], $_POST['title'], $_POST['guide_id']]);
+            if ($update_team) {
+                set_message('success', 'inventor guide updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 ?>

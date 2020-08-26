@@ -62,6 +62,9 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['manage_guide'])){
             include(TEMPLATE_BACK . DS . "guide/manage_guide.php");
         }
+        if(isset($_GET['edit_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/edit_guide.php");
+        }
 
         // Team requests
         if(isset($_GET['create_team'])){

@@ -33,7 +33,7 @@ submit_guide();
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">Full name</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" name="full_name"  required=""  />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -50,7 +50,7 @@ submit_guide();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">link</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Reportage link" name="link"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Reportage link" name="link" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -58,7 +58,7 @@ submit_guide();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Reportage title</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Reportage title" name="title" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Reportage title" name="title" required=""/>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
