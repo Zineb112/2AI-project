@@ -55,6 +55,11 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "innovationNews/edit_innov-news.php");
         }
 
+        //Inventor's guide requets
+        if(isset($_GET['create_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/create_guide.php");
+        }
+
         // Team requests
         if(isset($_GET['create_team'])){
             include(TEMPLATE_BACK . DS . "team/create_team.php");

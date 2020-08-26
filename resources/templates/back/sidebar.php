@@ -128,6 +128,28 @@
                                     </ul>
                                 </li>
 
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        Inventor's guide 
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_guide">
+                                                <i class="metismenu-icon">
+                                                </i>Create new Inventor's guide 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_guide">
+                                                <i class="metismenu-icon">
+                                                </i>Manage Inventor's guide 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                                 <li class="app-sidebar__heading">Activities</li>
                                 <li>
                                     <a href="#">
