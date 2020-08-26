@@ -42,6 +42,15 @@
                                 </div>
                             </div>
 
+                            <div class="col-md-4 mb-3"> 
+                                <label for="validationCustom01">Website link</label>
+                                <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner website link" name="link" value="<?php echo $pr->link ?>" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
