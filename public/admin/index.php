@@ -40,10 +40,7 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_gallery'])){
             include(TEMPLATE_BACK . DS . "gallery/edit_gallery.php");
         }
-        if(isset($_GET['edit_gallery'])){
-            include(TEMPLATE_BACK . DS . "gallery/edit_gallery.php");
-        }
-
+        
         // Innovation news requests
         if(isset($_GET['create_innov-news'])){
             include(TEMPLATE_BACK . DS . "innovationNews/create_innov-news.php");
