@@ -109,7 +109,7 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "carnet/manage_carnet.php");
         }
         if(isset($_GET['edit_carnet'])){
-            include(TEMPLATE_BACK . DS . "carnet/edit_testimonials.php");
+            include(TEMPLATE_BACK . DS . "carnet/edit_carnet.php");
         }
 
 
