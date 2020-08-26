@@ -14,7 +14,7 @@ function display_carnet(){
             <div class="carnetN__infos">
                 <h3 class="carnetN__infos--date">{$carnet->date}</h3>
                 <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title} </h5>
-                <a href="{$carnet->file}" class="carnetN__download">{$carnet->file}</a>
+                <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
             </div>
         </div>
         </div>
@@ -42,7 +42,7 @@ function display_carnet_portailInnov(){
             <div class="carnetN__infos">
                 <h3 class="carnetN__infos--date">{$carnet_portailInnov->date}</h3>
                 <h5 class="carnetN__infos--title"> <span>Titre: </span>{$carnet_portailInnov->title} </h5>
-                <a href="{$carnet_portailInnov->file}" class="carnetN__download">{$carnet_portailInnov->file}</a>
+                <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@ function submit_carnet(){
         try{
         $title = trim($_POST['title']);
         $date = trim($_POST['date']);
-        $file = trim($_POST['file']);
+        $file = $_FILES['cover']['name'];
         $cover = $_FILES['cover']['name'];
         $cover_id = 1;
 
