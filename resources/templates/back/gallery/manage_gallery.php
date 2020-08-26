@@ -1,4 +1,4 @@
-
+<?php delete_gallery(); ?>
 <div class="app-main__inner">
     <div class="app-page-title">
         <div class="page-title-wrapper">
@@ -24,7 +24,7 @@
                             <tr>
                                 <th class="text-center">#</th>
                                 <th>gallery item thumbnail</th>
-                                <th>gallery item title</th>
+                                <th>gallery item title/category</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update gallery item
+                    Update gallery's item
                     <div class="page-title-subheading">
-                        By submitting this form you will update gallery item member information
+                        By submitting this form you will update gallery item information
                     </div>
                 </div>
             </div>
@@ -34,51 +34,44 @@
                         <?php foreach($gallery_result as $gallery): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">title</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $gallery->title ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $gallery->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Role</label>
+                                <label for="validationCustom01">category</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $gallery->category ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" value="<?php echo $gallery->category ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
+
+                         
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Linkedin</label>
+                                <label for="validationCustom01">link</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="linkedIn account" name="linkedin" value="<?php echo $gallery->cover ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Gmail</label>
-                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Gmail account" name="gmail" value="<?php echo $gallery->link ?>"  />
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Type</label>
+                                <select name="type" id="validationCustom01">
+                                <option value="images">Image</option>
+                                <option value="video">Video</option>
+                                </select>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
-
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Twitter</label>
-                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Twitter account" name="twitter" value="<?php echo $gallery->type?>" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                           
 
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
