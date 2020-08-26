@@ -36,7 +36,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">full name</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $gallery->title ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $gallery->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -45,7 +45,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Role</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $gallery->category ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" value="<?php echo $gallery->category ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -54,7 +54,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Linkedin</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="linkedIn account" name="linkedin" value="<?php echo $gallery->cover ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="covre" name="cover" value="<?php echo $gallery->cover ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -63,7 +63,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Gmail</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Gmail account" name="gmail" value="<?php echo $gallery->link ?>"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -72,7 +72,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Twitter</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Twitter account" name="twitter" value="<?php echo $gallery->type?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="type" name="type" value="<?php echo $gallery->type?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
