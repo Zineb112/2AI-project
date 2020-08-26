@@ -49,12 +49,12 @@ submit_carnet();
                             </div>
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">File bdf</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
-                                        
                                 <input name="file" id="exampleFile" type="file" class="form-control-file">
-                                <big class="form-text text-muted"> for pdf file</big>
+                                <big class="form-text text-muted"> </big>
                             </div>
+
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->

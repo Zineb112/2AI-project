@@ -52,13 +52,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">file</label>
-                                <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="file" name="file" value="<?php echo $car->file ?>" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+                            <div class="col-md-6">
+                                <label for="exampleFile" class="">File pdf</label>
+                                <!-- MAX_FILE_SIZE must precede the file input field -->
+                                <input type="hidden" name="cover_id" value="<?php echo $car->cover?>">
+                                <input name="file" id="exampleFile" type="file" class="form-control-file">
+                               
                             </div>
 
                             <div class="col-md-6">
