@@ -173,6 +173,7 @@ require_once('component/2AINewsC2Component.php');
 require_once('component/innovComponent.php');
 require_once('component/carnetComponent.php');
 require_once('component/guideComponent.php');
+require_once('component/portailInventeurComponent.php');
 
 
 
