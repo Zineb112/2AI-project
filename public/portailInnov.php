@@ -55,46 +55,7 @@
         International, les événement passés et à venir.</p>
     </div>
     <div class="innovationN__wrapper">
-        <div class="Inews__singleInnov" data-aos="flip-up" data-aos-duration="1500">
-            <div class="Inews__imageInnov">
-                <img src="images/Inews1.png" alt="">
-                <a href=""><i class="fas fa-play"></i></a>
-            </div>
-            <div class="Inews__contentInnov">
-                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
-                <a href="" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
-            </div>
-        </div>
-        <div class="Inews__singleInnov" data-aos="flip-down" data-aos-duration="1500">
-            <div class="Inews__imageInnov">
-                <img src="images/Inews2.png" alt="">
-                <a href=""><i class="fas fa-play"></i></a>
-            </div>
-            <div class="Inews__contentInnov">
-                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
-                <a href="" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
-            </div>
-        </div>
-        <div class="Inews__singleInnov InnovM" data-aos="flip-up" data-aos-duration="1500">
-            <div class="Inews__imageInnov">
-                <img src="images/Inews3.png" alt="">
-                <a href=""><i class="fas fa-play"></i></a>
-            </div>
-            <div class="Inews__contentInnov">
-                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
-                <a href="" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
-            </div>
-        </div>
-        <div class="Inews__singleInnov InnovM" data-aos="flip-down" data-aos-duration="1500">
-            <div class="Inews__imageInnov">
-                <img src="images/Inews4.png" alt="">
-                <a href=""><i class="fas fa-play"></i></a>
-            </div>
-            <div class="Inews__contentInnov">
-                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
-                <a href="" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
-            </div>
-        </div>
+        <?php display_last_innovNews() ?>
         <a href="" class="InewsBtnA"><button class="InewsBtn">voir tout</button></a>
     </div>
 </section>
