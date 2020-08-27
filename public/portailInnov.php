@@ -131,17 +131,7 @@
                     <a href="" class="aiNews__more">voir tout</a>
             </div>
             <div class="aiNews__right" data-aos="flip-up" data-aos-duration="1000">
-                <div class="aiNews__block">
-                    <div class="aiNews__img">
-                    <img src="images/person6.png" alt="">
-                    <a href=""><i class="fas fa-play"></i></a>
-                    </div>
-                    <div class="aiNews__infos">
-                    <h3 class="aiNews__name">Ruth Patel</h3>
-                    <h3 class="aiNews__role">Expert en communication</h3>
-                    <h3 class="aiNews__titlee">Devenir expert en communication d’influence</h3>
-                    </div>
-                </div>
+                <?php display_last_2AINewsC2() ?>
             </div>
             <a href="" class="aiNews__moreM">voir tout</a>
     </div>
