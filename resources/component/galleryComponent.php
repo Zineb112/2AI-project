@@ -14,7 +14,7 @@ function display_gallery(){
             <div class="content-box">
                 <div class="inner">
                     <div class="title">{$gallery->title}</div>
-                    <h3><a href="#">{$gallery->category}</a></h3>
+                    <h3><a href="{$gallery->link}">{$gallery->category}</a></h3>
                 </div>
             </div>
         </div>
