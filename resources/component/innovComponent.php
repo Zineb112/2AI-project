@@ -4,7 +4,7 @@
 function display_innovNews(){
     global $pdo;
     try{
-    $sql ="SELECT i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id";
+    $sql ="SELECT i.id, i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $innovNews){
         echo <<<innov
@@ -32,7 +32,7 @@ innov;
 function display_last_innovNews(){
     global $pdo;
     try{
-    $sql ="SELECT i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.timestamp DESC LIMIT 4";
+    $sql ="SELECT i.id, i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC LIMIT 4";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $innovNews){
         echo <<<innov
@@ -91,7 +91,7 @@ function display_innov_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id "; 
+        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC"; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $innov){
         echo <<<innov
