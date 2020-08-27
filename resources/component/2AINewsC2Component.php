@@ -92,7 +92,7 @@ function display_2aiNews_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT a.*, m.file_name FROM ai_news a join media m on a.cover = m.id "; 
+        $sql = "SELECT a.*, m.file_name FROM ai_news a join media m on a.cover = m.id   ORDER BY a.id DESC"; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $ai_news){
         echo <<<ainews
