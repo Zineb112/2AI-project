@@ -2,7 +2,7 @@
 function display_2AINewsC2(){
     global $pdo;
     try{
-    $sql ="SELECT a.full_name, a.link, a.cover,a.role, a.title,  m.file_location FROM ai_news a join media m on a.cover = m.id";
+    $sql ="SELECT a.id, a.full_name, a.link, a.cover,a.role, a.title,  m.file_location FROM ai_news a join media m on a.cover = m.id  ORDER BY a.id DESC " ;
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $ai_news){
         echo <<<ai_news
@@ -17,6 +17,35 @@ function display_2AINewsC2(){
                 <h3 class="AinewsP__episode">$ai_news->title</h3>
             </div>
         </div>
+
+ai_news;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
+
+// function for displaying the last 1 2AI News into the homeC2
+function display_last_2AINewsC2(){
+    global $pdo;
+    try{
+    $sql ="SELECT a.id, a.full_name, a.link, a.cover,a.role, a.title,  m.file_name FROM ai_news a join media m on a.cover = m.id  ORDER BY a.id DESC LIMIT 1 " ;
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $ai_news){
+        echo <<<ai_news
+        <div class="aiNews__block">
+            <div class="aiNews__img">
+            <img src="uploads/{$ai_news->file_name}" alt="{$ai_news->full_name}">
+            <a href="{$ai_news->link}"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="aiNews__infos">
+            <h3 class="aiNews__name">{$ai_news->full_name}</h3>
+            <h3 class="aiNews__role">{$ai_news->role}</h3>
+            <h3 class="aiNews__titlee">{$ai_news->title}</h3>
+            </div>
+        </div>
+      
 
 ai_news;
     }
@@ -63,7 +92,7 @@ function display_2aiNews_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT a.*, m.file_name FROM ai_news a join media m on a.cover = m.id "; 
+        $sql = "SELECT a.*, m.file_name FROM ai_news a join media m on a.cover = m.id   ORDER BY a.id DESC"; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $ai_news){
         echo <<<ainews
