@@ -37,7 +37,7 @@ function display_last_2AINewsC2(){
         <div class="aiNews__block">
             <div class="aiNews__img">
             <img src="uploads/{$ai_news->file_name}" alt="{$ai_news->full_name}">
-            <a href=""><i class="fas fa-play"></i></a>
+            <a href="{$ai_news->link}"><i class="fas fa-play"></i></a>
             </div>
             <div class="aiNews__infos">
             <h3 class="aiNews__name">{$ai_news->full_name}</h3>
