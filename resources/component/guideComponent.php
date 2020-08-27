@@ -3,7 +3,7 @@
 function display_guide(){
     global $pdo;
     try{
-    $sql ="SELECT g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id";
+    $sql ="SELECT g.id, g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id ORDER BY g.id DESC";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $guide){
         echo <<<guide
@@ -33,7 +33,7 @@ guide;
 function display_last_guide(){
     global $pdo;
     try{
-    $sql ="SELECT g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id ORDER BY g.timestamp DESC LIMIT 3";
+    $sql ="SELECT g.id, g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id ORDER BY g.id DESC LIMIT 3";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $innovNews){
         echo <<<innov
@@ -95,7 +95,7 @@ function display_guide_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT g.*, m.file_name FROM guide g join media m on g.cover = m.id "; 
+        $sql = "SELECT g.*, m.file_name FROM guide g join media m on g.cover = m.id ORDER BY g.id DESC "; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $guide){
         echo <<<guide
