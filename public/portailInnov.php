@@ -178,33 +178,7 @@
                 vers le monde de l’entreprenariat.
         </p>
         <div class="guideI__wrapper">
-            <div class="guideI__perso" data-aos="flip-up" data-aos-duration="1000">
-                <div class="guideI__perso--img">
-                <img src="images/person5.png" alt="">
-                <a href=""><i class="fas fa-play"></i></a>
-                </div>  
-                <h3 class="guideI__perso--name">Kyle Watkins</h3>
-                <h3 class="guideI__perso--role">Co-fondateur samsung</h3>
-                <h3 class="guideI__perso--title">vers le monde de l’entreprenariat</h3>
-            </div>
-            <div class="guideI__perso" data-aos="flip-left" data-aos-duration="1000">
-                    <div class="guideI__perso--img">
-                    <img src="images/person6.png" alt="">
-                    <a href=""><i class="fas fa-play"></i></a>
-                    </div>  
-                    <h3 class="guideI__perso--name">Kyle Watkins</h3>
-                    <h3 class="guideI__perso--role">Co-fondateur samsung</h3>
-                    <h3 class="guideI__perso--title">vers le monde de l’entreprenariat</h3>
-            </div>
-            <div class="guideI__perso" data-aos="flip-down" data-aos-duration="1000">
-                    <div class="guideI__perso--img">
-                    <img src="images/person1.png" alt="">
-                    <a href=""><i class="fas fa-play"></i></a>
-                    </div>  
-                    <h3 class="guideI__perso--name">Kyle Watkins</h3>
-                    <h3 class="guideI__perso--role">Co-fondateur samsung</h3>
-                    <h3 class="guideI__perso--title">vers le monde de l’entreprenariat</h3>
-            </div>
+            <?php display_last_guide() ?>
         </div>
         <a href="" class="guideI__more">voir tout</a>
 </section>

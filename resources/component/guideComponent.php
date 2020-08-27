@@ -28,6 +28,33 @@ guide;
 }
 
 
+// function for displaying the last 3 guide into the homeC2
+
+function display_last_guide(){
+    global $pdo;
+    try{
+    $sql ="SELECT g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id ORDER BY g.timestamp DESC LIMIT 3";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $innovNews){
+        echo <<<innov
+
+        <div class="guideI__perso" data-aos="flip-up" data-aos-duration="1000">
+        <div class="guideI__perso--img">
+        <img src="uploads/{$innovNews->file_location}" alt="{$innovNews->title}">
+        <a href="{$innovNews->link}"><i class="fas fa-play"></i></a>
+        </div>  
+        <h3 class="guideI__perso--name">{$innovNews->full_name}</h3>
+        <h3 class="guideI__perso--role">{$innovNews->role}</h3>
+        <h3 class="guideI__perso--title">{$innovNews->title}</h3>
+    </div>
+innov;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
+
 // submit a guide to database admin area
 function submit_guide(){
     global $pdo;
