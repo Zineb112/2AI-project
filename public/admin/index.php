@@ -40,7 +40,8 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_gallery'])){
             include(TEMPLATE_BACK . DS . "gallery/edit_gallery.php");
         }
-
+    
+        
         // Innovation news requests
         if(isset($_GET['create_innov-news'])){
             include(TEMPLATE_BACK . DS . "innovationNews/create_innov-news.php");
@@ -50,6 +51,17 @@ include(TEMPLATE_BACK . DS . "head.php");
         }
         if(isset($_GET['edit_innov-news'])){
             include(TEMPLATE_BACK . DS . "innovationNews/edit_innov-news.php");
+        }
+
+        //Inventor's guide requets
+        if(isset($_GET['create_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/create_guide.php");
+        }
+        if(isset($_GET['manage_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/manage_guide.php");
+        }
+        if(isset($_GET['edit_guide'])){
+            include(TEMPLATE_BACK . DS . "guide/edit_guide.php");
         }
 
         // Team requests
@@ -82,13 +94,13 @@ include(TEMPLATE_BACK . DS . "head.php");
         include(TEMPLATE_BACK . DS . "testimonials/manage_testimonials.php");
         }
         if(isset($_GET['edit_testimonials'])){
-        include(TEMPLATE_BACK . DS . "testimonialss/edit_testimonials.php");
+        include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
 
 
         // Users requests
         if(isset($_GET['change_pass'])){
-            include(TEMPLATE_BACK . DS . "change_password.php");
+            include(TEMPLATE_BACK . DS . "users/change_password.php");
         }
         if(isset($_GET['add_user'])){
             $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "users/add_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
@@ -99,6 +111,20 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_user'])){
             $_SESSION['access'] == $access_admin ?  include(TEMPLATE_BACK . DS . "users/edit_user.php"):  include(TEMPLATE_BACK . DS . "notAuth.php") ;
         }
+
+
+        // Carnet requests
+        if(isset($_GET['create_carnet'])){
+            include(TEMPLATE_BACK . DS . "carnet/create_carnet.php");
+        }
+        if(isset($_GET['manage_carnet'])){
+            include(TEMPLATE_BACK . DS . "carnet/manage_carnet.php");
+        }
+        if(isset($_GET['edit_carnet'])){
+            include(TEMPLATE_BACK . DS . "carnet/edit_carnet.php");
+        }
+
+
 
 
 

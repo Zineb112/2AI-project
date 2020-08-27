@@ -1,4 +1,4 @@
-<?php update_partner()?>
+<?php update_gallery()?>
 <div class="app-main__inner">
     <div class="app-page-title">
         <div class="page-title-wrapper">
@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update partner
+                    Update gallery's item
                     <div class="page-title-subheading">
-                        By submitting this form you will update partner information
+                        By submitting this form you will update gallery item information
                     </div>
                 </div>
             </div>
@@ -19,10 +19,10 @@
     try {
         //code...
     
-        $edit_partner_sql = "SELECT * FROM partners WHERE id = ?";
-        $partner_edit = $pdo->prepare($edit_partner_sql);
-        $partner_edit->execute([$_GET['edit_partner']]);
-        $partner_result = $partner_edit->fetchAll();
+        $edit_gallery_sql = "SELECT * FROM gallery WHERE id = ?";
+        $gallery_edit = $pdo->prepare($edit_gallery_sql);
+        $gallery_edit->execute([$_GET['edit_gallery']]);
+        $gallery_result = $gallery_edit->fetchAll();
     ?>
     <div class="row justify-content-xl-center">
         <div class="col-md-8">
@@ -30,22 +30,44 @@
                 <div class="card-body">
                     <h5 class="card-title">General Info</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
-                    <?php if($partner_result): ?>
-                        <?php foreach($partner_result as $pr): ?>
+                    <?php if($gallery_result): ?>
+                        <?php foreach($gallery_result as $gallery): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Partner name</label>
-                                <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner name" name="partner_name" value="<?php echo $pr->partner_name ?>" required="" />
+                                <label for="validationCustom01">title</label>
+                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $gallery->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Website link</label>
-                                <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner website link" name="link" value="<?php echo $pr->link ?>" />
+                                <label for="validationCustom01">category</label>
+                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" value="<?php echo $gallery->category ?>" required="" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                         
+
+                            <div class="col-md-4 mb-3"> 
+                                <label for="validationCustom01">link</label>
+                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>"  />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Type</label>
+                                <select name="type" id="validationCustom01">
+                                <option value="images">Image</option>
+                                <option value="video">Video</option>
+                                </select>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -55,8 +77,8 @@
                                 <label for="exampleFile" class="">File</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
-                                <input type="hidden" name="cover_id" value="<?php echo $pr->partner_logo?>">
-                                <input name="partner_logo" id="exampleFile" type="file" class="form-control-file">
+                                <input type="hidden" name="cover_id" value="<?php echo $gallery->cover?>">
+                                <input name="avatar" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
                             </div>
                         </div>

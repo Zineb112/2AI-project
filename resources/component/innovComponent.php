@@ -4,7 +4,7 @@
 function display_innovNews(){
     global $pdo;
     try{
-    $sql ="SELECT i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id";
+    $sql ="SELECT i.id, i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $innovNews){
         echo <<<innov
@@ -27,7 +27,32 @@ innov;
     }
 }
 
+// function for displaying the last 4 innvo news into the homeC2
 
+function display_last_innovNews(){
+    global $pdo;
+    try{
+    $sql ="SELECT i.id, i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC LIMIT 4";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $innovNews){
+        echo <<<innov
+        <div class="Inews__singleInnov" data-aos="flip-down" data-aos-duration="1500">
+        <div class="Inews__imageInnov">
+            <img src="uploads/{$innovNews->file_name}" alt="{$innovNews->title}">
+            <a href="{$innovNews->link}"><i class="fas fa-play"></i></a>
+        </div>
+        <div class="Inews__contentInnov">
+            <h3><a href="{$innovNews->link}">{$innovNews->title}</a></h3>
+            <a href="{$innovNews->link}" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
+        </div>
+    </div>
+innov;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
 
 // submit an innovation news to database admin area
 function submit_innov(){
@@ -66,7 +91,7 @@ function display_innov_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id "; 
+        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC"; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $innov){
         echo <<<innov
@@ -77,7 +102,7 @@ function display_innov_admin()
         <td class=""> {$innov->link} </td>
 
         <td class="text-center">
-            <a href="index.php?edit_innov={$innov->id}">
+            <a href="index.php?edit_innov-news={$innov->id}">
             <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
@@ -135,6 +160,35 @@ function delete_innovNews()
 }
 
 
+
+// Update an innovation news information
+
+function update_innovNews()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `innov_news` SET `title` = ?,`link` = ?, `cover` = ? WHERE `innov_news`.`id` = ?";
+            $update_team = $pdo->prepare($sql);
+            $update_team->execute([$_POST['title'], $_POST['link'], $cover_id , $_POST['innov_id']]);
+            if ($update_team) {
+                set_message('success', 'Innovation news updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 
 ?>
