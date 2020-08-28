@@ -73,50 +73,20 @@
     </div>
 </section>
 
+
+
 <section class="portailN">
         <h3 class="portailN__title">Portail De L'inventeur</h3>
         <img class="portailN__line" src="images/lineC2G.png" alt="">
         <p class="portailN__subtitle">Un reportage en ligne des porteurs de projets Inventeurs et des Innovateurs (Success Stories).</p>
         <div class="portailN__wrapper">
-            <div class="portailN__inv" data-aos="flip-left" data-aos-duration="1000">
-                <div class="portailN__inv--top">
-                    <img src="images/person5.png" alt="">
-                    <a href=""><i class="fas fa-play"></i></a>
-                </div>
-                <div class="portailN__inv--bottom">
-                    <h3 class="portailN__name">Bill Gates</h3>
-                    <h3 class="portailN__role">PDG Microsoft</h3>
-                    <h3 class="portailN__titleI">Règles de succès</h3>
-                    <a href="" class="portailN__play">Lire la vidéo</a>
-                </div>
-            </div>
-            <div class="portailN__inv" data-aos="flip-down" data-aos-duration="1000" >
-                    <div class="portailN__inv--top">
-                        <img src="images/person1.png" alt="">
-                        <a href=""><i class="fas fa-play"></i></a>
-                    </div>
-                    <div class="portailN__inv--bottom">
-                        <h3 class="portailN__name">Bill Gates</h3>
-                        <h3 class="portailN__role">PDG Microsoft</h3>
-                        <h3 class="portailN__titleI">Règles de succès</h3>
-                        <a href="" class="portailN__play">Lire la vidéo</a>
-            </div>
-            </div>
-            <div class="portailN__inv" data-aos="flip-right" data-aos-duration="1000" >
-                    <div class="portailN__inv--top">
-                        <img src="images/person3.png" alt="">
-                        <a href=""><i class="fas fa-play"></i></a>
-                    </div>
-                    <div class="portailN__inv--bottom">
-                        <h3 class="portailN__name">Bill Gates</h3>
-                        <h3 class="portailN__role">PDG Microsoft</h3>
-                        <h3 class="portailN__titleI">Règles de succès</h3>
-                        <a href="" class="portailN__play">Lire la vidéo</a>
-                    </div>
-            </div>
+        <?php display_portail_home()?>
         </div>
         <a href="" class="portailN__more">Voir tout</a>
 </section>
+
+
+
 
 <section class="aiNews">
     <div class="aiNews__wrapper">
