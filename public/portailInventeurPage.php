@@ -11,7 +11,13 @@
     <div class="portailIP__wrapper">
     <?php display_portail() ?>
     </div>
-
+    <div class="portailIP__pagination">
+        <a href="#"><i class="fa fa-angle-left"></i></a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="fa fa-angle-right"></i></a>
+</div>
 </section>
 </header>
 
