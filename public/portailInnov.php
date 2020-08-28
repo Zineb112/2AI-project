@@ -68,7 +68,7 @@
         <p class="carnetN__subtitle">Carnet de l’Inventeur est un magazine mensuel, qui vise à promouvoir les résultats des recherches des inventeurs et des innovateurs, fort d’un contenu riche en informations techniques et stratégiques, et permettra aux entreprises et aux bailleurs de fonds de saisir d’intéressantes opportunités d’investissements à travers la valorisation des inventions qui y sont diffusées.</p>
         <a href="" class="carnetN__button">Autre éditions</a>
     </div>
-    <?php display_carnet_portailInnov() ?>
+    <?php display_last_carnet() ?>
     <a href="" class="carnetN__buttonM">Autre éditions</a>
     </div>
 </section>

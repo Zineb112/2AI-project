@@ -4,7 +4,7 @@
 function display_carnet(){
     global $pdo;
     try{
-    $sql ="SELECT c.title, c.date, c.file, c.cover, m.file_location FROM carnet c join media m on c.cover = m.id";
+    $sql ="SELECT c.id, c.title, c.date, c.file, c.cover, m.file_location FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC ";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $carnet){
         echo <<<carnet
@@ -13,7 +13,7 @@ function display_carnet(){
             <img src="uploads/{$carnet->file_location}" alt="">
             <div class="carnetN__infos">
                 <h3 class="carnetN__infos--date">{$carnet->date}</h3>
-                <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title} </h5>
+                <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title}</h5>
                 <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
             </div>
         </div>
@@ -29,19 +29,21 @@ carnet;
     }
 }
 
-function display_carnet_portailInnov(){
+
+// function for displaying the last 1 Carnet de l’inventeur into the homeC2
+function display_last_carnet(){
     global $pdo;
     try{
-    $sql ="SELECT c.title, c.date, c.file, c.cover, m.file_location FROM carnet c join media m on c.cover = m.id";
+    $sql ="SELECT c.id, c.title, c.date, c.file, c.cover, m.file_location FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC LIMIT 1 ";
     $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $carnet_portailInnov){
-        echo <<<carnet_portailInnov
+    foreach ($stmt as $carnet){
+        echo <<<carnet
         <div class="carnetN__right" data-aos="flip-down" data-aos-duration="1000">
         <div class="carnetN__carnet">
-            <img src="uploads/{$carnet_portailInnov->file_location}" alt="">
+            <img src="uploads/{$carnet->file_location}" alt="">
             <div class="carnetN__infos">
-                <h3 class="carnetN__infos--date">{$carnet_portailInnov->date}</h3>
-                <h5 class="carnetN__infos--title"> <span>Titre: </span>{$carnet_portailInnov->title} </h5>
+                <h3 class="carnetN__infos--date">{$carnet->date}</h3>
+                <h5 class="carnetN__infos--title"> <span>Titre: </span>{$carnet->title}</h5>
                 <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
             </div>
         </div>
@@ -49,7 +51,7 @@ function display_carnet_portailInnov(){
 
 
 
-carnet_portailInnov;
+carnet;
     }
     } catch (PDOException $e) {
     set_message('error','query failed');
@@ -96,7 +98,7 @@ function display_carnet_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT c.*, m.file_name FROM carnet c join media m on c.cover = m.id "; 
+        $sql = "SELECT c.*, m.file_name FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC "; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $carnet){
         echo <<<carnet
