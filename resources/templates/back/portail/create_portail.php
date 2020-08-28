@@ -1,6 +1,6 @@
 
 <?php 
-submit__portail();
+submit_portail();
 
 ?>
 <div class="app-main__inner">
