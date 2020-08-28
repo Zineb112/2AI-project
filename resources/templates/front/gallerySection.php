@@ -10,11 +10,7 @@
             "991": {"items": 2, "margin": 0},
             "1199": {"items": 5, "margin": 32}
         } }'>
-        <div><img src="assets/images/gal1.png" style="width: 240px; height:424px;" alt=""></div>
-        <div><img src="assets/images/gal2.png" style="width: 240px; height:424px;" alt=""></div>
-        <div><img src="assets/images/gal3.png" style="width: 240px; height:424px;" alt=""></div>
-        <div><img src="assets/images/gal4.png" style="width: 240px; height:424px;" alt=""></div>
-        <div><img src="assets/images/gal5.png" style="width: 240px; height:424px;" alt=""></div>
+        <?php display_last_gallery() ?>
     </div>
     </div>
 </section>

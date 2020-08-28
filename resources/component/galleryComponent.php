@@ -14,13 +14,30 @@ function display_gallery(){
             <div class="content-box">
                 <div class="inner">
                     <div class="title">{$gallery->title}</div>
-                    <h3><a href="{$gallery->link}">{$gallery->category}</a></h3>
+                    <h3><a href="{$gallery->link}" target="_blank">{$gallery->category}</a></h3>
                 </div>
             </div>
         </div>
     </div>
       
 
+gallery;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' .$e->getMessage();
+    }
+}
+
+function display_last_gallery(){
+    global $pdo;
+    try{
+    $sql ="SELECT g.id, g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id ORDER BY g.id DESC LIMIT 7";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $gallery){
+
+        echo <<<gallery
+        <div><a href="{$gallery->link}" target="_blank"><img src="iuploads/{$gallery->file_location}" style="width: 240px; height:424px;" alt="{$gallery->title}"></a></div>
 gallery;
     }
     } catch (PDOException $e) {
