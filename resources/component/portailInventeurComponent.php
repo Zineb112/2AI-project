@@ -77,7 +77,7 @@ function submit_portail(){
         upload_image('cover', $cover_id);
         $sql = "INSERT INTO `portail` (`id`, `full_name`, `link`, `cover`,  `role`, `title`) VALUES (NULL, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        $result = $stmt->execute([$name, $role,  $link, $title, $cover_id, ]);
+        $result = $stmt->execute([$name, $link, $cover_id, $role, $title ]);
         if($result){
             set_message('success','portail created successfully');
             

@@ -12,9 +12,9 @@ function display_carnet(){
         <div class="carnetN__carnet margincarn" data-aos="flip-down" data-aos-duration="1000">
             <img src="uploads/{$carnet->file_location}" alt="">
             <div class="carnetN__infos">
-                <h3 class="carnetN__infos--date">{$carnet->date}</h3>
+                <h3 class="carnetN__infos--date">Magazine mois {$carnet->date}</h3>
                 <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title}</h5>
-                <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
+                <a href="{$carnet->file} download" class="carnetN__download"> Télécharger </a>
             </div>
         </div>
         </div>
@@ -42,7 +42,7 @@ function display_last_carnet(){
         <div class="carnetN__carnet">
             <img src="uploads/{$carnet->file_location}" alt="">
             <div class="carnetN__infos">
-                <h3 class="carnetN__infos--date">{$carnet->date}</h3>
+                <h3 class="carnetN__infos--date">Magazine mois {$carnet->date}</h3>
                 <h5 class="carnetN__infos--title"> <span>Titre: </span>{$carnet->title}</h5>
                 <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
             </div>
