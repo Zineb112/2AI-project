@@ -109,14 +109,13 @@ function display_portail_admin()
         <td class=""><img src="../uploads/thumbnails/{$portail->file_name}" class="br-a" alt="portail thumbnail"></td>
         <td class=""> {$portail->full_name} </td>
         <td class=""> {$portail->link} </td>
-
         <td class="text-center">
             <a href="index.php?edit_portail={$portail->id}">
             <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
             </a>
-            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_partner&delete_partner={$partner->id}" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_portail&delete_portail={$portail->id}" data-toggle="modal" data-target="#exampleModal">
                 <i class="pe-7s-trash" style="font-size: 1rem;"></i>
             </button>
         </td>
