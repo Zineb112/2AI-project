@@ -109,6 +109,8 @@ function display_portail_admin()
         <td class=""><img src="../uploads/thumbnails/{$portail->file_name}" class="br-a" alt="portail thumbnail"></td>
         <td class=""> {$portail->full_name} </td>
         <td class=""> {$portail->link} </td>
+        <td class=""> {$portail->role} </td>
+        <td class=""> {$portail->title} </td>
         <td class="text-center">
             <a href="index.php?edit_portail={$portail->id}">
             <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
@@ -185,7 +187,7 @@ function update_portail()
 
           $sql = "UPDATE `portail` SET `full_name` = ?, `cover` = ?,`link` = ?, `role` = ?, `title`  = ? WHERE `portail`.`id` = ?";
             $update_portail = $pdo->prepare($sql);
-            $update_portail->execute([$_POST['full_name'], $cover_id, ['link'], ['role'], ['title'], $_POST['portail_id']]);
+            $update_portail->execute([$_POST['full_name'], $cover_id, $_POST['link'], $_POST['role'], $_POST['title'], $_POST['portail_id']]);
             if ($update_portail) {
                 set_message('success', 'portail updated successfully');
             } else {
