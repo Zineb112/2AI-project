@@ -14,7 +14,7 @@ function display_gallery(){
             <div class="content-box">
                 <div class="inner">
                     <div class="title">{$gallery->title}</div>
-                    <h3><a href="#">{$gallery->category}</a></h3>
+                    <h3><a href="{$gallery->link}">{$gallery->category}</a></h3>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@ function update_gallery()
           }
             
 
-            $sql = "UPDATE `gallery` SET `title` = ?,`category` = ?, `cover` = ?, `type` = ?, `link` = ? =  WHERE `gallery`.`id` = ?";
+            $sql = "UPDATE `gallery` SET `title` = ?,`category` = ?, `cover` = ?, `type` = ?, `link` = ?   WHERE `gallery`.`id` = ?";
             $update_gallery = $pdo->prepare($sql);
             $update_gallery->execute([$_POST['title'], $_POST['category'], $cover_id ,$_POST['type'], $_POST['link'], $_POST['gallery_id']]);
             if ($update_gallery) {

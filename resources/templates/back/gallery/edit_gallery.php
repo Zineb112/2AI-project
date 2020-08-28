@@ -56,7 +56,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">link</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -64,7 +64,8 @@
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Type</label>
-                                <select name="type" id="validationCustom01">
+                                <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
+                                <select name="type" id="validationCustom01" value="<?php echo $gallery->type?>" required="">
                                 <option value="images">Image</option>
                                 <option value="video">Video</option>
                                 </select>
