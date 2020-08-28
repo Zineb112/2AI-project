@@ -69,15 +69,15 @@ function submit_portail(){
             $name = trim($_POST['full_name']);
             $role = trim($_POST['role']);
             $link = trim($_POST['link']);
-            $gmail = trim($_POST['title']);
-            $file = $_FILES['avatar']['name'];
+            $title = trim($_POST['title']);
+            $file = $_FILES['cover']['name'];
             $cover_id = 1;
 
         //**------  function for handling image upload-------*/
         upload_image('cover', $cover_id);
-        $sql = "INSERT INTO `portail` (`id`, `full_name`, `cover`, `link`, `title`) VALUES (NULL, ?, ?, ?, ?)";
+        $sql = "INSERT INTO `portail` (`id`, `full_name`, `link`, `cover`,  `role`, `title`) VALUES (NULL, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        $result = $stmt->execute([$name, $link, $cover_id, $role, ]);
+        $result = $stmt->execute([$name, $role,  $link, $title, $cover_id, ]);
         if($result){
             set_message('success','portail created successfully');
             
@@ -100,7 +100,7 @@ function display_portail_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT g.*, m.file_name FROM portail p join media m on p.cover = m.id "; 
+        $sql = "SELECT p.*, m.file_name FROM portail p join media m on p.cover = m.id "; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $portail){
         echo <<<portail
@@ -183,9 +183,9 @@ function update_portail()
           }
             
 
-          $sql = "UPDATE `portail` SET `full_name` = ?,`link` = ?, `cover` = ?, `role` = ?, `title`  = ? WHERE `portail`.`id` = ?";
+          $sql = "UPDATE `portail` SET `full_name` = ?, `cover` = ?,`link` = ?, `role` = ?, `title`  = ? WHERE `portail`.`id` = ?";
             $update_portail = $pdo->prepare($sql);
-            $update_portail->execute([$_POST['full_name'], $cover_id, $_POST['link'], $_POST['portail_id']]);
+            $update_portail->execute([$_POST['full_name'], $cover_id, ['link'], ['role'], ['title'], $_POST['portail_id']]);
             if ($update_portail) {
                 set_message('success', 'portail updated successfully');
             } else {

@@ -74,7 +74,7 @@ submit_portail();
                                 <label for="exampleFile" class="">File</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-                                <input name="avatar" id="exampleFile" type="file" class="form-control-file">
+                                <input name="cover" id="exampleFile" type="file" class="form-control-file">
                                 <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
                             </div>
                         </div>
