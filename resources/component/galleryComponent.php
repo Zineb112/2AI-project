@@ -3,7 +3,7 @@
 function display_gallery(){
     global $pdo;
     try{
-    $sql ="SELECT g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id";
+    $sql ="SELECT g.id, g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id  ORDER BY g.id DESC";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $gallery){
 
