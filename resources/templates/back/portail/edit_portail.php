@@ -31,39 +31,39 @@
                     <h5 class="card-title">General Info</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                     <?php if($portail_result): ?>
-                        <?php foreach($portail_result as $pr): ?>
+                        <?php foreach($portail_result as $portail): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">full name</label>
-                                <input type="hidden" name="portail_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $pr->full_name ?>" required="" />
+                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $portail->full_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Website link</label>
-                                <input type="hidden" name="portail_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="portail video link" name="link" value="<?php echo $pr->link ?>" />
+                                <label for="validationCustom01">link</label>
+                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="portail video link" name="link" value="<?php echo $portail->link ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Website link</label>
-                                <input type="hidden" name="portail_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $pr->role ?>" />
+                                <label for="validationCustom01">Role</label>
+                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $portail->role ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Website link</label>
-                                <input type="hidden" name="portail_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="portail title" name="title" value="<?php echo $pr->title ?>" />
+                                <label for="validationCustom01">title</label>
+                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="portail title" name="title" value="<?php echo $portail->title ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -75,7 +75,7 @@
                                 <label for="exampleFile" class="">File</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
-                                <input type="hidden" name="cover_id" value="<?php echo $pr->cover?>">
+                                <input type="hidden" name="cover_id" value="<?php echo $portail->cover?>">
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
                             </div>
