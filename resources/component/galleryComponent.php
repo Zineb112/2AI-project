@@ -33,7 +33,7 @@ gallery;
 // submit a gallery to database admin area
 function submit_gallery(){
     global $pdo;
-    if(isset($_POST['submit'])){
+    if(isset($_POST['display'])){
         try{
         $title = trim($_POST['title']);
         $category = trim($_POST['category']);
@@ -76,6 +76,8 @@ function display_gallery_admin()
         <td class="text-center text-muted">{$gallery->id}</td>
         <td class=""><img src="../uploads/thumbnails/{$gallery->file_name}" class="br-a" alt="gallery thumbnail"></td>
         <td class=""> {$gallery->title} </td>
+        <td class=""> {$gallery->category} </td>
+        <td class=""> {$gallery->type} </td>
 
         <td class="text-center">
             <a href="index.php?edit_gallery={$gallery->id}">
