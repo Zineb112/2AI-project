@@ -96,6 +96,18 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['edit_testimonials'])){
         include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
+        
+        
+        // portail requests
+        if(isset($_GET['create_portail'])){
+        include(TEMPLATE_BACK . DS . "portail/create_portail.php");
+        }
+        if(isset($_GET['manage_testimonials'])){
+        include(TEMPLATE_BACK . DS . "portails/manage_portail.php");
+        }
+        if(isset($_GET['edit_testimonials'])){
+        include(TEMPLATE_BACK . DS . "portail/edit_portail.php");
+        }
 
 
         // Users requests
