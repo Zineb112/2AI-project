@@ -3,7 +3,7 @@
 function display_gallery(){
     global $pdo;
     try{
-    $sql ="SELECT g.id, g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id  ORDER BY g.id DESC";
+    $sql ="SELECT g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $gallery){
 
@@ -14,7 +14,7 @@ function display_gallery(){
             <div class="content-box">
                 <div class="inner">
                     <div class="title">{$gallery->title}</div>
-                    <h3><a href="{$gallery->link}">{$gallery->category}</a></h3>
+                    <h3><a href="#">{$gallery->category}</a></h3>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ gallery;
 // submit a gallery to database admin area
 function submit_gallery(){
     global $pdo;
-    if(isset($_POST['display'])){
+    if(isset($_POST['submit'])){
         try{
         $title = trim($_POST['title']);
         $category = trim($_POST['category']);
@@ -76,8 +76,6 @@ function display_gallery_admin()
         <td class="text-center text-muted">{$gallery->id}</td>
         <td class=""><img src="../uploads/thumbnails/{$gallery->file_name}" class="br-a" alt="gallery thumbnail"></td>
         <td class=""> {$gallery->title} </td>
-        <td class=""> {$gallery->category} </td>
-        <td class=""> {$gallery->type} </td>
 
         <td class="text-center">
             <a href="index.php?edit_gallery={$gallery->id}">
