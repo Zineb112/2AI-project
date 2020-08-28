@@ -102,10 +102,10 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['create_portail'])){
         include(TEMPLATE_BACK . DS . "portail/create_portail.php");
         }
-        if(isset($_GET['manage_testimonials'])){
+        if(isset($_GET['manage_portailss'])){
         include(TEMPLATE_BACK . DS . "portails/manage_portail.php");
         }
-        if(isset($_GET['edit_testimonials'])){
+        if(isset($_GET['edit_portails'])){
         include(TEMPLATE_BACK . DS . "portail/edit_portail.php");
         }
 
