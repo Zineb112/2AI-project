@@ -25,9 +25,9 @@
                                 <th class="text-center">#</th>
                                 <th>portail thumbnail</th>
                                 <th>full Name</th>
-                                <th>portail Link</th>
-                                <th>portail role</th>
-                                <th>portail title</th>
+                                <th>Link</th>
+                                <th>role</th>
+                                <th>title</th>
                             </tr>
                         </thead>
                         <tbody>
