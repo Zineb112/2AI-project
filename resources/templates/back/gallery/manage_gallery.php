@@ -23,7 +23,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th>gallery item thumbnail</th>
+                                <th>thumbnail</th>
                                 <th>title</th>
                                 <th>category</th>
                                 <th>type</th>
