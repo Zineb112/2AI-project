@@ -1,39 +1,74 @@
-
-@media (min-width: 1200px){
-.contactNous{
-    background-image: url(../images/bg_contact.png);
-    background-size: cover;
-    height: 600px;
-    background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 120px;
-    &__container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: max-content;
-        margin: auto;
-        padding: 16rem 0rem;
-        width: 88%;
-    }
-    &__titles{
-        grid-area: 1/1;
-        h3{
-            font-family: $fontS;
-            font-size: 56px;
-            color: white;
-            
+@media (min-width: 1025px) and (max-width: 1440px){
+    .contactNous{
+        background-image: url(../images/bg_contact.png);
+        background-size: cover;
+        height: 600px;
+        background-position: center;
+        background-attachment: fixed;
+        margin-bottom: 88px;
+        &__container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            margin: auto;
+            padding: 8rem 0rem;
+            width: 88%;
         }
-        h4{
-            font-size: 56px;
-            color: white;
-            font-weight: 900;
+        &__titles{
+            grid-area: 1/1;
+            h3{
+                font-family: $fontS;
+                font-size: 56px;
+                color: white;
+                
+            }
+            h4{
+                font-size: 56px;
+                color: white;
+                font-weight: 900;
+            }
         }
-    }
-    &__btns{
-        grid-area: 1/2;
-        margin: auto;
+        &__btns{
+            grid-area: 1/2;
+            margin: auto;
+        }
     }
 }
+@media (min-width: 1441px){
+        .contactNous{
+            background-image: url(../images/bg_contact.png);
+            background-size: cover;
+            height: 600px;
+            background-position: center;
+            background-attachment: fixed;
+            margin-bottom: 120px;
+            &__container{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: max-content;
+                margin: auto;
+                padding: 16rem 0rem;
+                width: 88%;
+            }
+            &__titles{
+                grid-area: 1/1;
+                h3{
+                    font-family: $fontS;
+                    font-size: 56px;
+                    color: white;
+                    
+                }
+                h4{
+                    font-size: 56px;
+                    color: white;
+                    font-weight: 900;
+                }
+            }
+            &__btns{
+                grid-area: 1/2;
+                margin: auto;
+            }
+        }
 }
 
 @media (min-width: 320px) and (max-width: 480px){
