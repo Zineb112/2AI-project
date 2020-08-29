@@ -8,7 +8,8 @@
             "0": {"items": 1, "margin": 0},
             "767": {"items": 1, "margin": 0},
             "991": {"items": 2, "margin": 0},
-            "1199": {"items": 5, "margin": 32}
+            "1025": {"items": 4, "margin": 0},
+            "1441": {"items": 5, "margin": 32}
         } }'>
         <?php display_last_gallery() ?>
     </div>
