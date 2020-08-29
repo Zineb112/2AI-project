@@ -127,7 +127,12 @@
 }
 
 
-
+@media (min-width: 1400px){
+    .hero-header__main{
+        display: grid !important;
+        align-items: normal;
+    }
+}
 
 @media (min-width: 1200px){
 .bnn{
