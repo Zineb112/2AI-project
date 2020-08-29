@@ -1,4 +1,105 @@
-@media (min-width: 1200px){
+@media (min-width: 1025px) and (max-width: 1440px){
+    .block-title__line {
+        background-color: $secondary;
+        display: flex;
+        width: 64px;
+        height: 6px;
+        border-radius: 3px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .block-title__line::before {
+        content: '';
+        width: 8px;
+        height: 6px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        left: 12px;
+        top: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    
+    
+    .actualitesPage {
+        margin-top: 120px;
+        margin-bottom: 80px;
+        &__title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        &__subtitle{
+            text-align: center;
+            font-size: 24px;
+            width: 56%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__bg{
+            position: absolute;
+            margin-top: -6%;
+            margin-left: 14%;
+            width: 6%;
+        }
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows: max-content  max-content;
+        }
+    }
+
+    .post-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+    }
+    
+    .post-pagination a {
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 57px;
+        height: 57px;
+        transition: all .4s ease;
+    }
+    
+    .post-pagination a:hover {
+        background-color: $secondary;
+        color: #fff;
+    }
+    
+    .post-pagination a.active {
+        background-color: $secondary;
+        color: #fff;
+        cursor: auto;
+    }
+    
+    .post-pagination a+a {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 1441px){
     .block-title__line {
         background-color: $secondary;
         display: flex;
@@ -51,7 +152,7 @@
             margin-left: auto;
             margin-right: auto;
             display: grid;
-            grid-template-columns: 33% 34% 33%;
+            grid-template-columns: 33.33% 33.33% 33.33%;
             grid-template-rows: max-content  max-content;
         }
     }
