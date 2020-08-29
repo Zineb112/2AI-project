@@ -3,7 +3,7 @@
 function display_portail(){
     global $pdo;
     try{
-    $sql ="SELECT p.full_name, p.link, p.cover,p.role, p.title, m.file_location FROM portail p join media m on p.cover = m.id";
+    $sql ="SELECT p.id, p.full_name, p.link, p.cover,p.role, p.title, m.file_location FROM portail p join media m on p.cover = m.id  ORDER BY p.id DESC LIMIT 7 ";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $portail){
         echo <<<portail
@@ -31,10 +31,11 @@ portail;
 
 
 
+// function for displaying the last 3 Carnet de l’inventeur into the homeC2
 function display_portail_home(){
     global $pdo;
     try{
-    $sql ="SELECT p.full_name, p.link, p.cover,p.role, p.title, m.file_location FROM portail p join media m on p.cover = m.id";
+    $sql ="SELECT p.id, p.full_name, p.link, p.cover,p.role, p.title, m.file_location FROM portail p join media m on p.cover = m.id  ORDER BY p.id DESC LIMIT 3 ";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $portail){
         echo <<<portail
@@ -100,7 +101,7 @@ function display_portail_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT p.*, m.file_name FROM portail p join media m on p.cover = m.id "; 
+        $sql = "SELECT p.*, m.file_name FROM portail p join media m on p.cover = m.id  ORDER BY p.id DESC"; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $portail){
         echo <<<portail
