@@ -1,9 +1,10 @@
 <section class="objectives">
+    <div class="objectives__wrapper">
         <div class="block-title__line"></div>
         <h3 class="objectives__title">Nos objectifs</h3>
         <div class="objectives__container">
             <div class="one" data-aos="flip-down">
-                <img src="assets/images/one.png" alt="">
+                <img src="images/one.png" alt="">
                 <div class="one__container">
                     <h3 class="objectives__numTitle">Objectif</h3>
                     <p class="objectives__numPara">IbtikarCom vous aide et accompagne à
@@ -12,7 +13,7 @@
                 </div>
             </div>
             <div class="two" data-aos="flip-up">
-                    <img src="assets/images/two.png" alt="">
+                    <img src="images/two.png" alt="">
                     <div class="two__container">
                         <h3 class="objectives__numTitle">Objectif</h3>
                         <p class="objectives__numPara"> L’agence encourage l’innovation sous
@@ -22,7 +23,7 @@
                     </div>
             </div>
             <div class="three" data-aos="flip-down">
-                    <img src="assets/images/three.png" alt="">
+                    <img src="images/three.png" alt="">
                     <div class="three__container">
                         <h3 class="objectives__numTitle">Objectif</h3>
                         <p class="objectives__numPara">Notre objectif est de vous proposer des solutions 
@@ -31,4 +32,5 @@
                     </div>
             </div>
         </div>
+    </div>
 </section>
