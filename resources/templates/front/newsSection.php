@@ -12,50 +12,6 @@
             "1199": {"items": 3, "margin": 0}
         }
     }'>
-    <div class="blog-one__single" data-aos="flip-right" data-aos-duration="2500">
-        <div class="blog-one__image">
-            <img src="assets/images/news1.png" alt="">
-            <a href="news-post.php"><i class="fas fa-plus"></i></a>
-        </div><!-- /.blog-one__image -->
-        <div class="blog-one__content">
-            <div class="blog-one__meta">
-                <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
-                <a href="#"><i class="fas fa-user"></i>Admin</a>
-            </div><!-- /.blog-one__meta -->
-            <h3><a href="news-post.php">Strategy for Norway's Peion Fund Global.</a></h3>
-            <a href="news-post.php" class="thm-btn blog-one__btn"><span>Lire la suite</span></a>
-            <!-- /.thm-btn blog-one__btn -->
-        </div><!-- /.blog-one__content -->
-    </div><!-- /.blog-one__single -->
-    <div class="blog-one__single" data-aos="flip-right" data-aos-duration="2500">
-        <div class="blog-one__image">
-            <img src="assets/images/news2.png" alt="">
-            <a href="news-post.php"><i class="fas fa-plus"></i></a>
-        </div><!-- /.blog-one__image -->
-        <div class="blog-one__content">
-            <div class="blog-one__meta">
-                <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
-                <a href="#"><i class="fas fa-user"></i>Admin</a>
-            </div><!-- /.blog-one__meta -->
-            <h3><a href="news-post.php">Strategy for Norway's Peion Fund Global.</a></h3>
-            <a href="news-post.php" class="thm-btn blog-one__btn"><span>Lire la suite</span></a>
-            <!-- /.thm-btn blog-one__btn -->
-        </div><!-- /.blog-one__content -->
-    </div><!-- /.blog-one__single -->
-    <div class="blog-one__single" data-aos="flip-right" data-aos-duration="2500">
-        <div class="blog-one__image">
-            <img src="assets/images/news3.png" alt="">
-            <a href="news-post.php"><i class="fas fa-plus"></i></a>
-        </div><!-- /.blog-one__image -->
-        <div class="blog-one__content">
-            <div class="blog-one__meta">
-                <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
-                <a href="#"><i class="fas fa-user"></i>Admin</a>
-            </div><!-- /.blog-one__meta -->
-            <h3><a href="news-post.php">Strategy for Norway's Peion Fund Global.</a></h3>
-            <a href="news-post.php" class="thm-btn blog-one__btn"><span>Lire la suite</span></a>
-            <!-- /.thm-btn blog-one__btn -->
-        </div><!-- /.blog-one__content -->
-    </div><!-- /.blog-one__single -->
+    <?php display_newsC1_home() ?>
 </div>
 </section>

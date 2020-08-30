@@ -25,7 +25,7 @@
     <img class="actualitesPage__bg" src="assets/images/shape.png" alt="">
 </section>
 <section class="actualitesPage__container">
-
+<?php display_newsC1_page() ?>
 </section>
 <div class="post-pagination">
         <a href="#"><i class="fa fa-angle-left"></i></a>
