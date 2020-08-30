@@ -60,6 +60,30 @@ news;
     }
 }
 
+function display_three_news(){
+    global $pdo;
+    try{
+    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 3";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $news){
+        $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
+        echo <<<news
+        <ul>
+        <li>
+            <img src="uploads/{$news->file_location}" alt="">
+            <a href="news-post.php?pid={$news->id}&post={$news->slug}"><h4>{$news->title}</h4></a>
+            <span>$reg</span>
+        </li>
+    </ul>
+news;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
+
+
 
 // Create a news to database admin area
 function submit_newsc1(){
@@ -197,6 +221,40 @@ function update_newsC1()
         } catch (PDOException $e) {
             echo 'query failed' . $e->getMessage();
         }
+    }
+}
+
+function display_signle_newsc1()
+{
+    global $pdo;
+    if (isset($_GET['id'])){
+        try {  
+              $sql = "SELECT b.*, m.file_name FROM blog_c1 b left join media m on b.cover = m.id WHERE b.id = ?";
+              $stmt = $pdo->prepare($sql);
+              $stmt->execute([$_GET['id']]);
+              $news = $stmt->fetchAll();
+              if ($news){
+                  foreach($news as $new){
+                    $reg = date("F jS, Y, g:i a", strtotime($new->published_at));
+                      echo <<<ne
+                      <div class="wrapperLeft__img">
+                      <img src="uploads/{$new->file_name}" alt="{$new->title}">
+                      </div>
+                      <div class="wrapperLeft__top">
+                      <div class="wrapperLeft__info">
+                         <h3 class="wrapperLeft__date">{$reg}</h3>
+                      </div>
+                      </div>
+                      <div class="wrapperLeft__content">
+                          <h3 class="wrapperLeft__title">{$new->title}</h3>
+                          <div class="wrapperLeft__para">{$new->content}</div>
+                      </div>
+ne;
+                  }
+              }
+          } catch (PDOException $e) {
+              echo 'query failed' . $e->getMessage();
+          }
     }
 }
 

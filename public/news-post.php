@@ -22,30 +22,7 @@
 
 <section class="newsPost">
     <div class="newsPost__wrapperLeft">
-            <div class="wrapperLeft__img">
-            <img src="images/news2.png" alt="">
-            </div>
-            <div class="wrapperLeft__top">
-            <div class="wrapperLeft__info">
-               <h3 class="wrapperLeft__date">12 février 2020</h3>
-               <span class="wrapperLeft__by">/ par </span>
-               <h3 class="wrapperLeft__author">Rim Bennani</h3>
-            </div>
-            </div>
-            <div class="wrapperLeft__content">
-                <h3 class="wrapperLeft__title">Content without backward</h3>
-                <p class="wrapperLeft__para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-                    
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum The man, who is in a stable condition in hospital, has "potentially life-changing injuries" after the overnight attack in Garvagh, County Lono donderry. He was shot in the arms and legs."What sort of men would think it is accepttable to sub ject a young girl to this level of brutality and violence? "Every child has the right to feel safe and protected in their own home - how is this poor child going to sleep tonight or in coming nights? What are the long term effects on her going to be?"
-                </p>
-            </div>
+        <?php display_signle_newsc1() ?>
     </div>
     <div class="newsPost__wrapperRight">
         <div class="wrapperRight__search">
@@ -66,23 +43,7 @@
         </div>
         <div class="wrapperRight__recent">
             <h3 class="wrapperRight__recent--title">Nouvelles récentes</h3>
-            <ul>
-                <li>
-                    <img src="images/news7.png" alt="">
-                    <h4>What to do with your Old Blog Posts?</h4>
-                    <span>February 12, 2020</span>
-                </li>
-                <li>
-                    <img src="images/news5.png" alt="">
-                    <h4>What to do with your Old Blog Posts?</h4>
-                    <span>February 12, 2020</span>
-                </li>
-                <li>
-                    <img src="images/news8.png" alt="">
-                    <h4>What to do with your Old Blog Posts?</h4>
-                    <span>February 12, 2020</span>
-                </li>
-            </ul>
+            <?php display_three_news() ?>
         </div>
         <div class="wrapperRight__newsletter">
             <h3><img src="images/enevolope-open.png" alt=""> Souscrire</h3>
