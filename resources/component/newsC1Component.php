@@ -95,38 +95,38 @@ function submit_newsc1(){
 
 //Posts Management. display pots to be edited or deleted in admin area
 
-// function display_newsC1_admin()
-// {
-//     global $pdo;
-//     try{
-//         $sql = "SELECT b.*, m.file_name FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC"; 
-//         $stmt = $pdo->query($sql)->fetchAll();
-//         foreach ($stmt as $post){
-//             $reg = date("F jS, Y, g:i a", strtotime($post->published_at));
-//         echo <<<news
-//         <tr>
-//         <td class="text-center text-muted">{$post->id}</td>
-//         <td class=""><img src="../uploads/thumbnails/{$post->file_name}" class="br-a" alt="team thumbnail"></td>
-//         <td class=""> {$post->title} </td>
-//         <td class=""> {$reg} </td>
+function display_newsC1_admin()
+{
+    global $pdo;
+    try{
+        $sql = "SELECT b.*, m.file_name FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC"; 
+        $stmt = $pdo->query($sql)->fetchAll();
+        foreach ($stmt as $post){
+            $reg = date("F jS, Y, g:i a", strtotime($post->published_at));
+        echo <<<news
+        <tr>
+        <td class="text-center text-muted">{$post->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$post->file_name}" class="br-a" alt="team thumbnail"></td>
+        <td class=""> {$post->title} </td>
+        <td class=""> {$reg} </td>
 
-//         <td class="text-center">
-//             <a href="index.php?edit_newsC1={$post->id}">
-//             <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
-//                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
-//             </button>
-//             </a>
-//             <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_newsC1&delete_newsC1={$post->id}" data-toggle="modal" data-target="#exampleModal">
-//                 <i class="pe-7s-trash" style="font-size: 1rem;"></i>
-//             </button>
-//         </td>
-//     </tr>
-// news;
-//     }
-// } catch (PDOException $e) {
-//     echo 'query failed' . $e->getMessage();
-// }
-// }
+        <td class="text-center">
+            <a href="index.php?edit_newsC1={$post->id}">
+            <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
+                <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
+            </button>
+            </a>
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_newsC1&delete_newsC1={$post->id}" data-toggle="modal" data-target="#exampleModal">
+                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
+            </button>
+        </td>
+    </tr>
+news;
+    }
+} catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
 
 
 // Delete a post
