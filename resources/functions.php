@@ -161,6 +161,7 @@ require_once('component/carnetComponent.php');
 require_once('component/guideComponent.php');
 require_once('component/portailInventeurComponent.php');
 require_once('component/newsC1Component.php');
+require_once('component/newsC2Component.php');
 
 
 
