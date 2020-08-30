@@ -137,27 +137,13 @@ function change_password(){
     }
 }
 
-//function for creating an excerpt 
-// function strWordCut($string,$length,$end='....')
-// {
-//     $string = strip_tags($string);
 
-//     if (strlen($string) > $length) {
 
-//         // truncate string
-//         $stringCut = substr($string, 0, $length);
-
-//         // make sure it ends in a word so assassinate doesn't become ass...
-//         $string = substr($stringCut, 0, strrpos($stringCut, ' ')).$end;
-//     }
-//     return $string;
-// }
-
-//function for creating URL slugs
-// function create_url_slug($string){
-//     $slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
-//     return $slug;
-//  }
+// function for creating URL slugs
+function create_url_slug($string){
+    $slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
+    return $slug;
+ }
 
 
 
