@@ -30,35 +30,35 @@ news;
     }
 }
 
-// function display_newsC1_home(){
-//     global $pdo;
-//     try{
-//     $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 5";
-//     $stmt = $pdo->query($sql)->fetchAll();
-//     foreach ($stmt as $news){
-//         $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
-//         echo <<<news
-//         <div class="blog-one__single" data-aos="flip-down" data-aos-duration="1000">
-//         <div class="blog-one__image">
-//             <img src="uploads/{$news->file_location}" alt="">
-//             <a href="news-post.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
-//         </div><!-- /.blog-one__image -->
-//         <div class="blog-one__content">
-//             <div class="blog-one__meta">
-//                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
-//             </div><!-- /.blog-one__meta -->
-//             <h3><a href="news-post.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-//             <a href="news-post.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
-//             <!-- /.thm-btn blog-one__btn -->
-//         </div><!-- /.blog-one__content -->
-// </div>
-// news;
-//     }
-//     } catch (PDOException $e) {
-//     set_message('error','query failed');
-//     echo 'query failed' . $e->getMessage();
-//     }
-// }
+function display_newsC1_home(){
+    global $pdo;
+    try{
+    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 5";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $news){
+        $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
+        echo <<<news
+        <div class="blog-one__single" data-aos="flip-down" data-aos-duration="1000">
+        <div class="blog-one__image">
+            <img src="uploads/{$news->file_location}" alt="">
+            <a href="news-post.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
+        </div><!-- /.blog-one__image -->
+        <div class="blog-one__content">
+            <div class="blog-one__meta">
+                <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
+            </div><!-- /.blog-one__meta -->
+            <h3><a href="news-post.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            <a href="news-post.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
+            <!-- /.thm-btn blog-one__btn -->
+        </div><!-- /.blog-one__content -->
+</div>
+news;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
 
 
 // Create a news to database admin area
