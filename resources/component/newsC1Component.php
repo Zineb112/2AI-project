@@ -224,38 +224,6 @@ function update_newsC1()
     }
 }
 
-function display_signle_newsc1()
-{
-    global $pdo;
-    if (isset($_GET['id'])){
-        try {  
-              $sql = "SELECT b.*, m.file_name FROM blog_c1 b left join media m on b.cover = m.id WHERE b.id = ?";
-              $stmt = $pdo->prepare($sql);
-              $stmt->execute([$_GET['id']]);
-              $news = $stmt->fetchAll();
-              if ($news){
-                  foreach($news as $new){
-                    $reg = date("F jS, Y, g:i a", strtotime($new->published_at));
-                      echo <<<ne
-                      <div class="wrapperLeft__img">
-                      <img src="uploads/{$new->file_name}" alt="{$new->title}">
-                      </div>
-                      <div class="wrapperLeft__top">
-                      <div class="wrapperLeft__info">
-                         <h3 class="wrapperLeft__date">{$reg}</h3>
-                      </div>
-                      </div>
-                      <div class="wrapperLeft__content">
-                          <h3 class="wrapperLeft__title">{$new->title}</h3>
-                          <div class="wrapperLeft__para">{$new->content}</div>
-                      </div>
-ne;
-                  }
-              }
-          } catch (PDOException $e) {
-              echo 'query failed' . $e->getMessage();
-          }
-    }
-}
+
 
 ?>

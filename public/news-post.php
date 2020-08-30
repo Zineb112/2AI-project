@@ -22,7 +22,7 @@
 
 <section class="newsPost">
     <div class="newsPost__wrapperLeft">
-        <?php display_signle_newsc1() ?>
+        <?php display_signle_news() ?>
     </div>
     <div class="newsPost__wrapperRight">
         <div class="wrapperRight__search">

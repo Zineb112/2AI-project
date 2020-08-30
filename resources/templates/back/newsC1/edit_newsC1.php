@@ -42,8 +42,8 @@
                                 </div>
                             </div>
 
-                            <textarea name="content">
-                                
+                            <textarea name="content" id="editor">
+                            <?php echo $newsC1->content?>
                             </textarea>
 
 
