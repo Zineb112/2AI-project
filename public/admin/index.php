@@ -136,6 +136,11 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "carnet/edit_carnet.php");
         }
 
+        // News C1 requestes
+        if(isset($_GET['create_newsC1'])){
+        include(TEMPLATE_BACK . DS . "newsC1/create_newsC1.php");
+        }
+
 
 
 
