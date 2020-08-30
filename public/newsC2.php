@@ -1,0 +1,110 @@
+@@include('includes/nav.html')
+
+
+
+<header class="hero-headerC2NP">
+@@include('includes/navigationC2.html')
+<section class="newsC2P">
+
+<h3 class="newsC2P__title">
+Derniers actualités
+</h3>
+
+<div class="newsC2P__wrapper">
+        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="images/news9.png" alt="">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                </div>
+                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
+                <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+        </div>
+        <div class="blog-one__singleInnov" data-aos="flip-up" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="images/news8.png" alt="">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                </div>
+                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
+                <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+        </div>
+        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="images/news7.png" alt="">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                </div>
+                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
+                <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+        </div>
+        <div class="blog-one__singleInnov" data-aos="flip-up" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="images/news6.png" alt="">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                </div>
+                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
+                <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+        </div>
+        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="images/news1.png" alt="">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                </div>
+                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
+                <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+        </div>
+        <div class="blog-one__singleInnov" data-aos="flip-up" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="images/news2.png" alt="">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                </div>
+                <h3><a href="">Strategy for Norway's Peion Fund Global.</a></h3>
+                <a href="" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+        </div>
+</div>
+    <div class="newsC2P__pagination">
+        <a href="#"><i class="fa fa-angle-left"></i></a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="fa fa-angle-right"></i></a>
+</div>
+
+
+</section>
+
+
+
+</header>
+
+@@include('includes/newsletterC2.html')
+@@include('includes/footerC2.html') 
+@@include('includes/end.html')   
