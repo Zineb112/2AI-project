@@ -151,6 +151,9 @@
     }
     &__recent{
         grid-area: 3/1;
+        a{
+            text-decoration: none;
+        }
         ul{
             list-style: none;
         }
@@ -192,6 +195,7 @@
             margin: auto;
             width: 80%;
             cursor: pointer;
+            color: black;
         }
         h4:hover{
             color: $secondary;
@@ -414,6 +418,9 @@
         }
         &__recent{
             grid-area: 3/1;
+            a{
+                text-decoration: none;
+            }
             ul{
                 padding: 0px;
                 list-style: none;
@@ -458,6 +465,7 @@
                 margin: 8px auto;
                 text-align: center;
                 cursor: pointer;
+                color: black;
             }
             h4:hover{
                 color: $secondary;
@@ -682,6 +690,9 @@
             }
             &__recent{
                 grid-area: 3/1;
+                a{
+                    text-decoration: none;
+                }
                 ul{
                     padding: 0px;
                     list-style: none;
@@ -726,6 +737,7 @@
                     margin: 8px auto;
                     text-align: center;
                     cursor: pointer;
+                    color: black;
                 }
                 h4:hover{
                     color: $secondary;
@@ -954,6 +966,9 @@
         }
         &__recent{
             grid-area: 3/1;
+            a{
+                text-decoration: none;
+            }
             ul{
                 padding: 0px;
                 list-style: none;
@@ -999,6 +1014,7 @@
                 margin: 8px auto;
                 text-align: center;
                 cursor: pointer;
+                color: black;
             }
             h4:hover{
                 color: $secondary;
