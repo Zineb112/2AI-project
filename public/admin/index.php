@@ -140,6 +140,9 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['create_newsC1'])){
         include(TEMPLATE_BACK . DS . "newsC1/create_newsC1.php");
         }
+        if(isset($_GET['manage_newsC1'])){
+        include(TEMPLATE_BACK . DS . "newsC1/manage_newsC1.php");
+        }
 
 
 
