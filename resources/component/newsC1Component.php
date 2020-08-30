@@ -139,5 +139,35 @@ function delete_newsC1()
 }
 
 
+// Update a post information
+
+function update_newsC1()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+            $title = trim($_POST['title']);
+            $slug =create_url_slug($title);
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `blog_c1` SET `slug` = ?,`title` = ?, `content` = ?, `published_at` = CURRENT_TIMESTAMP, `cover` = ? WHERE `blog_c1`.`id` = ?";
+            $update_newsC1 = $pdo->prepare($sql);
+            $update_newsC1->execute([$slug , $title, $_POST['content'], $cover_id, $_POST['newsC1_id']]);
+            if ($update_newsC1) {
+                set_message('success', 'Post information updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 ?>
