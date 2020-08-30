@@ -150,6 +150,28 @@
                                     </ul>
                                 </li>
 
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        News  concept 1
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_newsC1">
+                                                <i class="metismenu-icon"></i>
+                                                Create new news
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_newsC1">
+                                                <i class="metismenu-icon">
+                                                </i>Manage news
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                                 <li class="app-sidebar__heading">Activities</li>
                                 <li>
                                     <a href="#">
