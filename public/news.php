@@ -34,5 +34,6 @@
         <a href="#">3</a>
         <a href="#"><i class="fa fa-angle-right"></i></a>
 </div>
-@@include('includes/newsletter.html')
-@@include('includes/end.html')
+
+<?php include(TEMPLATE_FRONT . DS . "newsletter.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
