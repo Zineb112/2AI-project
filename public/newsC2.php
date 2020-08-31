@@ -4,7 +4,7 @@
 
 
 <header class="hero-headerC2NP">
-<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "navigationC2.php") ?>
 <section class="newsC2P">
 
 <h3 class="newsC2P__title">

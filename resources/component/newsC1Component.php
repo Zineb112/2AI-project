@@ -11,14 +11,14 @@ function display_newsC1_page(){
         <div class="blog-one__single" data-aos="flip-down" data-aos-duration="1000">
         <div class="blog-one__image">
             <img src="uploads/{$news->file_location}" alt="">
-            <a href="news-post.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
+            <a href="news-post.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
         </div><!-- /.blog-one__image -->
         <div class="blog-one__content">
             <div class="blog-one__meta">
                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
             </div><!-- /.blog-one__meta -->
             <h3><a href="news-post.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="news-post.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
+            <a href="news-post.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
             <!-- /.thm-btn blog-one__btn -->
         </div><!-- /.blog-one__content -->
 </div>
@@ -41,14 +41,14 @@ function display_newsC1_home(){
         <div class="blog-one__single" data-aos="flip-down" data-aos-duration="1000">
         <div class="blog-one__image">
             <img src="uploads/{$news->file_location}" alt="">
-            <a href="news-post.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
+            <a href="news-post.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
         </div><!-- /.blog-one__image -->
         <div class="blog-one__content">
             <div class="blog-one__meta">
                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
             </div><!-- /.blog-one__meta -->
-            <h3><a href="news-post.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="news-post.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
+            <h3><a href="news-post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            <a href="news-post.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
             <!-- /.thm-btn blog-one__btn -->
         </div><!-- /.blog-one__content -->
 </div>
@@ -224,6 +224,41 @@ function update_newsC1()
     }
 }
 
-
+function display_signle_news()
+{
+    global $pdo;
+    if (isset($_GET['id'])){
+        try {  
+              $sql = "SELECT b.*, m.file_name FROM blog_c1 b left join media m on b.cover = m.id WHERE b.id = ?";
+              $stmt = $pdo->prepare($sql);
+              $stmt->execute([$_GET['id']]);
+              $news = $stmt->fetchAll();
+              if ($news){
+                  foreach($news as $new){
+                    $reg = date("F jS, Y, g:i a", strtotime($new->published_at));
+                      echo <<<news
+                      <div class="newsPost__wrapperLeft">
+                      <div class="wrapperLeft__img">
+                      <img src="uploads/{$new->file_name}" alt="{$new->title}">
+                      </div>
+                      <div class="wrapperLeft__top">
+                      <div class="wrapperLeft__info">
+                         <h3 class="wrapperLeft__date">$reg</h3>
+                      </div>
+                      </div>
+                      <div class="wrapperLeft__content">
+                          <h3 class="wrapperLeft__title">{$new->title}</h3>
+                          <p class="wrapperLeft__para">{$new->content}
+                          </p>
+                      </div>
+              </div>
+news;
+                  }
+              }
+          } catch (PDOException $e) {
+              echo 'query failed' . $e->getMessage();
+          }
+    }
+}
 
 ?>

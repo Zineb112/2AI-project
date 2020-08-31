@@ -4,7 +4,7 @@
 <?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 
 <header class="hero-headerC2">
-<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "navigationC2.php") ?>
 <section class="Actualite">
     <div class="ActualiteLeft">
     <h3 class="Actualite__title">Actualité À La Une</h3>

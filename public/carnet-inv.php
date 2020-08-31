@@ -3,7 +3,7 @@
 <?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 
 <header class="hero-headerCI">
-<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
+<?php include(TEMPLATE_FRONT . DS . "navigationC2.php") ?>
 
 <section class="carnet-inv">
     <h3 class="carnet-inv__title">
