@@ -63,6 +63,9 @@
       font-weight: 700;
       color: black;
     }
+    a{
+      margin: auto;
+    }
     button{
       height: 64px;
       border: none;
@@ -148,6 +151,9 @@
     font-weight: 700;
     color: black;
   }
+  a{
+    margin: auto;
+  }
   button{
     height: 64px;
     border: none;
@@ -170,7 +176,7 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 599px){
   .newsletter{
     &__container{
       background-color: #fff;
@@ -226,6 +232,10 @@
       text-align: center;
       margin: 0px auto 16px;
       border-radius: 8%;
+    }
+    a{
+      margin: auto;
+      text-decoration: none;
     }
     button{
       display: block;
@@ -297,6 +307,9 @@
       font-size: 16px;
       font-weight: 700;
       color: black;
+    }
+    a{
+      grid-area: 2/1;
     }
     button{
       margin-left: 72%;

@@ -143,8 +143,27 @@ function change_password(){
 function create_url_slug($string){
     $slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
     return $slug;
- }
+}
 
+//function for visitors to subscribe
+function subscribe_newsletter(){
+    global $pdo;
+    try {
+        if(isset($_POST['subscribe'])){
+            $sql = "INSERT INTO `news_lettre` (`subscriber_email`) VALUES (?);";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([$_POST['subEmail']]);
+            if($stmt){
+                echo json_encode(['code'=>200, 'msg'=>"Subscribed successfully"]);
+            } else {
+                echo json_encode(['code'=>400, 'msg'=>"Try again later"]);
+            }
+        }
+    } catch (PDOException $e) {
+        echo 'query failed' . $e->getMessage();
+    }
+   
+}
 
 
 
@@ -162,6 +181,7 @@ require_once('component/guideComponent.php');
 require_once('component/portailInventeurComponent.php');
 require_once('component/newsC1Component.php');
 require_once('component/newsC2Component.php');
+require_once('component/newsletterComponent.php');
 
 
 

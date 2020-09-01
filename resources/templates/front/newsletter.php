@@ -1,11 +1,11 @@
 <setion class="newsletter">
         <div class="newsletter__container">
         <h3 class="newsletter__title">Envoyez-nous une newsletter pour être <br><span>mis à jour</span></h3>
-        <div class="newsletter__form">
+    <form class="newsletter__form needs-validation" method="POST" action="#" role="email">
         <i class="fa fa-envelope" aria-hidden="true"></i>
-        <input type="text" placeholder="Votre adresse mail">
-        <button class="newsletter">Abonnez-vous</button>
-    </div>
+        <input type="email" placeholder="Votre adresse mail" id="subscriberEmail" name="email" required>
+       <a class="newsletter" href="#" id="submit_email_subscribe" type="submit" name="submit"><button>Abonnez-vous</button></a>
+    </form>
         </div>
     </setion>
     <footer class="footerN">
