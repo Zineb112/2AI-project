@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">date</label>
+                                <label for="validationCustom01">Date</label>
                                 <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="date" name="date" value="<?php echo $car->date ?>" required="" />
                                 <div class="valid-feedback">
@@ -52,12 +52,15 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label for="exampleFile" class="">Download link</label>
-                                        <!-- MAX_FILE_SIZE must precede the file input field -->
-                                <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-                                <input name="file" id="exampleFile" type="file"  class="form-control-file" value="<?php echo $car->file?>" required="">
+                            <div class="col-md-4 mb-3"> 
+                                <label for="validationCustom01">Download link</label>
+                                <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Copy download link here" name="file" value="<?php echo $car->file ?>" required="" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
+
 
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>

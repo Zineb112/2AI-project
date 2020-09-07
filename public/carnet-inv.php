@@ -10,7 +10,9 @@
         Carnet de l’inventeur
     </h3>
 
+    <div class="carnet-inv__wrapper">
     <?php display_carnet() ?>
+    </div>
         
     <div class="carnet-inv__pagination">
         <a href="#"><i class="fa fa-angle-left"></i></a>

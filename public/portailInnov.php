@@ -39,12 +39,11 @@
     <div class="carnetN__wrapper">
     <div class="carnetN__left" data-aos="flip-up" data-aos-duration="1300">
         <h3 class="carnetN__title">Carnet de l’inventeur</h3>
-        <img class="carnetN__line" src="images/lineC2.png" alt="">
+        <img class="carnetN__line" src="assets/images/lineC2.png" alt="">
         <p class="carnetN__subtitle">Carnet de l’Inventeur est un magazine mensuel, qui vise à promouvoir les résultats des recherches des inventeurs et des innovateurs, fort d’un contenu riche en informations techniques et stratégiques, et permettra aux entreprises et aux bailleurs de fonds de saisir d’intéressantes opportunités d’investissements à travers la valorisation des inventions qui y sont diffusées.</p>
-        <a href="" class="carnetN__button">Autre éditions</a>
+        <a href="carnet-inv.php" class="carnetN__button">Autre éditions</a>
     </div>
     <?php display_last_carnet() ?>
-    <a href="" class="carnetN__buttonM">Autre éditions</a>
     </div>
 </section>
 

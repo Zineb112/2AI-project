@@ -8,15 +8,14 @@ function display_carnet(){
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $carnet){
         echo <<<carnet
-        <div class="carnet-inv__wrapper">
+
         <div class="carnetN__carnet margincarn" data-aos="flip-down" data-aos-duration="1000">
             <img src="uploads/{$carnet->file_location}" alt="">
             <div class="carnetN__infos">
                 <h3 class="carnetN__infos--date">Magazine mois {$carnet->date}</h3>
                 <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title}</h5>
-                <a href="{$carnet->file} download" class="carnetN__download"> Télécharger </a>
+                <a href="{$carnet->file}" target="_blank" class="carnetN__download"> Télécharger </a>
             </div>
-        </div>
         </div>
 
 
@@ -44,7 +43,7 @@ function display_last_carnet(){
             <div class="carnetN__infos">
                 <h3 class="carnetN__infos--date">Magazine mois {$carnet->date}</h3>
                 <h5 class="carnetN__infos--title"> <span>Titre: </span>{$carnet->title}</h5>
-                <a href="{$carnet->file}" download="{$carnet->file}" class="carnetN__download"> Télécharger </a>
+                <a href="{$carnet->file}" target="_blank" class="carnetN__download"> Télécharger </a>
             </div>
         </div>
     </div>
@@ -67,7 +66,7 @@ function submit_carnet(){
         try{
         $title = trim($_POST['title']);
         $date = trim($_POST['date']);
-        $file = $_FILES['cover']['name'];
+        $file = trim($_POST['file']);
         $cover = $_FILES['cover']['name'];
         $cover_id = 1;
 
@@ -107,7 +106,7 @@ function display_carnet_admin()
         <td class=""><img src="../uploads/thumbnails/{$carnet->file_name}" class="br-a" alt="carnet thumbnail"></td>
         <td class=""> {$carnet->title} </td>
         <td class=""> {$carnet->date} </td>
-        <td class=""> {$carnet->file} </td>
+        <td class=""><a href="{$carnet->file}" target="_blank">{$carnet->file}</a></td>
 
         <td class="text-center">
             <a href="index.php?edit_carnet={$carnet->id}">
