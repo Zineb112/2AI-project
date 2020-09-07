@@ -17,7 +17,7 @@ function display_newsC1_page(){
             <div class="blog-one__meta">
                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
             </div><!-- /.blog-one__meta -->
-            <h3><a href="news-post.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            <h3><a href="news-post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
             <a href="news-post.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
             <!-- /.thm-btn blog-one__btn -->
         </div><!-- /.blog-one__content -->
@@ -71,7 +71,7 @@ function display_three_news(){
         <ul>
         <li>
             <img src="uploads/{$news->file_location}" alt="">
-            <a href="news-post.php?pid={$news->id}&post={$news->slug}"><h4>{$news->title}</h4></a>
+            <a href="news-post.php?id={$news->id}&post={$news->slug}"><h4>{$news->title}</h4></a>
             <span>$reg</span>
         </li>
     </ul>

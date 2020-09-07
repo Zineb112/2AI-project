@@ -11,14 +11,14 @@ function display_newsC2_page(){
         <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
         <div class="blog-one__imageInnov">
             <img src="uploads/{$news->file_location}" alt="">
-            <a href="news-post.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
+            <a href="newspostC2.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
         </div>
         <div class="blog-one__contentInnov blogshadow">
             <div class="blog-one__metaInnov">
                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
             </div>
-            <h3><a href="newspostC2.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="newspostC2.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            <h3><a href="newspostC2.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            <a href="newspostC2.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
         </div>
         </div>
 
@@ -44,14 +44,14 @@ function display_newsC2_home(){
         <div class="blog-one__singleInnov" data-aos="flip-left" data-aos-duration="1000">
         <div class="blog-one__imageInnov">
             <img src="uploads/{$news->file_location}" alt="">
-            <a href="newspostC2.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
+            <a href="newspostC2.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
         </div>
         <div class="blog-one__contentInnov">
             <div class="blog-one__metaInnov">
                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
             </div>
-            <h3><a href="newspostC2.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="newsC2post.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            <h3><a href="newspostC2.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            <a href="newspostC2.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
         </div>
         </div>
 
@@ -76,14 +76,14 @@ function display_three_newsC2(){
         <div class="blog-one__singleInnov" data-aos="flip-left" data-aos-duration="1000">
         <div class="blog-one__imageInnov">
             <img src="uploads/{$news->file_location}" alt="">
-            <a href="newspostC2.php?pid={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
+            <a href="newspostC2.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
         </div>
         <div class="blog-one__contentInnov borderblog">
             <div class="blog-one__metaInnov">
                 <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
             </div>
-            <h3><a href="newspostC2.php?pid={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="newsC2post.php?pid={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            <h3><a href="newspostC2.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            <a href="newspostC2.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
         </div>
     </div>
 
@@ -241,7 +241,31 @@ function update_newsC2()
 
 
 
-
+function display_signle_newsC2()
+{
+    global $pdo;
+    if (isset($_GET['id'])){
+        try {  
+              $sql = "SELECT b.*, m.file_name FROM blog_c2 b left join media m on b.cover = m.id WHERE b.id = ?";
+              $stmt = $pdo->prepare($sql);
+              $stmt->execute([$_GET['id']]);
+              $news = $stmt->fetchAll();
+              if ($news){
+                  foreach($news as $new){
+                    $reg = date("F jS, Y, g:i a", strtotime($new->published_at));
+                      echo <<<news
+                      <h3 class="newspostC2__title">{$new->title}</h3>
+                      <h3 class="newspostC2__date">13 Mai 2020</h3>
+                      <img src="uploads/{$new->file_name}" alt="{$new->title}" class="newspostC2__cover">
+                      <div class="newspostC2__content">{$new->content}</div>
+news;
+                  }
+              }
+          } catch (PDOException $e) {
+              echo 'query failed' . $e->getMessage();
+          }
+    }
+}
 
 
 
