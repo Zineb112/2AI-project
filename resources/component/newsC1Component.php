@@ -248,8 +248,8 @@ function display_signle_news()
                       </div>
                       <div class="wrapperLeft__content">
                           <h3 class="wrapperLeft__title">{$new->title}</h3>
-                          <p class="wrapperLeft__para">{$new->content}
-                          </p>
+                          <div class="wrapperLeft__para">{$new->content}
+                          </div>
                       </div>
               </div>
 news;
