@@ -56,7 +56,7 @@
         <div class="portailN__wrapper">
         <?php display_portail_home()?>
         </div>
-        <a href="" class="portailN__more">Voir tout</a>
+        <a href="portailInventeurPage.php" class="portailN__more">Voir tout</a>
 </section>
 
 

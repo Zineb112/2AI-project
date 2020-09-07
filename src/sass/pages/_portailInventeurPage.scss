@@ -144,7 +144,7 @@
         }
         &__wrapper{
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 50% 50%;
             margin-bottom: 32px;
         }
         &__pagination {
@@ -196,7 +196,7 @@
         }
         &__wrapper{
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 50% 50%;
             margin-bottom: 32px;
 
         }
