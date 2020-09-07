@@ -12,11 +12,11 @@ function display_innovNews(){
         <div class="Inews__singleInnov" data-aos="flip-up" data-aos-duration="1500">
         <div class="Inews__imageInnov">
             <img src="uploads/{$innovNews->file_name}" alt="{$innovNews->title}">
-            <a href="{$innovNews->link}"><i class="fas fa-play"></i></a>
+            <a href="{$innovNews->link}" target="_blank"><i class="fas fa-play"></i></a>
         </div>
         <div class="Inews__contentInnov">
-            <h3><a href="{$innovNews->link}">{$innovNews->title}</a></h3>
-            <a href="{$innovNews->link}" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
+            <h3><a href="{$innovNews->link}" target="_blank">{$innovNews->title}</a></h3>
+            <a href="{$innovNews->link}" target="_blank" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
         </div>
     </div>
 innov;
@@ -39,11 +39,11 @@ function display_last_innovNews(){
         <div class="Inews__singleInnov" data-aos="flip-down" data-aos-duration="1500">
         <div class="Inews__imageInnov">
             <img src="uploads/{$innovNews->file_name}" alt="{$innovNews->title}">
-            <a href="{$innovNews->link}"><i class="fas fa-play"></i></a>
+            <a href="{$innovNews->link}" target="_blank"><i class="fas fa-play"></i></a>
         </div>
         <div class="Inews__contentInnov">
-            <h3><a href="{$innovNews->link}">{$innovNews->title}</a></h3>
-            <a href="{$innovNews->link}" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
+            <h3><a href="{$innovNews->link}" target="_blank">{$innovNews->title}</a></h3>
+            <a href="{$innovNews->link}" target="_blank" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
         </div>
     </div>
 innov;

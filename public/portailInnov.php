@@ -31,7 +31,7 @@
     </div>
     <div class="innovationN__wrapper">
         <?php display_last_innovNews() ?>
-        <a href="" class="InewsBtnA"><button class="InewsBtn">voir tout</button></a>
+        <a href="innovation-news.php" class="InewsBtnA"><button class="InewsBtn">voir tout</button></a>
     </div>
 </section>
 
