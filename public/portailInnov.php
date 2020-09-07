@@ -44,6 +44,7 @@
         <a href="carnet-inv.php" class="carnetN__button">Autre éditions</a>
     </div>
     <?php display_last_carnet() ?>
+    <a href="carnet-inv.php" class="carnetN__buttonM">Autre éditions</a>
     </div>
 </section>
 
@@ -72,19 +73,19 @@
                             en communication, production audiovisuelle ou 
                             événementiel, nous communiquera son expérience et 
                             développera le métier.</p>
-                    <a href="" class="aiNews__more">voir tout</a>
+                    <a href="2AINewsC2.php" class="aiNews__more">voir tout</a>
             </div>
             <div class="aiNews__right" data-aos="flip-up" data-aos-duration="1000">
                 <?php display_last_2AINewsC2() ?>
             </div>
-            <a href="" class="aiNews__moreM">voir tout</a>
+            <a href="2AINewsC2.php" class="aiNews__moreM">voir tout</a>
     </div>
 </section>
 
 <section class="downloadApp">
     <div class="downloadApp__wrapper">
         <div class="downloadApp__left" data-aos="flip-left" data-aos-duration="1000" >
-            <img src="images/phonDown.png" alt="">
+            <img src="assets/images/phonDown.png" alt="">
         </div>
         <div class="downloadApp__right" data-aos="flip-right" data-aos-duration="1000">
             <h3 class="downloadApp__title">Obtenez l'application maintenant!</h3>

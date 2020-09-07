@@ -9,7 +9,7 @@ function display_2AINewsC2(){
         <div class="AinewsP__card" data-aos="flip-up" data-aos-duration="1500">
             <div class="AinewsP__top">
             <img src="uploads/{$ai_news->file_location}" alt="{$ai_news->full_name}" >
-                <a href="$ai_news->link"><i class="fas fa-play"></i></a>
+                <a href="$ai_news->link" target="_blank"><i class="fas fa-play"></i></a>
             </div>
             <div class="AinewsP__bottom">
                 <h3 class="AinewsP__name">$ai_news->full_name</h3>
@@ -37,7 +37,7 @@ function display_last_2AINewsC2(){
         <div class="aiNews__block">
             <div class="aiNews__img">
             <img src="uploads/{$ai_news->file_name}" alt="{$ai_news->full_name}">
-            <a href="{$ai_news->link}"><i class="fas fa-play"></i></a>
+            <a href="$ai_news->link" target="_blank"><i class="fas fa-play"></i></a>
             </div>
             <div class="aiNews__infos">
             <h3 class="aiNews__name">{$ai_news->full_name}</h3>
