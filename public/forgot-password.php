@@ -1,3 +1,4 @@
+<?php require_once('../resources/config.php'); ?>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -22,14 +23,14 @@
 </head>
 
 <body>
-   
+<?php forgot_password(); ?>
     <div id="wrapper" class="wrapper">        
         <div class="fxt-template-animation fxt-template-layout5">
             <div class="fxt-bg-img fxt-none-767" data-bg-image="assets/images/bg5-l.png">
                 <div class="fxt-intro">
                     <div class="sub-title">Welcome To</div>
                     <h1>Ibtikarat arab agency</h1>
-                    <p>2.A.I</p>
+                    <p>I see that you forgot your password, don't worry just fill in your email in the form</p>
                 </div>
             </div>
             <div class="fxt-bg-color">
