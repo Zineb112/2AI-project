@@ -93,6 +93,7 @@
         padding: 24px 0px;
         text-align: center;
         max-width: 520px;
+        height: 240px;
         border-radius: 0% 0% 100% 100%;
     }
     &__name{
@@ -284,12 +285,13 @@
             background-color: white;
             padding: 24px 0px;
             text-align: center;
-			max-width: 320px;
+            max-width: 320px;
+            height: 224px;
             border-radius: 0% 0% 100% 100%;
         }
         &__name{
             color: $secondary;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 900;
             width: 80%;
             margin-left: auto;
@@ -297,9 +299,9 @@
         }
         &__role{
             color: $primary;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 800;
-            width: 80%;
+            width: 96%;
             margin-left: auto;
             margin-right: auto;
         }

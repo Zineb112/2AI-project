@@ -11,7 +11,7 @@ function display_guide(){
         <div class="guideInv__card" data-aos="flip-down" data-aos-duration="1500">
         <div class="guideInv__top">
             <img src="uploads/{$guide->file_location}" alt="{$guide->title}">
-            <a href="{$guide->link}"><i class="fas fa-play"></i></a>
+            <a href="{$guide->link}" target="_blank"><i class="fas fa-play"></i></a>
         </div>
         <div class="guideInv__bottom">
             <h3 class="guideInv__name">{$guide->full_name}</h3>
@@ -41,7 +41,7 @@ function display_last_guide(){
         <div class="guideI__perso" data-aos="flip-up" data-aos-duration="1000">
         <div class="guideI__perso--img">
         <img src="uploads/{$innovNews->file_location}" alt="{$innovNews->title}">
-        <a href="{$innovNews->link}"><i class="fas fa-play"></i></a>
+        <a href="{$innovNews->link}" target="_blank"><i class="fas fa-play"></i></a>
         </div>  
         <h3 class="guideI__perso--name">{$innovNews->full_name}</h3>
         <h3 class="guideI__perso--role">{$innovNews->role}</h3>

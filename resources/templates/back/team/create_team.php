@@ -85,7 +85,7 @@ submit_team();
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="avatar" id="exampleFile" type="file" class="form-control-file">
-                                <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
+                                <big class="form-text text-muted">&#9888; The dimensions must be 500 x 500 px at least</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_partner" type="submit" name="submit" value="Submit form">

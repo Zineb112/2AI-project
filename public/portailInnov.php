@@ -115,7 +115,7 @@
         <div class="guideI__wrapper">
             <?php display_last_guide() ?>
         </div>
-        <a href="" class="guideI__more">voir tout</a>
+        <a href="guide.php" class="guideI__more">voir tout</a>
 </section>
 
 
