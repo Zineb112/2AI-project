@@ -198,4 +198,39 @@ function delete_user()
         }
     }
 }
+//Dsiplay user profile
+
+function display_user_profile()
+{
+    global $pdo;
+        try {  
+              $sql = "SELECT u.*, m.file_name FROM users u left join media m on u.avatar = m.id WHERE u.id = ?";
+              $stmt = $pdo->prepare($sql);
+              $stmt->execute([$_SESSION['user_id']]);
+              $users = $stmt->fetchAll();
+              if (!empty($users)){
+                  foreach($users as $user){
+                      echo <<<users
+    <div class="profile_infos">
+    <h1>profile</h1>
+        <div class="profile__wrapper">
+            <img src="../uploads/{$user->file_name}" alt="">
+                <ul>
+                    <li>name: <h4>{$user->name}</h4></li>
+                    <li>last name: <h4>{$user->last_name}</h4></li>
+                    <li>username: <h4>{$user->username}</h4></li>
+                    <li>role: <h4>{$user->role}</h4></li>
+                    <li>email: <h4>{$user->email}</h4></li>
+                    <li>phone: <h4>{$user->tel}</h4></li>
+                </ul>
+            </div>
+        </div>
+users;
+                  }
+              }
+          } catch (PDOException $e) {
+              echo 'query failed' . $e->getMessage();
+          }
+}
+
 ?>

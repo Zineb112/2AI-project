@@ -281,6 +281,12 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a href="index.php?manage_subscriber">
+                                        <i class="metismenu-icon pe-7s-mail-open"></i>
+                                        Newsletter
+                                    </a>
+                                </li>
                                 <li class="app-sidebar__heading">Admin Area</li>
                                 <li>
                                     <a href="#">
@@ -307,6 +313,12 @@
                                     <a href="index.php?change_pass">
                                         <i class="metismenu-icon pe-7s-door-lock"></i>
                                         Change password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.php?user_profile">
+                                        <i class="metismenu-icon pe-7s-id"></i>
+                                        Profile
                                     </a>
                                 </li>
                                 <li>

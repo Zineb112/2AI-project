@@ -38,7 +38,9 @@ try {
 
 // Helper Functions
 
+require_once __DIR__ . DS . '../vendor/autoload.php';
 require_once('functions.php');
+require_once 'sendemail.php';
 
 
 ?>

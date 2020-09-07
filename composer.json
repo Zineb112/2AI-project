@@ -1,0 +1,14 @@
+{
+    "name": "project/portfolio",
+    "description": "portfolio achraf abbassi website",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2.5"
+        }
+    }
+}
