@@ -4,6 +4,7 @@
 
 
 display_2aiNews_admin();
+display_carnet_admin();
 
 
 ?>

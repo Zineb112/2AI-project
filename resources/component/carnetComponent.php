@@ -96,17 +96,57 @@ function submit_carnet(){
 function display_carnet_admin()
 {
     global $pdo;
-    try{
-        $sql = "SELECT c.*, m.file_name FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC "; 
-        $stmt = $pdo->query($sql)->fetchAll();
-        foreach ($stmt as $carnet){
+
+    if(isset($_POST['carnetpagination'])){
+
+    
+        $sql ="SELECT * FROM carnet";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 5;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        echo <<<table
+        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+        <thead>
+            <tr class="text-center">
+            <th>#</th>
+            <th>Thumbnail</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>File</th>
+            </tr>
+        </thead>
+        <tbody>
+table;
+
+    //determine the sql limit
+    $this_page_first_result = ($page - 1)*$result_per_page;
+    //now finally showing the posts
+
+        $sql = "SELECT c.*, m.file_name FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC LIMIT " . $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $carnets = $stmt->fetchAll();
+        foreach ($carnets as $carnet){
         echo <<<carnet
         <tr>
         <td class="text-center text-muted">{$carnet->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$carnet->file_name}" class="br-a" alt="carnet thumbnail"></td>
-        <td class=""> {$carnet->title} </td>
-        <td class=""> {$carnet->date} </td>
-        <td class=""><a href="{$carnet->file}" target="_blank">{$carnet->file}</a></td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$carnet->file_name}" class="br-a" alt="carnet thumbnail"></td>
+        <td class="text-center"> {$carnet->title} </td>
+        <td class="text-center"> {$carnet->date} </td>
+        <td class="text-center"><a href="{$carnet->file}" target="_blank">{$carnet->file}</a></td>
 
         <td class="text-center">
             <a href="index.php?edit_carnet={$carnet->id}">
@@ -121,9 +161,35 @@ function display_carnet_admin()
     </tr>
 carnet;
     }
-} catch (PDOException $e) {
-    echo 'query failed' . $e->getMessage();
+
+
+    echo <<<tableclose
+                        </tbody>
+                    </table>
+                    <nav class="" aria-label="Page navigation example">
+                        <ul class="pagination" style="margin: 1rem 0;justify-content: center;">
+tableclose;
+    //for the pagination links
+    //display links to the page
+    for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+        if($i == $page){
+            echo '<li class="page-item active"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
+        } else {
+            echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
+        }
+    }
+
+    $check = $this_page_first_result + $result_per_page;
+    $next = $page + 1;
+    if($number_of_results > $check){
+        echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" aria-label="Next" id="'. $next .'" ><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>';
+
+    }else {
+        echo " ";
+    }
+    echo  '</ul></nav>';
 }
+
 }
 
 

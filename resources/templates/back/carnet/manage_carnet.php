@@ -18,21 +18,8 @@
         <div class="col-md-12">
             <div class="main-card mb-3 card">
                 <div class="card-header">Carnet de l’inventeur card</div>
-                <div class="table-responsive">
-                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th class="text-center">#</th>
-                                <th>carnet thumbnail</th>
-                                <th>carnet title</th>
-                                <th>carnet date</th>
-                                <th>carnet file</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php display_carnet_admin() ?>
-                        </tbody>
-                    </table>
+                <div class="table-responsive" id="carnet_load">
+
                 </div>
             </div>
         </div>
@@ -47,4 +34,47 @@
         document.querySelector('.deletion_link').href = link;
         });
     }
+</script>
+
+
+<script>
+
+    $(document).ready(function () {
+        //showing the data without refresh but on going to the next pagination
+        setTimeout(function () {
+            load_fn_data();
+        }, 1000);
+
+        function load_fn_data(page) {
+            $.ajax({
+                url: "./ajaxCalls.php",
+                method: "POST",
+                data: {
+                    page: page,
+                    carnetpagination: "pagination"
+                },
+                success: function (data) {
+                    $('#carnet_load').html(data);
+                }
+            });
+        }
+
+        $(document).on('click', '.pagination_link', function () {
+            var page = $(this).attr("id");
+            load_fn_data(page);
+        })
+    })
+
+
+    // setTimeout(function(){
+    //                 //to handle the deletion
+    //         const delete_buttons = document.querySelectorAll('#deletebtn');
+    //         for(const el of delete_buttons ){
+    //             el.addEventListener('click', (e) => {
+    //             let link = e.currentTarget.value;
+    //             console.log(link);
+    //             document.querySelector('.deletion_link').href = link;
+    //             });
+    //         }
+    // }, 1000);
 </script>

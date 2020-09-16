@@ -138,11 +138,11 @@ table;
         echo <<<ainews
         <tr class="text-center">
         <td class="text-center text-muted">{$ai_news->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$ai_news->file_name}" class="br-a" alt="2ai News thumbnail"></td>
-        <td class=""> {$ai_news->full_name} </td>
-        <td class=""> {$ai_news->role} </td>
-        <td class=""> {$ai_news->title}</td>
-        <td class=""><a href="{$ai_news->link}" target="_blank"> {$ai_news->link}</a></td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$ai_news->file_name}" class="br-a" alt="2ai News thumbnail"></td>
+        <td class="text-center"> {$ai_news->full_name} </td>
+        <td class="text-center"> {$ai_news->role} </td>
+        <td class="text-center"> {$ai_news->title}</td>
+        <td class="text-center"><a href="{$ai_news->link}" target="_blank"> {$ai_news->link}</a></td>
         
         <td class="text-center">
             <a href="index.php?edit_2AINewsC2={$ai_news->id}">

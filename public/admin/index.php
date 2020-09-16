@@ -5,7 +5,6 @@ include(TEMPLATE_BACK . DS . "head.php");
 ?>
 
 <?php include(TEMPLATE_BACK . DS . "nav.php") ?>
-<?php include(TEMPLATE_BACK . DS . "ui_settings.php") ?>
 
 <div class="app-main">
     <?php include(TEMPLATE_BACK . DS . "sidebar.php") ?>
