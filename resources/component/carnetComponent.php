@@ -105,7 +105,7 @@ function display_carnet_admin()
         $stmt->execute();
 
         //for pagination using ajax, how much to show
-        $result_per_page = 5;
+        $result_per_page = 4;
         //To find how many posts in the database
         $number_of_results = $stmt->rowCount();
         //now the var will be on decimal so we round off using ceil fn
