@@ -90,16 +90,54 @@ function submit_innov(){
 function display_innov_admin()
 {
     global $pdo;
-    try{
-        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC"; 
-        $stmt = $pdo->query($sql)->fetchAll();
-        foreach ($stmt as $innov){
+
+    if(isset($_POST['innovpagination'])){
+
+    
+        $sql ="SELECT * FROM innov_news";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 4;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        echo <<<table
+        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+        <thead>
+            <tr class="text-center">
+            <th>#</th>
+                <th>Thumbnail</th>
+                <th>Title</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+table;
+
+    //determine the sql limit
+    $this_page_first_result = ($page - 1)*$result_per_page;
+
+        $sql = "SELECT i.*, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC LIMIT " . $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $inv= $stmt->fetchAll();
+        foreach ($inv as $innov){
         echo <<<innov
         <tr>
         <td class="text-center text-muted">{$innov->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$innov->file_name}" class="br-a" alt="innov news thumbnail"></td>
-        <td class=""> {$innov->title} </td>
-        <td class=""> {$innov->link} </td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$innov->file_name}" class="br-a" alt="innov news thumbnail"></td>
+        <td class="text-center"> {$innov->title} </td>
+        <td class="text-center"> {$innov->link} </td>
 
         <td class="text-center">
             <a href="index.php?edit_innov-news={$innov->id}">
@@ -114,9 +152,34 @@ function display_innov_admin()
     </tr>
 innov;
     }
-} catch (PDOException $e) {
-    echo 'query failed' . $e->getMessage();
+
+    echo <<<tableclose
+    </tbody>
+</table>
+<nav class="" aria-label="Page navigation example">
+    <ul class="pagination" style="margin: 1rem 0;justify-content: center;">
+tableclose;
+//for the pagination links
+//display links to the page
+for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+if($i == $page){
+echo '<li class="page-item active"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
+} else {
+echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
 }
+}
+
+$check = $this_page_first_result + $result_per_page;
+$next = $page + 1;
+if($number_of_results > $check){
+echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" aria-label="Next" id="'. $next .'" ><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>';
+
+}else {
+echo " ";
+}
+echo  '</ul></nav>';
+}
+
 }
 
 
