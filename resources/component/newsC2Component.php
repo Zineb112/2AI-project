@@ -137,17 +137,55 @@ function submit_newsC2(){
 function display_newsC2_admin()
 {
     global $pdo;
-    try{
-        $sql = "SELECT b.*, m.file_name FROM blog_c2 b join media m on b.cover = m.id ORDER BY b.published_at DESC"; 
-        $stmt = $pdo->query($sql)->fetchAll();
-        foreach ($stmt as $post){
+
+    if(isset($_POST['newsC2pagination'])){
+
+    
+        $sql ="SELECT * FROM gallery";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 4;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        echo <<<table
+        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+        <thead>
+            <tr class="text-center">
+            <th>#</th>
+                <th>Thumbnail</th>
+                <th>Post cover</th>
+                <th>Title</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+table;
+
+    //determine the sql limit
+    $this_page_first_result = ($page - 1)*$result_per_page;
+        $sql = "SELECT b.*, m.file_name FROM blog_c2 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT " . $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $newsC2= $stmt->fetchAll();
+        foreach ($newsC2 as $post){
             $reg = date("F jS, Y, g:i a", strtotime($post->published_at));
         echo <<<news
         <tr>
         <td class="text-center text-muted">{$post->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$post->file_name}" class="br-a" alt="team thumbnail"></td>
-        <td class=""> {$post->title} </td>
-        <td class=""> {$reg} </td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$post->file_name}" class="br-a" alt="team thumbnail"></td>
+        <td class="text-center"> {$post->title} </td>
+        <td class="text-center"> {$reg} </td>
 
         <td class="text-center">
             <a href="index.php?edit_newsC2={$post->id}">
@@ -162,9 +200,34 @@ function display_newsC2_admin()
     </tr>
 news;
     }
-} catch (PDOException $e) {
-    echo 'query failed' . $e->getMessage();
+
+    echo <<<tableclose
+    </tbody>
+</table>
+<nav class="" aria-label="Page navigation example">
+    <ul class="pagination" style="margin: 1rem 0;justify-content: center;">
+tableclose;
+//for the pagination links
+//display links to the page
+for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+if($i == $page){
+echo '<li class="page-item active"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
+} else {
+echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
 }
+}
+
+$check = $this_page_first_result + $result_per_page;
+$next = $page + 1;
+if($number_of_results > $check){
+echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" aria-label="Next" id="'. $next .'" ><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>';
+
+}else {
+echo " ";
+}
+echo  '</ul></nav>';
+}
+
 }
 
 // Delete a post
