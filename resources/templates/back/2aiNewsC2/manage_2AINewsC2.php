@@ -18,34 +18,55 @@
         <div class="col-md-12">
             <div class="main-card mb-3 card">
                 <div class="card-header"> 2ai New's list</div>
-                <div class="table-responsive">
-                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th class="text-center">#</th>
-                                <th> 2ai News member thumbnail</th>
-                                <th> 2ai News full Name</th>
-                                <th> 2ai News links</th>
-                                <th> 2ai News role</th>
-                                <th> 2ai News title</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php display_2aiNews_admin() ?>
-                        </tbody>
-                    </table>
+                <div class="table-responsive" id="aiNews_load">
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
 <script>
-    const delete_buttons = document.querySelectorAll('#PopoverCustomT-1');
-    for(const el of delete_buttons ){
-        el.addEventListener('click', (e) => {
-        let link = e.currentTarget.value;
-        document.querySelector('.deletion_link').href = link;
-        });
-    }
+
+    $(document).ready(function () {
+        //showing the data without refresh but on going to the next pagination
+        setTimeout(function () {
+            load_fn_data();
+        }, 1000);
+
+        function load_fn_data(page) {
+            $.ajax({
+                url: "./ajaxCalls.php",
+                method: "POST",
+                data: {
+                    page: page,
+                    postpagination: "pagination"
+                },
+                success: function (data) {
+                    $('#aiNews_load').html(data);
+                }
+            });
+        }
+
+        $(document).on('click', '.pagination_link', function () {
+            var page = $(this).attr("id");
+            load_fn_data(page);
+        })
+    })
+
+
+    setTimeout(function(){
+                    //to handle the deletion
+            const delete_buttons = document.querySelectorAll('#deletebtn');
+            for(const el of delete_buttons ){
+                el.addEventListener('click', (e) => {
+                let link = e.currentTarget.value;
+                console.log(link);
+                document.querySelector('.deletion_link').href = link;
+                });
+            }
+    }, 1000);
 </script>

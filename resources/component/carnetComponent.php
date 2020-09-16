@@ -127,6 +127,10 @@ carnet;
 }
 
 
+
+
+
+
 // Delete a partner
 function delete_carnet()
 {
