@@ -9,6 +9,7 @@ display_gallery_admin();
 display_guide_admin();
 display_portail_admin();
 display_innov_admin();
+display_newsC1_admin();
 
 
 ?>
