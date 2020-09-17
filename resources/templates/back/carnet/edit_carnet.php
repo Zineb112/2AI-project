@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update Carnet de l’inventeur
+                Mettre à jour Carnet de l’inventeur
                     <div class="page-title-subheading">
-                        By submitting this form you will update Carnet de l’inventeur 
+                    En soumettant ce formulaire, vous mettrez à jour les informations de Carnet de l’inventeur
                     </div>
                 </div>
             </div>
@@ -35,9 +35,9 @@
                         <div class="form-row">
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Carnet title</label>
+                                <label for="validationCustom01">Titre</label>
                                 <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $car->title ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du carnet" name="title" value="<?php echo $car->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -46,16 +46,16 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Date</label>
                                 <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="date" name="date" value="<?php echo $car->date ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire la date" name="date" value="<?php echo $car->date ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Download link</label>
+                                <label for="validationCustom01">Lien de téléchargement</label>
                                 <input type="hidden" name="carnet_id" value="<?php echo $car->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Copy download link here" name="file" value="<?php echo $car->file ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien de téléchargement" name="file" value="<?php echo $car->file ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -63,12 +63,12 @@
 
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Cover</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $car->cover?>">
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">

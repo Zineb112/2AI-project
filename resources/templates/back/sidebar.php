@@ -87,20 +87,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        inventor's notebook
+                                        Carnet de l’inventeur
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_carnet">
                                                 <i class="metismenu-icon"></i>
-                                                Create Carnet de l’inventeur
+                                                Créer carnet de l’inventeur
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_carnet">
                                                 <i class="metismenu-icon">
-                                                </i>Manage Carnet de l’inventeur
+                                                </i>Gérer carnet de l’inventeur
                                             </a>
                                         </li>
                                     </ul>
