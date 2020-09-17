@@ -50,13 +50,13 @@
                                         <li>
                                             <a href="index.php?create_innov-news">
                                                 <i class="metismenu-icon">
-                                                </i>Create new innovation news
+                                                </i>Créer innovation news
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_innov-news">
                                                 <i class="metismenu-icon">
-                                                </i>Manage innovation news
+                                                </i>Créer vos innovation news
                                             </a>
                                         </li>
                                     </ul>
@@ -78,7 +78,7 @@
                                         <li>
                                             <a href="index.php?manage_guide">
                                                 <i class="metismenu-icon">
-                                                </i>Gérer guide de l’Inventeur
+                                                </i>Gérer vos guide de l’Inventeur
                                             </a>
                                         </li>
                                     </ul>
@@ -100,7 +100,7 @@
                                         <li>
                                             <a href="index.php?manage_carnet">
                                                 <i class="metismenu-icon">
-                                                </i>Gérer carnet de l’inventeur
+                                                </i>Gérer vos carnet de l’inventeur
                                             </a>
                                         </li>
                                     </ul>
@@ -144,7 +144,7 @@
                                         <li>
                                             <a href="index.php?manage_2AINewsC2">
                                                 <i class="metismenu-icon">
-                                                </i>Gérer 2ai actualités
+                                                </i>Gérer vos 2ai actualités
                                             </a>
                                         </li>
                                     </ul>
@@ -211,7 +211,7 @@
                                         <li>
                                             <a href="index.php?manage_gallery">
                                                 <i class="metismenu-icon">
-                                                </i>Gérer galerie
+                                                </i>Gérer votre galerie
                                             </a>
                                         </li>
                                     </ul>

@@ -7,8 +7,8 @@
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>Manage your Innovation news
-                    <div class="page-title-subheading">here you can modify your innovation news information
+                <div>Gérez vos innovation news
+                    <div class="page-title-subheading">Ici vous pouvez voir les informations d'innovation news 
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header"> Innovation news list</div>
+                <div class="card-header"> Liste innovation news</div>
                 <div class="table-responsive" id="innov_load">
 
                 </div>

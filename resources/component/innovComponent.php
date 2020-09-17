@@ -117,8 +117,8 @@ function display_innov_admin()
             <tr class="text-center">
             <th>#</th>
                 <th>Thumbnail</th>
-                <th>Title</th>
-                <th>Links</th>
+                <th>Titre</th>
+                <th>Lien</th>
             </tr>
         </thead>
         <tbody>
