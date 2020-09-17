@@ -109,20 +109,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        Inventor Portal
+                                        Portail de l’Innovateur
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_portail">
                                                 <i class="metismenu-icon"></i>
-                                                Create Inventor Portal
+                                                Créer portail de l’Innovateur
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_portail">
                                                 <i class="metismenu-icon">
-                                                </i>Manage Inventor Portal
+                                                </i>Gérer portail de l’Innovateur
                                             </a>
                                         </li>
                                     </ul>

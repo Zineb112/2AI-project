@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update portail
+                Mettre à jour les informations des portail de l’Innovateur
                     <div class="page-title-subheading">
-                        By submitting this form you will update portail information
+                    En soumettant ce formulaire, vous mettrez à jour les informations des portail de l’Innovateur
                     </div>
                 </div>
             </div>
@@ -34,36 +34,36 @@
                         <?php foreach($portail_result as $portail): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $portail->full_name ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom complet de l’Innovateur" name="full_name" value="<?php echo $portail->full_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">link</label>
+                                <label for="validationCustom01">Lien</label>
                                 <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="portail video link" name="link" value="<?php echo $portail->link ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien" name="link" value="<?php echo $portail->link ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Role</label>
+                                <label for="validationCustom01">Rôle</label>
                                 <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $portail->role ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle de l’Innovateur" name="role" value="<?php echo $portail->role ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">title</label>
+                                <label for="validationCustom01">Titre</label>
                                 <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="portail title" name="title" value="<?php echo $portail->title ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre" name="title" value="<?php echo $portail->title ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -72,12 +72,12 @@
                      
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Cover</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $portail->cover?>">
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">
