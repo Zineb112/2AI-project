@@ -11,6 +11,7 @@ display_portail_admin();
 display_innov_admin();
 display_newsC1_admin();
 display_newsC2_admin();
+display_subscriber_admin();
 
 
 ?>
