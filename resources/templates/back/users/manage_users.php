@@ -29,7 +29,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th>Name</th>
+                                <th >Name</th>
                                 <th class="text-center">Service</th>
                                 <th class="text-center">Status</th>
                                 <th class="text-center">Reg Date</th>
