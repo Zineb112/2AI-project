@@ -65,20 +65,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        Inventor's guide 
+                                        Guide de l’Inventeur
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_guide">
                                                 <i class="metismenu-icon">
-                                                </i>Create new Inventor's guide 
+                                                </i>Créer guide de l’Inventeur
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_guide">
                                                 <i class="metismenu-icon">
-                                                </i>Manage Inventor's guide 
+                                                </i>Gérer guide de l’Inventeur
                                             </a>
                                         </li>
                                     </ul>

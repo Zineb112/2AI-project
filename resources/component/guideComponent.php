@@ -119,9 +119,9 @@ function display_guide_admin()
         <tr class="text-center">
         <th>#</th>
         <th>Thumbnail</th>
-        <th>Full Name</th>
-        <th>Role</th>
-        <th>Link</th>
+        <th>Nom complet</th>
+        <th>Rôle</th>
+        <th>Lien</th>
         </tr>
     </thead>
     <tbody>

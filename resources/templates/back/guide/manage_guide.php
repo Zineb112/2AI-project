@@ -7,8 +7,8 @@
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>Manage your Inventor's guide
-                    <div class="page-title-subheading">here you can modify your Inventor's guide information
+                <div>Gérez vos guide de l’Inventeur 
+                    <div class="page-title-subheading">Ici vous pouvez voir les informations de guide de l’Inventeur 
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header"> Inventor's guide list</div>
+                <div class="card-header">Liste guide de l’Inventeur </div>
                 <div class="table-responsive" id="guide_load">
 
                 </div>

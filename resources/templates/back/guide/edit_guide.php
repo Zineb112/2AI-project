@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update inventor's guide
+                Mettre à jour guide de l’Inventeur 
                     <div class="page-title-subheading">
-                        By submitting this form you will update inventor's guide information
+                    En soumettant ce formulaire, vous mettrez à jour les informations du guide de l’Inventeur 
                     </div>
                 </div>
             </div>
@@ -34,48 +34,48 @@
                         <?php foreach($guide_result as $guide): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Full name</label>
+                                <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" name="full_name" value="<?php echo $guide->full_name ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom complet de l'inventeur" name="full_name" value="<?php echo $guide->full_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Role</label>
+                                <label for="validationCustom01">Rôle</label>
                                 <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Inventor's guide role" name="role" value="<?php echo $guide->role ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle de l'inventeur" name="role" value="<?php echo $guide->role ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Link</label>
+                                <label for="validationCustom01">Lien</label>
                                 <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Reportage link" name="link" value="<?php echo $guide->link ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du reportage" name="link" value="<?php echo $guide->link ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Reportage title</label>
+                                <label for="validationCustom01">Titre</label>
                                 <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Reportage title" name="title" value="<?php echo $guide->title ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du reportage" name="title" value="<?php echo $guide->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Cover</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $guide->cover?>">
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">
