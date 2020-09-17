@@ -39,7 +39,7 @@
                                         Analytics Dashboard
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">Innovation Portal</li>
+                                <li class="app-sidebar__heading">Portail de Innovation</li>
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
