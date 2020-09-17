@@ -23,9 +23,9 @@
                         <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th>Partner thumbnail</th>
-                                <th>Partner Name</th>
-                                <th>Partner Link</th>
+                                <th class="text-center">Thumbnail</th>
+                                <th class="text-center">Nom partenaire</th>
+                                <th class="text-center">Lien de site Web</th>
                             </tr>
                         </thead>
                         <tbody>

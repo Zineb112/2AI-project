@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update partner
+                Mettre à jour les partenaires
                     <div class="page-title-subheading">
-                        By submitting this form you will update partner information
+                    En soumettant ce formulaire, vous mettrez à jour les informations des partenaires
                     </div>
                 </div>
             </div>
@@ -34,30 +34,31 @@
                         <?php foreach($partner_result as $pr): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Partner name</label>
+                                <label for="validationCustom01">Nom partenaire</label>
                                 <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner name" name="partner_name" value="<?php echo $pr->partner_name ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom partenaire" name="partner_name" value="<?php echo $pr->partner_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Website link</label>
+                                <label for="validationCustom01">Lien de site Web</label>
                                 <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Partner website link" name="link" value="<?php echo $pr->link ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien vers le site Web du partenaire" name="link" value="<?php echo $pr->link ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Logo</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $pr->partner_logo?>">
                                 <input name="partner_logo" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
+                                <big class="form-text text-muted">&#9888; Les dimensions doivent être de 200 x 80 px</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">

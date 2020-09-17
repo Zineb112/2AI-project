@@ -219,20 +219,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-loop"></i>
-                                        Partners
+                                        Partenaires
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_partner">
                                                 <i class="metismenu-icon"></i>
-                                                Create partner
+                                                Créer partenaire
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_partner">
                                                 <i class="metismenu-icon">
-                                                </i>Manage partner
+                                                </i>Gérer vos partenaires
                                             </a>
                                         </li>
                                     </ul>

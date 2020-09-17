@@ -66,9 +66,9 @@ function display_partners_admin()
         echo <<<partner
         <tr>
         <td class="text-center text-muted">{$partner->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$partner->file_name}" class="br-a" alt="partner thumbnail"></td>
-        <td class=""> {$partner->partner_name} </td>
-        <td class=""> {$partner->link} </td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$partner->file_name}" class="br-a" alt="partner thumbnail"></td>
+        <td class="text-center"> {$partner->partner_name} </td>
+        <td class="text-center"> {$partner->link} </td>
 
         <td class="text-center">
             <a href="index.php?edit_partner={$partner->id}">
