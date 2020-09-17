@@ -7,8 +7,8 @@
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>Manage your gallery
-                    <div class="page-title-subheading">Here you can modify your gallery information
+                <div>Gérez vos photos/vidéos
+                    <div class="page-title-subheading">Ici vous pouvez voir les informations de photo/vidéo
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header">Gallery items</div>
+                <div class="card-header">Liste des photos/ vidéos</div>
                 <div class="table-responsive" id="gallery_load">
 
                 </div>

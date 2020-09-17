@@ -7,8 +7,8 @@
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>Manage Carnet de l’inventeur
-                    <div class="page-title-subheading">here you can modify your Carnet de l’inventeur
+                <div>Gérez vos carnet de l’inventeur
+                    <div class="page-title-subheading">Ici vous pouvez voir les informations de carnet de l’inventeur
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header">Carnet de l’inventeur card</div>
+                <div class="card-header">Liste carnet de l’inventeur</div>
                 <div class="table-responsive" id="carnet_load">
 
                 </div>

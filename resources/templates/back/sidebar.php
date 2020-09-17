@@ -198,20 +198,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-photo-gallery"></i>
-                                        Gallery
+                                        Galerie
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_gallery">
                                                 <i class="metismenu-icon">
-                                                </i>Create new project
+                                                </i>Créer photo/vidéo
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_gallery">
                                                 <i class="metismenu-icon">
-                                                </i>Manage projects
+                                                </i>Gérer galerie
                                             </a>
                                         </li>
                                     </ul>

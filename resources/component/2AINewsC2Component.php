@@ -117,11 +117,11 @@ function display_2aiNews_admin()
         <thead>
             <tr class="text-center">
             <th>#</th>
-                <th> Thumbnail</th>
-                <th> Full Name</th>
-                <th> Role</th>
-                <th> Title</th>
-                <th> News links</th>
+                <th>Thumbnail</th>
+                <th>Nom complet</th>
+                <th>Rôle</th>
+                <th>Titre</th>
+                <th>Lien</th>
             </tr>
         </thead>
         <tbody>

@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update gallery's item
+                Mettre à jour galerie
                     <div class="page-title-subheading">
-                        By submitting this form you will update gallery item information
+                    En soumettant ce formulaire, vous mettrez à jour les informations des photos/ vidéos
                     </div>
                 </div>
             </div>
@@ -34,18 +34,18 @@
                         <?php foreach($gallery_result as $gallery): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">title</label>
+                                <label for="validationCustom01">Titre</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="title" name="title" value="<?php echo $gallery->title ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du iamge/vidéo" name="title" value="<?php echo $gallery->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">category</label>
+                                <label for="validationCustom01">Catégorie</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="category" name="category" value="<?php echo $gallery->category ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire la catégorie" name="category" value="<?php echo $gallery->category ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -54,9 +54,9 @@
                          
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">link</label>
+                                <label for="validationCustom01">Lien</label>
                                 <input type="hidden" name="gallery_id" value="<?php echo $gallery->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="link" name="link" value="<?php echo $gallery->link ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du l'image/vidéo" name="link" value="<?php echo $gallery->link ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -80,7 +80,7 @@
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $gallery->cover?>">
                                 <input name="avatar" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">
