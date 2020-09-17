@@ -61,7 +61,7 @@ function display_users()
         <tr>
         <td class="text-center text-muted">{$user->id}</td>
         <td>
-            <div class="widget-content p-0">
+            <div  class="widget-content p-0">
                 <div class="widget-content-wrapper">
                     <div class="widget-content-left mr-3">
                         <div class="widget-content-left">
