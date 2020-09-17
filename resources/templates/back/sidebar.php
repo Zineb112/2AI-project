@@ -153,20 +153,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        News  concept 1
+                                        Blog concept 1
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_newsC1">
                                                 <i class="metismenu-icon"></i>
-                                                Create new news
+                                                Créer nouveau actualités
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_newsC1">
                                                 <i class="metismenu-icon">
-                                                </i>Manage news
+                                                </i>Gérer vos actualités
                                             </a>
                                         </li>
                                     </ul>

@@ -7,7 +7,7 @@
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>Manage your Blog posts concept 1
+                <div>Gérez vos actualités pour le concept 1
                     <div class="page-title-subheading">Here you can Edit your posts or delete them.
                     </div>
                 </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header"> Posts list</div>
+                <div class="card-header">Liste des actualités</div>
                 <div class="table-responsive" id="newsC1_load">
 
                 </div>

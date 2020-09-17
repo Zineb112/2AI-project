@@ -147,8 +147,8 @@ function display_newsC1_admin()
         <thead>
             <tr class="text-center">
             <th>#</th>
-            <th>Post cover</th>
-            <th>Title</th>
+            <th>Cover</th>
+            <th>Titre</th>
             <th>Date</th>
             </tr>
         </thead>
