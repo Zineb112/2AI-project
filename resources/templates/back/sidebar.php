@@ -315,45 +315,7 @@
                                         Change password
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="index.php?user_profile">
-                                        <i class="metismenu-icon pe-7s-id"></i>
-                                        Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-browser"></i>
-                                        Pages
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="../index.php" target="_blank">
-                                                <i class="metismenu-icon"></i>
-                                                Home
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="../aboutUs.php" target="_blank">
-                                                <i class="metismenu-icon">
-                                                </i>About Us
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="../team.php" target="_blank">
-                                                <i class="metismenu-icon">
-                                                </i>Team
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="../gallery.php" target="_blank">
-                                                <i class="metismenu-icon">
-                                                </i>Gallery
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
