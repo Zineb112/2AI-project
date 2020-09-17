@@ -163,10 +163,9 @@ function display_newsC2_admin()
         <thead>
             <tr class="text-center">
             <th>#</th>
-                <th>Thumbnail</th>
-                <th>Post cover</th>
-                <th>Title</th>
-                <th>Date</th>
+            <th>Cover</th>
+            <th>Titre</th>
+            <th>Date</th>
             </tr>
         </thead>
         <tbody>

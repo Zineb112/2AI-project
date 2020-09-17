@@ -10,9 +10,9 @@ submit_newsC2();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Add new news for concept2
+                Ajouter nouveau actualité pour le concept 2
                     <div class="page-title-subheading">
-                        By submitting this form you will create a new blog post
+                    En soumettant ce formulaire, vous créerez un nouveau actualité 
                     </div>
                 </div>
             </div>
@@ -29,28 +29,28 @@ submit_newsC2();
         <div class="col-md-8">
             <div class="main-card mb-2 card">
                 <div class="card-body">
-                    <h5 class="card-title">New news</h5>
+                    <h5 class="card-title">Nouveau actualité</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Title</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Post title" name="title" required="" />
+                                <label for="validationCustom01">Titre</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre de l'article" name="title" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
-                            <textarea name="content" id="editor">
+                            <textarea name="Contenu" id="editor">
                                 
                             </textarea>
 
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Cover</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
-                                <big class="form-text text-muted">&#9888; The dimensions must be 500 x 500 px at least</big>
+                                <big class="form-text text-muted">&#9888; Les dimensions doivent être au moins de 500 x 500 px</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_partner" type="submit" name="submit" value="Submit form">
