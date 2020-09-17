@@ -31,7 +31,7 @@
 <section class="aboutUs">
 
     <div class="aboutUs__left">
-        <img src="images/about-img.png" alt="">
+        <img src="assets/images/about-img.png" alt="">
         <a id="play-video" class="banner-one__video videoUs"><i class="fa fa-play"></i></a>
     </div>
     <div class="aboutUs__right">
@@ -68,48 +68,48 @@
         <h3 class="servicesUs__title">Nous essayons de servir le meilleur <br> <span class="servicesUs__title--font">service</span></h3>
         <div class="servicesUs__container">
                 <div class="servicesUs__card1 cardActive">
-                    <img class="servicesUs__img1" src="images/designIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt1" src="images/designAltIcon.svg" alt="">
+                    <img class="servicesUs__img1" src="assets/images/designIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt1" src="assets/images/designAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Design & Edition</h3>
                 </div>
                 <div class="servicesUs__card2">
-                    <img class="servicesUs__img2" src="images/AudioIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt2" src="images/AudioAltIcon.svg" alt="">
+                    <img class="servicesUs__img2" src="assets/images/AudioIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt2" src="assets/images/AudioAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Audio-visuelle</h3>
                 </div>
                 <div class="servicesUs__card3">
-                    <img class="servicesUs__img3" src="images/EventIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt3" src="images/EventAltIcon.svg" alt="">
+                    <img class="servicesUs__img3" src="assets/images/EventIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt3" src="assets/images/EventAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Evénementielle </h3>
                 </div>
                 <div class="servicesUs__card4">
-                    <img class="servicesUs__img4" src="images/digitalIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt4" src="images/digitalAltIcon.svg" alt="">
+                    <img class="servicesUs__img4" src="assets/images/digitalIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt4" src="assets/images/digitalAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Digitalisation </h3>
                 </div>
                 <div class="servicesUs__card5">
-                    <img class="servicesUs__img5" src="images/pressIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt5" src="images/pressAltIcon.svg" alt="">
+                    <img class="servicesUs__img5" src="assets/images/pressIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt5" src="assets/images/pressAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Presse</h3>
                 </div>
                 <div class="servicesUs__card6">
-                    <img class="servicesUs__img6" src="images/locationIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt6" src="images/locationAltIcon.svg" alt="">
+                    <img class="servicesUs__img6" src="assets/images/locationIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt6" src="assets/images/locationAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Location de matériel</h3>
                 </div>
                 <div class="servicesUs__card7">
-                    <img class="servicesUs__img7" src="images/shootingIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt7" src="images/shootingAltIcon.svg" alt="">
+                    <img class="servicesUs__img7" src="assets/images/shootingIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt7" src="assets/images/shootingAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Shooting photo</h3>
                 </div>
                 <div class="servicesUs__card8">
-                    <img class="servicesUs__img8" src="images/marketingIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt8" src="images/marketingAltIcon.svg" alt="">
+                    <img class="servicesUs__img8" src="assets/images/marketingIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt8" src="assets/images/marketingAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Web, Mobile & Digital Marketing</h3>
                 </div>
                 <div class="servicesUs__card9">
-                    <img class="servicesUs__img9" src="images/conseilIcon.svg" alt="">
-                    <img class="servicesUs__imgAlt9" src="images/conseilAltIcon.svg" alt="">
+                    <img class="servicesUs__img9" src="assets/images/conseilIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt9" src="assets/images/conseilAltIcon.svg" alt="">
                     <h3 class="servicesUs__cardTitle">Conseil & Stratégie </h3>
                 </div>
         </div>
@@ -127,7 +127,7 @@
                     </ul>
              </div>
             <div class="servicesUs__serviceImg">
-                <img src="images/design-img.png" alt="">
+                <img src="assets/images/design-img.png" alt="">
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
                         </ul>
                  </div>
                 <div class="servicesUs__serviceImg audioWrapperImg">
-                    <img src="images/audio_img.png" alt="">
+                    <img src="assets/images/audio_img.png" alt="">
                 </div>
          </div>
     </div>
@@ -172,7 +172,7 @@
                             </ul>
                      </div>
                     <div class="servicesUs__serviceImg">
-                        <img src="images/event_img.png" alt="">
+                        <img src="assets/images/event_img.png" alt="">
                     </div>
              </div>
     </div>
@@ -194,7 +194,7 @@
                     </ul>
              </div>
             <div class="servicesUs__serviceImg">
-                <img src="images/digi-img.png" alt="">
+                <img src="assets/images/digi-img.png" alt="">
             </div>
         </div>
     </div>
@@ -214,7 +214,7 @@
                         </ul>
                  </div>
                 <div class="servicesUs__serviceImg audioWrapperImg">
-                    <img src="images/presse-img.png" alt="">
+                    <img src="assets/images/presse-img.png" alt="">
                 </div>
          </div>
     </div>
@@ -234,7 +234,7 @@
                             </ul>
                      </div>
                     <div class="servicesUs__serviceImg">
-                        <img src="images/materiel-img.png" alt="">
+                        <img src="assets/images/materiel-img.png" alt="">
                     </div>
              </div>
     </div>
@@ -253,7 +253,7 @@
                     </ul>
              </div>
             <div class="servicesUs__serviceImg">
-                <img src="images/shooting-img.png" alt="">
+                <img src="assets/images/shooting-img.png" alt="">
             </div>
         </div>
     </div>
@@ -270,7 +270,7 @@
                         </ul>
                  </div>
                 <div class="servicesUs__serviceImg audioWrapperImg">
-                    <img src="images/dmarketing-img.png" alt="">
+                    <img src="assets/images/dmarketing-img.png" alt="">
                 </div>
          </div>
     </div>
@@ -291,7 +291,7 @@
                             </ul>
                      </div>
                     <div class="servicesUs__serviceImg">
-                        <img src="images/conseil-img.png" alt="">
+                        <img src="assets/images/conseil-img.png" alt="">
                     </div>
              </div>
     </div>
