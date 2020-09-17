@@ -23,9 +23,9 @@
                         <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th> Team member thumbnail</th>
-                                <th> Team  full Name</th>
-                                <th> Team role</th>
+                                <th class="text-center"> Photo profile</th>
+                                <th class="text-center"> Nom complet</th>
+                                <th class="text-center"> Rôle</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update team's member
+                Mettre à jour les membres de l'équipe
                     <div class="page-title-subheading">
-                        By submitting this form you will update team member information
+                    En soumettant ce formulaire, vous mettrez à jour les informations des membres de l'équipe
                     </div>
                 </div>
             </div>
@@ -34,18 +34,18 @@
                         <?php foreach($team_result as $team): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $team->full_name ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom complet" name="full_name" value="<?php echo $team->full_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Role</label>
+                                <label for="validationCustom01">Rôle</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $team->role ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle" name="role" value="<?php echo $team->role ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -54,7 +54,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Linkedin</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="linkedIn account" name="linkedin" value="<?php echo $team->linkedin ?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte LinkedIn" name="linkedin" value="<?php echo $team->linkedin ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -63,7 +63,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Gmail</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Gmail account" name="gmail" value="<?php echo $team->gmail ?>"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Gmail" name="gmail" value="<?php echo $team->gmail ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -72,7 +72,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Twitter</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Twitter account" name="twitter" value="<?php echo $team->twitter?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Twitter" name="twitter" value="<?php echo $team->twitter?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -81,7 +81,7 @@
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Instagram</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Instagram account" name="instagram" value="<?php echo $team->instagram ?>"  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Instagram" name="instagram" value="<?php echo $team->instagram ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -90,12 +90,12 @@
 
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Photo profile</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $team->avatar?>">
                                 <input name="avatar" id="exampleFile" type="file" class="form-control-file">
-                                <small class="form-text text-muted">Upload only if you want to replaced the existing image with a new one</small>
+                                <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">

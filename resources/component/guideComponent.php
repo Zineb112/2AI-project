@@ -118,7 +118,7 @@ function display_guide_admin()
     <thead>
         <tr class="text-center">
         <th>#</th>
-        <th>Thumbnail</th>
+        <th>Cover</th>
         <th>Nom complet</th>
         <th>Rôle</th>
         <th>Lien</th>

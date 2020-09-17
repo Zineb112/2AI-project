@@ -10,10 +10,10 @@ function display_team(){
                     <div class="team-one__image">
                         <img src="uploads/{$team->file_location}" alt="{$team->full_name}" >
                         <div class="team-one__social">
-                            <a href="{$team->linkedin}"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{$team->linkedin}"><i class="fab fa-linkedin"></i></a>
                             <a href="{$team->twitter}"><i class="fab fa-twitter"></i></a>
-                            <a href="{$team->gmail}"><i class="fab fa-dribbble"></i></a>
-                            <a href="{$team->instagram}"><i class="fab fa-behance"></i></a>
+                            <a href="{$team->gmail}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a href="{$team->instagram}"><i class="fab fa-instagram"></i></a>
                         </div><!-- /.team-one__social -->
                     </div><!-- /.team-one__image -->
                     <div class="team-one__content">
@@ -45,11 +45,11 @@ function display_team_about(){
                         <img src="uploads/{$team->file_location}" alt="team">
 
                         <div class="social">
-                            <a href=""{$team->linkedin}"" target="_blank">
+                            <a href="{$team->linkedin}" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="{$team->twitter}" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
+                            <a href="{$team->gmail}" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                             </a>
                             <a href="{$team->twitter}" target="_blank">
                                 <i class="fab fa-twitter"></i>
@@ -124,9 +124,9 @@ function display_team_admin()
         echo <<<team
         <tr>
         <td class="text-center text-muted">{$team->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$team->file_name}" class="br-a" alt="team thumbnail"></td>
-        <td class=""> {$team->full_name} </td>
-        <td class=""> {$team->role} </td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$team->file_name}" class="br-a" alt="team thumbnail"></td>
+        <td class="text-center"> {$team->full_name} </td>
+        <td class="text-center"> {$team->role} </td>
 
         <td class="text-center">
             <a href="index.php?edit_team={$team->id}">

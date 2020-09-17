@@ -23,7 +23,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th class="text-center">Thumbnail</th>
+                                <th class="text-center">Logo partenaire</th>
                                 <th class="text-center">Nom partenaire</th>
                                 <th class="text-center">Lien de site Web</th>
                             </tr>
