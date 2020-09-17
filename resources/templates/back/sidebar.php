@@ -131,20 +131,20 @@
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
-                                        2AI News 
+                                        2ai actualités
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_2AINewsC2">
                                                 <i class="metismenu-icon"></i>
-                                                Create 2ai News
+                                                Créer 2ai actualités
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_2AINewsC2">
                                                 <i class="metismenu-icon">
-                                                </i>Manage 2ai News
+                                                </i>Gérer 2ai actualités
                                             </a>
                                         </li>
                                     </ul>

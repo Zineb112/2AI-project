@@ -7,9 +7,9 @@
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                    Update 2ai News
+                Mettre à jour 2ai actualités
                     <div class="page-title-subheading">
-                        By submitting this form you will update 2ai News  information
+                    En soumettant ce formulaire, vous mettrez à jour les informations de 2ai actualités
                     </div>
                 </div>
             </div>
@@ -34,36 +34,36 @@
                         <?php foreach($ai_news_result as $ai_news): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="ai_news_id" value="<?php echo $ai_news->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $ai_news->full_name ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom complet" name="full_name" value="<?php echo $ai_news->full_name ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Link</label>
+                                <label for="validationCustom01">Lien</label>
                                 <input type="hidden" name="ai_news_id" value="<?php echo $ai_news->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="link's" name="link" value="<?php echo $ai_news->link ?>" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien" name="link" value="<?php echo $ai_news->link ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Role</label>
+                                <label for="validationCustom01">Rôle</label>
                                 <input type="hidden" name="ai_news_id" value="<?php echo $ai_news->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="2ai News Role" name="role" value="<?php echo $ai_news->role ?>"  required=""/>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle" name="role" value="<?php echo $ai_news->role ?>"  required=""/>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Title</label>
+                                <label for="validationCustom01">Titre</label>
                                 <input type="hidden" name="ai_news_id" value="<?php echo $ai_news->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="2ai News title" name="title" value="<?php echo $ai_news->title ?>"  required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre d'actualité" name="title" value="<?php echo $ai_news->title ?>"  required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>

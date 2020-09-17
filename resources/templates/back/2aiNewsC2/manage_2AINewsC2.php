@@ -7,8 +7,8 @@
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>Manage your 2ai News members
-                    <div class="page-title-subheading">here you can modify your 2ai News's information
+                <div>Gérez vos 2ai actualités
+                    <div class="page-title-subheading">Ici vous pouvez voir les informations de vos 2ai actualités
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header"> 2ai New's list</div>
+                <div class="card-header"> Liste 2ai actualités</div>
                 <div class="table-responsive" id="aiNews_load">
 
                 </div>
