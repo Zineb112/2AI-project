@@ -83,6 +83,9 @@
         }
     }
     }
+    .paginationInv{
+        grid-column: 2/3;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -189,5 +192,9 @@
             margin-left: 15px;
         }
     }
+    }
+
+    .paginationInv{
+        grid-column: 1/3;
     }
 }

@@ -1,5 +1,82 @@
 <?php 
 
+function display_innov_page(){
+    global $pdo;
+    if(isset($_POST['displayInnov'])){
+
+    
+        $sql ="SELECT * FROM innov_news";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 6;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        //determine the sql limit
+        $this_page_first_result = ($page - 1)*$result_per_page;
+        //now finally showing the posts
+        $sql ="SELECT i.id, i.title, i.link, i.cover, m.file_name FROM innov_news i join media m on i.cover = m.id ORDER BY i.id DESC LIMIT ". $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $inv = $stmt->fetchAll();
+        
+        foreach ($inv as $innovNews){
+            echo <<<innov
+            <div class="Inews__singleInnov" data-aos="flip-up" data-aos-duration="1500">
+            <div class="Inews__imageInnov">
+                <img src="uploads/{$innovNews->file_name}" alt="{$innovNews->title}">
+                <a href="{$innovNews->link}" target="_blank"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="Inews__contentInnov">
+                <h3><a href="{$innovNews->link}" target="_blank">{$innovNews->title}</a></h3>
+                <a href="{$innovNews->link}" target="_blank" class="thm-btn Inews__btnInnov"><span>Lire la vidéo</span></a>
+            </div>
+        </div>
+    innov;
+        
+    }
+
+    echo '<section class="paginationInv"><div class="pagination-container post-pagination">';
+    //for the pagination links
+    //display links to the page
+    for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+        if($i == $page){
+            echo '<a class="pagination_link pagination__icon pagination__icon--active active" id="'. $i .'">'.$i .'</a>';
+        } else {
+            echo '<a class="pagination_link pagination__icon pagination__icon--active" id="'. $i .'">'.$i .'</a>';
+        }
+    }
+
+    // $check = $this_page_first_result + $result_per_page;
+    // $next = $page + 1;
+    // // if($number_of_results > $check){
+    // //     echo '<div class="post-pagination"><a class="pagination_link pagination__icon" id="'. $next .'">></a>'.'</div>';
+
+    // // }
+    // // else {
+    // //     echo " ";
+    // // }
+    // echo '</div>';
+}
+
+
+}
+
+
+
+
+
+
 
 function display_innovNews(){
     global $pdo;
