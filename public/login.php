@@ -102,16 +102,20 @@
   "hideMethod": "fadeOut"
 }
     </script>
-    <?php display_msg() ?>
-    <!-- Bootstrap js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Imagesloaded js -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <!-- Validator js -->
-    <script src="assets/js/validator.min.js"></script>
+<?php 
+   if(isset($_SESSION['msgPasschanged'])){
+    set_message('success', $_SESSION['msgPasschanged']);
+   }
+   display_msg(); ?>
+<!-- Bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- Validator js -->
+<script src="assets/js/validator.min.js"></script>
 
-    <!-- Custom Js -->
-    <script src="assets/js/login-js.js"></script>
+<!-- Custom Js -->
+<script src="assets/js/login-js.js"></script>
 
 </body>
 

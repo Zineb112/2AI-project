@@ -20,6 +20,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/login.css">
+        <!-- jquery-->
+        <script src="assets/js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- toastr notification -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
 </head>
 
 <body>
@@ -47,17 +54,14 @@
                             <i class="flaticon-envelope"></i>
                         </div>
                         <div class="form-group fxt-transformY-50 fxt-transition-delay-4">
-                            <button type="submit" class="fxt-btn-fill">Send Me Email</button>
+                            <button type="submit" class="fxt-btn-fill" name="forgot_email">Send Me Email</button>
                         </div>
                     </form>                            
                 </div> 
             </div>   
         </div>
     </div>
-    <!-- jquery-->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Popper js -->
-    <script src="assets/js/popper.min.js"></script>
+
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Imagesloaded js -->
