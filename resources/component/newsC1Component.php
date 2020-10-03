@@ -3,7 +3,7 @@
 
 
 
-function display_newsC1_front(){
+function display_newsC1_page(){
     global $pdo;
     if(isset($_POST['displayNewsC1'])){
 

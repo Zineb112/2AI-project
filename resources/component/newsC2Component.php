@@ -1,35 +1,83 @@
 <?php 
-
 function display_newsC2_page(){
     global $pdo;
-    try{
-    $sql ="SELECT b.*, m.file_location FROM blog_c2 b join media m on b.cover = m.id ORDER BY b.published_at DESC";
-    $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $news){
-        $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
-        echo <<<news
-        <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
-        <div class="blog-one__imageInnov">
-            <img src="uploads/{$news->file_location}" alt="">
-            <a href="newspostC2.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
-        </div>
-        <div class="blog-one__contentInnov blogshadow">
-            <div class="blog-one__metaInnov">
-                <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
+    if(isset($_POST['displayNewsC2'])){
+
+    
+        $sql ="SELECT * FROM blog_c2";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 6;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        //determine the sql limit
+        $this_page_first_result = ($page - 1)*$result_per_page;
+        //now finally showing the posts
+        $sql ="SELECT b.*, m.file_location FROM blog_c2 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT ". $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $posts = $stmt->fetchAll();
+        
+        foreach ($posts as $news){
+            $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
+
+            echo <<<news
+            <div class="blog-one__singleInnov" data-aos="flip-down" data-aos-duration="1000">
+            <div class="blog-one__imageInnov">
+                <img src="uploads/{$news->file_location}" alt="">
+                <a href="newspostC2.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
             </div>
-            <h3><a href="newspostC2.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="newspostC2.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
-        </div>
-        </div>
-
-
-news;
+            <div class="blog-one__contentInnov blogshadow">
+                <div class="blog-one__metaInnov">
+                    <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
+                </div>
+                <h3><a href="newspostC2.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+                <a href="newspostC2.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btnInnov"><span>Lire la suite</span></a>
+            </div>
+            </div>
+    
+    
+    news;
+        
     }
-    } catch (PDOException $e) {
-    set_message('error','query failed');
-    echo 'query failed' . $e->getMessage();
+
+    echo '<section class="paginationP"><div class="pagination-container post-pagination">';
+    //for the pagination links
+    //display links to the page
+    for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+        if($i == $page){
+            echo '<a class="pagination_link pagination__icon pagination__icon--active active" id="'. $i .'">'.$i .'</a>';
+        } else {
+            echo '<a class="pagination_link pagination__icon pagination__icon--active" id="'. $i .'">'.$i .'</a>';
+        }
     }
+
+    // $check = $this_page_first_result + $result_per_page;
+    // $next = $page + 1;
+    // // if($number_of_results > $check){
+    // //     echo '<div class="post-pagination"><a class="pagination_link pagination__icon" id="'. $next .'">></a>'.'</div>';
+
+    // // }
+    // // else {
+    // //     echo " ";
+    // // }
+    // echo '</div>';
 }
+
+
+}
+
 
 
 

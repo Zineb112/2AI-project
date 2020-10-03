@@ -3,5 +3,6 @@
 <?php 
 
 subscribe_newsletter();
-display_newsC1_front(); 
+display_newsC1_page(); 
+display_newsC2_page(); 
 ?>
