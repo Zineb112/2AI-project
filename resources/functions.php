@@ -206,6 +206,17 @@ function send_email($message, $email){
         echo 'Message could not be sent. Mailer Error: '. $mail->ErrorInfo;
     }
 }
+function table_count($table_name){
+    global $pdo;
+    $sql = "SELECT COUNT(*) as count FROM $table_name";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $count = $stmt->fetchAll()[0]->count;
+    echo $count;
+
+}
+
+
 
 require_once('component/loginComponent.php');
 require_once('component/usersComponent.php');
