@@ -73,6 +73,11 @@
         border: 2px solid $secondary;
         color: $secondary;
       }
+      &__a{
+        text-decoration: none;
+        grid-area: 1/2;
+        margin: auto;
+      }
     }
     
 }
@@ -211,6 +216,9 @@
         background-color: $primary-variant;
         border: 2px solid $secondary;
         color: $secondary;
+      }
+      &__a{
+        text-align: center;
       }
     }
   }

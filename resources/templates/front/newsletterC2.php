@@ -1,13 +1,31 @@
 <setion class="newsletterC2">
-        <div class="newsletterC2__container" data-aos="flip-down" data-aos-duration="1000">
-        <h3 class="newsletterC2__title">Envoyez-nous une newsletter pour être <br> <span>  mis à jour</span></h3>
-        <div class="newsletterC2__form">
-        <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-        <input type="text" placeholder="Votre adresse mail">
-        <button class="newsletterC2">Abonnez-vous</button>
-    </div>
-        </div>
-</setion>
+    <div
+        class="newsletterC2__container"
+        data-aos="flip-down"
+        data-aos-duration="1000">
+        <h3 class="newsletterC2__title">Envoyez-nous une newsletter pour être
+            <br>
+                <span>
+                    mis à jour</span>
+            </h3>
+            <form
+                class="newsletterC2__form needs-validation"
+                method="POST"
+                action="#"
+                role="email">
+                <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                <input
+                    type="email"
+                    placeholder="Votre adresse mail"
+                    id="subscriberEmail"
+                    name="email"
+                    required="required">
+                    <a href="#" id="submit_email_subscribe" class="newsletterC2__a" type="submit" name="submit">
+                        <button class="newsletterC2">Abonnez-vous</button>
+                    </a>
+                </form>
+            </div>
+        </setion>
 
 
 <script>
