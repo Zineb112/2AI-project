@@ -97,11 +97,17 @@
     .post-pagination a+a {
         margin-left: 15px;
     }
+    .pagination2AI{
+        grid-column: 1/3;
+    }
 }
 
 @media (min-width: 1439px) and (max-width: 1440px){
     .paginationP{
         grid-column: 2/3;
+    }
+    .pagination2AI{
+        grid-column: 1/3;
     }
 }
 
@@ -208,6 +214,9 @@
     }
     .paginationP{
         grid-column: 2/3;
+    }
+    .pagination2AI{
+        grid-column: 1/3;
     }
 }
 
@@ -407,5 +416,8 @@
     
     .post-pagination a+a {
         margin-left: 15px;
+    }
+    .pagination2AI{
+        grid-column: 1/3;
     }
 }
