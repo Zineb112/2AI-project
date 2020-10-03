@@ -7,4 +7,5 @@ display_newsC1_page();
 display_newsC2_page(); 
 display_2aiNews_page();
 display_carnet_page();
+display_guide_page();
 ?>

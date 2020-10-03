@@ -1,31 +1,78 @@
 <?php 
 
-function display_guide(){
+function display_guide_page(){
     global $pdo;
-    try{
-    $sql ="SELECT g.id, g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id ORDER BY g.id DESC";
-    $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $guide){
-        echo <<<guide
+    if(isset($_POST['displayGuide'])){
 
-        <div class="guideInv__card" data-aos="flip-down" data-aos-duration="1500">
-        <div class="guideInv__top">
-            <img src="uploads/{$guide->file_location}" alt="{$guide->title}">
-            <a href="{$guide->link}" target="_blank"><i class="fas fa-play"></i></a>
+    
+        $sql ="SELECT * FROM guide";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 4;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        //determine the sql limit
+        $this_page_first_result = ($page - 1)*$result_per_page;
+        //now finally showing the posts
+        $sql ="SELECT g.id, g.full_name, g.link, g.role, g.title, g.cover, m.file_location FROM guide g join media m on g.cover = m.id ORDER BY g.id DESC LIMIT ". $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $gui = $stmt->fetchAll();
+        
+        foreach ($gui as $guide){
+            echo <<<guide
+            <div class="guideInv__card" data-aos="flip-down" data-aos-duration="1500">
+            <div class="guideInv__top">
+                <img src="uploads/{$guide->file_location}" alt="{$guide->title}">
+                <a href="{$guide->link}" target="_blank"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="guideInv__bottom">
+                <h3 class="guideInv__name">{$guide->full_name}</h3>
+                <h3 class="guideInv__role">{$guide->role}g</h3>
+                <h3 class="guideInv__episode">{$guide->title}</h3>
+            </div>
         </div>
-        <div class="guideInv__bottom">
-            <h3 class="guideInv__name">{$guide->full_name}</h3>
-            <h3 class="guideInv__role">{$guide->role}g</h3>
-            <h3 class="guideInv__episode">{$guide->title}</h3>
-        </div>
-    </div>
-guide;
+    guide;
+        
     }
-    } catch (PDOException $e) {
-    set_message('error','query failed');
-    echo 'query failed' . $e->getMessage();
+
+    echo '<section class="pagination2AI"><div class="pagination-container post-pagination">';
+    //for the pagination links
+    //display links to the page
+    for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+        if($i == $page){
+            echo '<a class="pagination_link pagination__icon pagination__icon--active active" id="'. $i .'">'.$i .'</a>';
+        } else {
+            echo '<a class="pagination_link pagination__icon pagination__icon--active" id="'. $i .'">'.$i .'</a>';
+        }
     }
+
+    // $check = $this_page_first_result + $result_per_page;
+    // $next = $page + 1;
+    // // if($number_of_results > $check){
+    // //     echo '<div class="post-pagination"><a class="pagination_link pagination__icon" id="'. $next .'">></a>'.'</div>';
+
+    // // }
+    // // else {
+    // //     echo " ";
+    // // }
+    // echo '</div>';
 }
+
+
+}
+
 
 
 // function for displaying the last 3 guide into the homeC2
