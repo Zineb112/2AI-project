@@ -9,4 +9,5 @@ display_2aiNews_page();
 display_carnet_page();
 display_guide_page();
 display_innov_page();
+display_portail_page();
 ?>

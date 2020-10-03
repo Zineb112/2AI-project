@@ -1,5 +1,83 @@
 <?php
 
+function display_portail_page(){
+    global $pdo;
+    if(isset($_POST['displayPortail'])){
+
+    
+        $sql ="SELECT * FROM portail";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 6;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        //determine the sql limit
+        $this_page_first_result = ($page - 1)*$result_per_page;
+        //now finally showing the posts
+        $sql ="SELECT p.id, p.full_name, p.link, p.cover,p.role, p.title, m.file_location FROM portail p join media m on p.cover = m.id  ORDER BY p.id DESC LIMIT ". $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $port = $stmt->fetchAll();
+        
+        foreach ($port as $portail){
+            echo <<<portail
+            <div class="portailN__inv" data-aos="flip-down" data-aos-duration="1000">
+                 <div class="portailN__inv--top">
+                     <img src="uploads/{$portail->file_location}" alt="{$portail->full_name}">
+                     <a href="{$portail->link}" target="_blank"><i class="fas fa-play"></i></a>
+                 </div>
+                 <div class="portailN__inv--bottom">
+                     <h3 class="portailN__name">{$portail->full_name}</h3>
+                     <h3 class="portailN__role">{$portail->role}</h3>
+                     <h3 class="portailN__titleI">{$portail->title}</h3>
+                     <a href="{$portail->link}" target="_blank" class="portailN__play">Lire la vidéo</a>
+                 </div>
+             </div>
+     
+     portail;
+        
+    }
+
+    echo '<section class="paginationInv"><div class="pagination-container post-pagination">';
+    //for the pagination links
+    //display links to the page
+    for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+        if($i == $page){
+            echo '<a class="pagination_link pagination__icon pagination__icon--active active" id="'. $i .'">'.$i .'</a>';
+        } else {
+            echo '<a class="pagination_link pagination__icon pagination__icon--active" id="'. $i .'">'.$i .'</a>';
+        }
+    }
+
+    // $check = $this_page_first_result + $result_per_page;
+    // $next = $page + 1;
+    // // if($number_of_results > $check){
+    // //     echo '<div class="post-pagination"><a class="pagination_link pagination__icon" id="'. $next .'">></a>'.'</div>';
+
+    // // }
+    // // else {
+    // //     echo " ";
+    // // }
+    // echo '</div>';
+}
+
+
+}
+
+
+
+
 function display_portail(){
     global $pdo;
     try{
