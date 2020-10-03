@@ -145,9 +145,9 @@ table;
                 <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
             </button>
             </a>
-            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_innov-news&delete_innovNews={$innov->id}" data-toggle="modal" data-target="#exampleModal">
-                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
-            </button>
+            <button type="button" id="deletebtn" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_innov-news&delete_innovNews={$innov->id}" data-toggle="modal" data-target="#exampleModal">
+            <i class="pe-7s-trash"  style="font-size: 1rem;"></i>
+        </button>
         </td>
     </tr>
 innov;

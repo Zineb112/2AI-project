@@ -99,6 +99,14 @@
     }
 }
 
+@media (min-width: 1439px) and (max-width: 1440px){
+    .paginationP{
+        grid-column: 2/3;
+    }
+}
+
+
+
 @media (min-width: 1441px){
     .block-title__line {
         background-color: $secondary;
@@ -197,6 +205,9 @@
     
     .post-pagination a+a {
         margin-left: 15px;
+    }
+    .paginationP{
+        grid-column: 2/3;
     }
 }
 

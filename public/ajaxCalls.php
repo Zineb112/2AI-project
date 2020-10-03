@@ -3,4 +3,5 @@
 <?php 
 
 subscribe_newsletter();
+display_newsC1_front(); 
 ?>

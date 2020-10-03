@@ -13,8 +13,8 @@ if(isset($_POST['submit'])){
             $mail->isSMTP();
             $mail->Host = 'smtp.googlemail.com';  //gmail SMTP server
             $mail->SMTPAuth = true;
-            $mail->Username = '2aimailerstmp@gmail.com';   //username
-            $mail->Password = '0524645500@';   //password
+            $mail->Username = '';   //username
+            $mail->Password = '';   //password
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;                    //smtp port
           

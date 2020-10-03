@@ -17,7 +17,7 @@ defined('TEMPLATE_BACK') ? null : define('TEMPLATE_BACK', __DIR__ . DS . "templa
 defined('DB_HOST') ? null : define('DB_HOST', 'localhost');
 defined('DB_USER') ? null : define('DB_USER', 'root');
 defined('DB_PASS') ? null : define('DB_PASS', '');
-defined('DB_NAME') ? null : define('DB_NAME', '2ai_db');
+defined('DB_NAME') ? null : define('DB_NAME', '2ai_db'); 
 
 
 // setting DSN Data source name

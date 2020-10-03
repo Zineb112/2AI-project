@@ -24,16 +24,50 @@
     <p class="actualitesPage__subtitle">Des conseils, des analyses sur la communication, la création d’entreprise, le web, la presse, le webmarketing, shooting photo ou même sur la production audiovisuelle..</p>
     <img class="actualitesPage__bg" src="assets/images/shape.png" alt="">
 </section>
-<section class="actualitesPage__container">
-<?php display_newsC1_page() ?>
+<section class="actualitesPage__container" id="newsC1Container">
+
 </section>
-<div class="post-pagination">
+<!-- <div class="post-pagination">
         <a href="#"><i class="fa fa-angle-left"></i></a>
         <a href="#" class="active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#"><i class="fa fa-angle-right"></i></a>
-</div>
+</div> -->
+
+<script>
+    $(document).ready(function () {
+        //showing the data without refresh but on going to the next pagination
+        console.log('start');
+        setTimeout(function () {
+            load_fn_data();
+            
+        }, 1000);
+
+        function load_fn_data(page) {
+            $.ajax({
+                url: "./ajaxCalls.php",
+                method: "POST",
+                data: {
+                    displayNewsC1: "displayNewsC1",
+                    page: page
+                },
+                success: function (data) {     
+                        $('#newsC1Container').html(data)
+                    
+                }
+            });
+        }
+
+        $(document).on('click', '.pagination_link', function () {
+            var page = $(this).attr("id");
+            load_fn_data(page);
+        })
+    })
+</script>
+
+
+
 
 <?php include(TEMPLATE_FRONT . DS . "newsletter.php") ?>
 <?php include(TEMPLATE_FRONT . DS . "end.php") ?>

@@ -72,7 +72,7 @@
             for(const el of delete_buttons ){
                 el.addEventListener('click', (e) => {
                 let link = e.currentTarget.value;
-                console.log(link);
+
                 document.querySelector('.deletion_link').href = link;
                 });
             }
