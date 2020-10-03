@@ -1,32 +1,80 @@
 <?php 
 
-
-function display_carnet(){
+function display_carnet_page(){
     global $pdo;
-    try{
-    $sql ="SELECT c.id, c.title, c.date, c.file, c.cover, m.file_location FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC ";
-    $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $carnet){
-        echo <<<carnet
+    if(isset($_POST['displaycarnet'])){
 
-        <div class="carnetN__carnet margincarn" data-aos="flip-down" data-aos-duration="1000">
-            <img src="uploads/{$carnet->file_location}" alt="">
-            <div class="carnetN__infos">
-                <h3 class="carnetN__infos--date">Magazine mois {$carnet->date}</h3>
-                <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title}</h5>
-                <a href="{$carnet->file}" target="_blank" class="carnetN__download"> Télécharger </a>
+    
+        $sql ="SELECT * FROM carnet";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        //for pagination using ajax, how much to show
+        $result_per_page = 4;
+        //To find how many posts in the database
+        $number_of_results = $stmt->rowCount();
+        //now the var will be on decimal so we round off using ceil fn
+        $number_of_pages = ceil($number_of_results/$result_per_page);
+        //determineing which page the visitor is currently on
+        if(isset($_POST['page'])){
+            $page = $_POST['page'];
+        } else {
+            $page = 1;
+        }
+
+        //determine the sql limit
+        $this_page_first_result = ($page - 1)*$result_per_page;
+        //now finally showing the posts
+        $sql ="SELECT c.id, c.title, c.date, c.file, c.cover, m.file_location FROM carnet c join media m on c.cover = m.id  ORDER BY c.id DESC LIMIT ". $this_page_first_result .',' . $result_per_page;
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $crnt = $stmt->fetchAll();
+        
+        foreach ($crnt as $carnet){
+            echo <<<carnet
+            <div class="carnetN__carnet margincarn" data-aos="flip-down" data-aos-duration="1000">
+                <img src="uploads/{$carnet->file_location}" alt="">
+                <div class="carnetN__infos">
+                    <h3 class="carnetN__infos--date">Magazine mois {$carnet->date}</h3>
+                    <h5 class="carnetN__infos--title"> <span>Titre: </span> {$carnet->title}</h5>
+                    <a href="{$carnet->file}" target="_blank" class="carnetN__download"> Télécharger </a>
+                </div>
             </div>
-        </div>
-
-
-
-carnet;
+    
+    
+    
+    carnet;
+        
     }
-    } catch (PDOException $e) {
-    set_message('error','query failed');
-    echo 'query failed' . $e->getMessage();
+
+    echo '<section class="pagination2AI"><div class="pagination-container post-pagination">';
+    //for the pagination links
+    //display links to the page
+    for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
+        if($i == $page){
+            echo '<a class="pagination_link pagination__icon pagination__icon--active active" id="'. $i .'">'.$i .'</a>';
+        } else {
+            echo '<a class="pagination_link pagination__icon pagination__icon--active" id="'. $i .'">'.$i .'</a>';
+        }
     }
+
+    // $check = $this_page_first_result + $result_per_page;
+    // $next = $page + 1;
+    // // if($number_of_results > $check){
+    // //     echo '<div class="post-pagination"><a class="pagination_link pagination__icon" id="'. $next .'">></a>'.'</div>';
+
+    // // }
+    // // else {
+    // //     echo " ";
+    // // }
+    // echo '</div>';
 }
+
+
+}
+
+
+
 
 
 // function for displaying the last 1 Carnet de l’inventeur into the homeC2
