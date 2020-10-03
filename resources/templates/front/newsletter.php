@@ -123,8 +123,7 @@
                 </footer>
                 <div class="bottomFooter">
                     <h3 class="bottomFooter__title">
-                        Copyright © 2020 Designed by
-                        <span>YouCode Students</span>
+                    Copyright © <span  id="date"></span> Designed by <span>YouCode Students</span>
                     </h3>
                 </div>
 

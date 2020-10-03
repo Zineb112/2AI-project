@@ -534,3 +534,8 @@ function fConseil(){
     cardDigital.classList.remove('cardActive')
     cardConseil.classList.add('cardActive')
 }
+
+
+
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
