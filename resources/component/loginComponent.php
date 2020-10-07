@@ -112,7 +112,7 @@ function forgot_password(){
             //Create a link to the URL that will verify the
             //forgot password request and allow the user to change their
             //password.
-            $verifyScript = 'http://pcuriositylab.ml/forgot-pass.php';
+            $verifyScript = 'https://ibtikarcom.com/forgot-pass.php';
             
             //The link that we will send the user via email.
             $linkToSend = $verifyScript . '?uid=' . $userId . '&id=' . $passwordRequestId . '&t=' . $token;
