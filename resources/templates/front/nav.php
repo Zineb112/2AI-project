@@ -29,7 +29,7 @@
                             <div class="octf-mainbar-row octf-row">
                                 <div class="octf-col logo-col">
                                     <div id="site-logo" class="site-logo">
-                                        <a href="index.html">
+                                        <a href="index.php">
                                             <img src="images/logo.svg" alt="ibtikarcom" class="logo-size">
                                         </a>
                                     </div>
@@ -38,30 +38,30 @@
                                     <nav id="site-navigation" class="main-navigation">
                                         <ul class="menu">
                                             <li class=" current-menu-item current-menu-ancestor">
-                                                <a href="index.html">Accueil</a>
+                                                <a href="index.php">Accueil</a>
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">À propos</a>
+                                            <li class="menu-item-has-children"><a href="about-us">À propos</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="#">Qui sommes nous</a></li>
+                                                    <li><a href="about-us.php">Qui sommes nous</a></li>
                                                     <li><a href="#">Nos service</a></li>
-                                                    <li><a href="#">Notre équipe</a></li>
-                                                    <li><a href="#">FAQS</a></li>
+                                                    <li><a href="team.php">Notre équipe</a></li>
+                                                    <li><a href="faq.php">FAQS</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">Portail de l'innovation</a>
+                                            <li class="menu-item-has-children"><a href="soon.php" target="_blank">Portail de l'innovation</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="#">Innovation News</a></li>
-                                                    <li><a href="#">Carnet de l’inventeur</a></li>
-                                                    <li><a href="#">Portail De L'inventeur</a></li>
-                                                    <li><a href="#">2AI News</a></li>
-                                                    <li><a href="#">Guide De L’inventeur</a></li>
+                                                    <li><a href="soon.php" target="_blank">Innovation News</a></li>
+                                                    <li><a href="soon.php" target="_blank">Carnet de l’inventeur</a></li>
+                                                    <li><a href="soon.php" target="_blank">Portail De L'inventeur</a></li>
+                                                    <li><a href="soon.php" target="_blank">2AI News</a></li>
+                                                    <li><a href="soon.php" target="_blank">Guide De L’inventeur</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Projets</a>
+                                            <li><a href="projects.php">Projets</a>
                                             </li>
-                                            <li><a href="#">Actualités</a>
+                                            <li><a href="blog.php">Actualités</a>
                                             </li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="contact.php">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -86,30 +86,30 @@
                         <div class="mobile_nav collapse">
                             <ul id="menu-main-menu" class="mobile_mainmenu">
                                 <li class="current-menu-item current-menu-ancestor">
-                                    <a href="index.html">Accueil</a>
+                                    <a href="index.php">Accueil</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">À propos</a>
+                                <li class="menu-item-has-children"><a href="about-us.php">À propos</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Qui sommes nous</a></li>
+                                        <li><a href="about-us.php">Qui sommes nous</a></li>
                                         <li><a href="#">Nos service</a></li>
-                                        <li><a href="#">Notre équipe</a></li>
-                                        <li><a href="#">FAQS</a></li>
+                                        <li><a href="team.php">Notre équipe</a></li>
+                                        <li><a href="faq.php">FAQS</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Portail de l'innovation</a>
+                                <li class="menu-item-has-children"><a href="soon.php" target="_blank">Portail de l'innovation</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Innovation News</a></li>
-                                        <li><a href="#">Carnet de l’inventeur</a></li>
-                                        <li><a href="#">Portail De L'inventeur</a></li>
-                                        <li><a href="#">2AI News</a></li>
-                                        <li><a href="#">Guide De L’inventeur</a></li>
+                                        <li><a href="soon.php" target="_blank">Innovation News</a></li>
+                                        <li><a href="soon.php" target="_blank">Carnet de l’inventeur</a></li>
+                                        <li><a href="soon.php" target="_blank">Portail De L'inventeur</a></li>
+                                        <li><a href="soon.php" target="_blank">2AI News</a></li>
+                                        <li><a href="soon.php" target="_blank">Guide De L’inventeur</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Projets</a>
+                                <li><a href="projects.php">Projets</a>
                                 </li>
-                                <li><a href="#">Actualités</a>
+                                <li><a href="blog.php">Actualités</a>
                                 </li>
-                                <li><a href="#">Contacts</a></li>
+                                <li><a href="contact.php">Contacts</a></li>
                             </ul>
                         </div>
                     </div>

@@ -61,18 +61,9 @@
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Gmail</label>
+                                <label for="validationCustom01">Facebook</label>
                                 <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Gmail" name="gmail" value="<?php echo $team->gmail ?>"  />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Twitter</label>
-                                <input type="hidden" name="team_id" value="<?php echo $team->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Twitter" name="twitter" value="<?php echo $team->twitter?>" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Facebook" name="facebook" value="<?php echo $team->facebook ?>"  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>

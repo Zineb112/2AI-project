@@ -18,8 +18,22 @@
         <div class="col-md-12">
             <div class="main-card mb-3 card">
                 <div class="card-header">Liste des photos/ vidéos</div>
-                <div class="table-responsive" id="gallery_load">
-
+                <div class="table-responsive">
+                <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Couverture</th>
+                                <th class="text-center">Titre</th>
+                                <th class="text-center">Category</th>
+                                <th class="text-center">Type</th>
+                                <th class="text-center">Lien</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php display_gallery_admin() ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

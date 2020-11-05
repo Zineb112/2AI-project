@@ -8,18 +8,25 @@ function display_testimonials(){
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $testimonials){
         echo <<<testimonials
-       <div class="item">
-       <div class="testimonials__single">
-           <div class="testimonials__inner">
-               <div class="testimonials__image">
-                   <img src="uploads/{$testimonials->file_location}" alt="{$testimonials->full_name}">
-               </div><!-- /.testimonials__image -->
-               <p>{$testimonials->description} </p>
-               <h3>{$testimonials->full_name}</h3>
-               <h4>{$testimonials->role}</h4>
-           </div><!-- /.testimonials__inner -->
-       </div><!-- /.testimonials__single -->
-   </div><!-- /.item -->
+   <div class="testi-item">
+   <div class="layer1"></div>
+   <div class="layer2">
+       <div class="t-head flex-middle">
+           <img
+               src="uploads/{$testimonials->file_location}"
+               alt="{$testimonials->full_name}"
+               class="lazyloaded"
+               data-ll-status="loaded">
+               <div class="tinfo">
+                   <h6>{$testimonials->full_name}</h6>
+                   <span>{$testimonials->role}</span>
+               </div>
+           </div>
+           <div class="ttext">
+               "{$testimonials->description}"
+           </div>
+       </div>
+</div>
 
 
 

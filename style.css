@@ -5788,7 +5788,7 @@ div.swiper-pagination-custom, .swiper-pagination-fraction {
     color: #8E88B8;
 }
 .page-header {
-    background-image: url(assets/images/bg-pheader.jpg);
+    background-image: url(images/bg-pheader.jpg);
 }
 /* Header */
 .header-fullwidth .octf-area-wrap {
@@ -5935,7 +5935,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     margin-left: 100px;
 }
 .home-about-video {
-    background-image: url(assets/images/home-about.jpg);
+    background-image: url(images/home-about.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -6206,7 +6206,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     padding: 0px 0px 110px 0px;
 }
 .cta-h2 {
-    background-image: url(/images/bg-cta-home2.jpg);
+    background-image: url(images/bg-cta-home2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     top: -120px;
@@ -6273,7 +6273,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     padding-bottom: 25px;
 }
 .section-consultation {
-    background-image: url(/images/bg-cta-home2.jpg);
+    background-image: url(images/bg-cta-home2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -6457,7 +6457,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     color: #43BAFF;
 }
 .service2-v4 {
-    background-image: url(/images/bg-art2-home4.png);
+    background-image: url(images/bg-art2-home4.png);
     background-repeat: no-repeat;
     padding: 80px 0 80px 0;
 }
@@ -6680,7 +6680,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     background-size: cover;
 }
 .icon-box-s2.bg3:before {
-    background-image: url(/images/Design.jpg);
+    background-image: url(images/Design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -6690,7 +6690,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     background-size: cover;
 }
 .icon-box-s2.bg5:before {
-    background-image: url(/images/Startegie.jpg);
+    background-image: url(images/Startegie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -6701,7 +6701,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
 }
 .about-v5 {
     background-color: #10266b;
-    background-image: url(/images/bg-particle1.png);
+    background-image: url(images/bg-particle1.png);
     background-position: 0px 70px;
     background-repeat: no-repeat;
     padding: 80px 0px;
@@ -6771,7 +6771,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
 }
 .clients-v5 {
     background-color: #211F3B;
-    background-image: url(/images/bg-map-dark.jpg);
+    background-image: url(images/bg-map-dark.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;

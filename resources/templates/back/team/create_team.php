@@ -57,16 +57,8 @@ submit_team();
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Gmail</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Gmail" name="gmail" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Twitter</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Twitter" name="twitter"  />
+                                <label for="validationCustom01">Facebook</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Entrez son compte Facebook" name="facebook" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>

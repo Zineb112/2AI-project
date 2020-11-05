@@ -8,17 +8,25 @@ function display_gallery(){
     foreach ($stmt as $gallery){
 
         echo <<<gallery
-        <div class="portfolio-block-one mix {$gallery->type}" data-aos="flip-down" data-aos-duration="1000">
-        <div class="image-box">
-            <figure class="image"><img src="iuploads/{$gallery->file_location}" alt="{$gallery->title}"></figure>
-            <div class="content-box">
-                <div class="inner">
-                    <div class="title">{$gallery->title}</div>
-                    <h3><a href="{$gallery->link}" target="_blank">{$gallery->category}</a></h3>
+
+    <div class="project-item {$gallery->type}">
+    <div class="projects-box">
+            <div class="projects-thumbnail">
+                <a href="">
+                    <img src="iuploads/{$gallery->file_location}" alt="{$gallery->title}">
+                </a>
+            </div>
+            <div class="portfolio-info">
+                <a class="overlay" href=""></a>
+                <div class="portfolio-info-inner">
+                    <h5><a href="">{$gallery->title}</a></h5>
+                    <p class="portfolio-cates">
+                        <a >{$gallery->category}</a>
+                    </p> 
                 </div>
             </div>
         </div>
-    </div>
+</div>  
       
 
 gallery;
@@ -29,22 +37,7 @@ gallery;
     }
 }
 
-function display_last_gallery(){
-    global $pdo;
-    try{
-    $sql ="SELECT g.id, g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id ORDER BY g.id DESC LIMIT 7";
-    $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $gallery){
 
-        echo <<<gallery
-        <div><a href="{$gallery->link}" target="_blank"><img src="iuploads/{$gallery->file_location}" style="width: 240px; height:424px;" alt="{$gallery->title}"></a></div>
-gallery;
-    }
-    } catch (PDOException $e) {
-    set_message('error','query failed');
-    echo 'query failed' .$e->getMessage();
-    }
-}
 
 
 // submit a gallery to database admin area
@@ -80,59 +73,20 @@ function submit_gallery(){
 }
 
 // Gallery Management. display images/videos to be edited or deleted in admin area
-
 function display_gallery_admin()
 {
-    global $pdo;
-
-    if(isset($_POST['gallerypagination'])){
-
-    
-        $sql ="SELECT * FROM gallery";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-
-        //for pagination using ajax, how much to show
-        $result_per_page = 4;
-        //To find how many posts in the database
-        $number_of_results = $stmt->rowCount();
-        //now the var will be on decimal so we round off using ceil fn
-        $number_of_pages = ceil($number_of_results/$result_per_page);
-        //determineing which page the visitor is currently on
-        if(isset($_POST['page'])){
-            $page = $_POST['page'];
-        } else {
-            $page = 1;
-        }
-
-        echo <<<table
-        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-        <thead>
-            <tr class="text-center">
-            <th>#</th>
-                <th>Thumbnail</th>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Type</th>
-            </tr>
-        </thead>
-        <tbody>
-table;
-
-    //determine the sql limit
-    $this_page_first_result = ($page - 1)*$result_per_page;
-        $sql = "SELECT g.*, m.file_name FROM gallery g join media m on g.cover = m.id ORDER BY g.id DESC LIMIT " . $this_page_first_result .',' . $result_per_page;
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        $gal= $stmt->fetchAll();
-        foreach ($gal as $gallery){
+global $pdo;
+try{
+    $sql = "SELECT g.*, m.file_name FROM gallery g join media m on g.cover = m.id ORDER BY g.id DESC";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $gallery){
         echo <<<gallery
         <tr>
-        <td class="text-center text-muted">{$gallery->id}</td>
         <td class="text-center"><img src="../uploads/thumbnails/{$gallery->file_name}" class="br-a" alt="gallery thumbnail"></td>
         <td class="text-center"> {$gallery->title} </td>
         <td class="text-center"> {$gallery->category} </td>
         <td class="text-center"> {$gallery->type} </td>
+        <td class="text-center"> <a href="{$gallery->link}" target="_blank">{$gallery->link}</a></td>
 
         <td class="text-center">
             <a href="index.php?edit_gallery={$gallery->id}">
@@ -146,35 +100,10 @@ table;
         </td>
     </tr>
 gallery;
-    }
-
-    echo <<<tableclose
-    </tbody>
-</table>
-<nav class="" aria-label="Page navigation example">
-    <ul class="pagination" style="margin: 1rem 0;justify-content: center;">
-tableclose;
-//for the pagination links
-//display links to the page
-for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
-if($i == $page){
-echo '<li class="page-item active"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
-} else {
-echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
 }
+} catch (PDOException $e) {
+echo 'query failed' . $e->getMessage();
 }
-
-$check = $this_page_first_result + $result_per_page;
-$next = $page + 1;
-if($number_of_results > $check){
-echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" aria-label="Next" id="'. $next .'" ><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>';
-
-}else {
-echo " ";
-}
-echo  '</ul></nav>';
-}
-
 }
 
 // Delete a gallery items
