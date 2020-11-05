@@ -1,36 +1,56 @@
-<section class="objectives">
-    <div class="objectives__wrapper">
-        <div class="block-title__line"></div>
-        <h3 class="objectives__title">Nos objectifs</h3>
-        <div class="objectives__container">
-            <div class="one" data-aos="flip-down">
-                <img src="assets/images/one.png" alt="">
-                <div class="one__container">
-                    <h3 class="objectives__numTitle">Objectif</h3>
-                    <p class="objectives__numPara">IbtikarCom vous aide et accompagne à
-                             promouvoir votre image, vos
-                              innovations et vos différents produits ou services..</p>
+<section class="about-v5 padding-mobile" id="objectifs">
+    <div class="overlay overlay-image-about5"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="ot-heading">
+                    <span class="text-primary-light">// Nos objectifs</span>
+                    <h2 class="main-heading text-white">Nous Essayons De Servir Le Meilleur<br>Service</h2>
+                    </div>
+                    <div class="space-20"></div>
                 </div>
             </div>
-            <div class="two" data-aos="flip-up">
-                    <img src="assets/images/two.png" alt="">
-                    <div class="two__container">
-                        <h3 class="objectives__numTitle">Objectif</h3>
-                        <p class="objectives__numPara"> L’agence encourage l’innovation sous
-                                 toutes ses formes par la promotion et
-                                  la gratification des expériences exemplaires
-                                   de mise en œuvre des projets innovants</p>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="serv-box-2 s2">
+                        <span class="big-number">01</span>
+                        <div class="icon-main">
+                            <span></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>Objectif</h5>
+                            <div>IbtikarCom vous aide et accompagne à promouvoir votre image, vos
+                                innovations et vos différents produits ou services.</div>
+                        </div>
                     </div>
-            </div>
-            <div class="three" data-aos="flip-down">
-                    <img src="assets/images/three.png" alt="">
-                    <div class="three__container">
-                        <h3 class="objectives__numTitle">Objectif</h3>
-                        <p class="objectives__numPara">Notre objectif est de vous proposer des solutions 
-                                et des activités adaptées avec votre événement et de vous accompagner 
-                                de la conception jusqu’à l’organisation de votre événement.</p>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="serv-box-2 s2">
+                        <span class="big-number">02</span>
+                        <div class="icon-main">
+                            <span></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>Objectif</h5>
+                            <div>Encourage l’innovation sous toutes ses formes par la promotion et la
+                                gratification des expériences exemplaires de mise en œuvre des projets innovants</div>
+                        </div>
                     </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="serv-box-2 s2">
+                        <span class="big-number">03</span>
+                        <div class="icon-main">
+                            <span></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>Objectif</h5>
+                            <div>Notre objectif est de vous proposer des solutions et des activités
+                                adaptées avec votre événement et de vous accompagner de la conception jusqu’à
+                                l’organisation de votre événement.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>

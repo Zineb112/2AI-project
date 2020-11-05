@@ -8,11 +8,12 @@ function display_partner(){
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $partners){
         echo <<<partners
-        <li class="partners__item">
-        <a href="{$partners->link}" target ="_blank">
-        <img src="uploads/{$partners->file_name}" alt="{$partners->partner_name}" class="partners__img">
-        </a>  
-       </li>
+        <div class="partners-slide">
+        <a href="#" class="client-logo">
+            <figure class="partners-slide-inner">
+                <img class="partners-slide-image" src="uploads/{$partners->file_name}" alt="{$partners->partner_name}"></figure>
+            </a>
+        </div>
 partners;
     }
     } catch (PDOException $e) {

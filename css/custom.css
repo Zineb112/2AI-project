@@ -1,0 +1,127 @@
+.logo-size{
+    height: 72px;
+}
+
+.header_mobile{
+    position: fixed;
+}
+
+
+.tp-bullets.bullet-home-1{
+    display: none;
+}
+
+.tparrows {
+    display: none !important;
+}
+
+.mobil{
+    margin-bottom: 24px !important;
+}
+
+
+.textFooter{
+    color: #10266b !important;
+}
+
+.bg-maps-dots{
+    background-image: url(/images/bg-maps-dots.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.socialMedia{
+    margin-top: 40px;
+}
+
+.youtube{
+    color: #FF0000 !important;
+}
+
+.img-ibtikarcom{
+    width: 80%;
+}
+
+.margin-team-about{
+    margin-bottom: 32px;
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    .btnMobile{
+        margin-bottom: 24px !important;
+    }
+    /* .mobil{
+        margin-bottom: -80px !important;
+    } */
+    .margin-mobile{
+        margin-top: -40px;
+    }
+    .padding-mobile{
+        padding-bottom: 40px !important;
+    }
+
+    .padding-mobile-projet{
+        display: none;
+    }
+    .padding-top-mobile{
+        padding-top: 32px !important;
+    }
+
+    .padding-mobile_footer{
+        padding-top: 40px !important;
+        text-align: center;
+    }
+    .copyright-text{
+        text-align-last: center;
+    }
+    .team-top-title{
+        font-size: 32px !important;
+    }
+    .team-mobile{
+        padding-top: 24px !important;
+    }
+
+    .contactS-mobile{
+        top: 0px !important;
+    }
+    .contact-left {
+        margin-right: 0px !important;
+        text-align:justify;
+    }
+    .projects-masonry{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .projectspara{
+        text-align: justify;
+        text-align-last: center;
+    }
+    .blog-mobile{
+        padding-top: 40px !important;
+        padding-bottom: 56px !important;
+    }
+    .page-pagination{
+        margin-top: 32px !important;
+    }
+    .faq{
+        padding-top: 40px !important;
+        padding-bottom: 180px !important;
+    }
+    .faq-besoin{
+        font-size: 24px !important;
+    }
+    .cta-faq{
+        padding: 40px !important;
+        text-align:center;
+
+    }
+    .faq-height{
+        height: 40px !important;
+    }
+    .faq-support{
+        padding-bottom: 64px !important;
+    }
+}

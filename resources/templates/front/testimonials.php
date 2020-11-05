@@ -1,24 +1,81 @@
-<section class="testimonials" >
-<div class="testimonials__bg">
-    <div class="container-fluid">
-        <div class="block-title">
-            <div class="block-title__line"></div>
-            <h3 class="testimonials__title">Quelques avis de nos clients</h3>
-            <p class="testimonials__subtitle">Nos clients témoignent et transmettent leurs avis sur les expériences qu’ils vivent avec notre agence au quotidien. De belles histoires qui se concrétisent et se pérennisent.</p>
-        </div>
-
-        <div data-aos="zoom-in-down" data-aos-duration="600" class="thm__owl-carousel testimonials__carousel owl-carousel owl-theme" data-options='{
-            "items": 3, "margin": 60, "smartSpeed": 700, "autoplay": true, "autoplayHoverPause": true, "autoplayTimeout": 5000, "loop": true, "nav": false, "dots": true, "center": true, "responsive": {
-                "0": {"items": 1, "margin": 0},
-                "767": {"items": 1, "margin": 0},
-                "991": {"items": 2, "margin": 30},
-                "1199": {"items": 3.9999, "margin": 40}
-            }
-        }'>
-        <?php display_testimonials() ?>
-            
-        </div><!-- /.thm__owl-carousel testimonials__carousel owl-carousel owl-theme -->
-
-    </div><!-- /.container-fluid -->
-</div>
-</section><!-- /.testimonials -->
+<section class="bg-maps-dots"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="ot-heading text-center">
+                                    <span>// nos clients</span>
+                                    <h2 class="main-heading">We are Trusted <br>15+ Countries Worldwide</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-35"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="ot-testimonials">
+                                    <div class="owl-carousel owl-theme testimonial-inner ot-testimonials-slider">
+                                        <div class="testi-item">
+                                            <div class="layer1"></div>
+                                            <div class="layer2">
+                                                <div class="t-head flex-middle">
+                                                    <img src="/images/testi1.png" alt="Emilia Clarke" class="lazyloaded" data-ll-status="loaded">
+                                                        <div class="tinfo">
+                                                            <h6>SoftTech,</h6>
+                                                            <span>Manager of Company</span>                             
+                                                        </div>
+                                                </div>
+                                                <div class="ttext">
+                                                    "Patience. Infinite patience. No shortcuts. Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Even if the client is being careless. The best part...always solving problems with great original ideas!."                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testi-item">
+                                                <div class="layer1"></div>
+                                                <div class="layer2">
+                                                    <div class="t-head flex-middle">
+                                                        <img src="/images/testi2.png" alt="Emilia Clarke" class="lazyloaded" data-ll-status="loaded">
+                                                            <div class="tinfo">
+                                                                <h6>SoftTech,</h6>
+                                                                <span>Manager of Company</span>                             
+                                                            </div>
+                                                    </div>
+                                                    <div class="ttext">
+                                                        "Patience. Infinite patience. No shortcuts. Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Even if the client is being careless. The best part...always solving problems with great original ideas!."                           
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="testi-item">
+                                                <div class="layer1"></div>
+                                                <div class="layer2">
+                                                    <div class="t-head flex-middle">
+                                                        <img src="/images/testi1.png" alt="Emilia Clarke" class="lazyloaded" data-ll-status="loaded">
+                                                            <div class="tinfo">
+                                                                <h6>SoftTech,</h6>
+                                                                <span>Manager of Company</span>                             
+                                                            </div>
+                                                    </div>
+                                                    <div class="ttext">
+                                                        "Patience. Infinite patience. No shortcuts. Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Even if the client is being careless. The best part...always solving problems with great original ideas!."                           
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testi-item">
+                                                    <div class="layer1"></div>
+                                                    <div class="layer2">
+                                                        <div class="t-head flex-middle">
+                                                            <img src="/images/testi2.png" alt="Emilia Clarke" class="lazyloaded" data-ll-status="loaded">
+                                                                <div class="tinfo">
+                                                                    <h6>SoftTech,</h6>
+                                                                    <span>Manager of Company</span>                             
+                                                                </div>
+                                                        </div>
+                                                        <div class="ttext">
+                                                            "Patience. Infinite patience. No shortcuts. Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Even if the client is being careless. The best part...always solving problems with great original ideas!."                           
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
