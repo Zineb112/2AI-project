@@ -2489,22 +2489,23 @@ a:hover, a:active {
 .page-pagination li a, .page-pagination li span {
   font-size: 18px;
   color: #1b1d21;
-  background: #fff;
+  /* background: #fff; */
   font-weight: 700;
   height: 40px;
   width: 40px;
   display: block;
   text-align: center;
   line-height: 40px;
-  margin-right: 5px;
-  border: 1px solid #e7e7e7;
+  margin-right: 8px;
+  cursor: pointer;
+  /* border: 1px solid #e7e7e7; */
 }
 .page-pagination li a i:before, .page-pagination li span i:before {
   font-size: 16px;
 }
 .page-pagination li span, .page-pagination li a:hover {
   background: #43baff;
-  color: #fff;
+  color: #fff !important;
   border-color: #43baff;
 }
 
@@ -7031,7 +7032,7 @@ svg:not(:root) {
 .team-testi {
     padding-top: 0;
     padding-bottom: 110px;
-    background-image: url(/images/bg-maps-dots.jpg);
+    background-image: url(images/bg-maps-dots.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
 
@@ -7143,7 +7144,7 @@ svg:not(:root) {
 }
 .faq-support {
     background-color: #F8F8F8;
-    background-image: url(/images/bg-maps.jpg);
+    background-image: url(images/bg-maps.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

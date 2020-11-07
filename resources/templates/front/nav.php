@@ -40,7 +40,7 @@
                                             <li class=" current-menu-item current-menu-ancestor">
                                                 <a href="index.php">Accueil</a>
                                             </li>
-                                            <li class="menu-item-has-children"><a href="about-us">À propos</a>
+                                            <li class="menu-item-has-children"><a href="about-us.php">À propos</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="about-us.php">Qui sommes nous</a></li>
                                                     <li><a href="#">Nos service</a></li>

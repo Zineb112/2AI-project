@@ -67,10 +67,6 @@ submit_gallery();
                                 </div>
                             </div>
 
-                    
-
-            
-
                             <div class="col-md-6">
                                 <label for="exampleFile" class="">File</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->

@@ -21,7 +21,7 @@ function display_gallery(){
                 <div class="portfolio-info-inner">
                     <h5><a href="">{$gallery->title}</a></h5>
                     <p class="portfolio-cates">
-                        <a >{$gallery->category}</a>
+                        <a >{$gallery->type}</a>
                     </p> 
                 </div>
             </div>
@@ -37,6 +37,44 @@ gallery;
     }
 }
 
+function display_gallery_home(){
+    global $pdo;
+    try{
+    $sql ="SELECT g.id, g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id ORDER BY g.id DESC LIMIT 5";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $gallery){
+
+        echo <<<gallery
+
+
+<div class="project-item projects-style-2">
+<div class="projects-box">
+    <div class="projects-thumbnail">
+        <a href="">
+            <img src="uploads/{$gallery->file_location}" class="" alt="{$gallery->title}">                         
+            <span class="overlay"></span>
+        </a>
+    </div>
+    <div class="portfolio-info ">
+        <div class="portfolio-info-inner">
+            <a class="btn-link" href=""><i class="flaticon-right-arrow-1"></i></a>
+            <h5><a href="">{$gallery->title}</a></h5>
+            <p class="portfolio-cates">
+                <a href="#">{$gallery->type}</a>
+            </p> 
+        </div>
+    </div>
+</div>
+</div>
+      
+
+gallery;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' .$e->getMessage();
+    }
+}
 
 
 

@@ -13,7 +13,7 @@ function display_newsC1_page(){
         $stmt->execute();
 
         //for pagination using ajax, how much to show
-        $result_per_page = 6;
+        $result_per_page = 2;
         //To find how many posts in the database
         $number_of_results = $stmt->rowCount();
         //now the var will be on decimal so we round off using ceil fn
@@ -37,32 +37,44 @@ function display_newsC1_page(){
             $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
 
             echo <<<news
-            <div class="blog-one__single" data-aos="flip-down" data-aos-duration="1000">
-            <div class="blog-one__image">
-                <img src="uploads/{$news->file_location}" alt="">
-                <a href="news-post.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
-            </div><!-- /.blog-one__image -->
-            <div class="blog-one__content">
-                <div class="blog-one__meta">
-                    <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
-                </div><!-- /.blog-one__meta -->
-                <h3><a href="news-post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-                <a href="news-post.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
-                <!-- /.thm-btn blog-one__btn -->
-            </div><!-- /.blog-one__content -->
-    </div>
-    news;
+    <div class="col-lg-4 col-md-6 col-sm-12">
+    <article class="post-box blog-item">
+        <div class="post-inner">
+            <div class="entry-media">                                   
+                <a href="news-post.php?id={$news->id}&post={$news->slug}"><img src="uploads/{$news->file_location}" alt="{$news->title}"></a>
+            </div>                         
+            <div class="inner-post">
+                <div class="entry-header">
+                    <div class="entry-meta">
+                        <span class="posted-on"><a>{$reg}</a></span>
+                    </div><!-- .entry-meta -->
+                    
+                    <h3 class="entry-title"><a href="#">{$news->title}</a></h3>
+                </div><!-- .entry-header -->
+                
+                <div class="btn-readmore">
+                    <a href="#"><i class="flaticon-right-arrow-1"></i>PLUS</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+news;
         
     }
 
-    echo '<section class="paginationP"><div class="pagination-container post-pagination">';
+    echo '<div class="paggination-style ot-button text-center post-pagination"><ul class="page-pagination none-style">';
     //for the pagination links
     //display links to the page
     for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
         if($i == $page){
-            echo '<a class="pagination_link pagination__icon pagination__icon--active active" id="'. $i .'">'.$i .'</a>';
+            echo '<li><span aria-current="page" class="page-numbers current"><a  id="'. $i .'">'.$i .'</a></span></li>';
         } else {
-            echo '<a class="pagination_link pagination__icon pagination__icon--active" id="'. $i .'">'.$i .'</a>';
+            echo '<li><a class="pagination_link page-numbers" id="'. $i .'">'.$i .'</a></li>';
         }
     }
 
@@ -84,46 +96,39 @@ function display_newsC1_page(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function display_newsC1_home(){
     global $pdo;
     try{
-    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 5";
+    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 3";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $news){
         $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
         echo <<<news
-        <div class="blog-one__single" data-aos="flip-down" data-aos-duration="1000">
-        <div class="blog-one__image">
-            <img src="uploads/{$news->file_location}" alt="">
-            <a href="news-post.php?id={$news->id}&post={$news->slug}"><i class="fas fa-plus"></i></a>
-        </div><!-- /.blog-one__image -->
-        <div class="blog-one__content">
-            <div class="blog-one__meta">
-                <a href="#"><i class="fas fa-calendar-alt"></i>{$reg}</a>
-            </div><!-- /.blog-one__meta -->
-            <h3><a href="news-post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
-            <a href="news-post.php?id={$news->id}&post={$news->slug}" class="thm-btn blog-one__btn"><span>View more</span></a>
-            <!-- /.thm-btn blog-one__btn -->
-        </div><!-- /.blog-one__content -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+<article class="post-box blog-item">
+    <div class="post-inner">
+        <div class="entry-media">                                   
+            <a href="post.php?id={$news->id}&post={$news->slug}"><img src="uploads/{$news->file_location}" alt="{$news->title}"></a>
+        </div>                         
+        <div class="inner-post">
+            <div class="entry-header">
+                <div class="entry-meta">
+                    <span class="posted-on"><a>{$reg}</a></span>
+                </div><!-- .entry-meta -->
+                
+                <h3 class="entry-title"><a href="post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
+            </div><!-- .entry-header -->
+            
+            <div class="btn-readmore">
+                <a href="post.php?id={$news->id}&post={$news->slug}"><i class="flaticon-right-arrow-1"></i>PLUS</a>
+            </div>
+        </div>
+    </div>
+</article>
 </div>
+
+
+
 news;
     }
     } catch (PDOException $e) {
@@ -190,55 +195,16 @@ function submit_newsc1(){
 
 
 //Posts Management. display pots to be edited or deleted in admin area
-
 function display_newsC1_admin()
 {
-    global $pdo;
-    if(isset($_POST['newsC1pagination'])){
-
-    
-        $sql ="SELECT * FROM blog_c1";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-
-        //for pagination using ajax, how much to show
-        $result_per_page = 4;
-        //To find how many posts in the database
-        $number_of_results = $stmt->rowCount();
-        //now the var will be on decimal so we round off using ceil fn
-        $number_of_pages = ceil($number_of_results/$result_per_page);
-        //determineing which page the visitor is currently on
-        if(isset($_POST['page'])){
-            $page = $_POST['page'];
-        } else {
-            $page = 1;
-        }
-
-        echo <<<table
-        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-        <thead>
-            <tr class="text-center">
-            <th>#</th>
-            <th>Cover</th>
-            <th>Titre</th>
-            <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-table;
-
-    //determine the sql limit
-    $this_page_first_result = ($page - 1)*$result_per_page;
-
-        $sql = "SELECT b.*, m.file_name FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT " . $this_page_first_result .',' . $result_per_page;
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        $new= $stmt->fetchAll();
-        foreach ($new as $post){
-            $reg = date("F jS, Y, g:i a", strtotime($post->published_at));
+global $pdo;
+try{
+$sql = "SELECT b.*, m.file_name FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $post){
+        $reg = date("F jS, Y, g:i a", strtotime($post->published_at));
         echo <<<news
         <tr>
-        <td class="text-center text-muted">{$post->id}</td>
         <td class="text-center"><img src="../uploads/thumbnails/{$post->file_name}" class="br-a" alt="team thumbnail"></td>
         <td class="text-center"> {$post->title} </td>
         <td class="text-center"> {$reg} </td>
@@ -255,35 +221,10 @@ table;
         </td>
     </tr>
 news;
-    }
-
-    echo <<<tableclose
-    </tbody>
-</table>
-<nav class="" aria-label="Page navigation example">
-    <ul class="pagination" style="margin: 1rem 0;justify-content: center;">
-tableclose;
-//for the pagination links
-//display links to the page
-for($i=max(1,$page-2); $i<=min($page+4, $number_of_pages); $i++){
-if($i == $page){
-echo '<li class="page-item active"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
-} else {
-echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" id="' . $i . '">' .$i. '</a></li>';
 }
+} catch (PDOException $e) {
+echo 'query failed' . $e->getMessage();
 }
-
-$check = $this_page_first_result + $result_per_page;
-$next = $page + 1;
-if($number_of_results > $check){
-echo '<li class="page-item"><a href="javascript:void(0);" class="pagination_link page-link" aria-label="Next" id="'. $next .'" ><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>';
-
-}else {
-echo " ";
-}
-echo  '</ul></nav>';
-}
-
 }
 
 
@@ -337,6 +278,7 @@ function update_newsC1()
           if(empty($_FILES['cover']['name'])){
             $cover_id = $_POST['cover_id'];
             $title = trim($_POST['title']);
+            $content = trim($_POST['content']);
             $slug =create_url_slug($title);
           }else{
             //**------  function for handling image upload-------*/
@@ -358,7 +300,7 @@ function update_newsC1()
     }
 }
 
-function display_signle_news()
+function signle_news()
 {
     global $pdo;
     if (isset($_GET['id'])){
@@ -386,6 +328,84 @@ function display_signle_news()
                           </div>
                       </div>
               </div>
+
+              <article class="blog-post post-box">
+              <div class="entry-media">
+                  <img src="uploads/{$new->file_name}" alt="{$new->title}">
+              </div>
+              <div class="inner-post">
+                  <div class="entry-header">
+                      <div class="entry-meta">
+                          <span class="posted-on"><a href="">$reg</a></span>
+                      </div>
+                      <h3 class="entry-title"><a href="">{$new->title}</a></h3>
+                  </div>
+                  <div class="entry-summary">
+                  <p>{$new->content}</p>
+                  </div>
+                  <div class="post-relate">
+                      <h2>Related Posts</h2>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="post-box blog-item relate-box">
+                                  <div class="post-inner">
+                                      <div class="entry-media">
+                                          <div class="post-cat">
+                                              <span class="posted-in">
+                                                  <a href="#" rel="category tag">Development</a>
+                                              </span>
+                                          </div>                                    
+                                          <a href="post.html"><img src="https://via.placeholder.com/420x320.png" alt=""></a>
+                                      </div>                         
+                                      <div class="inner-post">
+                                          <div class="entry-header">
+                                              <div class="entry-meta">
+                                                  <span class="posted-on">_ <a href="#">November 21, 2019</a></span>
+                                                  <span class="byline">_ <a class="url fn n" href="#">Tom Black</a></span>
+                                              </div><!-- .entry-meta -->
+                                              
+                                              <h4 class="entry-title"><a href="post.html">Plan Your Project with Your  Software</a></h4>
+                                          </div><!-- .entry-header -->
+                                          
+                                          <div class="btn-readmore">
+                                              <a href="post.html"><i class="flaticon-right-arrow-1"></i>LEARN MORE</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="post-box blog-item relate-box">
+                                  <div class="post-inner">
+                                      <div class="entry-media">
+                                          <div class="post-cat">
+                                              <span class="posted-in">
+                                                  <a href="#" rel="category tag">Development</a>
+                                              </span>
+                                          </div>                                    
+                                          <a href="post.html"><img src="https://via.placeholder.com/420x320.png" alt=""></a>
+                                      </div>                         
+                                      <div class="inner-post">
+                                          <div class="entry-header">
+                                              <div class="entry-meta">
+                                                  <span class="posted-on">_ <a href="#">November 21, 2019</a></span>
+                                                  <span class="byline">_ <a class="url fn n" href="#">Tom Black</a></span>
+                                              </div><!-- .entry-meta -->
+                                              
+                                              <h4 class="entry-title"><a href="post.html">Does Magento Shared  Hosting Suit You? </a></h4>
+                                          </div><!-- .entry-header -->
+                                          
+                                          <div class="btn-readmore">
+                                              <a href="post.html"><i class="flaticon-right-arrow-1"></i>LEARN MORE</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </article>
 news;
                   }
               }

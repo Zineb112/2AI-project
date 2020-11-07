@@ -40,7 +40,7 @@ submit_newsc1();
                                 </div>
                             </div>
 
-                            <textarea name="Contenu" id="editor">
+                            <textarea name="content" id="editor">
                                 
                             </textarea>
 

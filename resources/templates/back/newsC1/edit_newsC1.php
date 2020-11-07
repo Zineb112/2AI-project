@@ -42,7 +42,7 @@
                                 </div>
                             </div>
 
-                            <textarea name="Contenu" id="editor">
+                            <textarea name="content" id="editor">
                             <?php echo $newsC1->content?>
                             </textarea>
 

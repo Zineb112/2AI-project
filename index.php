@@ -12,7 +12,7 @@
                         <!-- SLIDE 1 -->
                         <li data-index="rs-70" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="https://via.placeholder.com/1920x810.png"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="/images/slide1-home1.jpg" data-bgcolor='rgba(255,255,255,0)'  alt=""  data-bgposition="50% 50%" data-bgfit="auto" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                            <img src="images/slide1-home1.jpg" data-bgcolor='rgba(255,255,255,0)'  alt=""  data-bgposition="50% 50%" data-bgfit="auto" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                             
                             <!-- LAYER 1  right image overlay dark-->
 
@@ -94,7 +94,7 @@
                         <!-- SLIDE 1 -->
                         <li data-index="rs-71" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="https://via.placeholder.com/1920x810.png"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="/images/slide2-home1.jpg" data-bgcolor='#ffffff'  alt=""  data-bgposition="50% 50%" data-bgfit="auto" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                            <img src="images/slide2-home1.jpg" data-bgcolor='#ffffff'  alt=""  data-bgposition="50% 50%" data-bgfit="auto" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                               
                                                         
                             <!-- LAYER 3  Thin text title-->
@@ -169,7 +169,7 @@
                         <!-- SLIDE 1 -->
                         <li data-index="rs-72" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="https://via.placeholder.com/1920x810.png"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="/images/slide3-home1.jpg" data-bgcolor='#ffffff' alt=""  data-bgposition="50% 50%" data-bgfit="auto" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                            <img src="images/slide3-home1.jpg" data-bgcolor='#ffffff' alt=""  data-bgposition="50% 50%" data-bgfit="auto" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                             
                                                         
                             <!-- LAYER 3  Thin text title-->
@@ -295,106 +295,7 @@
 </section>
 <section class="no-padding-top">
                 <div class="owl-carousel owl-theme project-slider">
-                    <div class="project-item projects-style-2">
-                        <div class="projects-box">
-                            <div class="projects-thumbnail">
-                                <a href="">
-                                    <img src="/images/project-720x520.jpg" class="" alt="">                         
-                                    <span class="overlay"></span>
-                                </a>
-                            </div>
-                            <div class="portfolio-info ">
-                                <div class="portfolio-info-inner">
-                                    <a class="btn-link" href=""><i class="flaticon-right-arrow-1"></i></a>
-                                    <h5><a href="">Social Media App</a></h5>
-                                    <p class="portfolio-cates">
-                                        <a href="#">Design</a><span>/</span>
-                                        <a href="#">Technology</a>
-                                    </p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item projects-style-2">
-                        <div class="projects-box">
-                            <div class="projects-thumbnail">
-                                <a href="">
-                                    <img src="/images/project3-720x520.jpg" class="" alt="">                         
-                                    <span class="overlay"></span>
-                                </a>
-                            </div>
-                            <div class="portfolio-info ">
-                                <div class="portfolio-info-inner">
-                                    <a class="btn-link" href=""><i class="flaticon-right-arrow-1"></i></a>
-                                    <h5><a href="">App for Virtual Reality</a></h5>
-                                    <p class="portfolio-cates">
-                                        <a href="#">Design</a><span>/</span>
-                                        <a href="#">Ideas</a>
-                                    </p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item projects-style-2">
-                        <div class="projects-box">
-                            <div class="projects-thumbnail">
-                                <a href="">
-                                    <img src="/images/project4-720x520.jpg" class="" alt="">                         
-                                    <span class="overlay"></span>
-                                </a>
-                            </div>
-                            <div class="portfolio-info ">
-                                <div class="portfolio-info-inner">
-                                    <a class="btn-link" href=""><i class="flaticon-right-arrow-1"></i></a>
-                                    <h5><a href="">Basics Project</a></h5>
-                                    <p class="portfolio-cates">
-                                        <a href="#">Design</a><span>/</span>
-                                        <a href="#">Development</a>
-                                    </p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item projects-style-2">
-                        <div class="projects-box">
-                            <div class="projects-thumbnail">
-                                <a href="">
-                                    <img src="/images/project7-720x520.jpg" class="" alt="">                         
-                                    <span class="overlay"></span>
-                                </a>
-                            </div>
-                            <div class="portfolio-info ">
-                                <div class="portfolio-info-inner">
-                                    <a class="btn-link" href=""><i class="flaticon-right-arrow-1"></i></a>
-                                    <h5><a href="">eCommerce Website</a></h5>
-                                    <p class="portfolio-cates">
-                                        <a href="#">Design</a><span>/</span>
-                                        <a href="#">Ideas</a>
-                                    </p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item projects-style-2">
-                        <div class="projects-box">
-                            <div class="projects-thumbnail">
-                                <a href="">
-                                    <img src="/images/project8-720x520.jpg" class="" alt="">                         
-                                    <span class="overlay"></span>
-                                </a>
-                            </div>
-                            <div class="portfolio-info ">
-                                <div class="portfolio-info-inner">
-                                    <a class="btn-link" href=""><i class="flaticon-right-arrow-1"></i></a>
-                                    <h5><a href="">Basics Project</a></h5>
-                                    <p class="portfolio-cates">
-                                        <a href="#">Design</a><span>/</span>
-                                        <a href="#">Development</a>
-                                    </p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php display_gallery_home() ?>
                 </div>
 </section>
 
@@ -420,72 +321,7 @@
                         <div class="space-40"></div>
                         <div class="post-grid pgrid">
                             <div class="row justify-content-center">
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <article class="post-box blog-item">
-                                        <div class="post-inner">
-                                            <div class="entry-media">                                   
-                                                <a href="#"><img src="/images/blog1-601x520.jpg" alt=""></a>
-                                            </div>                         
-                                            <div class="inner-post">
-                                                <div class="entry-header">
-                                                    <div class="entry-meta">
-                                                        <span class="posted-on"><a>November 21, 2019</a></span>
-                                                    </div><!-- .entry-meta -->
-                                                    
-                                                    <h3 class="entry-title"><a href="#">Plan Your Project with Your Software</a></h3>
-                                                </div><!-- .entry-header -->
-                                                
-                                                <div class="btn-readmore">
-                                                    <a href="#"><i class="flaticon-right-arrow-1"></i>PLUS</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <article class="post-box blog-item">
-                                            <div class="post-inner">
-                                                <div class="entry-media">                                   
-                                                    <a href="#"><img src="/images/blog4-601x520.jpg" alt=""></a>
-                                                </div>                         
-                                                <div class="inner-post">
-                                                    <div class="entry-header">
-                                                        <div class="entry-meta">
-                                                            <span class="posted-on"><a>November 21, 2019</a></span>
-                                                        </div><!-- .entry-meta -->
-                                                        
-                                                        <h3 class="entry-title"><a href="#">Plan Your Project with Your Software</a></h3>
-                                                    </div><!-- .entry-header -->
-                                                    
-                                                    <div class="btn-readmore">
-                                                        <a href="#"><i class="flaticon-right-arrow-1"></i>PLUS</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <article class="post-box blog-item">
-                                            <div class="post-inner">
-                                                <div class="entry-media">                                   
-                                                    <a href="#"><img src="/images/blog3-601x520.jpg" alt=""></a>
-                                                </div>                         
-                                                <div class="inner-post">
-                                                    <div class="entry-header">
-                                                        <div class="entry-meta">
-                                                            <span class="posted-on"><a>November 21, 2019</a></span>
-                                                        </div><!-- .entry-meta -->
-                                                        
-                                                        <h3 class="entry-title"><a href="#">Plan Your Project with Your Software</a></h3>
-                                                    </div><!-- .entry-header -->
-                                                    
-                                                    <div class="btn-readmore">
-                                                        <a href="#"><i class="flaticon-right-arrow-1"></i>PLUS</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                </div>
+                                <?php display_newsC1_home() ?>
                             </div>
     
                         </div>
