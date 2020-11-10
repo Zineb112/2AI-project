@@ -10,9 +10,9 @@ submit_gallery();
                     <i class="pe-7s-wallet icon-gradient bg-plum-plate"> </i>
                 </div>
                 <div>
-                Ajouter une nouvelle photo ou vidéo
+                Créer un nouveau projet
                     <div class="page-title-subheading">
-                    En soumettant ce formulaire, vous ajouterez de nouvelles images / vidéos à votre galerie
+                    En soumettant ce formulaire, vous ajouterez de nouveaux projet
                     </div>
                 </div>
             </div>
@@ -29,28 +29,20 @@ submit_gallery();
         <div class="col-md-8">
             <div class="main-card mb-2 card">
                 <div class="card-body">
-                    <h5 class="card-title">Nouvelle image / vidéo</h5>
+                    <h5 class="card-title">Nouveau projet</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Titre</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du iamge/vidéo" name="title"  required=""  />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du projet" name="title"  required=""  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Catégorie</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire la catégorie" name="category" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Lien</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du l'image/vidéo" name="link"  />
+                                <label for="validationCustom01">client</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom du client" name="client" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -67,8 +59,12 @@ submit_gallery();
                                 </div>
                             </div>
 
+                            <textarea name="content" id="editor">
+                                
+                            </textarea>
+
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Cover</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">

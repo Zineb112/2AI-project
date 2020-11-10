@@ -77,7 +77,10 @@
     border: 1px solid black !important;
 } */
 
-
+.single-project-cover{
+    width: 1170px !important;
+    height: 700px !important;;
+}
 
 
 
@@ -190,6 +193,10 @@
     .nomargin{
         margin-right: 0px !important;
     margin-left: 0px !important;
+    }
+
+    .single-project-cover{
+        height: auto !important;;
     }
 
 

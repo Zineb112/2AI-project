@@ -24,9 +24,9 @@
                             <tr>
                                 <th class="text-center">Couverture</th>
                                 <th class="text-center">Titre</th>
-                                <th class="text-center">Category</th>
                                 <th class="text-center">Type</th>
-                                <th class="text-center">Lien</th>
+                                <th class="text-center">Client</th>
+                                <th class="text-center">Date</th>
                                 
                             </tr>
                         </thead>
