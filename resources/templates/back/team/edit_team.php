@@ -87,6 +87,7 @@
                                 <input type="hidden" name="cover_id" value="<?php echo $team->avatar?>">
                                 <input name="avatar" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
+                                <big class="form-text text-muted">&#9888; Les dimensions doivent être exactement 720 * 987 px</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">

@@ -162,6 +162,16 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "newsletter/manage_subscriber.php");
         }
 
+        // FAQ'S
+        if(isset($_GET['create_faq'])){
+            include(TEMPLATE_BACK . DS . "faq/create_faq.php");
+        }
+
+        // Departement
+        if(isset($_GET['create_departement'])){
+            include(TEMPLATE_BACK . DS . "departement/create_departement.php");
+        }
+
 
 
 

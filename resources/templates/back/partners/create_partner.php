@@ -40,17 +40,10 @@ submit_partner();
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Lien de site Web</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien vers le site Web du partenaire" name="link" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
 
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">Logo</label>
+                                <label for="exampleFile" class="">Logo du partenaire</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="partner_logo" id="exampleFile" type="file" class="form-control-file">

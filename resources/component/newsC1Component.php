@@ -13,7 +13,7 @@ function display_newsC1_page(){
         $stmt->execute();
 
         //for pagination using ajax, how much to show
-        $result_per_page = 2;
+        $result_per_page = 6;
         //To find how many posts in the database
         $number_of_results = $stmt->rowCount();
         //now the var will be on decimal so we round off using ceil fn
@@ -41,7 +41,7 @@ function display_newsC1_page(){
     <article class="post-box blog-item">
         <div class="post-inner">
             <div class="entry-media">                                   
-                <a href="news-post.php?id={$news->id}&post={$news->slug}"><img src="uploads/{$news->file_location}" alt="{$news->title}"></a>
+                <a href="post.php?id={$news->id}&post={$news->slug}"><img class="blog-border" src="uploads/{$news->file_location}" alt="{$news->title}"></a>
             </div>                         
             <div class="inner-post">
                 <div class="entry-header">
@@ -49,11 +49,11 @@ function display_newsC1_page(){
                         <span class="posted-on"><a>{$reg}</a></span>
                     </div><!-- .entry-meta -->
                     
-                    <h3 class="entry-title"><a href="#">{$news->title}</a></h3>
+                    <h3 class="entry-title"><a href="post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h3>
                 </div><!-- .entry-header -->
                 
                 <div class="btn-readmore">
-                    <a href="#"><i class="flaticon-right-arrow-1"></i>PLUS</a>
+                    <a href="post.php?id={$news->id}&post={$news->slug}"><i class="flaticon-right-arrow-1"></i>PLUS</a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@ function display_newsC1_home(){
 <article class="post-box blog-item">
     <div class="post-inner">
         <div class="entry-media">                                   
-            <a href="post.php?id={$news->id}&post={$news->slug}"><img src="uploads/{$news->file_location}" alt="{$news->title}"></a>
+            <a href="post.php?id={$news->id}&post={$news->slug}"><img class="blog-border" src="uploads/{$news->file_location}" alt="{$news->title}"></a>
         </div>                         
         <div class="inner-post">
             <div class="entry-header">
@@ -137,21 +137,37 @@ news;
     }
 }
 
-function display_three_news(){
+function display_two_post(){
     global $pdo;
     try{
-    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 3";
+    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 2";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $news){
         $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
         echo <<<news
-        <ul>
-        <li>
-            <img src="uploads/{$news->file_location}" alt="">
-            <a href="news-post.php?id={$news->id}&post={$news->slug}"><h4>{$news->title}</h4></a>
-            <span>$reg</span>
-        </li>
-    </ul>
+
+<div class="col-md-6">
+<div class="post-box blog-item relate-box">
+    <div class="post-inner">
+        <div class="entry-media">                                  
+            <a href="post.php?id={$news->id}&post={$news->slug}"><img class="blog-border" src="uploads/{$news->file_location}" alt="{$news->title}"></a>
+        </div>                         
+        <div class="inner-post">
+            <div class="entry-header">
+                <div class="entry-meta">
+                    <span class="posted-on"><a href="">$reg</a></span>
+                </div><!-- .entry-meta -->
+                
+                <h4 class="entry-title"><a href="post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h4>
+            </div><!-- .entry-header -->
+            
+            <div class="btn-readmore">
+                <a href="post.php?id={$news->id}&post={$news->slug}"><i class="flaticon-right-arrow-1"></i>PLUS</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 news;
     }
     } catch (PDOException $e) {
@@ -300,7 +316,7 @@ function update_newsC1()
     }
 }
 
-function signle_news()
+function  display_single_post()
 {
     global $pdo;
     if (isset($_GET['id'])){
@@ -313,99 +329,19 @@ function signle_news()
                   foreach($news as $new){
                     $reg = date("F jS, Y, g:i a", strtotime($new->published_at));
                       echo <<<news
-                      <div class="newsPost__wrapperLeft">
-                      <div class="wrapperLeft__img">
-                      <img src="uploads/{$new->file_name}" alt="{$new->title}">
-                      </div>
-                      <div class="wrapperLeft__top">
-                      <div class="wrapperLeft__info">
-                         <h3 class="wrapperLeft__date">$reg</h3>
-                      </div>
-                      </div>
-                      <div class="wrapperLeft__content">
-                          <h3 class="wrapperLeft__title">{$new->title}</h3>
-                          <div class="wrapperLeft__para">{$new->content}
-                          </div>
-                      </div>
-              </div>
-
-              <article class="blog-post post-box">
-              <div class="entry-media">
-                  <img src="uploads/{$new->file_name}" alt="{$new->title}">
-              </div>
-              <div class="inner-post">
-                  <div class="entry-header">
-                      <div class="entry-meta">
-                          <span class="posted-on"><a href="">$reg</a></span>
-                      </div>
-                      <h3 class="entry-title"><a href="">{$new->title}</a></h3>
-                  </div>
-                  <div class="entry-summary">
-                  <p>{$new->content}</p>
-                  </div>
-                  <div class="post-relate">
-                      <h2>Related Posts</h2>
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="post-box blog-item relate-box">
-                                  <div class="post-inner">
-                                      <div class="entry-media">
-                                          <div class="post-cat">
-                                              <span class="posted-in">
-                                                  <a href="#" rel="category tag">Development</a>
-                                              </span>
-                                          </div>                                    
-                                          <a href="post.html"><img src="https://via.placeholder.com/420x320.png" alt=""></a>
-                                      </div>                         
-                                      <div class="inner-post">
-                                          <div class="entry-header">
-                                              <div class="entry-meta">
-                                                  <span class="posted-on">_ <a href="#">November 21, 2019</a></span>
-                                                  <span class="byline">_ <a class="url fn n" href="#">Tom Black</a></span>
-                                              </div><!-- .entry-meta -->
-                                              
-                                              <h4 class="entry-title"><a href="post.html">Plan Your Project with Your  Software</a></h4>
-                                          </div><!-- .entry-header -->
-                                          
-                                          <div class="btn-readmore">
-                                              <a href="post.html"><i class="flaticon-right-arrow-1"></i>LEARN MORE</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="post-box blog-item relate-box">
-                                  <div class="post-inner">
-                                      <div class="entry-media">
-                                          <div class="post-cat">
-                                              <span class="posted-in">
-                                                  <a href="#" rel="category tag">Development</a>
-                                              </span>
-                                          </div>                                    
-                                          <a href="post.html"><img src="https://via.placeholder.com/420x320.png" alt=""></a>
-                                      </div>                         
-                                      <div class="inner-post">
-                                          <div class="entry-header">
-                                              <div class="entry-meta">
-                                                  <span class="posted-on">_ <a href="#">November 21, 2019</a></span>
-                                                  <span class="byline">_ <a class="url fn n" href="#">Tom Black</a></span>
-                                              </div><!-- .entry-meta -->
-                                              
-                                              <h4 class="entry-title"><a href="post.html">Does Magento Shared  Hosting Suit You? </a></h4>
-                                          </div><!-- .entry-header -->
-                                          
-                                          <div class="btn-readmore">
-                                              <a href="post.html"><i class="flaticon-right-arrow-1"></i>LEARN MORE</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </article>
+                                <div class="entry-media">
+                                <img class="blog-border" class="cover_post" src="uploads/{$new->file_name}" alt="{$new->title}">
+                            </div>
+                            <div class="inner-post">
+                                <div class="entry-header">
+                                    <div class="entry-meta">
+                                    <span class="posted-on"><a href="">$reg</a></span>
+                                    </div>
+                                    <h3 class="entry-title"><a href="">{$new->title}</a></h3>
+                                </div>
+                                <div class="entry-summary">
+                                <p>{$new->content}</p>
+                                </div>
 news;
                   }
               }
@@ -414,5 +350,36 @@ news;
           }
     }
 }
+
+
+function display_last_three_post(){
+    global $pdo;
+    try{
+    $sql ="SELECT b.*, m.file_location FROM blog_c1 b join media m on b.cover = m.id ORDER BY b.published_at DESC LIMIT 3";
+    $stmt = $pdo->query($sql)->fetchAll();
+    foreach ($stmt as $news){
+        $reg = date("F jS, Y, g:i a", strtotime($news->published_at));
+        echo <<<news
+
+<li class="clearfix"> 
+<div class="thumb">
+<a href="post.php?id={$news->id}&post={$news->slug}"><img class="recent_posts_three" src="uploads/{$news->file_location}" alt="{$news->title}"></a>
+</div>
+<div class="entry-header">
+    <h6><a href="post.php?id={$news->id}&post={$news->slug}">{$news->title}</a></h6>
+    <span class="post-on"><span class="entry-date">$reg</span></span>
+</div>
+</li>
+
+
+news;
+    }
+    } catch (PDOException $e) {
+    set_message('error','query failed');
+    echo 'query failed' . $e->getMessage();
+    }
+}
+
+
 
 ?>

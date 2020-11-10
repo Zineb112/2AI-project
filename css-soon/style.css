@@ -481,7 +481,7 @@ ul.style2-nav li:hover .nav-menu {
 .small-title {
     font-size: 32px;
     font-weight: 800;
-    color: white;
+    color: black;
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
@@ -491,7 +491,7 @@ ul.style2-nav li:hover .nav-menu {
 .main-title {
     font-size: 70px;
     font-weight: 700;
-    color: white;
+    color: black;
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
     position: relative;

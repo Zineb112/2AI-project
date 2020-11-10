@@ -33,15 +33,15 @@ submit_testimonials();
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">full name</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" required="" />
+                                <label for="validationCustom01">Nom complet</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Nom complet du client" name="full_name" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">description</label>
+                                <label for="validationCustom01">Description</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="testimonial description" name="description" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -49,7 +49,7 @@ submit_testimonials();
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">role</label>
+                                <label for="validationCustom01">Rôle</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="role client" name="role" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
@@ -58,7 +58,7 @@ submit_testimonials();
 
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Profile</label>
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="profile" id="exampleFile" type="file" class="form-control-file">

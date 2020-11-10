@@ -35,7 +35,7 @@
                         <div class="form-row">
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">full name</label>
+                                <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="testimonials_id" value="<?php echo $tes->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="full name" name="full_name" value="<?php echo $tes->full_name ?>" required="" />
                                 <div class="valid-feedback">
@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">descriptione</label>
+                                <label for="validationCustom01">Description</label>
                                 <input type="hidden" name="testimonials_id" value="<?php echo $tes->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="description" name="description" value="<?php echo $tes->description ?>" required="" />
                                 <div class="valid-feedback">
@@ -53,7 +53,7 @@
                             </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">role</label>
+                                <label for="validationCustom01">Rôle</label>
                                 <input type="hidden" name="testimonials_id" value="<?php echo $tes->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="role" name="role" value="<?php echo $tes->role ?>" required="" />
                                 <div class="valid-feedback">
@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">File</label>
+                                <label for="exampleFile" class="">Photo</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $tes->profile?>">

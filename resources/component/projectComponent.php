@@ -3,25 +3,25 @@
 function display_gallery(){
     global $pdo;
     try{
-    $sql ="SELECT g.id, g.title, g.category, g.cover, g.link, g.type, m.file_location FROM gallery g join media m on g.cover = m.id ORDER BY g.id DESC";
+    $sql ="SELECT p.*, m.file_location FROM project p join media m on p.cover = m.id ORDER BY p.id DESC";
     $stmt = $pdo->query($sql)->fetchAll();
-    foreach ($stmt as $gallery){
+    foreach ($stmt as $project){
 
         echo <<<gallery
-
-    <div class="project-item {$gallery->type}">
+        $reg = date("F jS, Y, g:i a", strtotime($project->published_at));
+    <div class="project-item {$project->type}">
     <div class="projects-box">
             <div class="projects-thumbnail">
                 <a href="">
-                    <img src="iuploads/{$gallery->file_location}" alt="{$gallery->title}">
+                    <img class="project_img_home" src="iuploads/{$project->file_location}" alt="{$project->title}">
                 </a>
             </div>
             <div class="portfolio-info">
                 <a class="overlay" href=""></a>
                 <div class="portfolio-info-inner">
-                    <h5><a href="">{$gallery->title}</a></h5>
+                    <h5><a href="">{$project->title}</a></h5>
                     <p class="portfolio-cates">
-                        <a >{$gallery->type}</a>
+                        <a >{$project->type}</a>
                     </p> 
                 </div>
             </div>

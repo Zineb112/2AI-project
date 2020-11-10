@@ -22,7 +22,7 @@
             <h2 class="team-top-title">Rencontrez L'équipe des Innovateurs!</h2>
         </div>
         <div class="container-fluid text-center">
-            <img src="/images/team-img.png" alt="">
+            <img src="images/team-img.png" alt="">
         </div>
     </section>
     <section class="team-our space-sm-bottom">
@@ -30,7 +30,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="img-Engitech">
-                        <img src="/images/team-bottom.png" alt="" class="img-ibtikarcom">
+                        <img src="images/team-bottom.png" alt="" class="img-ibtikarcom">
                     </div>
                 </div>
             </div>
@@ -62,8 +62,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8 mb-4 mb-md-0">
                         <div class="ot-heading">
-                            <span>// Écrivez-nous! Nous sommes là pour répondre à vos questions 24/7</span>
-                            <h2 class="main-heading">BESOIN D'UNE CONSULTATION?</h2>
+                            <span>// Contactez-nous pour un premier échange sur vos besoins<br>Vous souhaitez en savoir plus ?</span>
+                            <h2 class="main-heading">Demandez un devis</h2>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 align-self-end">

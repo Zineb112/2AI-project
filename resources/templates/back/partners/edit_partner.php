@@ -34,7 +34,7 @@
                         <?php foreach($partner_result as $pr): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Nom partenaire</label>
+                                <label for="validationCustom01">Nom du partenaire</label>
                                 <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom partenaire" name="partner_name" value="<?php echo $pr->partner_name ?>" required="" />
                                 <div class="valid-feedback">
@@ -42,17 +42,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Lien de site Web</label>
-                                <input type="hidden" name="partner_id" value="<?php echo $pr->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien vers le site Web du partenaire" name="link" value="<?php echo $pr->link ?>" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
                             <div class="col-md-6">
-                                <label for="exampleFile" class="">Logo</label>
+                                <label for="exampleFile" class="">Logo du partenaire</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $pr->partner_logo?>">

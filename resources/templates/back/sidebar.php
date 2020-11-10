@@ -32,11 +32,11 @@
                     <div class="scrollbar-sidebar">
                         <div class="app-sidebar__inner">
                             <ul class="vertical-nav-menu">
-                                <li class="app-sidebar__heading">Dashboards</li>
+                                <li class="app-sidebar__heading"></li>
                                 <li>
                                     <a href="index.php" class="mm-active">
-                                        <i class="metismenu-icon pe-7s-home"></i>
-                                        Analytics Dashboard
+                                    <i class="metismenu-icon  fa fa-fw" aria-hidden="true" title="Copy to use pie-chart"></i>
+                                        Analytiques
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Portail de Innovation</li>
@@ -44,7 +44,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         Innovation news
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -66,7 +66,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         Guide de l’Inventeur
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -88,7 +88,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         Carnet de l’inventeur
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -110,7 +110,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         Portail de l’Innovateur
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -132,7 +132,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         2ai actualités
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -154,7 +154,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         Blog concept 1
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -176,7 +176,7 @@
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-display2"></i>
                                         Blog concept 2
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -197,30 +197,30 @@
                                 <li class="app-sidebar__heading">Activities</li>
                                 <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-photo-gallery"></i>
-                                        Galerie
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use trophy"></i>
+                                        Projets
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="index.php?create_gallery">
                                                 <i class="metismenu-icon">
-                                                </i>Créer photo/vidéo
+                                                </i>Créer nouveau projet
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_gallery">
                                                 <i class="metismenu-icon">
-                                                </i>Gérer votre galerie
+                                                </i>Gérer votre projets
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-loop"></i>
+                                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i>
                                         Partenaires
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -240,9 +240,30 @@
                                 <li class="app-sidebar__heading">communication</li>
                                 <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-users"></i>
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use files-o"></i>
+                                        Blog concept 1
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_newsC1">
+                                                <i class="metismenu-icon"></i>
+                                                Créer nouveau actualités
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_newsC1">
+                                                <i class="metismenu-icon">
+                                                </i>Gérer vos actualités
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use users"></i>
                                         Team
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -262,9 +283,9 @@
 
                                 <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-users"></i>
+                                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use commenting"></i>
                                         Testimonials
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -282,17 +303,32 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="index.php?manage_subscriber">
-                                        <i class="metismenu-icon pe-7s-mail-open"></i>
-                                        Newsletter
+                                    <a href="#">
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use question"></i>
+                                        FAQ's
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_faq">
+                                                <i class="metismenu-icon"></i>
+                                                Create faq
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_testimonials">
+                                                <i class="metismenu-icon">
+                                                </i>Manage client member
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="app-sidebar__heading">Admin Area</li>
                                 <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-users"></i>
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use lock"></i>
                                         Users
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
                                     </a>
                                     <ul>
                                         <li>
@@ -307,14 +343,70 @@
                                                 </i>Manage users
                                             </a>
                                         </li>
+                                        <li>
+                                    <a href="index.php?manage_subscriber">
+                                        <i class="metismenu-icon pe-7s-mail-open"></i>
+                                        Les abonnés
+                                    </a>
+                                </li>
                                     </ul>
                                 </li>
+
                                 <li>
                                     <a href="index.php?change_pass">
-                                        <i class="metismenu-icon pe-7s-door-lock"></i>
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use key"></i>
                                         Change password
                                     </a>
                                 </li>
+
+                                <li>
+                                    <a href="#">
+                                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Copy to use columns"></i>
+                                        Pages
+                                        <i class="metismenu-state-icon fa fa-fw" aria-hidden="true" title="Copy to use chevron-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../index.php" target="_blank">
+                                                <i class="metismenu-icon"></i>
+                                                Acceuil
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../about-us.php" target="_blank">
+                                                <i class="metismenu-icon">
+                                                </i>À propos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../team.php" target="_blank">
+                                                <i class="metismenu-icon"></i>
+                                                Équipe
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../faq.php" target="_blank">
+                                                <i class="metismenu-icon">
+                                                </i>FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../projects.php" target="_blank">
+                                                <i class="metismenu-icon">
+                                                </i>Projets
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../blog.php" target="_blank">
+                                                <i class="metismenu-icon">
+                                                </i>Blog c1
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
 
                             </ul>
                         </div>

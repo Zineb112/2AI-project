@@ -243,10 +243,73 @@
                                                 
               
                     </ul>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="serv-box s1 v5 bg-s1 md-mb-30">
+                                <a href="it-services.html" class="overlay"></a>
+                                <div class="icon-main"><span class="flaticon-tablet"></span></div>
+                                <div class="content-box">
+                                    <h5>Custom Software Development</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="serv-box s1 v5 bg-s2 md-mb-30">
+                                <a href="web-development.html" class="overlay"></a>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
+                                <div class="content-box">
+                                    <h5>Outsoursing Development</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="serv-box s1 v5 bg-s3">
+                                <a href="mobile-development.html" class="overlay"></a>
+                                <div class="icon-main"><span class="flaticon-ui"></span></div>
+                                <div class="content-box">
+                                    <h5>Software Product Development</h5>
+                                </div>
+                            </div>
+                        </div>
+
                     <div class="tp-bannertimer"></div>
                     
 
                     </div>
+                    <div class="container">
+                            <div class="row">
+                    <div class="nomargin row mt--70 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="serv-box s1 v5 bg-s1 md-mb-30">
+                                    <a href="it-services.html" class="overlay"></a>
+                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
+                                    <div class="content-box">
+                                        <h5>Custom Software Development</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="serv-box s1 v5 bg-s2 md-mb-30">
+                                    <a href="web-development.html" class="overlay"></a>
+                                    <div class="icon-main"><span class="flaticon-report"></span></div>
+                                    <div class="content-box">
+                                        <h5>Outsoursing Development</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="serv-box s1 v5 bg-s3">
+                                    <a href="mobile-development.html" class="overlay"></a>
+                                    <div class="icon-main"><span class="flaticon-ui"></span></div>
+                                    <div class="content-box">
+                                        <h5>Software Product Development</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+</div>
 </div>
 
 <?php include(TEMPLATE_FRONT . DS . "services.php") ?>

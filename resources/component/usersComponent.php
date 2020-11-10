@@ -18,7 +18,6 @@ function add_users()
             $email = trim($_POST['email']);
             $service = trim($_POST['service']);
             $role = trim($_POST['role']);
-            $sold_conge = trim($_POST['pto']);
             if(empty($_FILES['profile_pic']['name'])){
                 $cover_id = 5;
               }else{
@@ -26,9 +25,9 @@ function add_users()
                 upload_image('profile_pic', $cover_id);
             }
 
-            $sql = "INSERT INTO `users` (`username`, `name`, `last_name`, `password_hash`, `role`, `access_right`,`timestamp`, `avatar`, `service_id`, `sold_conge`, `tel`, `email`) VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?);";
+            $sql = "INSERT INTO `users` (`username`, `name`, `last_name`, `password_hash`, `access_right`,`timestamp`, `avatar`, `service`, `tel`, `email`, `role`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?);";
             $stmt = $pdo->prepare($sql);
-            $result = $stmt->execute([$username, $name, $lastname, $password, $role, $access_right,$cover_id, $service,  $sold_conge ,  $phone, $email]);
+            $result = $stmt->execute([$username, $name, $lastname, $password, $access_right,$cover_id, $service ,  $phone, $email, $role]);
             if ($result) {
                 set_message('success', 'User created successfully');
                 redirect('index.php?manage_users&success');
@@ -46,7 +45,7 @@ function display_users()
 {
     global $pdo;
 
-    $sql = "SELECT u.id, m.file_name, u.name, u.last_name, u.role, s.service_name, u.status, u.timestamp FROM users u join service s on u.service_id = s.id join media m on u.avatar = m.id WHERE username != 'admin' ";
+    $sql = "SELECT u.id, m.file_name, u.name, u.last_name, u.role, u.service, u.status, u.timestamp FROM users u join media m on u.avatar = m.id WHERE username != 'admin' ";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $user) {
         $reg = date("F jS, Y, g:i a", strtotime($user->timestamp));
@@ -71,12 +70,13 @@ function display_users()
                     </div>
                     <div class="widget-content-left flex2">
                         <div class="widget-heading"> {$user->name} {$user->last_name} </div>
-                        <div class="widget-subheading opacity-7">{$user->role}</div>
+
                     </div>
                 </div>
             </div>
         </td>
-        <td class="text-center"> {$user->service_name} </td>
+        <td class="text-center"> {$user->service} </td>
+        <td class="text-center"> {$user->role} </td>
         <td class="text-center">
             {$status}
         </td>
@@ -137,16 +137,15 @@ function update_users()
             $email = trim($_POST['email']);
             $service = trim($_POST['service']);
             $role = trim($_POST['role']);
-            $sold_conge = trim($_POST['pto']);
             if(empty($_FILES['profile_pic']['name'])){
                 $cover_id = $_POST['cover_id'];
               }else{
                 //**------  function for handling image upload-------*/
                 upload_image('profile_pic', $cover_id);
             }
-            $sql = "UPDATE `users` SET  `username` = ?, `name` = ?, `last_name` = ?, `password_hash` = ?, `role` = ?, `avatar` = ?, `service_id` = ?, `sold_conge` = ?, `tel` = ?, `email` = ? WHERE `users`.`id` = ?";
+            $sql = "UPDATE `users` SET  `username` = ?, `name` = ?, `last_name` = ?, `password_hash` = ?, `avatar` = ?, `service` = ?, `role` = ?, `tel` = ?, `email` = ? WHERE `users`.`id` = ?";
             $stmt = $pdo->prepare($sql);
-            $result = $stmt->execute([$username, $name, $lastname, $password, $role, $cover_id, $service,  $sold_conge ,  $phone, $email, $_POST['user_id']]);
+            $result = $stmt->execute([$username, $name, $lastname, $password, $cover_id, $service, $role,  $phone, $email, $_POST['user_id']]);
             if ($result) {
                 set_message('success', 'User updated successfully');
 
@@ -168,7 +167,7 @@ function delete_user()
         //Exeption Handling
         try {
             //The SQL statement.
-            $sqlimg = "SELECT m.id, m.file_name FROM users e join media m on e.avatar = m.id WHERE e.id = ?";
+            $sqlimg = "SELECT m.id, m.file_name FROM users u join media m on u.avatar = m.id WHERE u.id = ?";
             //Prepare our SELECT SQL statement.
             $stmtimg = $pdo->prepare($sqlimg);
             //Execute the statement GET the users's avatar data.
@@ -182,7 +181,7 @@ function delete_user()
                 //this is not the default image, Now we are going to delete the actual image from the uploads folder.
                 !unlink('../uploads/' . $img->file_name) ? set_message('error', 'cannot delete image due to an error') : set_message('success', 'image has been deleted successfully');
                 //this is not the default image, The query to delete both the avatar and the user
-                $sql = "DELETE e, m FROM users e join media m on e.avatar = m.id WHERE e.id = ?";
+                $sql = "DELETE u, m FROM users u join media m on u.avatar = m.id WHERE u.id = ?";
             } else {
                 //this is the default image, The query to delete just the user
                 $sql = "DELETE FROM users WHERE id = ?";

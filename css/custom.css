@@ -25,7 +25,7 @@
 }
 
 .bg-maps-dots{
-    background-image: url(/images/bg-maps-dots.jpg);
+    background-image: url(../images/bg-maps-dots.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
 }
@@ -52,8 +52,44 @@
     margin-right: auto;
 }
 
+.recent_posts_three{
+    width: 70px !important;
+    height:  70px !important;
+}
+.cover_post{
+    width: 870px !important;
+    height: 520px !important;
+}
+
+/* .project_img_home{
+    width: 370px !important;
+    height: 370px !important;
+} */
 
 
+.img-testi{
+    border-radius: 100% !important;
+    width: 90px !important;
+    height: 90px !important;
+}
+
+/* .blog-border{
+    border: 1px solid black !important;
+} */
+
+
+
+
+
+#partners{
+    background-color: #faf9f7 !important;
+}
+
+.faq-grid{
+    display: grid !important;
+    grid-template-columns: 50% 50% !important;
+    grid-gap: 0px 40px !important;
+}
 
 @media screen and (min-width: 0px) and (max-width: 767px){
     .btnMobile{
@@ -130,4 +166,31 @@
     .faq-support{
         padding-bottom: 64px !important;
     }
+    .contact-post-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cover_post{
+        height: 320px !important;
+    }
+    .about-offer{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .service2-v4{
+        padding-top: 24px !important;
+    }
+    .about-team{
+        padding-top: 40px !important;
+    }
+    .service2-v4{
+        margin-top: 400px !important;
+    }
+    .nomargin{
+        margin-right: 0px !important;
+    margin-left: 0px !important;
+    }
+
+
 }

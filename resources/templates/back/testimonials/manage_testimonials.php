@@ -17,16 +17,14 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
-                <div class="card-header">client list</div>
+                <div class="card-header">Clients liste</div>
                 <div class="table-responsive">
                     <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                         <thead>
                             <tr>
-                                <th class="text-center">#</th>
-                                <th>client thumbnail</th>
-                                <th>client full Name</th>
-                                <th>client description</th>
-                                <th>client role</th>
+                                <th class="text-center">Profile</th>
+                                <th class="text-center">Nom complet</th>
+                                <th class="text-center">Rôle</th>
                             </tr>
                         </thead>
                         <tbody>

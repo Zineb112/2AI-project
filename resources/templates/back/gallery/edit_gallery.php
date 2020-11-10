@@ -79,8 +79,9 @@
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <input type="hidden" name="cover_id" value="<?php echo $gallery->cover?>">
-                                <input name="avatar" id="exampleFile" type="file" class="form-control-file">
+                                <input name="cover" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
+                                <big class="form-text text-muted">&#9888; Les dimensions doivent être au moins de 800 x 800 px</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_event" type="submit" name="submit" value="Submit form">

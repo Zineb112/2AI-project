@@ -220,11 +220,10 @@ function table_count($table_name){
 
 require_once('component/loginComponent.php');
 require_once('component/usersComponent.php');
-require_once('component/servicesComponent.php');
 require_once('component/partnersComponent.php');
 require_once('component/testimonialsComponent.php');
 require_once('component/teamComponent.php');
-require_once('component/galleryComponent.php');
+require_once('component/projectComponent.php');
 require_once('component/2AINewsC2Component.php');
 require_once('component/innovComponent.php');
 require_once('component/carnetComponent.php');
@@ -233,6 +232,7 @@ require_once('component/portailInventeurComponent.php');
 require_once('component/newsC1Component.php');
 require_once('component/newsC2Component.php');
 require_once('component/newsletterComponent.php');
+require_once('component/faqComponent.php');
 
 
 

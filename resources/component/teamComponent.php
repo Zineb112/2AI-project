@@ -36,7 +36,7 @@ team;
 function display_team_about(){
     global $pdo;
     try{
-        $sql ="SELECT t.full_name, t.role, t.avatar,t.linkedin, t.facebook, t.instagram, m.file_location FROM team t join media m on t.avatar = m.id";
+        $sql ="SELECT t.full_name, t.role, t.avatar,t.linkedin, t.facebook, t.instagram, m.file_location FROM team t join media m on t.avatar = m.id LIMIT 4";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $team){
         echo <<<team
@@ -113,7 +113,6 @@ function display_team_admin()
         foreach ($stmt as $team){
         echo <<<team
         <tr>
-        <td class="text-center text-muted">{$team->id}</td>
         <td class="text-center"><img src="../uploads/thumbnails/{$team->file_name}" class="br-a" alt="team thumbnail"></td>
         <td class="text-center"> {$team->full_name} </td>
         <td class="text-center"> {$team->role} </td>

@@ -26,8 +26,8 @@
             lineWidth: 4,
             speed: 0.01,
             //Background
-            bgColorInner: "#1f3c88",
-            bgColorOuter: "#1f3c88",
+            bgColorInner: "#F2F6F9",
+            bgColorOuter: "#F2F6F9",
         };
 
     var TWO_PI = 2*Math.PI;

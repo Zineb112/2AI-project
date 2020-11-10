@@ -152,34 +152,22 @@ $user_to_edit = $stmt_edit->fetchAll();
 
 
       <div class="position-relative row form-group">
-        <label for="UserService" class="col-sm-2 col-form-label">department</label>
+        <label for="useremail" class="col-sm-2 col-form-label">Département</label>
         <div class="col-sm-10">
-          <select name="service" id="UserService" class="form-control">
-
-            <?php display_service_in_form()?>
-
-          </select>
+          <input name="service" placeholder="Le nom du département" type="text" class="form-control" value="<?php echo trim($user->service); ?>"
+            required />
         </div>
       </div>
 
       <div class="position-relative row form-group">
-        <label for="userole" class="col-sm-2 col-form-label">Role</label>
+        <label for="useremail" class="col-sm-2 col-form-label">Rôle</label>
         <div class="col-sm-10">
-          <input name="role" id="userole" placeholder="data analyst" type="text" class="form-control" value="<?php echo trim($user->role); ?> " required />
-          <div class="invalid-feedback">
-            Please choose a valid role
-          </div>
+          <input name="role" placeholder="Le rôle" type="text" class="form-control" value="<?php echo trim($user->role); ?>"
+            required />
         </div>
       </div>
-      <div class="position-relative row form-group">
-        <label for="userpto" class="col-sm-2 col-form-label">sold conge (PTO)</label>
-        <div class="col-sm-10">
-          <input name="pto" id="userpto" placeholder="20 (paid time off)" type="number" value="<?php echo trim($user->sold_conge); ?>" class="form-control" required />
-          <div class="invalid-feedback">
-            Please choose a valid number
-          </div>
-        </div>
-      </div>
+
+
       <div class="position-relative row ">
         <div class="col-sm-10 ">
           <input type="submit" class="btn btn-primary" value="submit" name="submit"

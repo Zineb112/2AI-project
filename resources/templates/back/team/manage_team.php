@@ -22,7 +22,6 @@
                     <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                         <thead>
                             <tr>
-                                <th class="text-center">#</th>
                                 <th class="text-center"> Photo profile</th>
                                 <th class="text-center"> Nom complet</th>
                                 <th class="text-center"> Rôle</th>

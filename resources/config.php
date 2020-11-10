@@ -36,11 +36,41 @@ try {
     echo 'Connection Failed' . $e->getMessage();
 }
 
+//helper db functions
+function is_table_empty() {
+    global $pdo;
+    $result = $pdo->query("SELECT id FROM token");
+    if($result->rowCount()) {
+        return false;
+    } 
+    return true;
+}
+function get_access_token() {
+    global $pdo;
+    $sql = $pdo->query("SELECT access_token FROM token");
+    $result = $sql->fetch(PDO::FETCH_ASSOC);
+    return json_decode($result['access_token']);
+}
+
+function get_refersh_token() {
+    $result = get_access_token();
+    return $result->{'refresh_token'};
+}
+
+function update_access_token($token) {
+    global $pdo;
+    if(is_table_empty()) {
+        $pdo->query("INSERT INTO token(access_token) VALUES('$token')");
+    } else {
+        $pdo->query("UPDATE `token` SET `access_token` = '$token' WHERE 1");
+        // $stmt->execute([$token]);
+    }
+}
+
 // Helper Functions
-
 require_once __DIR__ . DS . '../vendor/autoload.php';
-require_once('functions.php');
+require_once 'functions.php';
 require_once 'sendemail.php';
-
+require_once 'google_analytics.php';
 
 ?>

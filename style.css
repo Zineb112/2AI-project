@@ -2231,7 +2231,7 @@ a:hover, a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .entry-content {
-  padding: 90px 0 110px;
+  padding: 90px 0 40px;
 }
 
 .post-box {
@@ -3152,10 +3152,10 @@ a:hover, a:active {
   display: none;
 }
 .widget .recent-news h6 a:hover {
-  color: #7141b1;
+  color: #49baff;
 }
 .widget .recent-news .entry-date {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   font-weight: bold;
   color: #b5b5b5;
@@ -6460,10 +6460,9 @@ div.tp-bullet.selected, div.tp-bullet:hover {
 .service2-v4 {
     background-image: url(images/bg-art2-home4.png);
     background-repeat: no-repeat;
-    padding: 80px 0 80px 0;
+    padding: 80px 0 40px 0;
 }
 .overlay-image-2 {
-    background-image: url(images/bg-art3-home4.png);
     background-position: bottom right;
     background-repeat: no-repeat;
 }
@@ -6649,6 +6648,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
 }
 .mt--70 {
     margin-top: -70px;
+    z-index: 111;
 }
 .icon-box-s2.bg:hover {
     color: #fff;
@@ -6705,7 +6705,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     background-image: url(images/bg-particle1.png);
     background-position: 0px 70px;
     background-repeat: no-repeat;
-    padding: 80px 0px;
+    padding: 40px 0px;
 }
 
 .left-v5 {
@@ -6761,8 +6761,8 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     padding: 120px 0 120px 0;
 }
 .news-v5 {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     background-color: #F8F8F8;
 }
 .counter-v5 {
@@ -6929,7 +6929,7 @@ svg:not(:root) {
 /* About */
 .about-offer {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 .pabout-left {
     margin: 0 -50px 0 -55px;
@@ -6963,7 +6963,7 @@ svg:not(:root) {
 }
 .about-team {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 .about-counter {
     z-index: 0;
@@ -7006,7 +7006,7 @@ svg:not(:root) {
     padding-bottom: 110px;
 }
 .team-top {
-    padding-top: 110px;
+    padding-top: 64px;
     padding-bottom: 0;
 }
 .team-top-title {
@@ -7124,8 +7124,8 @@ svg:not(:root) {
 }
 /* Faq */
 .faq {
-    padding-top: 100px;
-    padding-bottom: 245px;
+    padding-top: 64px;
+    padding-bottom: 220px;
 }
 .cta-faq {
   background: rgb(67,186,255);
@@ -7303,7 +7303,7 @@ svg:not(:root) {
 /* Project custom */
 .projects-masonry {
     padding-top: 80px;
-    padding-bottom: 110px;
+    padding-bottom: 80px;
 }
 .projects-slider {
     padding: 110px 0;
@@ -7472,8 +7472,8 @@ svg:not(:root) {
   }
 }
 section {
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     position: relative;
 }
 .pbt-120 {
@@ -7611,7 +7611,7 @@ section {
     width: 100%;
 }
 .space-100 {
-    height: 100px;
+    height: 56px;
     width: 100%;
 }
 .space-105 {
@@ -7631,7 +7631,7 @@ section {
     width: 100%;
 }
 .space-150 {
-    height: 150px;
+    height: 64px;
     width: 100%;
 }
 .space-26 {
@@ -7793,8 +7793,8 @@ section {
 }
 @media (max-width: 767px) {
   section {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 40px;
+      padding-bottom: 40px;
   }
   .space-sm-top {
       padding-top: 60px;

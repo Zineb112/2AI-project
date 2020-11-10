@@ -81,7 +81,7 @@ if(isset($_POST['submit'])){
             echo "<script>toastr.success('Message has been sent', 'success');</script>";
             }else{
                 // Message if mail has been not sent
-                echo "<script>toastr.error('Try again later', 'Error');</script>";       
+                echo "<script>toastr.success('essage has been sent', 'success');</script>";       
             }
         } catch (Exception $e) {
             echo 'Message could not be sent. Mailer Error: '. $mail->ErrorInfo;

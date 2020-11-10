@@ -72,7 +72,7 @@ submit_gallery();
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
-                                <big class="form-text text-muted">&#9888; Les dimensions doivent être au moins de 500 x 500 px</big>
+                                <big class="form-text text-muted">&#9888; Les dimensions doivent être au moins de 800 x 800 px</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_partner" type="submit" name="submit" value="Submit form">

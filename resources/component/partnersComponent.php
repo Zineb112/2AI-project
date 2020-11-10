@@ -4,12 +4,12 @@
 function display_partner(){
     global $pdo;
     try{
-    $sql ="SELECT p.partner_name, p.partner_logo, p.link, m.file_name FROM partners p join media m on p.partner_logo = m.id";
+    $sql ="SELECT p.partner_name, p.partner_logo, m.file_name FROM partners p join media m on p.partner_logo = m.id";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $partners){
         echo <<<partners
         <div class="partners-slide">
-        <a href="#" class="client-logo">
+        <a href="" class="client-logo">
             <figure class="partners-slide-inner">
                 <img class="partners-slide-image" src="uploads/{$partners->file_name}" alt="{$partners->partner_name}"></figure>
             </a>
@@ -30,15 +30,14 @@ function submit_partner(){
     if(isset($_POST['submit'])){
         try{
         $name = trim($_POST['partner_name']);
-        $link = trim($_POST['link']);
         $file = $_FILES['partner_logo']['name'];
         $cover_id = 1;
 
         //**------  function for handling image upload-------*/
         upload_image('partner_logo', $cover_id);
-        $sql = "INSERT INTO `partners` (`id`, `partner_name`, `partner_logo`, `link`) VALUES (NULL, ?, ?, ?)";
+        $sql = "INSERT INTO `partners` (`id`, `partner_name`, `partner_logo`) VALUES (NULL, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        $result = $stmt->execute([$name, $cover_id, $link]);
+        $result = $stmt->execute([$name, $cover_id]);
         if($result){
             set_message('success','Partner created successfully');
             
@@ -66,10 +65,8 @@ function display_partners_admin()
         foreach ($stmt as $partner){
         echo <<<partner
         <tr>
-        <td class="text-center text-muted">{$partner->id}</td>
         <td class="text-center"><img src="../uploads/thumbnails/{$partner->file_name}" class="br-a" alt="partner thumbnail"></td>
         <td class="text-center"> {$partner->partner_name} </td>
-        <td class="text-center"> {$partner->link} </td>
 
         <td class="text-center">
             <a href="index.php?edit_partner={$partner->id}">
@@ -144,9 +141,9 @@ function update_partner()
           }
             
 
-            $sql = "UPDATE `partners` SET `partner_name` = ?, `partner_logo` = ? , `link` = ? WHERE `partners`.`id` = ?";
+            $sql = "UPDATE `partners` SET `partner_name` = ?, `partner_logo` = ? WHERE `partners`.`id` = ?";
             $update_partner = $pdo->prepare($sql);
-            $update_partner->execute([$_POST['partner_name'], $cover_id, $_POST['link'], $_POST['partner_id']]);
+            $update_partner->execute([$_POST['partner_name'], $cover_id, $_POST['partner_id']]);
             if ($update_partner) {
                 set_message('success', 'Partner updated successfully');
             } else {

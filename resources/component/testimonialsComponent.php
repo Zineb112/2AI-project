@@ -15,7 +15,7 @@ function display_testimonials(){
            <img
                src="uploads/{$testimonials->file_location}"
                alt="{$testimonials->full_name}"
-               class="lazyloaded"
+               class="lazyloaded img-testi"
                data-ll-status="loaded">
                <div class="tinfo">
                    <h6>{$testimonials->full_name}</h6>
@@ -85,11 +85,9 @@ function display_testimonials_admin()
         foreach ($stmt as $testimonials){
         echo <<<testimonials
         <tr>
-        <td class="text-center text-muted">{$testimonials->id}</td>
-        <td class=""><img src="../uploads/thumbnails/{$testimonials->file_name}" class="br-a" alt="testimonials thumbnail"></td>
-        <td class=""> {$testimonials->full_name} </td>
-        <td class=""> {$testimonials->description} </td>
-        <td class=""> {$testimonials->role} </td>
+        <td class="text-center"><img src="../uploads/thumbnails/{$testimonials->file_name}" class="br-a" alt="testimonials thumbnail"></td>
+        <td class="text-center"> {$testimonials->full_name} </td>
+        <td class="text-center"> {$testimonials->role} </td>
 
         <td class="text-center">
             <a href="index.php?edit_testimonials={$testimonials->id}">

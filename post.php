@@ -3,17 +3,17 @@
 <?php include(TEMPLATE_FRONT . DS . "head.php") ?>
 <?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
 
-<?php  single_news(); ?>
+
 
 
         <div id="content" class="site-content">
             <div class="page-header flex-middle">
                 <div class="container">
                     <div class="inner flex-middle">
-                        <h1 class="page-title">Blog</h1>
+                        <h1 class="page-title">Actualités</h1>
                         <ul id="breadcrumbs" class="breadcrumbs none-style">
                             <li><a href="index.php">Acceuil</a></li>
-                            <li class="active">Blog</li>
+                            <li class="active">Actualités</li>
                         </ul>    
                     </div>
                 </div>
@@ -24,10 +24,19 @@
             <div class="container">
                 <div class="row">
                     <div class="content-area col-lg-9 col-md-12 col-sm-12 col-xs-12">
-
+                        <article class="blog-post post-box">
+                            <?php display_single_post() ?>
+                                <div class="post-relate">
+                                    <h2>Articles Similaires</h2>
+                                    <div class="row">
+                                    <?php display_two_post() ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                     <div class="widget-area primary-sidebar col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <aside id="author_widget-1" class="widget engitech_author-widget">
+                        <!-- <aside id="author_widget-1" class="widget engitech_author-widget">
                             <div class="author-widget_wrapper text-center">
                                 <div class="author-widget_image-wrapper">
                                     <img class="author-widget_image" src="https://via.placeholder.com/270x375.png" alt="Jina Peterson">
@@ -58,79 +67,15 @@
                                 <input type="search" class="search-field" placeholder="Search…" value="" name="s">
                                 <button type="submit" class="search-submit"><i class="flaticon-search"></i></button>
                             </form>
-                        </aside>
+                        </aside> -->
                         <aside class="widget widget_recent_news">
-                            <h5 class="widget-title">Recent Posts</h5>
+                            <h5 class="widget-title">Actualités récents</h5>
                             <ul class="recent-news clearfix">
-                                <li class="clearfix"> 
-                                    <div class="thumb">
-                                        <a href="post.html"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                    </div>
-                                    <div class="entry-header">
-                                        <h6><a href="post.html">Plan Your Project  with Your Software</a></h6>
-                                        <span class="post-on"><span class="entry-date">November 21, 2019</span></span>
-                                    </div>
-                                </li>
-                      
-                                <li class="clearfix"> 
-                                    <div class="thumb">
-                                        <a href="post.html"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                    </div>
-                                    <div class="entry-header">
-                                        <h6><a href="post.html">You have a Great  Business Idea?</a></h6>
-                                        <span class="post-on"><span class="entry-date">November 21, 2019</span></span>
-                                    </div>
-                                </li>
-                      
-                                <li class="clearfix"> 
-                                    <div class="thumb">
-                                        <a href="post.html"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                    </div>
-                                    <div class="entry-header">
-                                        <h6><a href="post.html">Building Data Analytics  Software</a></h6>
-                                        <span class="post-on"><span class="entry-date">September 24, 2019</span></span>
-                                    </div>
-                                </li>
+                            <?php display_last_three_post() ?>
                             </ul>
                         </aside>
-                        <aside class="widget instagram_widget">
-                            <h5 class="widget-title">Instagram</h5>
-                            <div class="widget-insta-feeds instafeed-gallery">
-                                <div class="instafeed-item">
-                                    <a href="#" target="_blank"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                </div>
-                                <div class="instafeed-item">
-                                    <a href="#" target="_blank"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                </div>
-                                <div class="instafeed-item">
-                                    <a href="#" target="_blank"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                </div>
-                                <div class="instafeed-item">
-                                    <a href="#" target="_blank"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                </div>
-                                <div class="instafeed-item">
-                                    <a href="#" target="_blank"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                </div>
-                                <div class="instafeed-item">
-                                    <a href="#" target="_blank"><img src="https://via.placeholder.com/70x70.png" alt=""></a>
-                                </div>
-                            </div>
-                        </aside>
-                        <aside class="widget widget_tag_cloud">
-                            <h5 class="widget-title">Tags</h5>
-                            <div class="tagcloud">
-                                <a href="#">business</a>
-                                <a href="#">marketing</a>
-                                <a href="#">SEO</a>
-                                <a href="#">SMM</a>
-                                <a href="#">solution</a>
-                                <a href="#">startup</a>
-                                <a href="#">strategy</a>
-                                <a href="#">tips</a>
-                            </div>
-                        </aside>
                         <aside class="widget widget_media_image">
-                            <a href="contact.html"><img src="https://via.placeholder.com/271x350.png" alt=""></a>
+                            <a href="contact.php"><img class="contact-post-img" src="images/contact-post.png" alt=""></a>
                         </aside>
                     </div>
                 </div>

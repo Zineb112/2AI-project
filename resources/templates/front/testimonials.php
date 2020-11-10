@@ -4,8 +4,7 @@
             <div class="col-md-12">
                 <div class="ot-heading text-center">
                     <span>// nos clients</span>
-                    <h2 class="main-heading">We are Trusted
-                        <br>15+ Countries Worldwide</h2>
+                    <h2 class="main-heading">Témoignage de Nos<br>Clients</h2>
                     </div>
                 </div>
             </div>

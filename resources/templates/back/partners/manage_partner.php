@@ -22,10 +22,8 @@
                     <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                         <thead>
                             <tr>
-                                <th class="text-center">#</th>
-                                <th class="text-center">Logo partenaire</th>
-                                <th class="text-center">Nom partenaire</th>
-                                <th class="text-center">Lien de site Web</th>
+                                <th class="text-center">Logo du partenaire</th>
+                                <th class="text-center">Nom du partenaire</th>
                             </tr>
                         </thead>
                         <tbody>
