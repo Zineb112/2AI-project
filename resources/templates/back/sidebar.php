@@ -291,13 +291,13 @@
                                         <li>
                                             <a href="index.php?create_testimonials">
                                                 <i class="metismenu-icon"></i>
-                                                Create client member
+                                                Créer recommandation
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_testimonials">
                                                 <i class="metismenu-icon">
-                                                </i>Manage client member
+                                                </i>Gérer vos recommandations
                                             </a>
                                         </li>
                                     </ul>
@@ -312,13 +312,13 @@
                                         <li>
                                             <a href="index.php?create_faq">
                                                 <i class="metismenu-icon"></i>
-                                                Create faq
+                                                Créer faq
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_testimonials">
+                                            <a href="index.php?manage_faq">
                                                 <i class="metismenu-icon">
-                                                </i>Manage client member
+                                                </i>Gérer vos FAQ's
                                             </a>
                                         </li>
                                     </ul>
@@ -334,13 +334,13 @@
                                         <li>
                                             <a href="index.php?add_user">
                                                 <i class="metismenu-icon"></i>
-                                                Add user
+                                                Créer user
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.php?manage_users">
                                                 <i class="metismenu-icon">
-                                                </i>Manage users
+                                                </i>Gérer vos users
                                             </a>
                                         </li>
                                         <li>

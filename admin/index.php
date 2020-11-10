@@ -166,10 +166,11 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['create_faq'])){
             include(TEMPLATE_BACK . DS . "faq/create_faq.php");
         }
-
-        // Departement
-        if(isset($_GET['create_departement'])){
-            include(TEMPLATE_BACK . DS . "departement/create_departement.php");
+        if(isset($_GET['manage_faq'])){
+            include(TEMPLATE_BACK . DS . "faq/manage_faq.php");
+        }
+        if(isset($_GET['edit_faq'])){
+            include(TEMPLATE_BACK . DS . "faq/edit_faq.php");
         }
 
 
