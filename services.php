@@ -131,20 +131,19 @@
                                     <li>
                                         <span>
                                             <i class="fas fa-check"></i>Cadrage</span></li>
-                                    <button class="listPlusA">Plus</button>
-                                    <li class="maskListA1">
+                                    <li>
                                         <span>
                                             <i class="fas fa-check"></i>Mise en scène</span></li>
-                                    <li class="maskListA2">
+                                    <li>
                                         <span>
                                             <i class="fas fa-check"></i>Prise de son</span></li>
-                                    <li class="maskListA3">
+                                    <li>
                                         <span>
                                             <i class="fas fa-check"></i>Montage</span></li>
-                                    <li class="maskListA4">
+                                    <li>
                                         <span>
                                             <i class="fas fa-check"></i>Étalonnage</span></li>
-                                    <li class="maskListA5">
+                                    <li>
                                         <span>
                                             <i class="fas fa-check"></i>Mixage</span></li>
                                 </ul>
@@ -380,6 +379,7 @@
             </div>
         </div>
     </section>
+    <?php include(TEMPLATE_FRONT . DS . "testimonials.php") ?>
     <?php include(TEMPLATE_FRONT . DS . "consultation.php") ?>
     <?php include(TEMPLATE_FRONT . DS . "partners.php") ?>
 </div>
