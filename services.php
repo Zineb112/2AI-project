@@ -30,11 +30,7 @@
             </div>
             <div class="row no-margin">
 
-                <section class="servicesUs" data-aos="zoom-in-down" data-aos-duration="1000">
-                    <div class="block-title__line"></div>
-                    <h3 class="servicesUs__title">Nous essayons de servir le meilleur
-                        <br>
-                        <span class="servicesUs__title--font">service</span></h3>
+                <section class="servicesUs" style="padding-top: 0px;">
                     <div class="servicesUs__container">
                         <div class="servicesUs__card1 cardActive">
                             <img class="servicesUs__img1" src="images/designIcon.svg" alt="">
