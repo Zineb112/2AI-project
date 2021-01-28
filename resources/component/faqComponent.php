@@ -107,23 +107,23 @@ function delete_faq()
 
 // Update a partner information
 
-function update_faq()
-{
-    global $pdo;
-    if (isset($_POST['submit'])) {
-        try {
-            $sql = "UPDATE `faq` SET `question` = ?, `reponse` = ? WHERE `faq`.`id` = ?";
-            $update_faq = $pdo->prepare($sql);
-            $update_faq->execute([$_POST['question'], [$_POST['reponse'], $_POST['faq_id']]);
-            if ($update_faq) {
-                set_message('success', 'Question updated successfully');
-            } else {
-                set_message('error', 'query failed try later');
-            }
-        } catch (PDOException $e) {
-            echo 'query failed' . $e->getMessage();
-        }
-    }
-}
+// function update_faq()
+// {
+//     global $pdo;
+//     if (isset($_POST['submit'])) {
+//         try {
+//             $sql = "UPDATE `faq` SET `question` = ?, `reponse` = ? WHERE `faq`.`id` = ?";
+//             $update_faq = $pdo->prepare($sql);
+//             $update_faq->execute([$_POST['question'], [$_POST['reponse'], $_POST['faq_id']]);
+//             if ($update_faq) {
+//                 set_message('success', 'Question updated successfully');
+//             } else {
+//                 set_message('error', 'query failed try later');
+//             }
+//         } catch (PDOException $e) {
+//             echo 'query failed' . $e->getMessage();
+//         }
+//     }
+// }
 
 ?>
