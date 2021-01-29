@@ -22,4 +22,5 @@
     <link rel="stylesheet" href="assets_c2/css/swiper.min.css">
     <link rel="stylesheet" href="assets_c2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets_c2/css/style.css">
+    
 </head>

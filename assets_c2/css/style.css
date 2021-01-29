@@ -1648,12 +1648,12 @@ s .process span:before {
   margin-bottom: 20px;
   font-family: "Fjalla One", sans-serif;
   opacity: 0.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 .works .project-box .content-box .inner h3 {
-  font-size: 5vw;
+  font-size: 2vw;
   font-weight: 800;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
   line-height: 1;
 }
 .works .project-box .content-box .inner h3 span {
@@ -2916,5 +2916,4 @@ s .process span:before {
     margin-right: 15px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -33,18 +33,18 @@ submit_portail();
                     <h5 class="card-title">Nouveau inventeur</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                         <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Nom complet</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom complet de l’Innovateur" name="full_name"  required=""  />
+
+                        <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Titre du capsule</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre" name="title" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
-
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Rôle</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle de l’Innovateur" name="role"  />
+                                <label for="validationCustom01">Nom complet</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le nom complet de l’Innovateur" name="full_name"  required=""  />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -58,15 +58,7 @@ submit_portail();
                                 </div>
                             </div>
 
-                          
-
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Titre</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre" name="title" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
+                        
 
                            
 

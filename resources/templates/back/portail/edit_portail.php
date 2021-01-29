@@ -33,6 +33,15 @@
                     <?php if($portail_result): ?>
                         <?php foreach($portail_result as $portail): ?>
                         <div class="form-row">
+                        <div class="col-md-4 mb-3"> 
+                                <label for="validationCustom01">Titre du capsule</label>
+                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre" name="title" value="<?php echo $portail->title ?>" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
@@ -46,24 +55,6 @@
                                 <label for="validationCustom01">Lien</label>
                                 <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien" name="link" value="<?php echo $portail->link ?>" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Rôle</label>
-                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle de l’Innovateur" name="role" value="<?php echo $portail->role ?>" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Titre</label>
-                                <input type="hidden" name="portail_id" value="<?php echo $portail->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre" name="title" value="<?php echo $portail->title ?>" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>

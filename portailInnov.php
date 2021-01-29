@@ -143,43 +143,7 @@
     <!-- end header -->
     <section class="works">
         <div class="container">
-            <div class="row">
-                <div class="col-12 wow fadeIn">
-                    <h6>Portail De L'inventeur</h6>
-                    <h2 data-text="Portail">Règles de succès</h2>
-                </div>
-                <!-- end col-12 -->
-                <div class="col-12">
-                    <div class="project-box wow fadeIn" data-bg="#e7f3ff">
-                        <figure>
-                            <a href="images/featured02.jpg" data-fancybox="data-fancybox"><img src="images/featured01.jpg" alt="Image"></a>
-                        </figure>
-                        <div class="content-box">
-                            <div class="inner">
-                                <small>Règles de succès</small>
-                                <h3>
-                                    <span>Female</span>Purples</h3>
-                                <div class="custom-link">
-                                    <a href="">
-                                        <div class="lines">
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <!-- end lines -->
-                                        <b>Lire la vidéo</b>
-                                    </a>
-                                </div>
-                                <!-- end custom-link -->
-                            </div>
-                            <!-- end inner -->
-                        </div>
-                        <!-- end content-box -->
-                    </div>
-                    <!-- end project-box -->
-                </div>
-                <!-- end col-12 -->
-            </div>
-            <!-- end row -->
+            <?php  display_portail_home(); ?>
         </div>
         <!-- end container -->
     </section>
