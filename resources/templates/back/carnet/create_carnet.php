@@ -34,15 +34,23 @@ submit_carnet();
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Titre</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du carnet" name="title" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ecrivez ici le titre du carnet" name="title" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Date</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire la date" name="date" required="" />
+                                <label for="validationCustom01">Mois</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ecrivez ici le mois de carnet" name="date" required="" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Description</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ecrivez ici la description du carnet" name="description" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -50,7 +58,7 @@ submit_carnet();
 
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Lien de téléchargement</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien de téléchargement" name="file" required="" />
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ecrivez ici le lien de téléchargement" name="file" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
