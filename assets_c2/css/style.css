@@ -1280,7 +1280,7 @@ header .sound .equalizer .holder {
   float: left;
   font-weight: 800;
   color: #1f5abc;
-  font-size: 10vw;
+  font-size: 4vw;
   line-height: 1;
 }
 .swiper-slider .swiper-slide .slide-inner .container h1 span {
@@ -1988,7 +1988,7 @@ s .process span:before {
   flex-direction: column;
 }
 .news .post.single-post .post-content .inner .post-title {
-  font-size: 66px;
+  font-size: 40px;
 }
 .news .post.single-post .post-image {
   margin-bottom: 30px;
@@ -2013,7 +2013,6 @@ s .process span:before {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  padding: 0 50px;
 }
 .news .post .post-content .inner {
   width: 100%;
@@ -2544,7 +2543,7 @@ s .process span:before {
   }
 
   .news .post.single-post .post-content .inner .post-title {
-    font-size: 44px;
+    font-size: 24px;
   }
 
   .news .post:nth-child(2n+2) .post-image {
@@ -2712,7 +2711,7 @@ s .process span:before {
   }
 
   .swiper-slider .swiper-slide .slide-inner .container h1 {
-    font-size: 20vw;
+    font-size: 8vw;
   }
 
   .swiper-slider .swiper-slide .slide-inner .container h1 span {

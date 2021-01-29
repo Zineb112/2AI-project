@@ -31,25 +31,20 @@
                     <h5 class="card-title">General Info</h5>
                     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate="" >
                     <?php if($innov_result): ?>
-                        <?php foreach($innov_result as $inv): ?>
+                        <?php foreach($innov_result as $innov): ?>
                         <div class="form-row">
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Titre</label>
-                                <input type="hidden" name="innov_id" value="<?php echo $inv->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre de news" name="title" value="<?php echo $inv->title ?>" required="" />
+                                <input type="hidden" name="innov_id" value="<?php echo $innov->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre de news" name="title" value="<?php echo $innov->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Lien</label>
-                                <input type="hidden" name="team_id" value="<?php echo $inv->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du news" name="link" value="<?php echo $inv->link ?>" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
+                            <textarea name="content" id="editor">
+                            <?php echo $innov->content?>
+                            </textarea>
 
 
 
@@ -58,7 +53,7 @@
                                 <label for="exampleFile" class="">Cover</label>
                                 <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
-                                <input type="hidden" name="cover_id" value="<?php echo $inv->cover?>">
+                                <input type="hidden" name="cover_id" value="<?php echo $innov->cover?>">
                                 <input name="cover" id="exampleFile" type="file" class="form-control-file">
                                 <small class="form-text text-muted">Télécharger uniquement si vous souhaitez remplacer l'image existante par une nouvelle</small>
                             </div>

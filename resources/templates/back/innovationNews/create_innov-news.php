@@ -40,13 +40,9 @@ submit_innov();
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Lien</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du news" name="link" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
+                            <textarea name="content" id="editor">
+                                
+                            </textarea>
 
 
                             <div class="col-md-6">
