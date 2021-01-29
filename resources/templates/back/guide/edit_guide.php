@@ -33,6 +33,15 @@
                     <?php if($guide_result): ?>
                         <?php foreach($guide_result as $guide): ?>
                         <div class="form-row">
+                        <div class="col-md-4 mb-3"> 
+                                <label for="validationCustom01">Titre</label>
+                                <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du reportage" name="title" value="<?php echo $guide->title ?>" required="" />
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            
                             <div class="col-md-4 mb-3"> 
                                 <label for="validationCustom01">Nom complet</label>
                                 <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
@@ -42,28 +51,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Rôle</label>
-                                <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle de l'inventeur" name="role" value="<?php echo $guide->role ?>" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
 
                             <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Lien</label>
+                                <label for="validationCustom01">Lien de reportage</label>
                                 <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du reportage" name="link" value="<?php echo $guide->link ?>" required="" />
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-3"> 
-                                <label for="validationCustom01">Titre</label>
-                                <input type="hidden" name="guide_id" value="<?php echo $guide->id?>">
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du reportage" name="title" value="<?php echo $guide->title ?>" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>

@@ -1658,7 +1658,7 @@ s .process span:before {
 }
 .works .project-box .content-box .inner h3 span {
   display: block;
-  font-size: 8vw;
+  font-size: 2vw;
   color: #1f5abc;
   margin-left: -7vw;
 }

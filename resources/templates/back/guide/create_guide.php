@@ -41,28 +41,22 @@ submit_guide();
                             </div>
 
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Rôle</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le rôle de l'inventeur" name="role" required="" />
+                                <label for="validationCustom01">Titre du capsule</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du reportage" name="title" required=""/>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
+
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Lien</label>
+                                <label for="validationCustom01">Lien de reportage</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le lien du reportage" name="link" required="" />
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Titre</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ici écrire le titre du reportage" name="title" required=""/>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
 
 
                             <div class="col-md-6">
