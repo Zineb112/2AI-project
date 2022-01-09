@@ -1,0 +1,808 @@
+.design, .digi{
+    background-color: $primary!important;
+}
+
+
+.vis, .marketing{
+    background-color: $secondary!important;
+}
+
+.evn{
+    background-color: black!important;
+}
+
+
+
+.bubbleG::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: $primary!important;
+    border: 2px solid white!important;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 500ms ease;
+}
+.bubbleG::after{
+    content: '';
+    width: 16px;
+    transition: all 500ms ease;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $primary!important;
+    border: 2px solid white!important;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bubbleR::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: $secondary!important;
+    border: 2px solid white!important;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 500ms ease;
+}
+.bubbleR::after{
+    content: '';
+    width: 16px;
+    transition: all 500ms ease;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $secondary!important;
+    border: 2px solid white!important;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bubbleD::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: black!important;
+    border: 2px solid white!important;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 500ms ease;
+}
+.bubbleD::after{
+    content: '';
+    width: 16px;
+    transition: all 500ms ease;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black!important;
+    border: 2px solid white!important;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    .services {
+        margin-bottom: 88px;
+        &__box--audio,
+        &__box--design,
+        &__box--event,
+        &__box--digitalisation,
+        &__box--marketing {
+            background-color: #fff;
+            box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
+            text-align: center;
+            padding: 40px 32px;
+            width: 60%;
+            margin: auto auto 16px auto;
+        }
+        &__years{
+            background-color: #032970;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            padding: 76px 32px;
+            width: 60%;
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content;
+            margin:  auto;
+        }
+        &__icon {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            background-color: #f2f2f6;
+            margin-bottom: 33px;
+            position: relative;
+            i{
+                width: 70px;
+                border-radius: 50%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 2px;
+                color: white;
+                background-image: linear-gradient(90deg, $primary-variant 0%, $primary);
+            }
+            img {
+                width: 56%;
+            }
+        }
+        &__icon--bubble{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation-duration: 1500ms;
+                animation: service_hexagon 6s infinite linear;
+                animation-play-state: running;
+        }
+        &__icon--bubble::before{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: all 500ms ease;
+        }
+        &__icon--bubble::after{
+            content: '';
+            width: 16px;
+            transition: all 500ms ease;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            bottom: 10px;
+            right: 10px;
+        }
+        &__container {
+            width: 96%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+        }
+        &__wrapper {
+            width: 80%;
+            margin: -140px auto 40px;
+            grid-area: 1/1;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content max-content max-content;
+        }
+        &__info{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25% max-content;
+            grid-area: 1/2;
+    
+        }
+        &__info--line{
+            background-color: $secondary;
+            display: flex;
+            width: 64px;
+            height: 6px;
+            border-radius: 3px;
+            position: relative;
+        }
+        &__info--line::before{
+            content: '';
+            width: 8px;
+            height: 6px;
+            background-color: white;
+            border-radius: 3px;
+            position: absolute;
+            left: 12px;
+            top: 0px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &__info--title{
+            margin-top: 12px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        &__info--titleEdit{
+            font-family: $fontS;
+            color: $primary;
+            font-weight: 800;
+        }
+        &__info--para{
+            font-size: 24px;
+            width: 88%;
+        }
+    }
+    
+    .servTitle{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+    }
+    
+    .lineTP{
+        grid-row: 1/2;
+    }
+    .btnsrv{
+        grid-row: 3/4;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .services__info--btn{
+        width: 40%;
+    }
+    }
+
+@media (min-width: 1441px){
+.services {
+    margin-bottom: 140px;
+    &__box--audio,
+    &__box--design,
+    &__box--event,
+    &__box--digitalisation,
+    &__box--marketing {
+        background-color: #fff;
+        box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
+        text-align: center;
+        padding: 40px 32px;
+        width: 60%;
+        margin: auto auto 16px auto;
+    }
+    &__years{
+        background-color: #032970;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        padding: 76px 32px;
+        width: 60%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin:  auto;
+    }
+    &__icon {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        background-color: #f2f2f6;
+        margin-bottom: 33px;
+        position: relative;
+        i{
+            width: 70px;
+            border-radius: 50%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 2px;
+            color: white;
+            background-image: linear-gradient(90deg, $primary-variant 0%, $primary);
+        }
+        img {
+            width: 56%;
+        }
+    }
+    &__icon--bubble{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation-duration: 1500ms;
+            animation: service_hexagon 6s infinite linear;
+            animation-play-state: running;
+    }
+    &__icon--bubble::before{
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: $secondary;
+        border: 2px solid $secondary;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        transition: all 500ms ease;
+    }
+    &__icon--bubble::after{
+        content: '';
+        width: 16px;
+        transition: all 500ms ease;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: $secondary;
+        border: 2px solid $secondary;
+        bottom: 10px;
+        right: 10px;
+    }
+    &__container {
+        width: 96%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+    &__wrapper {
+        width: 80%;
+        margin: -140px auto 40px;
+        grid-area: 1/1;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content max-content max-content;
+    }
+    &__info{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% max-content;
+        grid-area: 1/2;
+
+    }
+    &__info--line{
+        background-color: $secondary;
+        display: flex;
+        width: 64px;
+        height: 6px;
+        border-radius: 3px;
+        position: relative;
+    }
+    &__info--line::before{
+        content: '';
+        width: 8px;
+        height: 6px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        left: 12px;
+        top: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &__info--title{
+        margin-top: 12px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2em;
+    }
+    &__info--titleEdit{
+        font-family: $fontS;
+        color: $primary;
+        font-weight: 800;
+    }
+    &__info--para{
+        font-size: 24px;
+        width: 88%;
+    }
+}
+
+.servTitle{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.lineTP{
+    grid-row: 2/3;
+}
+.btnsrv{
+    grid-row: 4/5;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .services {
+       margin-bottom: 120px;
+       &__box--audio,
+       &__box--design,
+       &__box--event,
+       &__box--digitalisation,
+       &__box--marketing {
+            background-color: #fff;
+            box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
+            text-align: center;
+            padding: 40px 32px;
+            margin-bottom: 24px;
+            
+        }
+        &__years{
+            background-color: #032970;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            padding: 76px 0px;
+            width: 100%;
+            height: max-content;
+            margin: auto;
+
+        }
+        &__icon {
+            width: 121px;
+            height: 121px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            background-color: #f2f2f6;
+            margin-bottom: 33px;
+            position: relative;
+            i{
+                width: 70px;
+                border-radius: 50%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+                background-image: linear-gradient(90deg, $primary-variant 0%, $primary);
+            }
+            img {
+                width: 56%;
+            }
+        }
+        &__icon--bubble{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation-duration: 1500ms;
+                animation: service_hexagon 6s infinite linear;
+                animation-play-state: running;
+        }
+        &__icon--bubble::before{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: all 500ms ease;
+        }
+        &__icon--bubble::after{
+            content: '';
+            width: 16px;
+            transition: all 500ms ease;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            bottom: 10px;
+            right: 10px;
+        }
+        &__container {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+        }
+        &__wrapper {
+            width: 80%;
+            grid-area: 1/1;
+            margin: 0px auto 80px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content max-content max-content;
+        }
+        &__info{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            grid-area: 2/1;
+
+            br{
+                display: none;
+            }
+        }
+        &__info--line{
+            background-color: $secondary;
+            display: flex;
+            width: 64px;
+            height: 6px;
+            border-radius: 3px;
+            position: relative;
+        }
+        &__info--line::before{
+            content: '';
+            width: 8px;
+            height: 6px;
+            background-color: white;
+            border-radius: 3px;
+            position: absolute;
+            left: 12px;
+            top: 0px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &__info--title{
+            margin-top: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        &__info--titleEdit{
+            font-family: $fontS;
+            color: $primary;
+            font-weight: 900;
+        }
+        &__info--para{
+            font-size: 24px;
+            text-align: justify;
+        }
+    }
+    
+    .servTitle{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .servPara {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: justify;
+        text-align-last: center;
+    }
+    
+    .numberY{
+        color: $secondary;
+        font-weight: 700;
+    }
+    
+    .yearA{
+        font-weight: 700;
+    }
+
+    .btnsrv{
+        margin: auto;
+        display: block;
+    }
+    
+
+
+
+
+}
+
+@media (min-width: 600px)and (max-width: 1024px){
+    .services {
+        margin-bottom: 120px;
+        &__box--audio,
+        &__box--design,
+        &__box--event,
+        &__box--digitalisation,
+        &__box--marketing {
+            background-color: #fff;
+            box-shadow: 0 4px 35px 0 rgba(57, 57, 57, 0.24);
+            text-align: center;
+            padding: 40px 32px;
+            width: 72%;
+            margin: 0px auto 40px;
+        }
+        &__years{
+            background-color: #032970;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            padding: 64px 24px;
+            width: 72%;
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content;
+            margin:  36px auto ;
+        }
+        &__icon {
+            width: 121px;
+            height: 121px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            background-color: #f2f2f6;
+            margin-bottom: 33px;
+            position: relative;
+            i{
+                width: 70px;
+                border-radius: 50%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+                background-image: linear-gradient(90deg, $primary-variant 0%, $primary);
+            }
+            img {
+                width: 56%;
+            }
+        }
+        &__icon--bubble{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation-duration: 1500ms;
+                animation: service_hexagon 6s infinite linear;
+                animation-play-state: running;
+        }
+        &__icon--bubble::before{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: all 500ms ease;
+        }
+        &__icon--bubble::after{
+            content: '';
+            width: 16px;
+            transition: all 500ms ease;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            bottom: 10px;
+            right: 10px;
+        }
+        &__container {
+            width: 96%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+        }
+        &__wrapper {
+            width: 96%;
+            margin:  auto;
+            grid-area: 1/1;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content max-content max-content max-content;
+        }
+        &__info{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            grid-area: 2/1;
+            margin: 40px auto;
+    
+        }
+        &__info--line{
+            background-color: $secondary;
+            display: flex;
+            width: 64px;
+            height: 6px;
+            border-radius: 3px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__info--line::before{
+            content: '';
+            width: 8px;
+            height: 6px;
+            background-color: white;
+            border-radius: 3px;
+            position: absolute;
+            left: 12px;
+            top: 0px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &__info--title{
+			text-align: center;
+			font-size: 24px;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: 700;
+        }
+        &__info--titleEdit{
+            font-family: $fontS;
+            color: $primary;
+            font-weight: 800;
+        }
+        &__info--para{
+            font-size: 24px;
+            width: 88%;
+            margin: 0px auto 40px;
+            text-align: center;
+        }
+    }
+    
+    .servTitle{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .servPara {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: justify;
+        text-align-last: center;
+    }
+    
+    .numberY{
+        color: $secondary;
+        font-weight: 700;
+    }
+    
+    .yearA{
+        font-weight: 700;
+    }
+    
+    .lineTP{
+        grid-row: 2/3;
+    }
+    .btnsrv{
+        grid-row: 4/5;
+        margin: auto;
+    }
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+
+@keyframes service_hexagon {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}

@@ -1,0 +1,53 @@
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "components/hamburgers/hamburgers";
+@import "components/nav";
+@import "components/button";
+
+@import "base/base";
+
+@import "layouts/objectives";
+@import "layouts/innovation-portal";
+@import "layouts/testimonials-section";
+@import "layouts/partners-section";
+@import "layouts/blog-section";
+@import "layouts/services-aboutUs";
+@import "layouts/team-section";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/gallery";
+@import "layouts/contact";
+@import "layouts/newsletter";
+@import "layouts/headerAlt";
+@import "layouts/footerN";
+@import "layouts/footerC2";
+@import "layouts/service-home";
+@import "layouts/newsletterC2";
+
+
+
+
+
+@import "pages/contactpage";
+@import "pages/404";
+@import "pages/news";
+@import "pages/teampage";
+@import "pages/gallerypage";
+@import "pages/news-details.scss";
+@import "pages/aboutUs.scss";
+@import "pages/newspageC2";
+@import "pages/newspostC2";
+@import "pages/portailInnov";
+@import "pages/portailInventeurPage";
+@import "pages/2AINewsC2";
+
+
+@import "pages/guide";
+@import "pages/Innovation-news";
+@import "pages/carnet-inv";
+
+
+
+

@@ -1,0 +1,366 @@
+<?php require_once('../resources/config.php'); ?>
+
+<!-- nav -->
+<?php include(TEMPLATE_FRONT . DS . "nav.php") ?>
+<!-- nav end -->
+
+<!-- header -->
+<header class="headerAlt">
+<?php include(TEMPLATE_FRONT . DS . "navigation.php") ?>
+        <div class="headerAlt__container">
+        <h3 class="headerAlt__title">À Propos</h3>
+        <ul class="headerAlt__list">
+            <il>
+                <a href="index.php">Acceuil</a>
+            </il>
+            <il>
+                >
+            </il>
+            <il>
+                <a href="aboutUs.php">À Propos</a>
+            </il>
+        </ul>
+        </div>
+</header>
+<!-- header end -->
+
+<!-- AboutUs -->
+<div id="video-overlay" class="video-overlay">
+    <a class="video-overlay-close">&times;</a>
+</div>
+<section class="aboutUs">
+
+    <div class="aboutUs__left">
+        <img src="assets/images/about-img.png" alt="">
+        <a id="play-video" class="banner-one__video videoUs"><i class="fa fa-play"></i></a>
+    </div>
+    <div class="aboutUs__right">
+        <div class="services__info--line"></div>
+        <h3 class="aboutUs__right--title">À propos de nous</h3>
+        <p>Agence IbtikarCom, chargée de la communication et de la production 
+            en Audiovisuel, et événementielle de la veille technologique, de l’invention et de
+             l’innovation. Elle s’occupe de l’accompagnement des 
+             projets innovants pour le développement durable et sociale.
+            IbtikarCom assure la promotion de l’invention, de l’innovation et de
+             l’intelligence Arabe et Africaine pour le développement du tissu économique.
+            </p>
+            <button class="aboutUs__right--moreBtn">plus</button>
+            <span class="aboutUs__right--more">
+            <p> IbtikarCom est au service de la performance digitale de nos clients et
+                les accompagne de la réflexion au déploiement, en passant par la 
+                conception et le web design ainsi que la production. L’innovation et la
+                 R&D sont au cœur de l’ADN de l’agence. Développeur de solutions techniques sur-mesure, </p>
+            <p>  IbtikarCom est également reconnue pour les performances, la fiabilité, 
+                la sécurité et la qualité de ses applicatifs web et mobiles.
+            </p>
+            </span>     
+    </div>
+</section>
+
+
+
+<!-- AboutUs end -->
+
+
+<!-- Sevices -->
+<section class="servicesUs" data-aos="zoom-in-down" data-aos-duration="1000">
+        <div class="block-title__line"></div>
+        <h3 class="servicesUs__title">Nous essayons de servir le meilleur <br> <span class="servicesUs__title--font">service</span></h3>
+        <div class="servicesUs__container">
+                <div class="servicesUs__card1 cardActive">
+                    <img class="servicesUs__img1" src="assets/images/designIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt1" src="assets/images/designAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Design & Edition</h3>
+                </div>
+                <div class="servicesUs__card2">
+                    <img class="servicesUs__img2" src="assets/images/AudioIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt2" src="assets/images/AudioAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Audio-visuelle</h3>
+                </div>
+                <div class="servicesUs__card3">
+                    <img class="servicesUs__img3" src="assets/images/EventIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt3" src="assets/images/EventAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Evénementielle </h3>
+                </div>
+                <div class="servicesUs__card4">
+                    <img class="servicesUs__img4" src="assets/images/digitalIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt4" src="assets/images/digitalAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Digitalisation </h3>
+                </div>
+                <div class="servicesUs__card5">
+                    <img class="servicesUs__img5" src="assets/images/pressIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt5" src="assets/images/pressAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Presse</h3>
+                </div>
+                <div class="servicesUs__card6">
+                    <img class="servicesUs__img6" src="assets/images/locationIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt6" src="assets/images/locationAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Location de matériel</h3>
+                </div>
+                <div class="servicesUs__card7">
+                    <img class="servicesUs__img7" src="assets/images/shootingIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt7" src="assets/images/shootingAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Shooting photo</h3>
+                </div>
+                <div class="servicesUs__card8">
+                    <img class="servicesUs__img8" src="assets/images/marketingIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt8" src="assets/images/marketingAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Web, Mobile & Digital Marketing</h3>
+                </div>
+                <div class="servicesUs__card9">
+                    <img class="servicesUs__img9" src="assets/images/conseilIcon.svg" alt="">
+                    <img class="servicesUs__imgAlt9" src="assets/images/conseilAltIcon.svg" alt="">
+                    <h3 class="servicesUs__cardTitle">Conseil & Stratégie </h3>
+                </div>
+        </div>
+    <div class="displayDesign">
+        <div class="servicesUs__wrapperInfos">
+            <div class="servicesUs__serviceInfos">
+                <h3 class="serviceInfos__title">Design & Edition :</h3>
+                <p class="serviceInfos__para">La conception et la réalisation de vos supports visuels multimédias sont réalisés en accord avec vos objectifs et la charte graphique de votre entreprise. </p>
+            </div>
+            <div class="servicesUs__list">
+                    <ul class="CheckList">
+                            <li><span><i class="fas fa-check"></i>Mise en page</span></li>
+                            <li><span><i class="fas fa-check"></i>Communication digitale</span></li>
+                            <li><span><i class="fas fa-check"></i>L’Impression</span></li>
+                    </ul>
+             </div>
+            <div class="servicesUs__serviceImg">
+                <img src="assets/images/design-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="displayAudio">
+        <div class="servicesUs__wrapperInfos">
+                <div class="servicesUs__serviceInfos audioWrapperInfo">
+                    <h3 class="serviceInfos__title">Production Audio-visuelle :</h3>
+                    <p class="serviceInfos__para">Nous réalisons des solutions films et vidéos pour dynamiser la communication des entreprises et institutions.</p>
+                </div>
+                <div class="servicesUs__list audioWrapperList">
+                        <ul class="CheckList">
+                                <li><span><i class="fas fa-check"></i>Tournage</span></li>
+                                <li><span><i class="fas fa-check"></i>Post-production</span></li>
+                                <li><span><i class="fas fa-check"></i>Diffusion & distribution de contenu </span></li>
+                                <li><span><i class="fas fa-check"></i>Cadrage</span></li>
+                                <button class="listPlusA">Plus</button>
+                                <li class="maskListA1"><span><i class="fas fa-check"></i>Mise en scène</span></li>
+                                <li class="maskListA2"><span><i class="fas fa-check"></i>Prise de son</span></li>
+                                <li class="maskListA3"><span><i class="fas fa-check"></i>Montage</span></li>
+                                <li class="maskListA4"><span><i class="fas fa-check"></i>Étalonnage</span></li>
+                                <li class="maskListA5"><span><i class="fas fa-check"></i>Mixage</span></li>
+                        </ul>
+                 </div>
+                <div class="servicesUs__serviceImg audioWrapperImg">
+                    <img src="assets/images/audio_img.png" alt="">
+                </div>
+         </div>
+    </div>
+    <div class="displayEvent">
+            <div class="servicesUs__wrapperInfos">
+                    <div class="servicesUs__serviceInfos">
+                        <h3 class="serviceInfos__title">Evénementielle :</h3>
+                        <p class="serviceInfos__para">Nous adaptons la prestation en fonction des demandes du client et de la tendance actuelle.Nous couvrons plusieurs métiers de l’événementiel. 
+                                </p>
+                    </div>
+                    <div class="servicesUs__list">
+                            <ul class="CheckList">
+                                    <li><span><i class="fas fa-check"></i>Gestion des prestataires</span></li>
+                                    <li><span><i class="fas fa-check"></i>Tables rondes</span></li>
+                                    <li><span><i class="fas fa-check"></i>CInauguration</span></li>
+                                    <li><span><i class="fas fa-check"></i>Concours et Congrès</span></li>
+                            </ul>
+                     </div>
+                    <div class="servicesUs__serviceImg">
+                        <img src="assets/images/event_img.png" alt="">
+                    </div>
+             </div>
+    </div>
+    <div class="displayDigitalisation">
+        <div class="servicesUs__wrapperInfos">
+            <div class="servicesUs__serviceInfos">
+                <h3 class="serviceInfos__title">Digitalisation :</h3>
+                <p class="serviceInfos__para">Simplification, optimisation, rentabilité.</p>
+            </div>
+            <div class="servicesUs__list">
+                    <ul class="CheckList">
+                            <li><span><i class="fas fa-check"></i>Marketing Automation</span></li>
+                            <li><span><i class="fas fa-check"></i>Stockage des données</span></li>
+                            <li><span><i class="fas fa-check"></i>Transmission des données</span></li>
+                            <li><span><i class="fas fa-check"></i>Protection des données</span></li>
+                            <button class="listPlusD">Plus</button>
+                            <li class="maskListD1"><span><i class="fas fa-check"></i>Workshops de transformation digitale</span></li>
+                            <li class="maskListD2"><span><i class="fas fa-check"></i>Gestion et organisation de votre projet</span></li>
+                    </ul>
+             </div>
+            <div class="servicesUs__serviceImg">
+                <img src="assets/images/digi-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="displayPresse">
+        <div class="servicesUs__wrapperInfos">
+                <div class="servicesUs__serviceInfos audioWrapperInfo">
+                    <h3 class="serviceInfos__title">Presse :</h3>
+                    <p class="serviceInfos__para"> La communication corporate et les relations médias au cœur de la stratégie de communication.</p>
+                </div>
+                <div class="servicesUs__list audioWrapperList">
+                        <ul class="CheckList">
+                                <li><span><i class="fas fa-check"></i>Rédaction et conception des outils de presse </span></li>
+                                <li><span><i class="fas fa-check"></i>Organisation conférence de presse</span></li>
+                                <li><span><i class="fas fa-check"></i>Relation presse corporate</span></li>
+                                <li><span><i class="fas fa-check"></i>Organisation d’interview</span></li>
+                                <li><span><i class="fas fa-check"></i>Mise en place de partenariats</span></li>
+                        </ul>
+                 </div>
+                <div class="servicesUs__serviceImg audioWrapperImg">
+                    <img src="assets/images/presse-img.png" alt="">
+                </div>
+         </div>
+    </div>
+    <div class="displayLocation">
+            <div class="servicesUs__wrapperInfos">
+                    <div class="servicesUs__serviceInfos">
+                        <h3 class="serviceInfos__title">Location de matériel :</h3>
+                        <p class="serviceInfos__para">Vous avez un film ou un évènement et recherchez du matériel audiovisuel ? N’hésitez pas à nous contacter pour nous demander un devis. </p>
+                    </div>
+                    <div class="servicesUs__list">
+                            <ul class="CheckList">
+                                    <li><span><i class="fas fa-check"></i>Matériel d’événements</span></li>
+                                    <li><span><i class="fas fa-check"></i>Matériel audiovisuelle</span></li>
+                                    <li><span><i class="fas fa-check"></i>Matériel sonorisation</span></li>
+                                    <li><span><i class="fas fa-check"></i>Matériel prise de vue</span></li>
+                                    <li><span><i class="fas fa-check"></i>Location plateau / studio </span></li>
+                            </ul>
+                     </div>
+                    <div class="servicesUs__serviceImg">
+                        <img src="assets/images/materiel-img.png" alt="">
+                    </div>
+             </div>
+    </div>
+    <div class="displayShooting">
+        <div class="servicesUs__wrapperInfos">
+            <div class="servicesUs__serviceInfos">
+                <h3 class="serviceInfos__title">Shooting photo :</h3>
+                <p class="serviceInfos__para">Photographie Artistique, Commercial & Corporate.</p>
+            </div>
+            <div class="servicesUs__list">
+                    <ul class="CheckList">
+                            <li><span><i class="fas fa-check"></i>Books, portfolio & reportage</span></li>
+                            <li><span><i class="fas fa-check"></i>Prise de vue</span></li>
+                            <li><span><i class="fas fa-check"></i>Traitement et retouche des photos</span></li>
+                            <li><span><i class="fas fa-check"></i>Shooting photo </span></li>
+                    </ul>
+             </div>
+            <div class="servicesUs__serviceImg">
+                <img src="assets/images/shooting-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="displayDigital">
+        <div class="servicesUs__wrapperInfos">
+                <div class="servicesUs__serviceInfos audioWrapperInfo">
+                    <h3 class="serviceInfos__title">Web, Mobile & Digital Marketing :</h3>
+                    <p class="serviceInfos__para">A l’heure de la digitalisation, avoir une stratégie digitale bien réfléchie est une partie indispensable de toute stratégie de croissance globale.</p>
+                </div>
+                <div class="servicesUs__list audioWrapperList">
+                        <ul class="CheckList">
+                                <li><span><i class="fas fa-check"></i>App Web & Mobile</span></li>
+                                <li><span><i class="fas fa-check"></i>Marketing digitale </span></li>
+                        </ul>
+                 </div>
+                <div class="servicesUs__serviceImg audioWrapperImg">
+                    <img src="assets/images/dmarketing-img.png" alt="">
+                </div>
+         </div>
+    </div>
+    <div class="displayConseil">
+            <div class="servicesUs__wrapperInfos">
+                    <div class="servicesUs__serviceInfos">
+                        <h3 class="serviceInfos__title"> Conseil & Stratégie :</h3>
+                        <p class="serviceInfos__para">Accompagnement stratégique complet pour vous aider à construire une stratégie forte optimisant les forces vives de votre société et en débutant une véritable gestion de projet. 
+                        </p>
+                    </div>
+                    <div class="servicesUs__list">
+                            <ul class="CheckList">
+                                    <li><span><i class="fas fa-check"></i>Audit</span></li>
+                                    <li><span><i class="fas fa-check"></i>Communication</span></li>
+                                    <li><span><i class="fas fa-check"></i>Digitale</span></li>
+                                    <li><span><i class="fas fa-check"></i>Entreprise</span></li>
+                                    <li><span><i class="fas fa-check"></i>Conseil & élaboration de Stratégie en Marketing</span></li>
+                            </ul>
+                     </div>
+                    <div class="servicesUs__serviceImg">
+                        <img src="assets/images/conseil-img.png" alt="">
+                    </div>
+             </div>
+    </div>
+</section>
+<!-- Sevices end -->
+
+
+<!-- objectives -->
+<?php include(TEMPLATE_FRONT . DS . "objectives.php") ?>
+<!-- objectives end -->
+
+<!-- testimonials -->
+<!-- testimonials end -->
+
+<!-- Contact -->
+<!-- Contact end -->
+
+<!-- Team -->
+<section class="teamUs" data-aos="flip-left">
+    <div class="block-title__line"></div>
+    <h3 class="teamUs__title">Nous avons une équipe d'experts</h3>
+    <!-- <p class="teamUs__subtitle">Rencontrez les membres de notre équipe professionnelle.</p> -->
+<div class="teamUs__container">
+    <div class=" thm__owl-carousel testimonials__carousel owl-carousel owl-theme" data-options='{
+        "items": 3, "margin": 60, "smartSpeed": 700,"autoplay": true, "autoplayHoverPause": true, "autoplayTimeout": 3000, "loop": true, "nav": false, "dots": true, "center": true, "responsive": {
+            "0": {"items": 1, "margin": 0},
+            "767": {"items": 1, "margin": 0},
+            "991": {"items": 2, "margin": 30},
+            "1199": {"items": 3, "margin": 40}
+        }
+    }'>
+            <?php display_team_about() ?>
+           
+    </div>
+</div>
+<a href="team.php"><button class="seeTeam">voir tout</button></a>
+</section>
+<!-- Team end -->
+
+<!-- contact -->
+<?php include(TEMPLATE_FRONT . DS . "contactSection.php") ?>
+<!-- contact end -->
+
+<!-- partners -->
+<?php include(TEMPLATE_FRONT . DS . "partners.php") ?>
+<!-- partners end -->
+
+
+<!-- footer -->
+<?php include(TEMPLATE_FRONT . DS . "newsletter.php") ?>
+<!-- footer end -->
+<?php include(TEMPLATE_FRONT . DS . "end.php") ?>
+
+<script>
+    $('#play-video').on('click', function(e){
+      e.preventDefault();
+      $('#video-overlay').addClass('open');
+      $("#video-overlay").append('<iframe width="80%" height="80%" src="../images/about2AI.mp4" frameborder="0" allowfullscreen></iframe>');
+    });
+    
+    $('.video-overlay, .video-overlay-close').on('click', function(e){
+      e.preventDefault();
+      close_video();
+    });
+    
+    $(document).keyup(function(e){
+      if(e.keyCode === 27) { close_video(); }
+    });
+    
+    function close_video() {
+      $('.video-overlay.open').removeClass('open').find('iframe').remove();
+    };</script>

@@ -1,0 +1,181 @@
+@@include('includes/nav.html')
+<header class="headerAlt">
+@@include('includes/navigation.html')
+<div class="headerAlt__container">
+<h3 class="headerAlt__title">Galerie</h3>
+<ul class="headerAlt__list">
+    <il>
+        <a href="index.html">Acceuil</a>
+    </il>
+    <il>
+        >
+    </il>
+    <il>
+        <a href="gallery.html">Galerie</a>
+    </il>
+</ul>
+</div>
+</header>
+
+<section class="galleryPage">
+<div class="block-title__line"></div>
+    <h3 class="actualitesPage__title">Quelques réalisations pour nos clients</h3>
+    <p class="actualitesPage__subtitle">Un cocktail de réactivité, créativité et passion au service de nos clients, à découvrir ci-dessous.</p>
+    <img class="actualitesPage__bg" src="images/shape.png" alt="">
+<ul class="filter-wrap">
+        <li class="active-filtre filter" data-filter="all">
+            <a>Toutes</a>
+        </li>
+        <li class="filter" data-filter=".images">
+            <a>Images</a>
+        </li>
+        <li class="filter" data-filter=".video">
+            <a>Vidéos</a>
+        </li>
+    
+</ul>
+<div class="galleryCenter">
+<div id="Container" class="galleryContainer">
+        <div class="portfolio-block-one mix images" data-aos="flip-down" data-aos-duration="1000">
+            <div class="image-box">
+                <figure class="image"><img src="images/gal1.png" alt=""></figure>
+                <div class="content-box">
+                    <div class="inner">
+                        <div class="title">Photo. Ui - Ux</div>
+                        <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-block-one mix video" data-aos="flip-down" data-aos-duration="1000">
+                <div class="image-box">
+                    <figure class="image"><img src="images/gal2.png" alt=""></figure>
+                    <div class="content-box">
+                        <div class="inner">
+                            <div class="title">Photo. Ui - Ux</div>
+                            <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-block-one mix images" data-aos="flip-down" data-aos-duration="1000">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/gal3.png" alt=""></figure>
+                        <div class="content-box">
+                            <div class="inner">
+                                <div class="title">Photo. Ui - Ux</div>
+                                <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-block-one mix video" data-aos="flip-down" data-aos-duration="1000">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/gal4.png" alt=""></figure>
+                            <div class="content-box">
+                                <div class="inner">
+                                    <div class="title">Photo. Ui - Ux</div>
+                                    <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-block-one mix images" data-aos="flip-down" data-aos-duration="1000">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gal5.png" alt=""></figure>
+                                <div class="content-box">
+                                    <div class="inner">
+                                        <div class="title">Photo. Ui - Ux</div>
+                                        <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-block-one mix video" data-aos="flip-down" data-aos-duration="1000">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/gal6.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="inner">
+                                            <div class="title">Photo. Ui - Ux</div>
+                                            <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-block-one mix images" data-aos="flip-down" data-aos-duration="1000">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="images/gal7.png" alt=""></figure>
+                                        <div class="content-box">
+                                            <div class="inner">
+                                                <div class="title">Photo. Ui - Ux</div>
+                                                <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-block-one mix video" data-aos="flip-down" data-aos-duration="1000">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="images/gal8.png" alt=""></figure>
+                                            <div class="content-box">
+                                                <div class="inner">
+                                                    <div class="title">Photo. Ui - Ux</div>
+                                                    <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-block-one mix images" data-aos="flip-down" data-aos-duration="1000">
+                                            <div class="image-box">
+                                                <figure class="image"><img src="images/gal9.png" alt=""></figure>
+                                                <div class="content-box">
+                                                    <div class="inner">
+                                                        <div class="title">Photo. Ui - Ux</div>
+                                                        <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-block-one mix video" data-aos="flip-down" data-aos-duration="1000">
+                                                <div class="image-box">
+                                                    <figure class="image"><img src="images/gal1.png" alt=""></figure>
+                                                    <div class="content-box">
+                                                        <div class="inner">
+                                                            <div class="title">Photo. Ui - Ux</div>
+                                                            <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio-block-one mix images" data-aos="flip-down" data-aos-duration="1000">
+                                                    <div class="image-box">
+                                                        <figure class="image"><img src="images/gal2.png" alt=""></figure>
+                                                        <div class="content-box">
+                                                            <div class="inner">
+                                                                <div class="title">Photo. Ui - Ux</div>
+                                                                <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-block-one mix video" data-aos="flip-down" data-aos-duration="1000">
+                                                        <div class="image-box">
+                                                            <figure class="image"><img src="images/gal3.png" alt=""></figure>
+                                                            <div class="content-box">
+                                                                <div class="inner">
+                                                                    <div class="title">Photo. Ui - Ux</div>
+                                                                    <h3><a href="portfolio-details.html">Logo Design</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+</div>
+</div>
+</section>
+
+
+
+@@include('includes/testimonials.html')
+@@include('includes/partners.html')
+@@include('includes/newsletter.html')
+@@include('includes/end.html')
+
